@@ -50,7 +50,7 @@ I use [Paq](https://github.com/savq/paq-nvim) for plugin manager, see: https://g
 
 * [settings.lua](nvim/lua/settings.lua): General Neovim settings and configuration
 
-* [statusline.lua](nvim/lua/statusline.lua): Statusline configuration file (with a plugin or not, I use `lualine`)
+* [statusline.lua](nvim/lua/statusline.lua): Statusline configuration file (in this case I use this file for [lualine.nvim](https://github.com/hoob3rt/lualine.nvim) configuration)
 
 * [nvim-compe](nvim/lua/nvim-compe/main.lua): Autocompletion settings, TAB completion also for LSP
 
