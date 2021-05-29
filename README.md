@@ -62,13 +62,13 @@ I use [Paq](https://github.com/savq/paq-nvim) for plugin manager, see: https://g
 
 See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md)
 
-* **Bash -> bashls:** https://github.com/bash-lsp/bash-language-server
+* Bash - [bashls](https://github.com/bash-lsp/bash-language-server)
 
-* **Python -> pyright:** https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#bashls
+* Python - [pyright](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#bashls)
 
-* **C, C++ -> clangd:** https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#clangd
+* C, C++ - [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#clangd)
 
-* **HTML, CSS, JavaScript -> vscode-html:** https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#html
+* HTML, CSS, JavaScript - [vscode-html](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#ht)
 
 ## Resources:
 
