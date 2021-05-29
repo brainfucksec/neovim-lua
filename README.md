@@ -2,6 +2,8 @@
 
 My Neovim "IDE" configuration with Lua
 
+![.](img/screenshot-1.png)
+
 ## Plugins
 
 [paq-nvim](https://github.com/savq/paq-nvim) - Neovim package manager written in Lua
@@ -95,10 +97,6 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 * Lua 5.1 Reference Manual - https://www.lua.org/manual/5.1/
 
 ## Screenshots
-
-`init.lua`
-
-![.](img/screenshot-1.png)
 
 `Bash`
 
