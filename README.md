@@ -95,3 +95,9 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 * Lua 5.1 Reference Manual - https://www.lua.org/manual/5.1/
 
 ## Screenshots
+
+Colorscheme: [molokai](https://github.com/tomasr/molokai)
+
+Fonts: [Cozette](https://github.com/slavfox/Cozette)
+
+Icons: [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
