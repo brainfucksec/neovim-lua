@@ -96,6 +96,18 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 
 ## Screenshots
 
+`init.lua`
+
+![.](img/screenshot-1.png)
+
+`Bash`
+
+![.](img/screenshot-2.png)
+
+`C`
+
+![.](img/screenshot-3.png)
+
 Colorscheme: [molokai](https://github.com/tomasr/molokai)
 
 Fonts: [Cozette](https://github.com/slavfox/Cozette)
