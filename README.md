@@ -44,19 +44,19 @@ I use [Paq](https://github.com/savq/paq-nvim) for plugin manager, see: https://g
 
 * [init.lua](nvim/init.lua): Main configuration file (call `lua` modules, load plugins etc.)
 
-* `lua`: Folder of `lua` modules, here reside all the Lua modules that needed. The logic is simple, insert a folder for plugin and/or settings written in Lua, and call it from `init.lua` file.  For plugins settings I use the convention `<plugin-folder/main.lua>` (See below).
+* [lua](nvim/lua): Folder of `lua` modules, here reside all the Lua modules that needed. The logic is simple, insert a folder for plugin and/or settings written in Lua, and call it from `init.lua` file.  For plugins settings I use the convention `<plugin-folder/main.lua>` (See below).
 
-* `keymapping.lua`: Keymaps configuration file, vim/neovim and plugins keymaps.
+* [keymapping.lua](nvim/lua/keymapping.lua): Keymaps configuration file, vim/neovim and plugins keymaps.
 
-* `settings.lua`: General Neovim settings and configuration
+* [settings.lua](nvim/lua/settings.lua): General Neovim settings and configuration
 
-* `statusline.lua`: Statusline configuration file (with a plugin or not, I use `lualine`)
+* [statusline.lua](nvim/lua/statusline.lua): Statusline configuration file (with a plugin or not, I use `lualine`)
 
-* `nvim.compe`: Autocompletion settings, TAB completion also for LSP
+* [nvim-compe](nvim/lua/nvim-compe/main.lua): Autocompletion settings, TAB completion also for LSP
 
-* `nvim-lspconfig`: LSP configuration: in this file I insert the language servers for LSP
+* [nvim-lspconfig](nvim/lua/nvim-lspconfig/main.lua): LSP configuration: in this file I insert the language servers for LSP
 
-* `nvim-tree`: File manager settings
+* [nvim-tree](nvim/lua/nvim-tree/main.lua): File manager settings
 
 ## LSP config
 
