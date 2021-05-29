@@ -1,7 +1,6 @@
 # Neovim Lua (from init.vim to init.lua)
 
-## My Neovim "IDE" configuration with Lua
----
+My Neovim "IDE" configuration with Lua
 
 ## Plugins
 
