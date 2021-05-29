@@ -108,6 +108,10 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 
 ![.](img/screenshot-3.png)
 
+`Python`
+
+![.](img/screenshot-4.png)
+
 Colorscheme: [molokai](https://github.com/tomasr/molokai)
 
 Fonts: [Cozette](https://github.com/slavfox/Cozette)
