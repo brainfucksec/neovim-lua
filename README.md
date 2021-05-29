@@ -1,4 +1,4 @@
-# Neovim Lua (from init.vim to init.lua)
+ Neovim Lua (from init.vim to init.lua)
 
 ### My Neovim "IDE" configuration with Lua
 
@@ -42,7 +42,7 @@ I use [Paq](https://github.com/savq/paq-nvim) for plugin manager, see: https://g
 
 ## Files and settings:
 
-* `init.lua`: Main configuration file (call `lua` modules, load plugins etc.)
+* [init.lua](nvim/init.lua): Main configuration file (call `lua` modules, load plugins etc.)
 
 * `lua`: Folder of `lua` modules, here reside all the Lua modules that needed. The logic is simple, insert a folder for plugin and/or settings written in Lua, and call it from `init.lua` file.  For plugins settings I use the convention `<plugin-folder/main.lua>` (See below).
 
