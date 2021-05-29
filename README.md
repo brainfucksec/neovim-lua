@@ -42,7 +42,7 @@ I use [Paq](https://github.com/savq/paq-nvim) for plugin manager, see: https://g
     └── statusline.lua
 ```
 
-## Files and settings:
+## Files and settings
 
 * [init.lua](nvim/init.lua): Main configuration file (call `lua` modules, load plugins etc.)
 
@@ -72,30 +72,6 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 
 * HTML, CSS, JavaScript - [vscode-html](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#ht)
 
-## Resources:
-
-* https://github.com/nanotee/nvim-lua-guide
-
-* https://alpha2phi.medium.com/neovim-init-lua-e80f4f136030
-
-* https://oroques.dev/notes/neovim-init/
-
-* https://icyphox.sh/blog/nvim-lua/
-
-## Examples:
-
-* https://github.com/mjlbach/defaults.nvim/blob/master/init.lua
-
-* https://github.com/siduck76/neovim-dots
-
-## Lua resources:
-
-* Lua in Y minutes - https://learnxinyminutes.com/docs/lua/
-
-* Lua Quick Guide - https://github.com/medwatt/Notes/blob/main/Lua/Lua_Quick_Guide.ipynb
-
-* Lua 5.1 Reference Manual - https://www.lua.org/manual/5.1/
-
 ## Screenshots
 
 `Bash`
@@ -115,3 +91,33 @@ Colorscheme: [molokai](https://github.com/tomasr/molokai)
 Fonts: [Cozette](https://github.com/slavfox/Cozette)
 
 Icons: [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
+
+## Resources
+
+* https://github.com/nanotee/nvim-lua-guide
+
+* https://alpha2phi.medium.com/neovim-init-lua-e80f4f136030
+
+* https://oroques.dev/notes/neovim-init/
+
+* https://icyphox.sh/blog/nvim-lua/
+
+## Examples:
+
+* https://github.com/mjlbach/defaults.nvim/blob/master/init.lua
+
+* https://github.com/siduck76/neovim-dots
+
+## Lua resources
+
+* Lua in Y minutes - https://learnxinyminutes.com/docs/lua/
+
+* Lua Quick Guide - https://github.com/medwatt/Notes/blob/main/Lua/Lua_Quick_Guide.ipynb
+
+* Lua 5.1 Reference Manual - https://www.lua.org/manual/5.1/
+
+## Disclaimer
+
+This configuration is in alpha version, See: `Version` on [init.lua](nvim/init.lua) as a reference.
+I work fine with this configuration but it is still not intended for daily use.
+
