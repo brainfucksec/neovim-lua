@@ -48,11 +48,7 @@ I use [Paq](https://github.com/savq/paq-nvim) for plugin manager, see: https://g
 
 * [init.lua](nvim/init.lua): Main configuration file (call `lua` modules, load plugins etc.)
 
-* [lua](nvim/lua): Folder of `lua` modules, here reside all the Lua modules that needed. The logic is simple, inside the `lua` folder there are the files and/or folders for neovim and plugins settings (written in Lua), these modules are called from `init.lua` file (See below).
-
-For plugins settings I use the convention `<plugin-folder/main.lua>`.
-
-See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
+* [lua](nvim/lua): Folder of `lua` modules, here reside all the Lua modules that needed. The logic is simple, inside the `lua` folder there are the files and/or folders for neovim and plugins settings (written in Lua), these modules are called from `init.lua` file (See below).  For plugins settings I use the convention `<plugin-folder/main.lua>`.  See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 
 * [keymapping.lua](nvim/lua/keymapping.lua): Keymaps configuration file, vim/neovim and plugins keymaps.
 
