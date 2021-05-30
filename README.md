@@ -92,6 +92,13 @@ Fonts: [Cozette](https://github.com/slavfox/Cozette)
 
 Icons: [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 
+## TODO
+
+* Improve section `LSP config` (add language servers install instruction)
+
+* Test [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+---
+
 ## Resources
 
 * https://github.com/nanotee/nvim-lua-guide
@@ -119,5 +126,7 @@ Icons: [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 ## Disclaimer
 
 This configuration is in alpha version, See: `Version` on [init.lua](nvim/init.lua) as a reference.
-I work fine with this configuration but it is still not intended for daily use.
+I work fine with this configuration but it is still not intended for daily use, see my current [init.vim](https://github.com/brainfucksec/dotfiles/blob/master/.config/nvim/init.vim) configuration on my
+[dotfiles](https://github.com/brainfucksec/dotfiles) for the "stable" setup that I use on some operating systems.
 
+As all my setups I try to follow the [KISS](https://en.wikipedia.org/wiki/KISS_principle) principle, probably some concepts may not be valid for everyone, then feel free to take what you need but don't install anything without checking first!
