@@ -4,7 +4,7 @@ My Neovim "IDE" configuration with Lua
 
 ![.](img/screenshot-1.png)
 
-This setup assumes is for the latest [nightly build](https://github.com/neovim/neovim/releases/tag/nightly) of Neovim. Since version 0.5 of Neovim is a development version, keep in mind that some APIs that are being actively worked on are not quite stable and might change before release.
+This setup is for the latest [nightly build](https://github.com/neovim/neovim/releases/tag/nightly) of Neovim. Since version 0.5 of Neovim is a development version, keep in mind that some APIs that are being actively worked on are not quite stable and might change before release.
 
 ## Plugins
 
@@ -48,7 +48,9 @@ I use [Paq](https://github.com/savq/paq-nvim) for plugin manager, see: https://g
 
 * [init.lua](nvim/init.lua): Main configuration file (call `lua` modules, load plugins etc.)
 
-* [lua](nvim/lua): Folder of `lua` modules, here reside all the Lua modules that needed. The logic is simple, insert a folder for plugin and/or settings written in Lua, and call it from `init.lua` file.  For plugins settings I use the convention `<plugin-folder/main.lua>` (See below).
+* [lua](nvim/lua): Folder of `lua` modules, here reside all the Lua modules that needed. The logic is simple, inside the `lua` folder there are the files and/orm folders for neovim and plugins settings written in Lua, these modules are called from `init.lua` file (See below).
+For plugins settings I use the convention `<plugin-folder/main.lua>`.
+See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 
 * [keymapping.lua](nvim/lua/keymapping.lua): Keymaps configuration file, vim/neovim and plugins keymaps.
 
