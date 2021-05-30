@@ -4,6 +4,8 @@ My Neovim "IDE" configuration with Lua
 
 ![.](img/screenshot-1.png)
 
+This setup assumes is for the latest [nightly build](https://github.com/neovim/neovim/releases/tag/nightly) of Neovim. Since version 0.5 of Neovim is a development version, keep in mind that some APIs that are being actively worked on are not quite stable and might change before release.
+
 ## Plugins
 
 [paq-nvim](https://github.com/savq/paq-nvim) - Neovim package manager written in Lua
@@ -94,7 +96,7 @@ Icons: [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 
 ## TODO
 
-* Improve section `LSP config` (add language servers install instruction)
+* Improve section [LSP config](#lsp-config)
 
 * Test [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 ---
