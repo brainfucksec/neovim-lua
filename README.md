@@ -1,10 +1,10 @@
 # Neovim Lua (from init.vim to init.lua)
 
-My Neovim "IDE" configuration with Lua
+My Neovim configuration with Lua
 
 ![.](img/screenshot-1.png)
 
-This setup is for the latest [nightly build](https://github.com/neovim/neovim/releases/tag/nightly) of Neovim. Since version 0.5 of Neovim is a development version, keep in mind that some APIs that are being actively worked on are not quite stable and might change before release.
+This setup is for [neovim nightly 0.5.0-dev](https://github.com/neovim/neovim/releases/tag/nightly)
 
 ## Plugins
 
