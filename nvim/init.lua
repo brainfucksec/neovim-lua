@@ -10,9 +10,9 @@
 
 neovim configuration file
 
-Version: 0.1.0_alpha - 2021/06/13
+Version: 0.2.0_alpha - 2021/07/04
 Maintainer: Brainfuck
-Website: https://github.com/brainfucksec/neovim-lua
+Website: https://github.com/brainfucksec/dotfiles
 --]]
 
 
