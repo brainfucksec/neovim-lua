@@ -6,6 +6,7 @@
 -- `init.lua`
 
 -- plugin: nvim-compe
+--- https://github.com/hrsh7th/nvim-compe
 require('compe').setup {
   enabled = true,
   autocomplete = true,
@@ -18,7 +19,14 @@ require('compe').setup {
   max_abbr_width = 100,
   max_kind_width = 100,
   max_menu_width = 100,
-  documentation = true,
+  documentation = {
+    border = { '', '' ,'', ' ', '', '', '', ' ' }, -- the border option is the same as `|help nvim_open_win|`
+    winhighlight = "NormalFloat:CompeDocumentation,FloatBorder:CompeDocumentationBorder",
+    max_width = 120,
+    min_width = 60,
+    max_height = math.floor(vim.o.lines * 0.3),
+    min_height = 1,
+  };
 
   source = {
     path = true,
