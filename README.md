@@ -1,10 +1,6 @@
 # Neovim Lua (from init.vim to init.lua)
 
-My Neovim configuration with Lua
-
-![.](img/screenshot-1.png)
-
-This setup is for [neovim v0.5.0](https://github.com/neovim/neovim/releases/tag/v0.5.0))
+My Neovim "IDE" configuration with Lua
 
 ## Plugins
 
@@ -44,11 +40,11 @@ I use [Paq](https://github.com/savq/paq-nvim) for plugin manager, see: https://g
     └── statusline.lua
 ```
 
-## Files and settings
+## Files and settings:
 
 * [init.lua](nvim/init.lua): Main configuration file (call `lua` modules, load plugins etc.)
 
-* [lua](nvim/lua): Folder of `lua` modules, here reside all the Lua modules that needed. The logic is simple, inside the `lua` folder there are the files and/or folders for neovim and plugins settings (written in Lua), these modules are called from `init.lua` file (See below).  For plugins settings I use the convention `<plugin-folder/main.lua>`.  See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
+* [lua](nvim/lua): Folder of `lua` modules, here reside all the Lua modules that needed. The logic is simple, insert a folder for plugin and/or settings written in Lua, and call it from `init.lua` file.  For plugins settings I use the convention `<plugin-folder/main.lua>` (See below).
 
 * [keymapping.lua](nvim/lua/keymapping.lua): Keymaps configuration file, vim/neovim and plugins keymaps.
 
@@ -74,7 +70,35 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 
 * HTML, CSS, JavaScript - [vscode-html](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#ht)
 
+## Resources:
+
+* https://github.com/nanotee/nvim-lua-guide
+
+* https://alpha2phi.medium.com/neovim-init-lua-e80f4f136030
+
+* https://oroques.dev/notes/neovim-init/
+
+* https://icyphox.sh/blog/nvim-lua/
+
+## Examples:
+
+* https://github.com/mjlbach/defaults.nvim/blob/master/init.lua
+
+* https://github.com/siduck76/neovim-dots
+
+## Lua resources:
+
+* Lua in Y minutes - https://learnxinyminutes.com/docs/lua/
+
+* Lua Quick Guide - https://github.com/medwatt/Notes/blob/main/Lua/Lua_Quick_Guide.ipynb
+
+* Lua 5.1 Reference Manual - https://www.lua.org/manual/5.1/
+
 ## Screenshots
+
+`init.lua`
+
+![.](img/screenshot-1.png)
 
 `Bash`
 
@@ -93,42 +117,3 @@ Colorscheme: [molokai](https://github.com/tomasr/molokai)
 Fonts: [Cozette](https://github.com/slavfox/Cozette)
 
 Icons: [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
-
-## TODO
-
-* Improve section [LSP config](#lsp-config)
-
-* Test [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
----
-
-## Resources
-
-* https://github.com/nanotee/nvim-lua-guide
-
-* https://alpha2phi.medium.com/neovim-init-lua-e80f4f136030
-
-* https://oroques.dev/notes/neovim-init/
-
-* https://icyphox.sh/blog/nvim-lua/
-
-## Examples:
-
-* https://github.com/mjlbach/defaults.nvim/blob/master/init.lua
-
-* https://github.com/siduck76/neovim-dots
-
-## Lua resources
-
-* Lua in Y minutes - https://learnxinyminutes.com/docs/lua/
-
-* Lua Quick Guide - https://github.com/medwatt/Notes/blob/main/Lua/Lua_Quick_Guide.ipynb
-
-* Lua 5.1 Reference Manual - https://www.lua.org/manual/5.1/
-
-## Disclaimer
-
-This configuration is in alpha version, See: `Version` on [init.lua](nvim/init.lua) as a reference.
-I work fine with this configuration but it is still not intended for daily use, see my current [init.vim](https://github.com/brainfucksec/dotfiles/blob/master/.config/nvim/init.vim) configuration on my
-[dotfiles](https://github.com/brainfucksec/dotfiles) for the "stable" setup that I use on some operating systems.
-
-As all my setups I try to follow the [KISS](https://en.wikipedia.org/wiki/KISS_principle) principle, probably some concepts may not be valid for everyone, then feel free to take what you need but don't install anything without checking first!
