@@ -115,7 +115,7 @@ Icons: [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 
 * https://github.com/mjlbach/defaults.nvim/blob/master/init.lua
 
-* https://github.com/siduck76/neovim-dots
+* https://github.com/siduck76/NvChad
 
 ## Lua resources
 
