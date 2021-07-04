@@ -4,7 +4,7 @@ My Neovim configuration with Lua
 
 ![.](img/screenshot-1.png)
 
-This setup is for [neovim nightly 0.5.0-dev](https://github.com/neovim/neovim/releases/tag/nightly)
+This setup is for [neovim v0.5.0](https://github.com/neovim/neovim/releases/tag/v0.5.0))
 
 ## Plugins
 
