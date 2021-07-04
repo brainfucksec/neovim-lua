@@ -88,7 +88,7 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 
 ![.](img/4-python.png)
 
-##
+## Appearance
 
 Colorscheme: [molokai](https://github.com/tomasr/molokai)
 
