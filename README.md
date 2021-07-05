@@ -1,6 +1,6 @@
-# Neovim Lua (from init.vim to init.lua)
+# Neovim Lua
 
-My Neovim configuration with Lua
+### My Neovim configuration with Lua
 
 ![.](img/1-init.lua.png)
 
