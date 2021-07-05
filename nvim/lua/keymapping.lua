@@ -3,7 +3,7 @@
 -----------------------------------------------------------
 
 -- This file can be loaded by calling `require('module_name')` from your
--- init.lua
+--- init.lua
 
 local map = vim.api.nvim_set_keymap
 

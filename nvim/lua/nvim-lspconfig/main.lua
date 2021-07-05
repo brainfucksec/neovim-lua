@@ -3,9 +3,7 @@
 -----------------------------------------------------------
 
 -- This file can be loaded by calling `require('module_name')` from your
--- `init.lua`
-
-local g = vim.g
+--- `init.lua`
 
 -- plugin: nvim-lspconfig
 --- For language server setup see: https://github.com/neovim/nvim-lspconfig

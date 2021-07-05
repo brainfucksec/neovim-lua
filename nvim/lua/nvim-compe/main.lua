@@ -3,7 +3,7 @@
 -----------------------------------------------------------
 
 -- This file can be loaded by calling `require('module_name')` from your
--- `init.lua`
+--- init.lua
 
 -- plugin: nvim-compe
 --- https://github.com/hrsh7th/nvim-compe
