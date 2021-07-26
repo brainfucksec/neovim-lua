@@ -98,9 +98,11 @@ Icons: [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 
 ## TODO
 
-* Improve section [LSP config](#lsp-config)
+* Improve section: [LSP config](#lsp-config)
 
-* Test [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+* Add section: [Installation]()
+
+* Test [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) (Replacing `tagbar` and `after/syntax` folder...)
 ---
 
 ## Resources
