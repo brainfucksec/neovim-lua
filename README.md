@@ -102,6 +102,8 @@ Icons: [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 
 * Add section: [Installation]()
 
+* Add Lua (LSP) support
+
 * Test [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) (Replacing `tagbar` and `after/syntax` folder...)
 ---
 
