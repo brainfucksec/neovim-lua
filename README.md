@@ -66,13 +66,13 @@ I use [Paq](https://github.com/savq/paq-nvim) for plugin manager, see: https://g
 
 See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md)
 
-* Bash - [bashls](https://github.com/bash-lsp/bash-language-server)
+* Bash - [bashls](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#bashls)
 
-* Python - [pyright](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#bashls)
+* Python - [pyright](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#pyright)
 
 * C, C++ - [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#clangd)
 
-* HTML, CSS, JavaScript - [vscode-html](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#ht)
+* HTML, CSS, JavaScript - [vscode-html](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#html)
 
 ## Screenshots
 
@@ -100,11 +100,35 @@ Icons: [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 
 ![.](img/5-startuptime.png)
 
+## Installation
+
+1. Install [neovim v0.5.0](https://github.com/neovim/neovim/releases/tag/v0.5.0)
+
+2. Install [npm](https://github.com/npm/cli) (for download the packages of LSP language servers)
+
+3. Download [this repository](https://github.com/brainfucksec/neovim-lua) with `git` and copy the required folders
+```bash
+    git clone https://github.com/brainfucksec/neovim-lua.git
+    cd neovim-lua/
+    cp -Rv nvim ~/.config/nvim/
+```
+
+4. Install [Paq](https://github.com/savq/paq-nvim#installation)
+
+5. Open `neovim` and run the command [:PaqInstall](https://github.com/savq/paq-nvim#commands) to install the plugins
+
+## LSP Configuration
+
+1. Install LSP language servers with `npm`
+```bash
+    sudo npm install -g bash-language-server pyright vscode-langservers-extracted
+```
+
+2. Install [clang](https://clangd.llvm.org/installation.html) for use LSP with [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#clangd)
+
+3. Open a file with `neovim` and run command [:LspInfo](https://github.com/neovim/nvim-lspconfig#built-in-commands) for testing the LSP support
+
 ## TODO
-
-* Improve section: [LSP config](#lsp-config)
-
-* Add section: [Installation]()
 
 * Add Lua (LSP) support
 
