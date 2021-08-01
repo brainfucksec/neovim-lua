@@ -62,18 +62,6 @@ I use [Paq](https://github.com/savq/paq-nvim) for plugin manager, see: https://g
 
 * [nvim-tree](nvim/lua/nvim-tree/main.lua): File manager settings
 
-## LSP config
-
-See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md)
-
-* Bash - [bashls](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#bashls)
-
-* Python - [pyright](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#pyright)
-
-* C, C++ - [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#clangd)
-
-* HTML, CSS, JavaScript - [vscode-html](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#html)
-
 ## Screenshots
 
 `Bash`
@@ -128,9 +116,21 @@ Icons: [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 
 3. Open a file with `neovim` and run command [:LspInfo](https://github.com/neovim/nvim-lspconfig#built-in-commands) for testing the LSP support
 
+Supported languages in my configuration:
+
+    * Bash - [bashls](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#bashls)
+
+    * Python - [pyright](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#pyright)
+
+    * C, C++ - [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#clangd)
+
+    * HTML, CSS, JavaScript - [vscode-html](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#html)
+
+See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md)
+
 ## TODO
 
-* Add Lua (LSP) support
+* Add Lua (and other languages) to LSP configuration
 
 * Test [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) (Replacing `tagbar` and `after/syntax` folder (maybe)...)
 ---
