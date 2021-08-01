@@ -96,6 +96,10 @@ Fonts: [Cozette](https://github.com/slavfox/Cozette)
 
 Icons: [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 
+## Startup time
+
+![.](img/5-startuptime.png)
+
 ## TODO
 
 * Improve section: [LSP config](#lsp-config)
