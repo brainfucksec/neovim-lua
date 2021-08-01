@@ -25,7 +25,9 @@ o.mouse = 'a'               -- enable mouse support
 o.clipboard = 'unnamedplus' -- copy/paste to system clipboard
 b.swapfile = false          -- don't use swapfile
 
+-----------------------------------------------------------
 -- Neovim UI
+-----------------------------------------------------------
 o.syntax = 'enable'         -- enable syntax highlighting
 w.number = true             -- show line number
 o.showmatch = true          -- highlight matching parenthesis
@@ -55,7 +57,6 @@ o.history = 100         -- remember n lines in history
 o.lazyredraw = true     -- faster scrolling
 b.synmaxcol = 240       -- max column for syntax highlight
 
-
 -----------------------------------------------------------
 -- Colorscheme
 -----------------------------------------------------------
@@ -80,18 +81,23 @@ cmd([[
 
 -- 2 spaces for selected filetypes
 cmd([[
-  autocmd FileType xml,html,xhtml,css,scss,javascript,lua setlocal shiftwidth=2 tabstop=2
+  autocmd FileType xml,html,xhtml,css,scss,javascript,lua,yaml setlocal shiftwidth=2 tabstop=2
 ]])
 
 -- 8 spaces for Go files
 cmd([[autocmd FileType go setlocal shiftwidth=8 tabstop=8]])
 
 -- IndentLine
-g.indentLine_char = '|'     -- set indentLine character
+g.indentLine_char = '|'       -- set indentLine character
 --g.indentLine_setColors = 0  -- set indentLine color
+
+-- disable IndentLine for markdown files (avoid concealing)
+cmd([[
+	autocmd FileType markdown let g:indentLine_enabled=0
+]])
 
 -----------------------------------------------------------
 -- Autocompletion
 -----------------------------------------------------------
 o.completeopt = 'menuone,noselect,noinsert' -- completion options
-o.shortmess = 'c'       -- don't show completion messages
+o.shortmess = 'c' 	-- don't show completion messages
