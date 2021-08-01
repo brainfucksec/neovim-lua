@@ -27,7 +27,7 @@ This setup is for [neovim v0.5.0](https://github.com/neovim/neovim/releases/tag/
 
 I use [Paq](https://github.com/savq/paq-nvim) for plugin manager, see: https://github.com/savq/paq-nvim#installation
 
-## Neovim directory tree
+## Directory tree of Lua files
 ```
 ~/.config/nvim
 .
@@ -104,7 +104,7 @@ Icons: [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 
 * Add Lua (LSP) support
 
-* Test [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) (Replacing `tagbar` and `after/syntax` folder...)
+* Test [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) (Replacing `tagbar` and `after/syntax` folder (maybe)...)
 ---
 
 ## Resources
@@ -132,9 +132,5 @@ Icons: [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 * Lua 5.1 Reference Manual - https://www.lua.org/manual/5.1/
 
 ## Disclaimer
-
-This configuration is in alpha version, See: `Version` on [init.lua](nvim/init.lua) as a reference.
-I work fine with this configuration but it is still not intended for daily use, see my current [init.vim](https://github.com/brainfucksec/dotfiles/blob/master/.config/nvim/init.vim) configuration on my
-[dotfiles](https://github.com/brainfucksec/dotfiles) for the "stable" setup that I use on some operating systems.
 
 As all my setups I try to follow the [KISS](https://en.wikipedia.org/wiki/KISS_principle) principle, probably some concepts may not be valid for everyone, then feel free to take what you need but don't install anything without checking first!
