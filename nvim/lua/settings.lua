@@ -8,14 +8,14 @@
 -----------------------------------------------------------
 -- Neovim API aliases
 -----------------------------------------------------------
-local cmd = vim.cmd     -- execute Vim commands
-local exec = vim.api.nvim_exec       -- execute Vimscript
 --local map = vim.api.nvim_set_keymap  -- set global keymap
-local fn = vim.fn       -- call Vim functions
-local g = vim.g         -- global variables
-local o = vim.o         -- global options
-local b = vim.bo        -- buffer-scoped options
-local w = vim.wo        -- windows-scoped options
+local cmd = vim.cmd     				-- execute Vim commands
+local exec = vim.api.nvim_exec 	-- execute Vimscript
+local fn = vim.fn       				-- call Vim functions
+local g = vim.g         				-- global variables
+local o = vim.o         				-- global options
+local b = vim.bo        				-- buffer-scoped options
+local w = vim.wo        				-- windows-scoped options
 
 -----------------------------------------------------------
 -- General
@@ -88,8 +88,8 @@ cmd([[
 cmd([[autocmd FileType go setlocal shiftwidth=8 tabstop=8]])
 
 -- IndentLine
-g.indentLine_char = '|'       -- set indentLine character
 --g.indentLine_setColors = 0  -- set indentLine color
+g.indentLine_char = '|'       -- set indentLine character
 
 -- disable IndentLine for markdown files (avoid concealing)
 cmd([[
