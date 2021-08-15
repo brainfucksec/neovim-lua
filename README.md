@@ -132,7 +132,9 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 
 * Add Lua (and other languages) to LSP configuration
 
-* Test [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) (Replacing `tagbar` and `after/syntax` folder (maybe)...)
+* Test [Vista.vim](https://github.com/liuchengxu/vista.vim)
+
+* Add Start Screen when neovim is opened without arguments
 ---
 
 ## Resources
