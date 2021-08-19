@@ -13,30 +13,28 @@ local cmd = vim.cmd     				-- execute Vim commands
 local exec = vim.api.nvim_exec 	-- execute Vimscript
 local fn = vim.fn       				-- call Vim functions
 local g = vim.g         				-- global variables
-local o = vim.o         				-- global options
-local b = vim.bo        				-- buffer-scoped options
-local w = vim.wo        				-- windows-scoped options
+local opt = vim.opt         		-- global/buffer/windows-scoped options
 
 -----------------------------------------------------------
 -- General
 -----------------------------------------------------------
-g.mapleader = ','           -- change leader to a comma
-o.mouse = 'a'               -- enable mouse support
-o.clipboard = 'unnamedplus' -- copy/paste to system clipboard
-b.swapfile = false          -- don't use swapfile
+g.mapleader = ','             -- change leader to a comma
+opt.mouse = 'a'               -- enable mouse support
+opt.clipboard = 'unnamedplus' -- copy/paste to system clipboard
+opt.swapfile = false          -- don't use swapfile
 
 -----------------------------------------------------------
 -- Neovim UI
 -----------------------------------------------------------
-o.syntax = 'enable'         -- enable syntax highlighting
-w.number = true             -- show line number
-o.showmatch = true          -- highlight matching parenthesis
-w.foldmethod = 'marker'     -- enable folding (default 'foldmarker')
-w.colorcolumn = '80'        -- line lenght marker at 80 columns
-o.splitright = true         -- vertical split to the right
-o.splitbelow = true         -- orizontal split to the bottom
-o.ignorecase = true         -- ignore case letters when search
-o.smartcase = true          -- ignore lowercase for the whole pattern
+opt.syntax = 'enable'         -- enable syntax highlighting
+opt.number = true             -- show line number
+opt.showmatch = true          -- highlight matching parenthesis
+opt.foldmethod = 'marker'     -- enable folding (default 'foldmarker')
+opt.colorcolumn = '80'        -- line lenght marker at 80 columns
+opt.splitright = true         -- vertical split to the right
+opt.splitbelow = true         -- orizontal split to the bottom
+opt.ignorecase = true         -- ignore case letters when search
+opt.smartcase = true          -- ignore lowercase for the whole pattern
 
 -- remove whitespace on save
 cmd([[au BufWritePre * :%s/\s\+$//e]])
@@ -52,24 +50,24 @@ exec([[
 -----------------------------------------------------------
 -- Memory, CPU
 -----------------------------------------------------------
-o.hidden = true         -- enable background buffers
-o.history = 100         -- remember n lines in history
-o.lazyredraw = true     -- faster scrolling
-b.synmaxcol = 240       -- max column for syntax highlight
+opt.hidden = true         -- enable background buffers
+opt.history = 100         -- remember n lines in history
+opt.lazyredraw = true     -- faster scrolling
+opt.synmaxcol = 240       -- max column for syntax highlight
 
 -----------------------------------------------------------
 -- Colorscheme
 -----------------------------------------------------------
-o.termguicolors = true          -- enable 24-bit RGB colors
-cmd([[colorscheme molokai]])    -- set colorscheme
+opt.termguicolors = true          -- enable 24-bit RGB colors
+cmd([[colorscheme molokai]])      -- set colorscheme
 
 -----------------------------------------------------------
 -- Tabs, indent
 -----------------------------------------------------------
-b.expandtab = true      -- use spaces instead of tabs
-b.shiftwidth = 4        -- shift 4 spaces when tab
-b.tabstop = 4           -- 1 tab == 4 spaces
-b.smartindent = true    -- autoindent new lines
+opt.expandtab = true      -- use spaces instead of tabs
+opt.shiftwidth = 4        -- shift 4 spaces when tab
+opt.tabstop = 4           -- 1 tab == 4 spaces
+opt.smartindent = true    -- autoindent new lines
 
 -- don't auto commenting new lines
 cmd([[au BufEnter * set fo-=c fo-=r fo-=o]])
@@ -99,5 +97,5 @@ cmd([[
 -----------------------------------------------------------
 -- Autocompletion
 -----------------------------------------------------------
-o.completeopt = 'menuone,noselect,noinsert' -- completion options
-o.shortmess = 'c' 	-- don't show completion messages
+opt.completeopt = 'menuone,noselect,noinsert' -- completion options
+opt.shortmess = 'c' 	-- don't show completion messages
