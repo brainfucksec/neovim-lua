@@ -10,15 +10,15 @@
 
 neovim configuration file
 
-Version: 0.3.1_alpha - 2021/08/01
+Version: 0.4.0_alpha - 2021/08/20
 Maintainer: Brainfuck
-Website: https://github.com/brainfucksec/dotfiles
+Website: https://github.com/brainfucksec/neovim-lua
 
 --]]
 
 
 -----------------------------------------------------------
--- Plugins
+-- Load plugins
 -----------------------------------------------------------
 -- paq-nvim
 vim.cmd 'packadd paq-nvim'            -- load package

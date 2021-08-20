@@ -134,7 +134,7 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 
 * Test [Vista.vim](https://github.com/liuchengxu/vista.vim)
 
-* Add Start Screen when neovim is opened without arguments
+* Add a start page when Neovim is opened without arguments
 ---
 
 ## Resources
