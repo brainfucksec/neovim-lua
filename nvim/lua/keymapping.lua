@@ -1,22 +1,22 @@
 -----------------------------------------------------------
 -- Keymapping
+--- Keymaps configuration file, keymaps of neovim
+--- and plugins.
 -----------------------------------------------------------
 
--- This file can be loaded by calling `require('module_name')` from your
---- init.lua
-
 local map = vim.api.nvim_set_keymap
+local default = {noremap = true, silent = true}
 
-local defaults = {noremap = true, silent = true}
 
+-- Neovim shortcuts
 -- basic autopair
-map('i', '"', '""<left>', defaults)
-map('i', '`', '``<left>', defaults)
-map('i', '(', '()<left>', defaults)
-map('i', '[', '[]<left>', defaults)
-map('i', '{', '{}<left>', defaults)
-map('i', '{<CR>', '{<CR}<ESC>0', defaults)
-map('i', '{;<CR>', '{<CR};<ESC>0', defaults)
+map('i', '"', '""<left>', default)
+map('i', '`', '``<left>', default)
+map('i', '(', '()<left>', default)
+map('i', '[', '[]<left>', default)
+map('i', '{', '{}<left>', default)
+map('i', '{<CR>', '{<CR}<ESC>0', default)
+map('i', '{;<CR>', '{<CR};<ESC>0', default)
 
 -- autocomplete with Tab
 map('i', '<Tab>', 'v:lua.tab_complete()', {expr = true})
@@ -25,7 +25,7 @@ map('i', '<S-Tab>', 'v:lua.s_tab_complete()', {expr = true})
 map('s', '<S-Tab>', 'v:lua.s_tab_complete()', {expr = true})
 
 -- clear search highlighting
-map('n', '<leader>c', ':nohl<CR>', defaults)
+map('n', '<leader>c', ':nohl<CR>', default)
 
 -- press kk to exit
 map('i', 'kk', '<Esc>', {noremap = true})
@@ -37,19 +37,20 @@ map('', '<left>', '<nop>', {noremap = true})
 map('', '<right>', '<nop>', {noremap = true})
 
 -- fast saving
-map('n', '<leader>s', ':w<cr>', defaults)
-map('i', '<leader>s', '<C-c>:w<cr>', defaults)
+map('n', '<leader>s', ':w<cr>', default)
+map('i', '<leader>s', '<C-c>:w<cr>', default)
 
 -- move around splits using Ctrl + {h,j,k,l}
-map('n', '<C-h>', '<C-w>h', defaults)
-map('n', '<C-j>', '<C-w>j', defaults)
-map('n', '<C-k>', '<C-w>k', defaults)
-map('n', '<C-l>', '<C-w>l', defaults)
+map('n', '<C-h>', '<C-w>h', default)
+map('n', '<C-j>', '<C-w>j', default)
+map('n', '<C-k>', '<C-w>k', default)
+map('n', '<C-l>', '<C-w>l', default)
 
--- nvim-tree shortcuts
-map('n', '<C-n>', ':NvimTreeToggle<CR>', defaults)
-map('n', '<leader>r', ':NvimTreeRefresh<CR>', defaults)
-map('n', '<leader>n', ':NvimTreeFindFile<CR>', defaults)
+-- Plugins shortcuts:
+-- nvim-tree
+map('n', '<C-n>', ':NvimTreeToggle<CR>', default)       -- open/close
+map('n', '<leader>r', ':NvimTreeRefresh<CR>', default)  -- refresh
+map('n', '<leader>n', ':NvimTreeFindFile<CR>', default) -- search file
 
--- open/close tagbar
-map('', '<C-m>', ':TagbarToggle<CR>', defaults)
+-- tagbar
+map('', '<C-m>', ':TagbarToggle<CR>', default)  -- open/close
