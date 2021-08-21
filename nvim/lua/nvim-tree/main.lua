@@ -2,12 +2,9 @@
 -- File manager configuration file
 -----------------------------------------------------------
 
--- This file can be loaded by calling `require('module_name')` from your
---- init.lua
-
 local g = vim.g
 
--- plugin: nvim-tree
+-- Plugin: nvim-tree
 --- https://github.com/kyazdani42/nvim-tree.lua
 g.nvim_tree_width = 27
 g.nvim_tree_ignore = {'.git', 'node_modules', '.cache'}

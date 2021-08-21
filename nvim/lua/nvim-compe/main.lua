@@ -2,10 +2,7 @@
 -- Autocomplete configuration file
 -----------------------------------------------------------
 
--- This file can be loaded by calling `require('module_name')` from your
---- init.lua
-
--- plugin: nvim-compe
+-- Plugin: nvim-compe
 --- https://github.com/hrsh7th/nvim-compe
 require('compe').setup {
   enabled = true,

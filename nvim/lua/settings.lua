@@ -1,9 +1,7 @@
 -----------------------------------------------------------
 -- Neovim settings
+--- General Neovim settings and configuration
 -----------------------------------------------------------
-
--- This file can be loaded by calling `require('module_name')` from your
---- init.lua
 
 -----------------------------------------------------------
 -- Neovim API aliases
@@ -37,7 +35,7 @@ opt.ignorecase = true         -- ignore case letters when search
 opt.smartcase = true          -- ignore lowercase for the whole pattern
 
 -- remove whitespace on save
-cmd([[au BufWritePre * :%s/\s\+$//e]])
+cmd[[au BufWritePre * :%s/\s\+$//e]]
 
 -- highlight on yank
 exec([[
@@ -59,7 +57,7 @@ opt.synmaxcol = 240       -- max column for syntax highlight
 -- Colorscheme
 -----------------------------------------------------------
 opt.termguicolors = true          -- enable 24-bit RGB colors
-cmd([[colorscheme molokai]])      -- set colorscheme
+cmd[[colorscheme molokai]]        -- set colorscheme
 
 -----------------------------------------------------------
 -- Tabs, indent
@@ -70,29 +68,29 @@ opt.tabstop = 4           -- 1 tab == 4 spaces
 opt.smartindent = true    -- autoindent new lines
 
 -- don't auto commenting new lines
-cmd([[au BufEnter * set fo-=c fo-=r fo-=o]])
+cmd[[au BufEnter * set fo-=c fo-=r fo-=o]]
 
 -- remove line lenght marker for selected filetypes
-cmd([[
+cmd[[
   autocmd FileType text,markdown,xml,html,xhtml,javascript setlocal cc=0
-]])
+]]
 
 -- 2 spaces for selected filetypes
-cmd([[
+cmd[[
   autocmd FileType xml,html,xhtml,css,scss,javascript,lua,yaml setlocal shiftwidth=2 tabstop=2
-]])
+]]
 
 -- 8 spaces for Go files
-cmd([[autocmd FileType go setlocal shiftwidth=8 tabstop=8]])
+cmd[[autocmd FileType go setlocal shiftwidth=8 tabstop=8]]
 
 -- IndentLine
 --g.indentLine_setColors = 0  -- set indentLine color
 g.indentLine_char = '|'       -- set indentLine character
 
 -- disable IndentLine for markdown files (avoid concealing)
-cmd([[
+cmd[[
 	autocmd FileType markdown let g:indentLine_enabled=0
-]])
+]]
 
 -----------------------------------------------------------
 -- Autocompletion
