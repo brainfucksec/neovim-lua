@@ -10,8 +10,8 @@
 
 neovim configuration file
 
-Version: 0.5.0_alpha - 2021/08/25
-Maintainer: Brainfuck
+Version: 0.6.0_alpha - 2021/08/25
+Maintainer: Brainf+ck
 Website: https://github.com/brainfucksec/neovim-lua
 
 --]]
@@ -34,7 +34,7 @@ require 'paq'{
   'neovim/nvim-lspconfig';
   'kyazdani42/nvim-tree.lua';
   'kyazdani42/nvim-web-devicons';
-  'preservim/tagbar';
+  'liuchengxu/vista.vim';
 }
 
 -----------------------------------------------------------

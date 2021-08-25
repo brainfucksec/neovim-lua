@@ -22,7 +22,7 @@ This setup is for [neovim >= v0.5.0](https://github.com/neovim/neovim/releases/t
 
 [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons) - A Lua fork of vim-devicons
 
-[tagbar](https://github.com/preservim/tagbar) - Browse the tags of the current file and get an overview of its structure
+[vista.vim](https://github.com/liuchengxu/vista.vim) - View and search LSP symbols, tags in Vim/NeoVim
 
 
 I use [Paq](https://github.com/savq/paq-nvim) for plugin manager, see: https://github.com/savq/paq-nvim#installation
@@ -131,8 +131,6 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 ## TODO
 
 * Add Lua (and other languages) to LSP configuration
-
-* Test [Vista.vim](https://github.com/liuchengxu/vista.vim)
 
 * Add a start page when Neovim is opened without arguments
 ---
