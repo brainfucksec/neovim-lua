@@ -41,7 +41,9 @@ I use [Paq](https://github.com/savq/paq-nvim) for plugin manager, see: https://g
     ├── nvim-tree
     │   └── main.lua
     ├── settings.lua
-    └── statusline.lua
+    ├── statusline.lua
+    └── vista
+        └── main.lua
 ```
 
 ## Files and settings
@@ -61,6 +63,8 @@ I use [Paq](https://github.com/savq/paq-nvim) for plugin manager, see: https://g
 * [nvim-lspconfig](nvim/lua/nvim-lspconfig/main.lua): LSP configuration: in this file I insert the language servers for LSP
 
 * [nvim-tree](nvim/lua/nvim-tree/main.lua): File manager settings
+
+* [vista](nvim/lua/vista/main.lua): Tag viewer settings
 
 ## Screenshots
 

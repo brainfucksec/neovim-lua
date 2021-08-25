@@ -10,7 +10,7 @@
 
 neovim configuration file
 
-Version: 0.6.0_alpha - 2021/08/25
+Version: 0.6.1_alpha - 2021/08/25
 Maintainer: Brainf+ck
 Website: https://github.com/brainfucksec/neovim-lua
 
@@ -46,3 +46,4 @@ require('statusline')   	      -- statusline
 require('nvim-cmp/main') 	      -- autocomplete
 require('nvim-tree/main')	      -- file manager
 require('nvim-lspconfig/main') 	-- LSP settings
+require('vista/main')           -- tag viewer
