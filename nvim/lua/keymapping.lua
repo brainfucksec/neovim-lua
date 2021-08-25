@@ -17,12 +17,6 @@ map('i', '{', '{}<left>', default)
 map('i', '{<CR>', '{<CR}<ESC>0', default)
 map('i', '{;<CR>', '{<CR};<ESC>0', default)
 
--- autocomplete with Tab
-map('i', '<Tab>', 'v:lua.tab_complete()', {expr = true})
-map('s', '<Tab>', 'v:lua.tab_complete()', {expr = true})
-map('i', '<S-Tab>', 'v:lua.s_tab_complete()', {expr = true})
-map('s', '<S-Tab>', 'v:lua.s_tab_complete()', {expr = true})
-
 -- clear search highlighting
 map('n', '<leader>c', ':nohl<CR>', default)
 

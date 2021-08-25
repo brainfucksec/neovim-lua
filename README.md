@@ -4,7 +4,7 @@
 
 ![.](img/1-init.lua.png)
 
-This setup is for [neovim v0.5.0](https://github.com/neovim/neovim/releases/tag/v0.5.0)
+This setup is for [neovim >= v0.5.0](https://github.com/neovim/neovim/releases/tag/v0.5.0)
 
 ## Plugins
 
@@ -14,7 +14,7 @@ This setup is for [neovim v0.5.0](https://github.com/neovim/neovim/releases/tag/
 
 [lualine.nvim](https://github.com/hoob3rt/lualine.nvim) - Statusline written in pure Lua
 
-[nvim-compe](https://github.com/hrsh7th/nvim-compe) - Auto completion plugin
+[nvim-cmp](https://github.com/hrsh7th/nvim-cmp) - Auto completion plugin
 
 [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - A collection of common configurations for Neovim's built-in language server client.
 
@@ -34,7 +34,7 @@ I use [Paq](https://github.com/savq/paq-nvim) for plugin manager, see: https://g
 ├── init.lua
 └── lua
     ├── keymapping.lua
-    ├── nvim-compe
+    ├── nvim-cmp
     │   └── main.lua
     ├── nvim-lspconfig
     │   └── main.lua
@@ -56,7 +56,7 @@ I use [Paq](https://github.com/savq/paq-nvim) for plugin manager, see: https://g
 
 * [statusline.lua](nvim/lua/statusline.lua): Statusline configuration file (in this case I use this file for [lualine.nvim](https://github.com/hoob3rt/lualine.nvim) configuration)
 
-* [nvim-compe](nvim/lua/nvim-compe/main.lua): Autocompletion settings, TAB completion also for LSP
+* [nvim-cmp](nvim/lua/nvim-cmp/main.lua): Autocompletion settings, TAB completion also for LSP
 
 * [nvim-lspconfig](nvim/lua/nvim-lspconfig/main.lua): LSP configuration: in this file I insert the language servers for LSP
 

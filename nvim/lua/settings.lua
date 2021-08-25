@@ -97,3 +97,4 @@ cmd[[
 -----------------------------------------------------------
 opt.completeopt = 'menuone,noselect,noinsert' -- completion options
 opt.shortmess = 'c' 	-- don't show completion messages
+

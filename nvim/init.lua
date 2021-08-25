@@ -10,12 +10,11 @@
 
 neovim configuration file
 
-Version: 0.4.0_alpha - 2021/08/20
+Version: 0.5.0_alpha - 2021/08/25
 Maintainer: Brainfuck
 Website: https://github.com/brainfucksec/neovim-lua
 
 --]]
-
 
 -----------------------------------------------------------
 -- Load plugins
@@ -30,7 +29,8 @@ require 'paq'{
 
   'Yggdroot/indentLine';
   'hoob3rt/lualine.nvim';
-  'hrsh7th/nvim-compe';
+  'hrsh7th/nvim-cmp';
+  'hrsh7th/cmp-nvim-lsp';
   'neovim/nvim-lspconfig';
   'kyazdani42/nvim-tree.lua';
   'kyazdani42/nvim-web-devicons';
@@ -43,6 +43,6 @@ require 'paq'{
 require('settings')             -- settings
 require('keymapping')           -- keymapping
 require('statusline')   	      -- statusline
-require('nvim-compe/main') 	    -- autocomplete
+require('nvim-cmp/main') 	      -- autocomplete
 require('nvim-tree/main')	      -- file manager
 require('nvim-lspconfig/main') 	-- LSP settings
