@@ -1,6 +1,6 @@
 # Neovim Lua
 
-### My Neovim configuration with Lua
+### My Neovim configuration with Lua (migration from VimL to Lua)
 
 ![.](img/1-init.lua.png)
 
@@ -133,12 +133,14 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 
 * Add Go,Lua (and other languages) to LSP configuration
 
+* Improve LSP configuration
+
 * Continue the migration from VimL (Vimscript) to Lua :)
 
 * Add a start page when Neovim is opened without arguments
 ---
 
-## Resources
+## Guides and resources
 
 * https://github.com/nanotee/nvim-lua-guide
 
@@ -148,7 +150,7 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 
 * https://icyphox.sh/blog/nvim-lua/
 
-## Examples:
+* https://github.com/ibhagwan/nvim-lua
 
 * https://github.com/mjlbach/defaults.nvim/blob/master/init.lua
 
@@ -164,4 +166,11 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 
 ## Disclaimer
 
-As all my setups I try to follow the [KISS](https://en.wikipedia.org/wiki/KISS_principle) principle, probably some concepts may not be valid for everyone, then feel free to take what you need but don't install anything without checking first!
+* This configuration is in development version.  See: `Version` on [init.lua](nvim/init.lua) file.
+
+* The configuration is being migrated from VimL (Vim Script) to Lua, for now many `.vim` files are still used.
+
+* As all my setups I try to follow the [KISS](https://en.wikipedia.org/wiki/KISS_principle) principle, probably some concepts may not be valid for everyone, then feel free to take what you need but don't install anything without checking first!
+---
+
+#### Thanks to all the authors of the sources mentioned above and to all the others from whom I "stole" some configs :)
