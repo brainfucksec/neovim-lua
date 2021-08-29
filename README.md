@@ -31,19 +31,14 @@ This setup is for [neovim >= v0.5.0](https://github.com/neovim/neovim/releases/t
 ├── init.lua
 └── lua
     ├── keymapping.lua
-    ├── nvim-cmp
-    │   └── main.lua
-    ├── nvim-lspconfig
-    │   └── main.lua
-    ├── nvim-tree
-    │   └── main.lua
-    ├── paq-nvim
-    │   └── main.lua
-    ├── settings.lua
-    ├── statusline.lua
-    └── vista
-        └── main.lua
-
+    ├── plugins
+    │   ├── lualine.lua
+    │   ├── nvim-cmp.lua
+    │   ├── nvim-lspconfig.lua
+    │   ├── nvim-tree.lua
+    │   ├── paq-nvim.lua
+    │   └── vista.lua
+    └── settings.lua
 ```
 
 ## Files and settings
@@ -56,17 +51,17 @@ This setup is for [neovim >= v0.5.0](https://github.com/neovim/neovim/releases/t
 
 * [settings.lua](nvim/lua/settings.lua): General Neovim settings and configuration
 
-* [statusline.lua](nvim/lua/statusline.lua): Statusline configuration file (in this case I use this file for [lualine.nvim](https://github.com/hoob3rt/lualine.nvim) configuration)
+* [lualine.lua](nvim/lua/plugins/lualine.lua): Statusline configuration file (in this case I use this file for [lualine.nvim](https://github.com/hoob3rt/lualine.nvim) configuration)
 
-* [nvim-cmp](nvim/lua/nvim-cmp/main.lua): Autocompletion settings, TAB completion also for LSP
+* [nvim-cmp](nvim/lua/plugins/nvim-cmp.lua): Autocompletion settings, TAB completion also for LSP
 
-* [nvim-lspconfig](nvim/lua/nvim-lspconfig/main.lua): LSP configuration: in this file I insert the language servers for LSP
+* [nvim-lspconfig](nvim/lua/plugins/nvim-lspconfig.lua): LSP configuration: in this file I insert the language servers for LSP
 
-* [nvim-tree](nvim/lua/nvim-tree/main.lua): File manager settings
+* [nvim-tree](nvim/lua/plugins/nvim-tree.lua): File manager settings
 
-* [paq-nvim](nvim/lua/paq-nvim/main.lua): Plugin manager settings
+* [paq-nvim](nvim/lua/plugins/paq-nvim.lua): Plugin manager settings
 
-* [vista](nvim/lua/vista/main.lua): Tag viewer settings
+* [vista](nvim/lua/plugins/vista.lua): Tag viewer settings
 
 ## Screenshots
 
@@ -96,11 +91,11 @@ Icons: [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 
 ## Installation
 
-1. Install [neovim v0.5.0](https://github.com/neovim/neovim/releases/tag/v0.5.0)
+1. Install [neovim >= v0.5.0](https://github.com/neovim/neovim/releases/tag/v0.5.0)
 
 2. Install [npm](https://github.com/npm/cli) (for download the packages of LSP language servers)
 
-3. Download [this repository](https://github.com/brainfucksec/neovim-lua) with `git` and copy the required folders
+3. Download [this repository](https://github.com/brainfucksec/neovim-lua) with `git` and copy the `nvim` folder
 ```bash
     git clone https://github.com/brainfucksec/neovim-lua.git
     cd neovim-lua/
