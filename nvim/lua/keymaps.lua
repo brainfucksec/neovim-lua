@@ -1,13 +1,14 @@
 -----------------------------------------------------------
--- Keymapping
---- Keymaps configuration file, keymaps of neovim
+-- Keymaps configuration file: keymaps of neovim
 --- and plugins.
 -----------------------------------------------------------
 
 local map = vim.api.nvim_set_keymap
 local default = {noremap = true, silent = true}
 
+-----------------------------------------------------------
 -- Neovim shortcuts:
+-----------------------------------------------------------
 -- basic autopair
 map('i', '"', '""<left>', default)
 map('i', '`', '``<left>', default)
@@ -39,7 +40,9 @@ map('n', '<C-j>', '<C-w>j', default)
 map('n', '<C-k>', '<C-w>k', default)
 map('n', '<C-l>', '<C-w>l', default)
 
+-----------------------------------------------------------
 -- Plugins shortcuts:
+-----------------------------------------------------------
 -- nvim-tree
 map('n', '<C-n>', ':NvimTreeToggle<CR>', default)       -- open/close
 map('n', '<leader>r', ':NvimTreeRefresh<CR>', default)  -- refresh

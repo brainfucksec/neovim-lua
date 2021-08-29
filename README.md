@@ -30,7 +30,7 @@ This setup is for [neovim >= v0.5.0](https://github.com/neovim/neovim/releases/t
 .
 ├── init.lua
 └── lua
-    ├── keymapping.lua
+    ├── keymaps.lua
     ├── plugins
     │   ├── lualine.lua
     │   ├── nvim-cmp.lua
@@ -47,7 +47,7 @@ This setup is for [neovim >= v0.5.0](https://github.com/neovim/neovim/releases/t
 
 * [lua](nvim/lua): Folder of `lua` modules, here reside all the Lua modules that needed. The logic is simple, inside the `lua` folder there are the files and/or folders for neovim and plugins settings (written in Lua), these modules are called from `init.lua` file (See below).  For plugins settings I use the convention `<plugin-folder/main.lua>`.  See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 
-* [keymapping.lua](nvim/lua/keymapping.lua): Keymaps configuration file, vim/neovim and plugins keymaps.
+* [keymaps.lua](nvim/lua/keymaps.lua): Keymaps configuration file, vim/neovim and plugins keymaps.
 
 * [settings.lua](nvim/lua/settings.lua): General Neovim settings and configuration
 
