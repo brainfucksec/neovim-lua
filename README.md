@@ -51,17 +51,17 @@ This setup is for [neovim >= v0.5.0](https://github.com/neovim/neovim/releases/t
 
 * [settings.lua](nvim/lua/settings.lua): General Neovim settings and configuration
 
-* [lualine.lua](nvim/lua/plugins/lualine.lua): Statusline configuration file (in this case I use this file for [lualine.nvim](https://github.com/hoob3rt/lualine.nvim) configuration)
+* [plugins/lualine.lua](nvim/lua/plugins/lualine.lua): Statusline configuration file (in this case I use this file for [lualine.nvim](https://github.com/hoob3rt/lualine.nvim) configuration)
 
-* [nvim-cmp](nvim/lua/plugins/nvim-cmp.lua): Autocompletion settings, TAB completion also for LSP
+* [plugins/nvim-cmp.lua](nvim/lua/plugins/nvim-cmp.lua): Autocompletion settings, TAB completion also for LSP
 
-* [nvim-lspconfig](nvim/lua/plugins/nvim-lspconfig.lua): LSP configuration: in this file I insert the language servers for LSP
+* [plugins/nvim-lspconfig.lua](nvim/lua/plugins/nvim-lspconfig.lua): LSP configuration: in this file I insert the language servers for LSP
 
-* [nvim-tree](nvim/lua/plugins/nvim-tree.lua): File manager settings
+* [plugins/nvim-tree.lua](nvim/lua/plugins/nvim-tree.lua): File manager settings
 
-* [paq-nvim](nvim/lua/plugins/paq-nvim.lua): Plugin manager settings
+* [plugins/paq-nvim.lua](nvim/lua/plugins/paq-nvim.lua): Plugin manager settings
 
-* [vista](nvim/lua/plugins/vista.lua): Tag viewer settings
+* [plugins/vista.lua](nvim/lua/plugins/vista.lua): Tag viewer settings
 
 ## Screenshots
 
