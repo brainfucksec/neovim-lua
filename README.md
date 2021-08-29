@@ -148,13 +148,13 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 
 * https://oroques.dev/notes/neovim-init/
 
-* https://icyphox.sh/blog/nvim-lua/
-
 * https://github.com/ibhagwan/nvim-lua
 
 * https://github.com/mjlbach/defaults.nvim/blob/master/init.lua
 
 * https://github.com/siduck76/NvChad
+
+* https://www.reddit.com/r/neovim/
 
 ## Lua resources
 
