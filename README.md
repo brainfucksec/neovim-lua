@@ -24,9 +24,6 @@ This setup is for [neovim >= v0.5.0](https://github.com/neovim/neovim/releases/t
 
 [vista.vim](https://github.com/liuchengxu/vista.vim) - View and search LSP symbols, tags in Vim/NeoVim
 
-
-I use [Paq](https://github.com/savq/paq-nvim) for plugin manager, see: https://github.com/savq/paq-nvim#installation
-
 ## Directory tree of Lua files
 ```
 ~/.config/nvim
@@ -40,10 +37,13 @@ I use [Paq](https://github.com/savq/paq-nvim) for plugin manager, see: https://g
     │   └── main.lua
     ├── nvim-tree
     │   └── main.lua
+    ├── paq-nvim
+    │   └── main.lua
     ├── settings.lua
     ├── statusline.lua
     └── vista
         └── main.lua
+
 ```
 
 ## Files and settings
@@ -63,6 +63,8 @@ I use [Paq](https://github.com/savq/paq-nvim) for plugin manager, see: https://g
 * [nvim-lspconfig](nvim/lua/nvim-lspconfig/main.lua): LSP configuration: in this file I insert the language servers for LSP
 
 * [nvim-tree](nvim/lua/nvim-tree/main.lua): File manager settings
+
+* [paq-nvim](nvim/lua/paq-nvim/main.lua): Plugin manager settings
 
 * [vista](nvim/lua/vista/main.lua): Tag viewer settings
 
@@ -134,7 +136,9 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 
 ## TODO
 
-* Add Lua (and other languages) to LSP configuration
+* Add Go,Lua (and other languages) to LSP configuration
+
+* Continue the migration from VimL (Vimscript) to Lua :)
 
 * Add a start page when Neovim is opened without arguments
 ---

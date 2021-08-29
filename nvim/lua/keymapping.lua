@@ -7,7 +7,7 @@
 local map = vim.api.nvim_set_keymap
 local default = {noremap = true, silent = true}
 
--- Neovim shortcuts
+-- Neovim shortcuts:
 -- basic autopair
 map('i', '"', '""<left>', default)
 map('i', '`', '``<left>', default)
