@@ -4,24 +4,24 @@
 -----------------------------------------------------------
 
 local map = vim.api.nvim_set_keymap
-local default = {noremap = true, silent = true}
+local default_opts = {noremap = true, silent = true}
 
 -----------------------------------------------------------
 -- Neovim shortcuts:
 -----------------------------------------------------------
 -- basic autopair
-map('i', '"', '""<left>', default)
-map('i', '`', '``<left>', default)
-map('i', '(', '()<left>', default)
-map('i', '[', '[]<left>', default)
-map('i', '{', '{}<left>', default)
-map('i', '{<CR>', '{<CR}<ESC>0', default)
-map('i', '{;<CR>', '{<CR};<ESC>0', default)
+map('i', '"', '""<left>', default_opts)
+map('i', '`', '``<left>', default_opts)
+map('i', '(', '()<left>', default_opts)
+map('i', '[', '[]<left>', default_opts)
+map('i', '{', '{}<left>', default_opts)
+map('i', '{<CR>', '{<CR}<ESC>0', default_opts)
+map('i', '{;<CR>', '{<CR};<ESC>0', default_opts)
 
 -- clear search highlighting
-map('n', '<leader>c', ':nohl<CR>', default)
+map('n', '<leader>c', ':nohl<CR>', default_opts)
 
--- press kk to exit
+-- map Esc to kk
 map('i', 'kk', '<Esc>', {noremap = true})
 
 -- don't use arrow keys
@@ -31,22 +31,22 @@ map('', '<left>', '<nop>', {noremap = true})
 map('', '<right>', '<nop>', {noremap = true})
 
 -- fast saving
-map('n', '<leader>s', ':w<cr>', default)
-map('i', '<leader>s', '<C-c>:w<cr>', default)
+map('n', '<leader>s', ':w<cr>', default_opts)
+map('i', '<leader>s', '<C-c>:w<cr>', default_opts)
 
 -- move around splits using Ctrl + {h,j,k,l}
-map('n', '<C-h>', '<C-w>h', default)
-map('n', '<C-j>', '<C-w>j', default)
-map('n', '<C-k>', '<C-w>k', default)
-map('n', '<C-l>', '<C-w>l', default)
+map('n', '<C-h>', '<C-w>h', default_opts)
+map('n', '<C-j>', '<C-w>j', default_opts)
+map('n', '<C-k>', '<C-w>k', default_opts)
+map('n', '<C-l>', '<C-w>l', default_opts)
 
 -----------------------------------------------------------
 -- Plugins shortcuts:
 -----------------------------------------------------------
 -- nvim-tree
-map('n', '<C-n>', ':NvimTreeToggle<CR>', default)       -- open/close
-map('n', '<leader>r', ':NvimTreeRefresh<CR>', default)  -- refresh
-map('n', '<leader>n', ':NvimTreeFindFile<CR>', default) -- search file
+map('n', '<C-n>', ':NvimTreeToggle<CR>', default_opts)       -- open/close
+map('n', '<leader>r', ':NvimTreeRefresh<CR>', default_opts)  -- refresh
+map('n', '<leader>n', ':NvimTreeFindFile<CR>', default_opts) -- search file
 
 -- Vista
-map('', '<C-m>', ':Vista<CR>', default)  -- open/close vista window
+map('', '<C-m>', ':Vista<CR>', default_opts)  -- open/close vista window
