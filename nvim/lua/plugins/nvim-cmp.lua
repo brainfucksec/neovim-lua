@@ -11,6 +11,7 @@ cmp.setup {
     ['<Tab>'] = cmp.mapping.select_next_item()
   },
   sources = {
-    { name = 'nvim_lsp' }
+    { name = 'nvim_lsp' },
+    { name = 'path' },
   },
 }
