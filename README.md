@@ -73,10 +73,6 @@ This setup is for [neovim >= v0.5.0](https://github.com/neovim/neovim/releases/t
 
 ![.](img/3-c.png)
 
-`Python`
-
-![.](img/4-python.png)
-
 ## Appearance
 
 Colorscheme: [Neovim Monokai](https://github.com/tanvirtin/monokai.nvim)
@@ -87,7 +83,7 @@ Icons: [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 
 ## Startup time
 
-![.](img/5-startuptime.png)
+![.](img/4-startuptime.png)
 
 ## Installation
 
