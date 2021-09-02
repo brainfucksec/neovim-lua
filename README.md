@@ -79,7 +79,7 @@ This setup is for [neovim >= v0.5.0](https://github.com/neovim/neovim/releases/t
 
 ## Appearance
 
-Colorscheme: [molokai](https://github.com/tomasr/molokai)
+Colorscheme: [Neovim Monokai](https://github.com/tanvirtin/monokai.nvim)
 
 Fonts: [Cozette](https://github.com/slavfox/Cozette)
 

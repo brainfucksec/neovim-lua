@@ -9,7 +9,7 @@
 
 Neovim init file
 
-Version: 0.9.0_alpha - 2021/08/29
+Version: 0.10.0_alpha - 2021/09/02
 Maintainer: Brainf+ck
 Website: https://github.com/brainfucksec/neovim-lua
 
@@ -26,3 +26,4 @@ require('plugins/lualine')        -- statusline
 require('plugins/nvim-cmp')       -- autocomplete
 require('plugins/nvim-lspconfig') -- LSP settings
 require('plugins/vista')          -- tag viewer
+require('monokai')                -- colorscheme
