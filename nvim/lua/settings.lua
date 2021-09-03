@@ -56,8 +56,8 @@ opt.synmaxcol = 240       -- max column for syntax highlight
 -----------------------------------------------------------
 -- Colorscheme
 -----------------------------------------------------------
-opt.termguicolors = true        -- enable 24-bit RGB colors
-cmd[[colorscheme monokai_pro]]  -- set colorscheme
+opt.termguicolors = true    -- enable 24-bit RGB colors
+cmd[[colorscheme monokai]]  -- set colorscheme
 
 -----------------------------------------------------------
 -- Tabs, indent
@@ -79,9 +79,6 @@ cmd[[
 cmd[[
   autocmd FileType xml,html,xhtml,css,scss,javascript,lua,yaml setlocal shiftwidth=2 tabstop=2
 ]]
-
--- 8 spaces for Go files
-cmd[[autocmd FileType go setlocal shiftwidth=8 tabstop=8]]
 
 -- IndentLine
 --g.indentLine_setColors = 0  -- set indentLine color
