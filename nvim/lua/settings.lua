@@ -56,8 +56,8 @@ opt.synmaxcol = 240       -- max column for syntax highlight
 -----------------------------------------------------------
 -- Colorscheme
 -----------------------------------------------------------
-opt.termguicolors = true    -- enable 24-bit RGB colors
-cmd[[colorscheme monokai]]  -- set colorscheme
+opt.termguicolors = true      -- enable 24-bit RGB colors
+cmd[[colorscheme monokai]]    -- set colorscheme
 
 -----------------------------------------------------------
 -- Tabs, indent
@@ -71,9 +71,7 @@ opt.smartindent = true    -- autoindent new lines
 cmd[[au BufEnter * set fo-=c fo-=r fo-=o]]
 
 -- remove line lenght marker for selected filetypes
-cmd[[
-  autocmd FileType text,markdown,xml,html,xhtml,javascript setlocal cc=0
-]]
+cmd[[autocmd FileType text,markdown,xml,html,xhtml,javascript setlocal cc=0]]
 
 -- 2 spaces for selected filetypes
 cmd[[
@@ -85,9 +83,7 @@ cmd[[
 g.indentLine_char = '|'       -- set indentLine character
 
 -- disable IndentLine for markdown files (avoid concealing)
-cmd[[
-	autocmd FileType markdown let g:indentLine_enabled=0
-]]
+cmd[[autocmd FileType markdown let g:indentLine_enabled=0]]
 
 -----------------------------------------------------------
 -- Autocompletion

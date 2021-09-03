@@ -131,13 +131,15 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 
 ## TODO
 
-* Add Go,Lua (and other languages) to LSP configuration
-
 * Improve LSP configuration
 
 * Continue the migration from VimL (Vimscript) to Lua :)
 
-* Add a start page when Neovim is opened without arguments
+* Test [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+
+* Add Go,Lua (and other languages) to LSP configuration
+
+* Add custom startscreen when Neovim is opened without arguments
 ---
 
 ## Guides and resources
