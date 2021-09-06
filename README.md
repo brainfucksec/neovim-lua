@@ -1,6 +1,6 @@
 # Neovim Lua
 
-### My Neovim configuration with Lua (migration from VimL to Lua)
+### My Neovim configuration with Lua
 
 ![.](img/1-init.lua.png)
 
@@ -137,8 +137,6 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 ## TODO
 
 * Improve LSP configuration
-
-* Continue the migration from VimL (Vimscript) to Lua :)
 
 * Add Go,Lua (and other languages) to LSP configuration
 
