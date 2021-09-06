@@ -20,6 +20,7 @@ require 'paq' {
   'kyazdani42/nvim-tree.lua';
   'kyazdani42/nvim-web-devicons';
   'liuchengxu/vista.vim';
+  'nvim-treesitter/nvim-treesitter';
   'tanvirtin/monokai.nvim';
 }
 

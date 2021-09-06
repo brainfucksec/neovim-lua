@@ -20,6 +20,8 @@ This setup is for [neovim >= v0.5.0](https://github.com/neovim/neovim/releases/t
 
 [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua) - A File Explorer written In Lua
 
+[nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - Nvim Treesitter configurations and abstraction layer
+
 [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons) - A Lua fork of vim-devicons
 
 [vista.vim](https://github.com/liuchengxu/vista.vim) - View and search LSP symbols, tags in Vim/NeoVim
@@ -27,18 +29,19 @@ This setup is for [neovim >= v0.5.0](https://github.com/neovim/neovim/releases/t
 ## Directory tree of Lua files
 ```
 ~/.config/nvim
-.
-├── init.lua
-└── lua
-    ├── keymaps.lua
-    ├── plugins
-    │   ├── lualine.lua
-    │   ├── nvim-cmp.lua
-    │   ├── nvim-lspconfig.lua
-    │   ├── nvim-tree.lua
-    │   ├── paq-nvim.lua
-    │   └── vista.lua
-    └── settings.lua
+├── after
+├── lua
+│   ├── plugins
+│   │   ├── lualine.lua
+│   │   ├── nvim-cmp.lua
+│   │   ├── nvim-lspconfig.lua
+│   │   ├── nvim-tree.lua
+│   │   ├── nvim-treesitter.lua
+│   │   ├── paq-nvim.lua
+│   │   └── vista.lua
+│   ├── keymaps.lua
+│   └── settings.lua
+└── init.lua
 ```
 
 ## Files and settings
@@ -58,6 +61,8 @@ This setup is for [neovim >= v0.5.0](https://github.com/neovim/neovim/releases/t
 * [plugins/nvim-lspconfig.lua](nvim/lua/plugins/nvim-lspconfig.lua): LSP configuration: in this file I insert the language servers for LSP
 
 * [plugins/nvim-tree.lua](nvim/lua/plugins/nvim-tree.lua): File manager settings
+
+* [plugin/nvim-treesitter](nvim/lua/plugins/nvim-treesitter): Treesitter interface
 
 * [plugins/paq-nvim.lua](nvim/lua/plugins/paq-nvim.lua): Plugin manager settings
 
@@ -135,8 +140,6 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 
 * Continue the migration from VimL (Vimscript) to Lua :)
 
-* Test [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-
 * Add Go,Lua (and other languages) to LSP configuration
 
 * Add custom startscreen when Neovim is opened without arguments
@@ -170,7 +173,7 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 
 * This configuration is in development version.  See: `Version` on [init.lua](nvim/init.lua) file.
 
-* The configuration is being migrated from VimL (Vim Script) to Lua, for now many `.vim` files are still used.
+* The configuration is being migrated from VimL (Vim Script) to Lua.
 
 * As all my setups I try to follow the [KISS](https://en.wikipedia.org/wiki/KISS_principle) principle, probably some concepts may not be valid for everyone, then feel free to take what you need but don't install anything without checking first!
 ---
