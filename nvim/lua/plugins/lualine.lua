@@ -6,7 +6,7 @@
 --- https://github.com/hoob3rt/lualine.nvim
 require('lualine').setup {
   options = {
-    theme = 'molokai',
+    theme = 'material-nvim',
     icons_enabled = true,
     extensions = {'nvim-tree'},
   };

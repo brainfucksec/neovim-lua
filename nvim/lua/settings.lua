@@ -1,6 +1,5 @@
 -----------------------------------------------------------
 -- Neovim settings
---- General Neovim settings
 -----------------------------------------------------------
 
 -----------------------------------------------------------
@@ -24,7 +23,6 @@ opt.swapfile = false          -- don't use swapfile
 -----------------------------------------------------------
 -- Neovim UI
 -----------------------------------------------------------
-opt.syntax = 'enable'         -- enable syntax highlighting
 opt.number = true             -- show line number
 opt.showmatch = true          -- highlight matching parenthesis
 opt.foldmethod = 'marker'     -- enable folding (default 'foldmarker')
@@ -57,7 +55,7 @@ opt.synmaxcol = 240       -- max column for syntax highlight
 -- Colorscheme
 -----------------------------------------------------------
 opt.termguicolors = true      -- enable 24-bit RGB colors
-cmd[[colorscheme monokai]]    -- set colorscheme
+cmd('colorscheme monokai')
 
 -----------------------------------------------------------
 -- Tabs, indent
