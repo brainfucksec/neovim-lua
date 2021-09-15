@@ -26,6 +26,7 @@ require 'paq' {
   'hrsh7th/cmp-buffer';
   'saadparwaiz1/cmp_luasnip';
   'L3MON4D3/LuaSnip';
+  'windwp/nvim-autopairs';
   'tanvirtin/monokai.nvim';
 }
 

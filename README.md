@@ -28,6 +28,7 @@ This setup is for [neovim >= v0.5.0](https://github.com/neovim/neovim/releases/t
 
 [LuaSnip](https://github.com/L3MON4D3/LuaSnip) - Snippet Engine for Neovim written in Lua
 
+[nvim-autopairs](https://github.com/windwp/nvim-autopairs) - A super powerful autopairs for Neovim.
 
 ## Directory tree of Lua files
 ```
@@ -38,6 +39,7 @@ This setup is for [neovim >= v0.5.0](https://github.com/neovim/neovim/releases/t
     ├── keymaps.lua
     ├── plugins
     │   ├── lualine.lua
+    │   ├── nvim-autopairs.lua
     │   ├── nvim-cmp.lua
     │   ├── nvim-lspconfig.lua
     │   ├── nvim-tree.lua
@@ -57,15 +59,17 @@ This setup is for [neovim >= v0.5.0](https://github.com/neovim/neovim/releases/t
 
 * [settings.lua](nvim/lua/settings.lua): General Neovim settings and configuration
 
-* [plugins/lualine.lua](nvim/lua/plugins/lualine.lua): Statusline configuration file (in this case I use this file for [lualine.nvim](https://github.com/hoob3rt/lualine.nvim) configuration)
+* [plugins/lualine.lua](nvim/lua/plugins/lualine.lua): Statusline configuration file: [lualine.nvim](https://github.com/hoob3rt/lualine.nvim)
 
-* [plugins/nvim-cmp.lua](nvim/lua/plugins/nvim-cmp.lua): Autocompletion settings, TAB completion also for LSP
+* [plugins/nvim-autopairs](nvim/lua/plugins/nvim-autopairs.lua): Autoclose brackets
 
-* [plugins/nvim-lspconfig.lua](nvim/lua/plugins/nvim-lspconfig.lua): LSP configuration: in this file I insert the language servers for LSP
+* [plugins/nvim-cmp.lua](nvim/lua/plugins/nvim-cmp.lua): Autocompletion settings
+
+* [plugins/nvim-lspconfig.lua](nvim/lua/plugins/nvim-lspconfig.lua): LSP configuration (language servers, keybinding)
 
 * [plugins/nvim-tree.lua](nvim/lua/plugins/nvim-tree.lua): File manager settings
 
-* [plugin/nvim-treesitter](nvim/lua/plugins/nvim-treesitter): Treesitter interface
+* [plugin/nvim-treesitter](nvim/lua/plugins/nvim-treesitter): Treesitter interface configuration
 
 * [plugins/paq-nvim.lua](nvim/lua/plugins/paq-nvim.lua): Plugin manager settings
 
