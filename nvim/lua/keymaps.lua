@@ -1,6 +1,7 @@
 -----------------------------------------------------------
 -- Keymaps configuration file: keymaps of neovim
---- and plugins.
+-- and plugins. For autocompletion mappings see:
+-- keymapping on nvim-cmp.lua file
 -----------------------------------------------------------
 
 local map = vim.api.nvim_set_keymap
@@ -40,7 +41,7 @@ map('n', '<C-j>', '<C-w>j', default_opts)
 map('n', '<C-k>', '<C-w>k', default_opts)
 map('n', '<C-l>', '<C-w>l', default_opts)
 
--- Close all windows and exit from neovim
+-- close all windows and exit from neovim
 map('n', '<leader>q', ':quitall<CR>', default_opts)
 
 -----------------------------------------------------------

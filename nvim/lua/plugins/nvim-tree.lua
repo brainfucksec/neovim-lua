@@ -4,15 +4,8 @@
 
 local g = vim.g
 
---[[
-Plugin: nvim-tree
-https://github.com/kyazdani42/nvim-tree.lua
-
-Keybindings are defined in `keymapping.lua`
-See: `help NvimTree`
-https://github.com/kyazdani42/nvim-tree.lua#keybindings
---]]
-
+-- Plugin: nvim-tree
+--- https://github.com/kyazdani42/nvim-tree.lua
 g.nvim_tree_width = 27
 g.nvim_tree_ignore = {'.git', 'node_modules', '.cache'}
 g.nvim_tree_gitignore = 1
@@ -31,4 +24,8 @@ g.nvim_tree_show_icons = {
 g.nvim_tree_icons = {
 	default = "‣ "
 }
+
+-- Keybindings are defined in `keymapping.lua`
+--- See: `help NvimTree`
+--- https://github.com/kyazdani42/nvim-tree.lua#keybindings
 
