@@ -37,7 +37,9 @@ map('n', '<C-l>', '<C-w>l', default_opts)
 map('n', '<leader>q', ':quitall<CR>', default_opts)
 
 -- basic autopair
--- use this if you don't want a plugin for brackets autopair:
+-- Use this if you don't want a plugin for brackets autopairs
+-- (it's very slow).
+
 --[[
 map('i', '"', '""<left>', default_opts)
 map('i', '`', '``<left>', default_opts)
