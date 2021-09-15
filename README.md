@@ -143,15 +143,15 @@ Bash - [bashls](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#b
 
 Python - [pyright](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#pyright)
 
-C, C++ - [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#clangd)
+C-C++ - [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#clangd)
 
-HTML, CSS, JavaScript - [vscode-html](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#html)
+HTML/CSS/JSON - [vscode-html](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#html)
 
 See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md)
 
 ## TODO
 
-* Fix JavaScript support (and add TypeScript support)
+* Add JavaScript, TypeScript support
 
 * Add Go,Lua (and other languages) to LSP configuration
 

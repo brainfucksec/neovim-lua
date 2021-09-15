@@ -16,7 +16,7 @@ https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#pyright
 C, C++ -->  clangd
 https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#clangd
 
-HTML, CSS, JavaScript --> vscode-html-languageserver
+HTML/CSS/JSON --> vscode-html-languageserver
 https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#html
 
 Note: vscode-html-languageserver LSP not work on JavaScript without
