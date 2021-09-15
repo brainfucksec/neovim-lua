@@ -137,7 +137,7 @@ Icons: [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 
 3. Open a source file of one of the supported languages with `neovim`, in the Neovim cmd line run command [:LspInfo](https://github.com/neovim/nvim-lspconfig#built-in-commands) for testing the LSP support
 
-Supported languages in my configuration:
+### Languages currently supported:
 
 Bash - [bashls](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#bashls)
 
@@ -149,11 +149,12 @@ HTML/CSS/JSON - [vscode-html](https://github.com/neovim/nvim-lspconfig/blob/mast
 
 JavaScript/TypeScript - [tsserver](https://github.com/typescript-language-server/typescript-language-server)
 
+
 See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md)
 
 ## TODO
 
-* Add Go,Lua (and other languages) to LSP configuration
+* Add Go,Lua (and other few languages) to LSP configuration
 
 * Add custom startscreen when Neovim is opened without arguments
 ---
