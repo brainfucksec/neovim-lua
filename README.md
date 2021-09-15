@@ -147,11 +147,11 @@ C-C++ - [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#
 
 HTML/CSS/JSON - [vscode-html](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#html)
 
+JavaScript/TypeScript - [tsserver](https://github.com/typescript-language-server/typescript-language-server)
+
 See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md)
 
 ## TODO
-
-* Add JavaScript, TypeScript support
 
 * Add Go,Lua (and other languages) to LSP configuration
 
