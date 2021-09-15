@@ -10,38 +10,41 @@ This setup is for [neovim >= v0.5.0](https://github.com/neovim/neovim/releases/t
 
 [paq-nvim](https://github.com/savq/paq-nvim) - Neovim package manager written in Lua
 
-[indentLine](https://github.com/Yggdroot/indentLine) - Show indent lines
+[nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua) - A File Explorer written In Lua
 
 [lualine.nvim](https://github.com/hoob3rt/lualine.nvim) - Statusline written in pure Lua
 
-[nvim-cmp](https://github.com/hrsh7th/nvim-cmp) - Auto completion plugin
+[indentLine](https://github.com/Yggdroot/indentLine) - Show indent lines
 
-[nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - A collection of common configurations for Neovim's built-in language server client.
-
-[nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua) - A File Explorer written In Lua
-
-[nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - Nvim Treesitter configurations and abstraction layer
+[vista.vim](https://github.com/liuchengxu/vista.vim) - View and search LSP symbols, tags in Vim/NeoVim
 
 [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons) - A Lua fork of vim-devicons
 
-[vista.vim](https://github.com/liuchengxu/vista.vim) - View and search LSP symbols, tags in Vim/NeoVim
+[nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - Nvim Treesitter configurations and abstraction layer
+
+[nvim-cmp](https://github.com/hrsh7th/nvim-cmp) - Auto completion plugin
+
+[nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - A collection of common configurations for Neovim's built-in language server client
+
+[LuaSnip](https://github.com/L3MON4D3/LuaSnip) - Snippet Engine for Neovim written in Lua
+
 
 ## Directory tree of Lua files
 ```
 ~/.config/nvim
 ├── after
-├── lua
-│   ├── plugins
-│   │   ├── lualine.lua
-│   │   ├── nvim-cmp.lua
-│   │   ├── nvim-lspconfig.lua
-│   │   ├── nvim-tree.lua
-│   │   ├── nvim-treesitter.lua
-│   │   ├── paq-nvim.lua
-│   │   └── vista.lua
-│   ├── keymaps.lua
-│   └── settings.lua
-└── init.lua
+├── init.lua
+└── lua
+    ├── keymaps.lua
+    ├── plugins
+    │   ├── lualine.lua
+    │   ├── nvim-cmp.lua
+    │   ├── nvim-lspconfig.lua
+    │   ├── nvim-tree.lua
+    │   ├── nvim-treesitter.lua
+    │   ├── paq-nvim.lua
+    │   └── vista.lua
+    └── settings.lua
 ```
 
 ## Files and settings
@@ -128,7 +131,7 @@ Icons: [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 
 2. Install [clang](https://clangd.llvm.org/installation.html) for use LSP with [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#clangd)
 
-3. Open a file with `neovim` and run command [:LspInfo](https://github.com/neovim/nvim-lspconfig#built-in-commands) for testing the LSP support
+3. Open a source file of one of the supported languages with `neovim`, in the Neovim cmd line run command [:LspInfo](https://github.com/neovim/nvim-lspconfig#built-in-commands) for testing the LSP support
 
 Supported languages in my configuration:
 
@@ -144,7 +147,7 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 
 ## TODO
 
-* Improve LSP configuration
+* Fix JavaScript support (and add TypeScript support)
 
 * Add Go,Lua (and other languages) to LSP configuration
 
