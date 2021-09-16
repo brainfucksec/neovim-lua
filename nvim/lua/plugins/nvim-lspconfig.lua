@@ -5,25 +5,6 @@
 -- Plugin: nvim-lspconfig
 -- for language server setup see: https://github.com/neovim/nvim-lspconfig
 
---[[ Supported languages:
-
-Bash --> bashls
-https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#bashls
-
-Python --> pyright
-https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#pyright
-
-C-C++ -->  clangd
-https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#clangd
-
-HTML/CSS/JSON --> vscode-html-languageserver
-https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#html
-
-JavaScript/TypeScript --> tsserver
-https://github.com/typescript-language-server/typescript-language-server
-
---]]
-
 local nvim_lsp = require('lspconfig')
 
 -- Add additional capabilities supported by nvim-cmp
@@ -77,11 +58,33 @@ local on_attach = function(client, bufnr)
 
 end
 
--- Language servers:
+--[[ Language servers:
+
+Add here your language servers.
+
+For language servers list see:
+https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md
+
+
+Bash --> bashls
+https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#bashls
+
+Python --> pyright
+https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#pyright
+
+C-C++ -->  clangd
+https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#clangd
+
+HTML/CSS/JSON --> vscode-html-languageserver
+https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#html
+
+JavaScript/TypeScript --> tsserver
+https://github.com/typescript-language-server/typescript-language-server
+
+--]]
+
 -- Use a loop to conveniently call 'setup' on multiple servers and
--- map buffer local keybindings when the language server attaches.
--- For language servers see:
--- https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md
+-- map buffer local keybindings when the language server attaches
 local servers = { 'bashls', 'pyright', 'clangd', 'html', 'tsserver' }
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
