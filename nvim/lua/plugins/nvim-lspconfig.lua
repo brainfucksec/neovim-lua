@@ -5,7 +5,7 @@
 -- Plugin: nvim-lspconfig
 -- for language server setup see: https://github.com/neovim/nvim-lspconfig
 
---[[ Language servers, see `servers` above:
+--[[ Supported languages:
 
 Bash --> bashls
 https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#bashls

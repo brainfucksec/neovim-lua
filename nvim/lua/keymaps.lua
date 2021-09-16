@@ -1,7 +1,6 @@
 -----------------------------------------------------------
 -- Keymaps configuration file: keymaps of neovim
--- and plugins. For autocompletion mappings see:
--- nvim-cmp.lua file
+-- and plugins.
 -----------------------------------------------------------
 
 local map = vim.api.nvim_set_keymap
@@ -38,7 +37,7 @@ map('n', '<leader>q', ':quitall<CR>', default_opts)
 
 -- basic autopair
 -- Use this if you don't want a plugin for brackets autopairs
--- (it's very slow).
+-- slow when closing "{}" :(
 
 --[[
 map('i', '"', '""<left>', default_opts)
