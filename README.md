@@ -130,7 +130,7 @@ Icons: [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 
 1. Install LSP language servers with `npm`
 ```bash
-    sudo npm install -g bash-language-server pyright vscode-langservers-extracted
+    sudo npm install -g bash-language-server pyright vscode-langservers-extracted tsserver
 ```
 
 2. Install [clang](https://clangd.llvm.org/installation.html) for use LSP with [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#clangd)
