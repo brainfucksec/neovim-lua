@@ -12,7 +12,7 @@ This setup is for [neovim >= v0.5.0](https://github.com/neovim/neovim/releases/t
 
 [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua) - A File Explorer written In Lua
 
-[lualine.nvim](https://github.com/hoob3rt/lualine.nvim) - Statusline written in pure Lua
+[feline.nvim](https://github.com/Famiu/feline.nvim) - A minimal, stylish and customizable statusline for Neovim written in Lua
 
 [indentLine](https://github.com/Yggdroot/indentLine) - Show indent lines
 
@@ -38,7 +38,7 @@ This setup is for [neovim >= v0.5.0](https://github.com/neovim/neovim/releases/t
 └── lua
     ├── keymaps.lua
     ├── plugins
-    │   ├── lualine.lua
+    │   ├── feline.lua
     │   ├── nvim-autopairs.lua
     │   ├── nvim-cmp.lua
     │   ├── nvim-lspconfig.lua
@@ -59,7 +59,7 @@ This setup is for [neovim >= v0.5.0](https://github.com/neovim/neovim/releases/t
 
 * [settings.lua](nvim/lua/settings.lua): General Neovim settings and configuration
 
-* [plugins/lualine.lua](nvim/lua/plugins/lualine.lua): Statusline configuration file: [lualine.nvim](https://github.com/hoob3rt/lualine.nvim)
+* [plugins/feline.lua](nvim/lua/plugins/feline.lua): Statusline configuration file
 
 * [plugins/nvim-autopairs](nvim/lua/plugins/nvim-autopairs.lua): Autoclose brackets
 

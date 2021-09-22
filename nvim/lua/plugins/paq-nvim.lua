@@ -10,10 +10,10 @@ local paq = require('paq-nvim').paq   -- import module with `paq` function
 
 -- Add packages
 -- for package info see: init.lua (Lua modules)
-require 'paq' {
+require('paq') {
   'savq/paq-nvim';  -- let paq manage itself
 
-  'hoob3rt/lualine.nvim';
+  'famiu/feline.nvim';
   'kyazdani42/nvim-web-devicons';
   'kyazdani42/nvim-tree.lua';
   'Yggdroot/indentLine';
