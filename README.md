@@ -181,7 +181,7 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 
 * Lua Quick Guide - https://github.com/medwatt/Notes/blob/main/Lua/Lua_Quick_Guide.ipynb
 
-* Lua 5.1 Reference Manual - https://www.lua.org/manual/5.1/
+* Lua 5.4 Reference Manual - https://www.lua.org/manual/5.4/
 
 ## Disclaimer
 
