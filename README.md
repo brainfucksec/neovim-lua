@@ -77,25 +77,9 @@ This setup is for [neovim >= v0.5.0](https://github.com/neovim/neovim/releases/t
 
 ## Screenshots
 
-`Bash`
-
 ![.](img/2-bash.png)
 
-`C`
-
 ![.](img/3-c.png)
-
-`Python`
-
-![.](img/4-python.png)
-
-`Lua`
-
-![.](img/5-lua.png)
-
-`config`
-
-![.](img/6-config.png)
 
 ## Appearance
 
@@ -104,10 +88,6 @@ Colorscheme: [Neovim Monokai](https://github.com/tanvirtin/monokai.nvim)
 Fonts: [Cozette](https://github.com/slavfox/Cozette)
 
 Icons: [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
-
-## Startup time
-
-![.](img/startuptime.png)
 
 ## Installation
 
@@ -154,9 +134,8 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 
 ## TODO
 
-* Add Go,Lua (and other few languages) to LSP configuration
-
-* Add custom startscreen when Neovim is opened without arguments
+* Add Lua to LSP configuration
+* Improve font icons
 ---
 
 ## Guides and resources
@@ -186,8 +165,6 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 ## Disclaimer
 
 * This configuration is in development version.  See: `Version` on [init.lua](nvim/init.lua) file.
-
-* The configuration is being migrated from VimL (Vim Script) to Lua.
 
 * As all my setups I try to follow the [KISS](https://en.wikipedia.org/wiki/KISS_principle) principle, probably some concepts may not be valid for everyone, then feel free to take what you need but don't install anything without checking first!
 ---

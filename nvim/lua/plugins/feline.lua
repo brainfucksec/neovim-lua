@@ -63,7 +63,7 @@ local lsp_get_diag = function(str)
   return (count > 0) and ' '..count..' ' or ''
 end
 
--- set and place components on statusline
+-- set components
 local comps = {
   vi_mode = {
     left = {
@@ -92,21 +92,12 @@ local comps = {
         style = 'bold'
       }
     },
-    encoding = {
-      provider = 'file_encoding',
-      left_sep = ' ',
-      hl = {
-        fg = colors.fg,
-        style = 'bold'
-      }
-    },
     type = {
       provider = 'file_type'
     },
     os = {
       provider = file_osinfo,
       left_sep = ' ',
-      right_sep = ' ',
       hl = {
         fg = colors.fg,
         style = 'bold'
@@ -115,6 +106,7 @@ local comps = {
     position = {
       provider = 'position',
       left_sep = ' ',
+      right_sep = ' ',
       hl = {
         fg = colors.cyan,
         style = 'bold'
@@ -122,69 +114,39 @@ local comps = {
     },
   },
   left_end = {
-    provider = function() return '' end,
+    provider = function() return '⏵' end,
     hl = {
       fg = colors.bg,
       bg = colors.red,
     }
   },
-  line_percentage = {
-    provider = 'line_percentage',
-    left_sep = ' ',
-    right_sep = ' ',
-    hl = {
-      style = 'bold'
-    }
-  },
-  --[[scroll_bar = {
-    provider = 'scroll_bar',
-    left_sep = ' ',
-    hl = {
-      fg = colors.cyan,
-      style = 'bold'
-    }
-  },]]--
   diagnos = {
     err = {
-      -- provider = 'diagnostic_errors',
-      provider = function()
-        return '' .. lsp_get_diag('Error')
-      end,
-      -- left_sep = ' ',
-      enabled = function() return lsp.diagnostics_exist('Error') end,
+      provider = 'diagnostic_errors',
+      left_sep = ' ',
+      icon = '⚠ ',
       hl = {
         fg = colors.red
       }
     },
     warn = {
-      -- provider = 'diagnostic_warnings',
-      provider = function()
-        return '' .. lsp_get_diag('Warning')
-      end,
-      -- left_sep = ' ',
-      enabled = function() return lsp.diagnostics_exist('Warning') end,
+      provider = 'diagnostic_warnings',
+      left_sep = ' ',
+      icon = ' ',
       hl = {
         fg = colors.yellow
       }
     },
     info = {
-      -- provider = 'diagnostic_info',
-      provider = function()
-        return '' .. lsp_get_diag('Information')
-      end,
-      -- left_sep = ' ',
-      enabled = function() return lsp.diagnostics_exist('Information') end,
+      provider = 'diagnostic_info',
+      left_sep = ' ',
       hl = {
-        fg = colors.blue
+        fg = colors.green
       }
     },
     hint = {
-      -- provider = 'diagnostic_hints',
-      provider = function()
-        return '' .. lsp_get_diag('Hint')
-      end,
-      -- left_sep = ' ',
-      enabled = function() return lsp.diagnostics_exist('Hint') end,
+      provider = 'diagnostic_hints',
+      left_sep = ' ',
       hl = {
         fg = colors.cyan
       }
@@ -193,9 +155,9 @@ local comps = {
   lsp = {
     name = {
       provider = 'lsp_client_names',
-      -- left_sep = ' ',
+      left_sep = ' ',
       right_sep = ' ',
-      icon = '  ',
+      icon = ' ',
       hl = {
         fg = colors.yellow
       }
@@ -257,9 +219,6 @@ table.insert(components.active[2], comps.diagnos.info)
 table.insert(components.active[2], comps.lsp.name)
 table.insert(components.active[2], comps.file.os)
 table.insert(components.active[2], comps.file.position)
-table.insert(components.active[2], comps.line_percentage)
-table.insert(components.active[2], comps.scroll_bar)
-table.insert(components.active[2], comps.vi_mode.right)
 
 require('feline').setup {
   colors = { bg = colors.bg, fg = colors.fg  },
