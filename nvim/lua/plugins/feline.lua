@@ -10,8 +10,6 @@
   see: https://github.com/ibhagwan/nvim-lua
 --]]
 
---require('feline').setup()
-
 local colors = {
   bg = '#1d1f22',
   fg = '#f8f8f0',
@@ -42,18 +40,6 @@ local vi_mode_colors = {
   NONE = colors.blue
 }
 
-local function file_osinfo()
-  local os = vim.bo.fileformat:upper()
-  local icon
-  if os == 'UNIX' then
-    icon = ' '
-  elseif os == 'MAC' then
-    icon = ' '
-  else
-    icon = ' '
-  end
-  return icon .. os
-end
 
 local lsp = require('feline.providers.lsp')
 local vi_mode_utils = require('feline.providers.vi_mode')
@@ -63,7 +49,7 @@ local lsp_get_diag = function(str)
   return (count > 0) and ' '..count..' ' or ''
 end
 
--- set components
+-- my components
 local comps = {
   vi_mode = {
     left = {
@@ -82,114 +68,116 @@ local comps = {
       right_sep = ' ',
     }
   },
+  -- File info
   file = {
     info = {
-      provider = 'file_info',
-      left_sep = ' ',
-      file_modified_icon = '',
+      provider = {
+        name = 'file_info',
+        opts = { file_modified_icon = '' }
+      },
       hl = {
         fg = colors.cyan,
         style = 'bold'
-      }
+      },
     },
-    type = {
-      provider = 'file_type'
+  type = {
+      provider = { name = 'file_type' },
     },
     os = {
-      provider = file_osinfo,
-      left_sep = ' ',
+      provider = function()
+        local os = vim.bo.fileformat:upper()
+        local icon
+        if os == 'UNIX' then
+          icon = ' '
+        elseif os == 'MAC' then
+          icon = ' '
+        else
+          icon = ' '
+        end
+        return icon .. os
+      end,
       hl = {
         fg = colors.fg,
         style = 'bold'
-      }
+      },
+      left_sep = ' ',
     },
     position = {
-      provider = 'position',
-      left_sep = ' ',
-      right_sep = ' ',
+      provider = { name = 'position' },
       hl = {
         fg = colors.cyan,
         style = 'bold'
-      }
+      },
+      left_sep = ' ',
+    },
+    line_percentage = {
+      provider = { name = 'line_percentage' },
+      hl = {
+        fg = colors.fg,
+        style = 'bold'
+      },
+      left_sep = ' ',
+      right_sep = ' ',
     },
   },
-  left_end = {
-    provider = function() return '⏵' end,
-    hl = {
-      fg = colors.bg,
-      bg = colors.red,
-    }
-  },
+  -- LSP info
   diagnos = {
     err = {
       provider = 'diagnostic_errors',
-      left_sep = ' ',
       icon = '⚠ ',
-      hl = {
-        fg = colors.red
-      }
+      hl = { fg = colors.red },
+      left_sep = ' ',
     },
     warn = {
       provider = 'diagnostic_warnings',
-      left_sep = ' ',
       icon = ' ',
-      hl = {
-        fg = colors.yellow
-      }
+      hl = { fg = colors.yellow },
+      left_sep = ' ',
     },
     info = {
       provider = 'diagnostic_info',
+      icon = ' ',
+      hl = { fg = colors.green },
       left_sep = ' ',
-      hl = {
-        fg = colors.green
-      }
     },
     hint = {
       provider = 'diagnostic_hints',
+      icon = ' ',
+      hl = { fg = colors.cyan },
       left_sep = ' ',
-      hl = {
-        fg = colors.cyan
-      }
     },
   },
   lsp = {
     name = {
       provider = 'lsp_client_names',
-      left_sep = ' ',
-      right_sep = ' ',
       icon = ' ',
-      hl = {
-        fg = colors.yellow
-      }
+      hl = { fg = colors.fg },
+      left_sep = '  ',
+      right_sep = ' ',
     }
   },
+  -- git info
   git = {
     branch = {
       provider = 'git_branch',
       icon = ' ',
-      left_sep = ' ',
       hl = {
         fg = colors.pink,
         style = 'bold'
-      }
+      },
+      left_sep = ' ',
     },
     add = {
       provider = 'git_diff_added',
-      hl = {
-        fg = colors.green
-      }
+      hl = { fg = colors.green },
     },
     change = {
       provider = 'git_diff_changed',
-      hl = {
-        fg = colors.orange
-      }
+      hl = { fg = colors.orange },
     },
     remove = {
       provider = 'git_diff_removed',
-      hl = {
-        fg = colors.red
-      }
+      hl = { fg = colors.red },
     }
   }
 }
@@ -219,6 +207,7 @@ table.insert(components.active[2], comps.diagnos.info)
 table.insert(components.active[2], comps.lsp.name)
 table.insert(components.active[2], comps.file.os)
 table.insert(components.active[2], comps.file.position)
+table.insert(components.active[2], comps.file.line_percentage)
 
 require('feline').setup {
   colors = { bg = colors.bg, fg = colors.fg  },
