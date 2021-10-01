@@ -3,11 +3,13 @@
 -----------------------------------------------------------
 
 --[[
-  Plugin: feline.nvim
-  https://github.com/famiu/feline.nvim
 
-  Thanks to ibhagwan for the example to follow
-  see: https://github.com/ibhagwan/nvim-lua
+Plugin: feline.nvim
+https://github.com/famiu/feline.nvim
+
+Thanks to ibhagwan for the example to follow
+see: https://github.com/ibhagwan/nvim-lua
+
 --]]
 
 local colors = {
@@ -34,7 +36,7 @@ local vi_mode_colors = {
   ENTER = colors.orange,
   MORE = colors.orange,
   SELECT = colors.pink,
-  COMMAND = colors.cyan,
+  COMMAND = colors.green,
   SHELL = colors.cyan,
   TERM = colors.cyan,
   NONE = colors.blue
@@ -65,7 +67,7 @@ local comps = {
         return val
       end,
       left_sep = ' ',
-      right_sep = ' ',
+      right_sep = '  '
     }
   },
   -- File info
@@ -73,11 +75,14 @@ local comps = {
     info = {
       provider = {
         name = 'file_info',
-        opts = { file_modified_icon = '' }
+        opts = {
+          type = 'unique',
+          file_modified_icon = ''
+        }
       },
       hl = {
         fg = colors.cyan,
-        style = 'bold'
+        --style = 'bold'
       },
     },
   type = {
@@ -103,12 +108,12 @@ local comps = {
       left_sep = ' ',
     },
     position = {
-      provider = { name = 'position' },
+      provider = {name = 'position'},
       hl = {
         fg = colors.cyan,
         style = 'bold'
       },
-      left_sep = ' ',
+      left_sep = '  ',
     },
     line_percentage = {
       provider = { name = 'line_percentage' },
@@ -117,7 +122,14 @@ local comps = {
         style = 'bold'
       },
       left_sep = ' ',
-      right_sep = ' ',
+    },
+    scroll_bar = {
+      provider = { name = 'scroll_bar' },
+      hl = {
+        fg = colors.pink
+      },
+      left_sep = ' ',
+      right_sep = ' '
     },
   },
   -- LSP info
@@ -208,6 +220,7 @@ table.insert(components.active[2], comps.lsp.name)
 table.insert(components.active[2], comps.file.os)
 table.insert(components.active[2], comps.file.position)
 table.insert(components.active[2], comps.file.line_percentage)
+table.insert(components.active[2], comps.file.scroll_bar)
 
 require('feline').setup {
   colors = { bg = colors.bg, fg = colors.fg  },
