@@ -42,7 +42,6 @@ local vi_mode_colors = {
   NONE = colors.blue
 }
 
-
 local lsp = require('feline.providers.lsp')
 local vi_mode_utils = require('feline.providers.vi_mode')
 
@@ -67,7 +66,7 @@ local comps = {
         return val
       end,
       left_sep = ' ',
-      right_sep = '  '
+      right_sep = ' ',
     }
   },
   -- File info
@@ -84,6 +83,7 @@ local comps = {
         fg = colors.cyan,
         --style = 'bold'
       },
+      icon = '',
     },
   type = {
       provider = { name = 'file_type' },
@@ -126,7 +126,7 @@ local comps = {
     scroll_bar = {
       provider = { name = 'scroll_bar' },
       hl = {
-        fg = colors.pink
+        fg = colors.green
       },
       left_sep = ' ',
       right_sep = ' '
