@@ -38,7 +38,7 @@ local vi_mode_colors = {
   SELECT = colors.pink,
   COMMAND = colors.green,
   SHELL = colors.cyan,
-  TERM = colors.cyan,
+  TERM = colors.green,
   NONE = colors.blue
 }
 

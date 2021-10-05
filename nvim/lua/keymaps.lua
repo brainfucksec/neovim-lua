@@ -39,6 +39,9 @@ map('n', '<leader>q', ':quitall<CR>', default_opts)
 -----------------------------------------------------------
 -- Applications & Plugins shortcuts:
 -----------------------------------------------------------
+-- open terminal
+map('n', '<C-t>', ':Term<CR>', {noremap = true})
+
 -- nvim-tree
 map('n', '<C-n>', ':NvimTreeToggle<CR>', default_opts)       -- open/close
 map('n', '<leader>r', ':NvimTreeRefresh<CR>', default_opts)  -- refresh
