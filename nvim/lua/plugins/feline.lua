@@ -52,16 +52,18 @@ end
 
 -- My components
 local comps = {
-  -- vi Mode
+  -- VI mode label
   vi_mode = {
     left = {
       provider = function()
-        return vi_mode_utils.get_vim_mode()
+        local label = ' '..vi_mode_utils.get_vim_mode()..' '
+        return label
       end,
       hl = function()
         local val = {
           name = vi_mode_utils.get_mode_highlight_name(),
-          fg = vi_mode_utils.get_mode_color(),
+          fg = colors.bg,
+          bg = vi_mode_utils.get_mode_color(),
           style = 'bold'
         }
         return val
