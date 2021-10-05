@@ -178,19 +178,26 @@ local comps = {
         fg = colors.pink,
         style = 'bold'
       },
-      left_sep = ' ',
+      left_sep = '  ',
     },
     add = {
       provider = 'git_diff_added',
+      icon = '  ',
       hl = { fg = colors.green },
+      left_sep = ' ',
+
     },
     change = {
       provider = 'git_diff_changed',
+      icon = '  ',
       hl = { fg = colors.orange },
+      left_sep = ' ',
     },
     remove = {
       provider = 'git_diff_removed',
+      icon = '  ',
       hl = { fg = colors.red },
+      left_sep = ' ',
     }
   }
 }
