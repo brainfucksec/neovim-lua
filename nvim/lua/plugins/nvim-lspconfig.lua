@@ -58,13 +58,14 @@ local on_attach = function(client, bufnr)
 
 end
 
---[[ Language servers:
+--[[
 
-Add here your language servers.
+Language servers:
+
+Add your language server to `servers`
 
 For language servers list see:
 https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md
-
 
 Bash --> bashls
 https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#bashls
@@ -86,10 +87,20 @@ https://github.com/typescript-language-server/typescript-language-server
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
 local servers = { 'bashls', 'pyright', 'clangd', 'html', 'tsserver' }
+
+-- Set settings for language servers below
+--
+-- tsserver settings
+local ts_settings = function(client)
+  client.resolved_capabilities.document_formatting = false
+  ts_settings(client)
+end
+
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
     on_attach = on_attach,
     capabilities = capabilities,
+    ts_settings = ts_settings,
     flags = {
       debounce_text_changes = 150,
     }

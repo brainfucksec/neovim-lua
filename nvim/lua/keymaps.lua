@@ -5,6 +5,7 @@
 
 local map = vim.api.nvim_set_keymap
 local default_opts = {noremap = true, silent = true}
+local cmd = vim.cmd
 
 -----------------------------------------------------------
 -- Neovim shortcuts:
@@ -36,12 +37,12 @@ map('n', '<C-l>', '<C-w>l', default_opts)
 map('n', '<leader>q', ':quitall<CR>', default_opts)
 
 -----------------------------------------------------------
--- Plugins shortcuts:
+-- Applications & Plugins shortcuts:
 -----------------------------------------------------------
 -- nvim-tree
 map('n', '<C-n>', ':NvimTreeToggle<CR>', default_opts)       -- open/close
 map('n', '<leader>r', ':NvimTreeRefresh<CR>', default_opts)  -- refresh
 map('n', '<leader>n', ':NvimTreeFindFile<CR>', default_opts) -- search file
 
--- Vista
-map('', '<C-m>', ':Vista<CR>', default_opts)  -- open/close vista window
+-- Vista tag-viewer
+map('n', '<C-m>', ':Vista!!<CR>', default_opts)   -- open/close
