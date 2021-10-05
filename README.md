@@ -14,21 +14,23 @@ This setup require [neovim >= v0.5.1](https://github.com/neovim/neovim/releases/
 
 [feline.nvim](https://github.com/Famiu/feline.nvim) - A minimal, stylish and customizable statusline for Neovim written in Lua
 
+[nvim-cmp](https://github.com/hrsh7th/nvim-cmp) - Auto completion plugin
+
 [indentLine](https://github.com/Yggdroot/indentLine) - Show indent lines
+
+[nvim-autopairs](https://github.com/windwp/nvim-autopairs) - A super powerful autopairs for Neovim
+
+[nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - A collection of common configurations for Neovim's built-in language server client
+[
+[LuaSnip](https://github.com/L3MON4D3/LuaSnip) - Snippet Engine for Neovim written in Lua
 
 [vista.vim](https://github.com/liuchengxu/vista.vim) - View and search LSP symbols, tags in Vim/NeoVim
 
-[nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons) - A Lua fork of vim-devicons
-
 [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - Nvim Treesitter configurations and abstraction layer
 
-[nvim-cmp](https://github.com/hrsh7th/nvim-cmp) - Auto completion plugin
+[nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons) - A Lua fork of vim-devicons
 
-[nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - A collection of common configurations for Neovim's built-in language server client
-
-[LuaSnip](https://github.com/L3MON4D3/LuaSnip) - Snippet Engine for Neovim written in Lua
-
-[nvim-autopairs](https://github.com/windwp/nvim-autopairs) - A super powerful autopairs for Neovim.
+[gitsigns](https://github.com/lewis6991/gitsigns.nvim) - Super fast git decorations implemented purely in lua/teal
 
 ## Directory tree of Lua files
 ```
@@ -39,6 +41,7 @@ This setup require [neovim >= v0.5.1](https://github.com/neovim/neovim/releases/
     ├── keymaps.lua
     ├── plugins
     │   ├── feline.lua
+    │   ├── gitsigns.lua
     │   ├── nvim-autopairs.lua
     │   ├── nvim-cmp.lua
     │   ├── nvim-lspconfig.lua
@@ -55,25 +58,27 @@ This setup require [neovim >= v0.5.1](https://github.com/neovim/neovim/releases/
 
 * [lua](nvim/lua): Folder of `lua` modules, here reside all the Lua modules that needed. These modules are called from `init.lua` file (See below).  For plugins settings I use the convention `/lua/plugins/<plugin_name>.lua>`.  See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 
-* [keymaps.lua](nvim/lua/keymaps.lua): Keymaps configuration file, vim/neovim and plugins keymaps.
-
 * [settings.lua](nvim/lua/settings.lua): General Neovim settings and configuration
 
-* [plugins/feline.lua](nvim/lua/plugins/feline.lua): Statusline configuration file
-
-* [plugins/nvim-autopairs](nvim/lua/plugins/nvim-autopairs.lua): Autoclose brackets
-
-* [plugins/nvim-cmp.lua](nvim/lua/plugins/nvim-cmp.lua): Autocompletion settings
-
-* [plugins/nvim-lspconfig.lua](nvim/lua/plugins/nvim-lspconfig.lua): LSP configuration (language servers, keybinding)
-
-* [plugins/nvim-tree.lua](nvim/lua/plugins/nvim-tree.lua): File manager settings
-
-* [plugin/nvim-treesitter](nvim/lua/plugins/nvim-treesitter): Treesitter interface configuration
+* [keymaps.lua](nvim/lua/keymaps.lua): Keymaps configuration file, vim/neovim and plugins keymaps.
 
 * [plugins/paq-nvim.lua](nvim/lua/plugins/paq-nvim.lua): Plugin manager settings
 
+* [plugins/nvim-tree.lua](nvim/lua/plugins/nvim-tree.lua): File manager settings
+
+* [plugins/feline.lua](nvim/lua/plugins/feline.lua): Statusline configuration file
+
+* [plugins/nvim-cmp.lua](nvim/lua/plugins/nvim-cmp.lua): Autocompletion settings
+
+* [plugins/nvim-autopairs](nvim/lua/plugins/nvim-autopairs.lua): Autoclose brackets
+
+* [plugins/nvim-lspconfig.lua](nvim/lua/plugins/nvim-lspconfig.lua): LSP configuration (language servers, keybinding)
+
 * [plugins/vista.lua](nvim/lua/plugins/vista.lua): Tag viewer settings
+
+* [plugins/nvim-treesitter](nvim/lua/plugins/nvim-treesitter): Treesitter interface configuration
+
+* [plugins/gitsigns](nvim/lua/plugins/gitsigns): git decorators
 
 ## Screenshots
 
@@ -154,7 +159,6 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 * https://github.com/siduck76/NvChad
 
 * https://github.com/ibhagwan/nvim-lua
-
 
 ## Lua resources
 

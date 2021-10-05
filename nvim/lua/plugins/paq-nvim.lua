@@ -28,5 +28,7 @@ require('paq') {
   'L3MON4D3/LuaSnip';
   'windwp/nvim-autopairs';
   'tanvirtin/monokai.nvim';
+  'nvim-lua/plenary.nvim';
+  'lewis6991/gitsigns.nvim';
 }
 
