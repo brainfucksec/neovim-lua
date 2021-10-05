@@ -163,7 +163,7 @@ local comps = {
   lsp = {
     name = {
       provider = 'lsp_client_names',
-      icon = ' LSP: ',
+      icon = ' lsp: ',
       hl = { fg = colors.yellow },
       left_sep = '  ',
       right_sep = ' ',
@@ -218,7 +218,6 @@ table.insert(components.active[1], comps.git.branch)
 table.insert(components.active[1], comps.git.add)
 table.insert(components.active[1], comps.git.change)
 table.insert(components.active[1], comps.git.remove)
-table.insert(components.inactive[1], comps.vi_mode.left)
 table.insert(components.inactive[1], comps.file.info)
 table.insert(components.active[2], comps.diagnos.err)
 table.insert(components.active[2], comps.diagnos.warn)
