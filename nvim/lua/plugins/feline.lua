@@ -163,8 +163,8 @@ local comps = {
   lsp = {
     name = {
       provider = 'lsp_client_names',
-      icon = ' ',
-      hl = { fg = colors.fg },
+      icon = ' LSP: ',
+      hl = { fg = colors.yellow },
       left_sep = '  ',
       right_sep = ' ',
     }
