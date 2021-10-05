@@ -50,8 +50,9 @@ local lsp_get_diag = function(str)
   return (count > 0) and ' '..count..' ' or ''
 end
 
--- my components
+-- My components
 local comps = {
+  -- vi Mode
   vi_mode = {
     left = {
       provider = function()
@@ -66,7 +67,7 @@ local comps = {
         return val
       end,
       left_sep = ' ',
-      right_sep = ' ',
+      right_sep = ' '
     }
   },
   -- File info

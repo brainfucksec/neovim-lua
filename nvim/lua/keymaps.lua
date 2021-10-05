@@ -35,20 +35,6 @@ map('n', '<C-l>', '<C-w>l', default_opts)
 -- close all windows and exit from neovim
 map('n', '<leader>q', ':quitall<CR>', default_opts)
 
--- basic autopair
--- Use this if you don't want a plugin for brackets autopairs
--- slow when closing "{}" :(
-
---[[
-map('i', '"', '""<left>', default_opts)
-map('i', '`', '``<left>', default_opts)
-map('i', '(', '()<left>', default_opts)
-map('i', '[', '[]<left>', default_opts)
-map('i', '{', '{}<left>', default_opts)
-map('i', '{<CR>', '{<CR}<ESC>0', default_opts)
-map('i', '{;<CR>', '{<CR};<ESC>0', default_opts)
---]]
-
 -----------------------------------------------------------
 -- Plugins shortcuts:
 -----------------------------------------------------------
