@@ -4,7 +4,7 @@
 
 ![.](img/1-init.lua.png)
 
-This setup is for [neovim >= v0.5.0](https://github.com/neovim/neovim/releases/tag/v0.5.0)
+This setup require [neovim >= v0.5.1](https://github.com/neovim/neovim/releases/tag/v0.5.1)
 
 ## Plugins
 
@@ -81,6 +81,8 @@ This setup is for [neovim >= v0.5.0](https://github.com/neovim/neovim/releases/t
 
 ![.](img/3-c.png)
 
+![.](img/4-terminal.png)
+
 ## Appearance
 
 Colorscheme: [Neovim Monokai](https://github.com/tanvirtin/monokai.nvim)
@@ -91,7 +93,7 @@ Icons: [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 
 ## Installation
 
-1. Install [neovim >= v0.5.0](https://github.com/neovim/neovim/releases/tag/v0.5.0)
+1. Install [neovim >= v0.5.1](https://github.com/neovim/neovim/releases/tag/v0.5.0)
 
 2. Install [npm](https://github.com/npm/cli) (for download the packages of LSP language servers)
 
@@ -127,15 +129,16 @@ C-C++ - [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#
 
 HTML/CSS/JSON - [vscode-html](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#html)
 
-JavaScript/TypeScript - [tsserver](https://github.com/typescript-language-server/typescript-language-server)
+JavaScript/TypeScript - [tsserver](https://github.com/typescript-language-server/typescript-language-server) (under development)
 
 
 See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md)
 
 ## TODO
 
-* Add Lua to LSP configuration
-* Improve font icons
+* Fix/Add JavaScript support
+* Add Lua to LSP configurations
+* Improve support for dev-icons
 ---
 
 ## Guides and resources
