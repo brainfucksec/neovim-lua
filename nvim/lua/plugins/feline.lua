@@ -96,17 +96,17 @@ local comps = {
         local os = vim.bo.fileformat:upper()
         local icon
         if os == 'UNIX' then
-          icon = ' '
+          icon = '  '
         elseif os == 'MAC' then
-          icon = ' '
+          icon = '  '
         else
-          icon = ' '
+          icon = '  '
         end
         return icon .. os
       end,
       hl = {
         fg = colors.fg,
-        style = 'bold'
+        --style = 'bold'
       },
       left_sep = ' ',
     },
