@@ -50,6 +50,7 @@ local lsp_get_diag = function(str)
   return (count > 0) and ' '..count..' ' or ''
 end
 
+
 -- My components
 local comps = {
   -- VI mode label
@@ -109,6 +110,7 @@ local comps = {
         --style = 'bold'
       },
       left_sep = ' ',
+      right_sep = ' '
     },
     position = {
       provider = {name = 'position'},
@@ -116,7 +118,8 @@ local comps = {
         fg = colors.cyan,
         style = 'bold'
       },
-      left_sep = '  ',
+      left_sep = ' ',
+      right_sep = ' '
     },
     line_percentage = {
       provider = { name = 'line_percentage' },
@@ -168,7 +171,7 @@ local comps = {
       icon = ' lsp: ',
       hl = { fg = colors.yellow },
       left_sep = '  ',
-      right_sep = ' ',
+      --right_sep = ' ',
     }
   },
   -- git info
