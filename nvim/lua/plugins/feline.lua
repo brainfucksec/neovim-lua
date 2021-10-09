@@ -7,8 +7,11 @@
 Plugin: feline.nvim
 https://github.com/famiu/feline.nvim
 
-Thanks to ibhagwan for the example to follow
-see: https://github.com/ibhagwan/nvim-lua
+For the configuration see the Usage section:
+https://github.com/famiu/feline.nvim/blob/master/USAGE.md
+
+Thanks to ibhagwan for the example to follow:
+https://github.com/ibhagwan/nvim-lua
 
 --]]
 
@@ -79,7 +82,7 @@ local comps = {
       provider = {
         name = 'file_info',
         opts = {
-          type = 'unique',
+          type = 'relative',
           file_modified_icon = ''
         }
       },
@@ -161,7 +164,7 @@ local comps = {
     name = {
       provider = 'lsp_client_names',
       icon = ' lsp: ',
-      hl = { fg = colors.yellow },
+      hl = { fg = colors.pink },
       left_sep = '  ',
       --right_sep = ' ',
     }
@@ -171,10 +174,7 @@ local comps = {
     branch = {
       provider = 'git_branch',
       icon = ' ',
-      hl = {
-        fg = colors.pink,
-        style = 'bold'
-      },
+      hl = { fg = colors.pink },
       left_sep = '  ',
     },
     add = {

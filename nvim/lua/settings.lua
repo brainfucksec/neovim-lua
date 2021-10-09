@@ -87,8 +87,8 @@ cmd [[autocmd FileType markdown let g:indentLine_enabled=0]]
 -----------------------------------------------------------
 -- Autocompletion
 -----------------------------------------------------------
--- Not used: see: /plugins/nvim-cmp.lua
---opt.completeopt = 'menuone,noselect,noinsert' -- completion options
+-- Not used here, option defined on /plugins/nvim-cmp.lua
+--opt.completeopt = 'menuone,noselect,noinsert'
 
 -----------------------------------------------------------
 -- Terminal
