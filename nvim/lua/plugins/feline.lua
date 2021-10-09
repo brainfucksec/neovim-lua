@@ -94,21 +94,18 @@ local comps = {
     },
     os = {
       provider = function()
-        local os = vim.bo.fileformat:upper()
+        local os = vim.bo.fileformat:lower()
         local icon
-        if os == 'UNIX' then
+        if os == 'unix' then
           icon = '  '
-        elseif os == 'MAC' then
+        elseif os == 'mac' then
           icon = '  '
         else
           icon = '  '
         end
         return icon .. os
       end,
-      hl = {
-        fg = colors.fg,
-        --style = 'bold'
-      },
+      hl = { fg = colors.fg },
       left_sep = ' ',
       right_sep = ' '
     },
@@ -119,21 +116,16 @@ local comps = {
         style = 'bold'
       },
       left_sep = ' ',
-      right_sep = ' '
     },
     line_percentage = {
       provider = { name = 'line_percentage' },
-      hl = {
-        fg = colors.fg,
-        style = 'bold'
-      },
+      hl = { fg = colors.pink },
       left_sep = ' ',
+      right_sep = ' '
     },
     scroll_bar = {
       provider = { name = 'scroll_bar' },
-      hl = {
-        fg = colors.green
-      },
+      hl = { fg = colors.green },
       left_sep = ' ',
       right_sep = ' '
     },
@@ -232,7 +224,6 @@ table.insert(components.active[2], comps.lsp.name)
 table.insert(components.active[2], comps.file.os)
 table.insert(components.active[2], comps.file.position)
 table.insert(components.active[2], comps.file.line_percentage)
-table.insert(components.active[2], comps.file.scroll_bar)
 
 require('feline').setup {
   colors = { bg = colors.bg, fg = colors.fg  },
