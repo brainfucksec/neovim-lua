@@ -141,9 +141,10 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 
 ## TODO
 
-* Fix/Add JavaScript support
-* Add Lua to LSP configurations
-* Improve support for dev-icons
+* Improve JavaScript support
+* Add Lua to LSP configuration
+* Add alternative color scheme
+
 ---
 
 ## Guides and resources
