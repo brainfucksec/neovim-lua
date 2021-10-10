@@ -56,7 +56,7 @@ end
 
 -- My components
 local comps = {
-  -- VI mode label
+  -- vi mode label
   vi_mode = {
     left = {
       provider = function()
@@ -64,19 +64,19 @@ local comps = {
         return label
       end,
       hl = function()
-        local val = {
+        local label = {
           name = vi_mode_utils.get_mode_highlight_name(),
           fg = colors.bg,
           bg = vi_mode_utils.get_mode_color(),
           style = 'bold'
         }
-        return val
+        return label
       end,
       left_sep = ' ',
       right_sep = ' '
     }
   },
-  -- File info
+  -- file info
   file = {
     info = {
       provider = {
@@ -226,7 +226,19 @@ table.insert(components.active[2], comps.file.position)
 table.insert(components.active[2], comps.file.line_percentage)
 
 require('feline').setup {
-  colors = { bg = colors.bg, fg = colors.fg  },
+  colors = {
+    bg = colors.bg,
+    fg = colors.fg
+  },
   components = components,
-  vi_mode_colors = vi_mode_colors
+  vi_mode_colors = vi_mode_colors,
+  force_inactive = {
+    filetypes = {
+      'NvimTree',
+      'vista',
+      'term'
+    },
+    buftypes = {},
+    bufnames = {},
+  },
 }
