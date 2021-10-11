@@ -9,7 +9,7 @@
 
 Neovim init file
 
-Version: 0.7.1_rev3 - 2021/10/09
+Version: 0.7.2 - 2021/10/11
 Maintainer: Brainf+ck
 Website: https://github.com/brainfucksec/neovim-lua
 
@@ -29,3 +29,4 @@ require('plugins/nvim-lspconfig')   -- LSP settings
 require('plugins/vista')            -- tag viewer
 require('plugins/nvim-treesitter')  -- tree-sitter interface
 require('plugins/gitsigns')         -- git decorations
+
