@@ -29,7 +29,7 @@ local colors = {
 }
 
 local vi_mode_colors = {
-  NORMAL = colors.cyan,
+  NORMAL = colors.pink,
   INSERT = colors.green,
   VISUAL = colors.yellow,
   OP = colors.cyan,
@@ -39,7 +39,7 @@ local vi_mode_colors = {
   ENTER = colors.orange,
   MORE = colors.orange,
   SELECT = colors.pink,
-  COMMAND = colors.green,
+  COMMAND = colors.cyan,
   SHELL = colors.cyan,
   TERM = colors.green,
   NONE = colors.blue
@@ -56,7 +56,6 @@ end
 
 -- My components
 local comps = {
-  -- vi mode label
   vi_mode = {
     left = {
       provider = function()
@@ -64,19 +63,18 @@ local comps = {
         return label
       end,
       hl = function()
-        local label = {
+        local set_color = {
           name = vi_mode_utils.get_mode_highlight_name(),
           fg = colors.bg,
           bg = vi_mode_utils.get_mode_color(),
           style = 'bold'
         }
-        return label
+        return set_color
       end,
       left_sep = ' ',
       right_sep = ' '
     }
   },
-  -- file info
   file = {
     info = {
       provider = {
@@ -86,10 +84,7 @@ local comps = {
           file_modified_icon = ''
         }
       },
-      hl = {
-        fg = colors.cyan,
-        --style = 'bold'
-      },
+      hl = { fg = colors.cyan },
       icon = '',
     },
   type = {
@@ -166,7 +161,6 @@ local comps = {
       icon = ' lsp: ',
       hl = { fg = colors.pink },
       left_sep = '  ',
-      --right_sep = ' ',
     }
   },
   -- git info
@@ -209,6 +203,7 @@ table.insert(components.active, {})
 table.insert(components.inactive, {})
 table.insert(components.inactive, {})
 
+-- Right section
 table.insert(components.active[1], comps.vi_mode.left)
 table.insert(components.active[1], comps.file.info)
 table.insert(components.active[1], comps.git.branch)
@@ -216,6 +211,8 @@ table.insert(components.active[1], comps.git.add)
 table.insert(components.active[1], comps.git.change)
 table.insert(components.active[1], comps.git.remove)
 table.insert(components.inactive[1], comps.file.info)
+
+-- Left Section
 table.insert(components.active[2], comps.diagnos.err)
 table.insert(components.active[2], comps.diagnos.warn)
 table.insert(components.active[2], comps.diagnos.hint)
