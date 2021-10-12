@@ -18,24 +18,29 @@ cmp.setup {
 
 -- completion settings
   completion = {
-    --completeopt = 'menuone,noselect,noinsert'
-    completeopt = 'menu,menuone,noinsert'
+    -- default: completeopt = 'menu,menuone,noselect'
+    completeopt = 'menuone,noselect',
+    keyword_length = 2
   },
 
   -- key mapping
   mapping = {
     ['<C-n>'] = cmp.mapping.select_next_item {
-      behavior = cmp.SelectBehavior.Insert,
+      behavior = cmp.SelectBehavior.Insert
     },
+    { 'i' },
     ['<C-p>'] = cmp.mapping.select_prev_item {
       behavior = cmp.SelectBehavior.Insert,
     },
+    { 'i' },
     ['<Down>'] = cmp.mapping.select_next_item {
       behavior = cmp.SelectBehavior.Select,
     },
+    { 'i' },
     ['<Up>'] = cmp.mapping.select_next_item {
       behavior = cmp.SelectBehavior.Select,
     },
+    { 'i ' },
     ['<CR>'] = cmp.mapping.confirm {
       behavior = cmp.ConfirmBehavior.Replace,
       select = true,
