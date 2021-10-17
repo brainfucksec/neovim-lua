@@ -15,6 +15,7 @@ https://github.com/ibhagwan/nvim-lua
 
 --]]
 
+
 local colors = {
   bg = '#1d1f22',
   fg = '#f8f8f0',
@@ -52,7 +53,6 @@ local lsp_get_diag = function(str)
   local count = vim.lsp,diagnostic.get_count(0, str)
   return (count > 0) and ' '..count..' ' or ''
 end
-
 
 -- My components
 local comps = {
