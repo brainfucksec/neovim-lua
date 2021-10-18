@@ -36,6 +36,7 @@ opt.linebreak = true          -- wrap on word boundary
 -- remove whitespace on save
 cmd [[au BufWritePre * :%s/\s\+$//e]]
 
+
 -- highlight on yank
 exec([[
   augroup YankHighlight
@@ -70,7 +71,7 @@ opt.smartindent = true    -- autoindent new lines
 cmd [[au BufEnter * set fo-=c fo-=r fo-=o]]
 
 -- remove line lenght marker for selected filetypes
-cmd [[autocmd FileType text,markdown,xml,html,xhtml,javascript setlocal cc=0]]
+cmd [[autocmd FileType text,markdown,html,xhtml,javascript setlocal cc=0]]
 
 -- 2 spaces for selected filetypes
 cmd [[
@@ -87,7 +88,6 @@ cmd [[autocmd FileType markdown let g:indentLine_enabled=0]]
 -----------------------------------------------------------
 -- Autocompletion
 -----------------------------------------------------------
--- Not used here, option defined on /plugins/nvim-cmp.lua
 --opt.completeopt = 'menuone,noselect,noinsert'
 
 -----------------------------------------------------------

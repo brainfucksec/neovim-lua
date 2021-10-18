@@ -18,8 +18,8 @@ cmp.setup {
 
 -- completion settings
   completion = {
-    -- default: completeopt = 'menu,menuone,noselect'
-    completeopt = 'menuone,noselect',
+    -- completeopt = 'menu,menuone,noselect'
+    completeopt = 'menu,menuone,noselect',
     keyword_length = 2
   },
 
