@@ -106,9 +106,7 @@ Icons: [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
     cp -Rv nvim ~/.config/nvim/
 ```
 
-4. Install [Paq](https://github.com/savq/paq-nvim#installation)
-
-5. Open `neovim` and run the command [:PaqInstall](https://github.com/savq/paq-nvim#commands) to install the plugins
+4. Install [packer.nvim](https://github.com/wbthomason/packer.nvim) for manage the plugins, see: https://github.com/wbthomason/packer.nvim#quickstart
 
 ## LSP Configuration
 
