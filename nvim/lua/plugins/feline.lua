@@ -119,6 +119,7 @@ local comps = {
       provider = {name = 'position'},
       hl = {
         fg = colors.cyan,
+        style = 'bold'
       },
       right_sep = ' ',
     },
@@ -159,7 +160,7 @@ local comps = {
   lsp = {
     name = {
       provider = 'lsp_client_names',
-      icon = ' ',
+      icon = '  ',
       hl = { fg = colors.pink },
       left_sep = '  ',
     }
