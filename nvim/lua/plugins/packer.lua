@@ -25,6 +25,7 @@ return packer.startup(function(use)
   use 'tanvirtin/monokai.nvim'
   use 'neovim/nvim-lspconfig'
   use { 'hrsh7th/nvim-cmp',
+    event = "InsertEnter",
     requires = {
       'L3MON4D3/LuaSnip',
       'hrsh7th/cmp-nvim-lsp',
