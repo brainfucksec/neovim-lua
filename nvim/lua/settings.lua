@@ -88,7 +88,7 @@ cmd [[autocmd FileType markdown let g:indentLine_enabled=0]]
 -----------------------------------------------------------
 -- Autocompletion
 -----------------------------------------------------------
-opt.completeopt = 'menuone,noselect,noinsert'
+opt.completeopt = 'menuone,noinsert'
 
 -----------------------------------------------------------
 -- Terminal
