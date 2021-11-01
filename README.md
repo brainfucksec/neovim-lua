@@ -46,7 +46,6 @@ This setup require [neovim >= v0.5.1](https://github.com/neovim/neovim/releases/
 │   │   ├── nvim-treesitter.lua
 │   │   ├── packer.lua
 │   │   └── vista.lua
-│   ├── colors.lua
 │   ├── keymaps.lua
 │   └── settings.lua
 ├── plugin
@@ -63,8 +62,6 @@ This setup require [neovim >= v0.5.1](https://github.com/neovim/neovim/releases/
 * [settings.lua](nvim/lua/settings.lua): General Neovim settings and configuration
 
 * [keymaps.lua](nvim/lua/keymaps.lua): Keymaps configuration file, vim/neovim and plugins keymaps.
-
-* [colors.lua](nvim/lua/color.lua): Define colors for neovim and plugins.
 
 * [plugins/packer.lua](nvim/lua/plugins/packer.lua): Plugin manager settings
 
@@ -97,6 +94,8 @@ Monokai
 OneDark
 
 ![.](img/5-onedark.png)
+
+![.](img/6-onedark-1.png)
 
 
 ## Appearance
@@ -155,7 +154,7 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 ## TODO
 
 * Add Lua to LSP configuration
-* Improve color schemes
+* ..Write my own dashboard plugin (one day).
 
 ---
 
