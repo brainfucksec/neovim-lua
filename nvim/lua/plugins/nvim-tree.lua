@@ -5,21 +5,13 @@
 -- Plugin: nvim-tree
 -- https://github.com/kyazdani42/nvim-tree.lua
 
+-- Keybindings are defined in `keymapping.lua`:
+--- https://github.com/kyazdani42/nvim-tree.lua#keybindings
 
---[[
-
-Keybindings are defined in `keymapping.lua`:
-https://github.com/kyazdani42/nvim-tree.lua#keybindings
-
-Note: options under the g: command should be set BEFORE running the
-setup function:
-https://github.com/kyazdani42/nvim-tree.lua#setup
-
-See: `help NvimTree`
-
-]]--
-
-
+-- Note: options under the g: command should be set BEFORE running the
+--- setup function:
+--- https://github.com/kyazdani42/nvim-tree.lua#setup
+--- See: `help NvimTree`
 local g = vim.g
 
 g.nvim_tree_gitignore = 1
@@ -40,7 +32,7 @@ g.nvim_tree_icons = {
 	default = "‣ "
 }
 
-require('nvim-tree').setup{
+require('nvim-tree').setup {
   open_on_setup = true,
   view = {
     width = 32,
@@ -50,5 +42,4 @@ require('nvim-tree').setup{
     dotfiles = true,
     custom = { '.git', 'node_modules', '.cache', '.bin' },
   },
-
 }

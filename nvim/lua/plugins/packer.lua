@@ -37,7 +37,8 @@ return packer.startup(function(use)
   use 'nvim-treesitter/nvim-treesitter'
 
   -- colorscheme
-  use 'tanvirtin/monokai.nvim'
+  --use 'tanvirtin/monokai.nvim'
+  use 'navarasu/onedark.nvim'
 
   -- LSP
   use 'neovim/nvim-lspconfig'

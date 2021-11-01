@@ -83,15 +83,26 @@ This setup require [neovim >= v0.5.1](https://github.com/neovim/neovim/releases/
 
 ## Screenshots
 
+Monokai
+
 ![.](img/2-bash.png)
 
 ![.](img/3-c.png)
 
 ![.](img/4-terminal.png)
 
+OneDark
+
+![.](img/5-onedark.png)
+
+
 ## Appearance
 
-Colorscheme: [Neovim Monokai](https://github.com/tanvirtin/monokai.nvim)
+Colorschemes:
+
+[OneDark](https://github.com/navarasu/onedark.nvim)
+
+[Neovim Monokai](https://github.com/tanvirtin/monokai.nvim)
 
 Fonts: [Cozette](https://github.com/slavfox/Cozette)
 
@@ -141,7 +152,7 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 ## TODO
 
 * Add Lua to LSP configuration
-* Add alternative color schemes
+* Improve color schemes
 
 ---
 
