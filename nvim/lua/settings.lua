@@ -78,17 +78,11 @@ cmd [[
   autocmd FileType xml,html,xhtml,css,scss,javascript,lua,yaml setlocal shiftwidth=2 tabstop=2
 ]]
 
--- IndentLine
---g.indentLine_setColors = 0  -- set indentLine color
-g.indentLine_char = '|'       -- set indentLine character
-
--- disable IndentLine for markdown files (avoid concealing)
-cmd [[autocmd FileType markdown let g:indentLine_enabled=0]]
-
 -----------------------------------------------------------
 -- Autocompletion
 -----------------------------------------------------------
-opt.completeopt = 'menuone,noinsert'
+-- insert mode completion options
+opt.completeopt = 'menuone,noselect'
 
 -----------------------------------------------------------
 -- Terminal

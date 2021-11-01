@@ -9,7 +9,7 @@
 
 
 Neovim init file
-Version: 0.12.0-dev - 2021/10/31
+Version: 0.20.0 - 2021/11/01
 Maintainer: Brainf+ck
 Website: https://github.com/brainfucksec/neovim-lua
 
@@ -18,13 +18,14 @@ Website: https://github.com/brainfucksec/neovim-lua
 -----------------------------------------------------------
 -- Import Lua modules
 -----------------------------------------------------------
-require('settings')                 -- settings
-require('keymaps')                  -- keymaps
-require('plugins/packer')           -- plugin manager
-require('plugins/nvim-tree')	      -- file manager
-require('plugins/feline')           -- statusline
-require('plugins/nvim-cmp')         -- autocomplete
-require('plugins/nvim-autopairs')   -- autopairs
-require('plugins/nvim-lspconfig')   -- LSP settings
-require('plugins/vista')            -- tag viewer
-require('plugins/nvim-treesitter')  -- tree-sitter interface
+require('settings')
+require('keymaps')
+require('plugins/packer')
+require('plugins/nvim-tree')
+require('plugins/indent-blankline')
+require('plugins/nvim-autopairs')
+require('plugins/feline')
+require('plugins/vista')
+require('plugins/nvim-cmp')
+require('plugins/nvim-lspconfig')
+require('plugins/nvim-treesitter')

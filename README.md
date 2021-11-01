@@ -12,11 +12,13 @@ This setup require [neovim >= v0.5.1](https://github.com/neovim/neovim/releases/
 
 [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua) - A File Explorer written In Lua
 
-[feline.nvim](https://github.com/Famiu/feline.nvim) - A minimal, stylish and customizable statusline for Neovim written in Lua
-
-[indentLine](https://github.com/Yggdroot/indentLine) - Show indent lines
+[Indent Blankline](https://github.com/lukas-reineke/indent-blankline.nvim) - Adds indentation guides to all lines (including empty lines)
 
 [nvim-autopairs](https://github.com/windwp/nvim-autopairs) - A super powerful autopairs for Neovim
+
+[feline.nvim](https://github.com/Famiu/feline.nvim) - A minimal, stylish and customizable statusline for Neovim written in Lua
+
+[nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons) - A Lua fork of vim-devicons
 
 [vista.vim](https://github.com/liuchengxu/vista.vim) - View and search LSP symbols, tags in Vim/NeoVim
 
@@ -28,27 +30,27 @@ This setup require [neovim >= v0.5.1](https://github.com/neovim/neovim/releases/
 
 [LuaSnip](https://github.com/L3MON4D3/LuaSnip) - Snippet Engine for Neovim written in Lua
 
-[nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons) - A Lua fork of vim-devicons
-
 [gitsigns](https://github.com/lewis6991/gitsigns.nvim) - Super fast git decorations implemented purely in lua/teal
 
 ## Directory tree of Lua files
+
 ```
-~/.config/nvim
-├── after
-├── init.lua
-└── lua
-    ├── keymaps.lua
-    ├── plugins
-    │   ├── feline.lua
-    │   ├── nvim-autopairs.lua
-    │   ├── nvim-cmp.lua
-    │   ├── nvim-lspconfig.lua
-    │   ├── nvim-tree.lua
-    │   ├── nvim-treesitter.lua
-    │   ├── packer.lua
-    │   └── vista.lua
-    └── settings.lua
+├── lua
+│   ├── plugins
+│   │   ├── feline.lua
+│   │   ├── indent-blankline.lua
+│   │   ├── nvim-autopairs.lua
+│   │   ├── nvim-cmp.lua
+│   │   ├── nvim-lspconfig.lua
+│   │   ├── nvim-tree.lua
+│   │   ├── nvim-treesitter.lua
+│   │   ├── packer.lua
+│   │   └── vista.lua
+│   ├── keymaps.lua
+│   └── settings.lua
+├── plugin
+│   └── packer_compiled.lua
+└── init.lua
 ```
 
 ## Files and settings
@@ -63,19 +65,21 @@ This setup require [neovim >= v0.5.1](https://github.com/neovim/neovim/releases/
 
 * [plugins/packer.lua](nvim/lua/plugins/packer.lua): Plugin manager settings
 
-* [plugins/nvim-tree.lua](nvim/lua/plugins/nvim-tree.lua): File manager settings
-
 * [plugins/feline.lua](nvim/lua/plugins/feline.lua): Statusline configuration file
 
-* [plugins/nvim-cmp.lua](nvim/lua/plugins/nvim-cmp.lua): Autocompletion settings
+* [plugins/indent-blankline.lua](nvim/lua/plugins/indent-blankline.lua): Indent line
 
 * [plugins/nvim-autopairs](nvim/lua/plugins/nvim-autopairs.lua): Autoclose brackets
 
+* [plugins/nvim-cmp.lua](nvim/lua/plugins/nvim-cmp.lua): Autocompletion settings
+
 * [plugins/nvim-lspconfig.lua](nvim/lua/plugins/nvim-lspconfig.lua): LSP configuration (language servers, keybinding)
 
-* [plugins/vista.lua](nvim/lua/plugins/vista.lua): Tag viewer settings
+* [plugins/nvim-tree.lua](nvim/lua/plugins/nvim-tree.lua): File manager settings
 
 * [plugins/nvim-treesitter](nvim/lua/plugins/nvim-treesitter): Treesitter interface configuration
+
+* [plugins/vista.lua](nvim/lua/plugins/vista.lua): Tag viewer settings
 
 ## Screenshots
 
@@ -137,23 +141,22 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 ## TODO
 
 * Add Lua to LSP configuration
-* Add alternative color scheme
+* Add alternative color schemes
 
 ---
 
 ## Guides and resources
 
+* https://neovim.io/doc/user/lua.html
+
 * https://github.com/nanotee/nvim-lua-guide
-
-* https://alpha2phi.medium.com/neovim-init-lua-e80f4f136030
-
-* https://oroques.dev/notes/neovim-init/
 
 * https://www.reddit.com/r/neovim/
 
 * https://github.com/siduck76/NvChad
 
-* https://github.com/ibhagwan/nvim-lua
+* https://github.com/artart222/CodeArt
+
 
 ## Lua resources
 

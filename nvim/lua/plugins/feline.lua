@@ -121,6 +121,7 @@ local comps = {
         fg = colors.cyan,
         style = 'bold'
       },
+      left_sep = ' ',
       right_sep = ' ',
     },
     scroll_bar = {
