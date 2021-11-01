@@ -1,3 +1,3 @@
 # directories and files to exclude
-paqs/
-
+nvim/after
+packer/
