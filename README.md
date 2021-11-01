@@ -46,6 +46,7 @@ This setup require [neovim >= v0.5.1](https://github.com/neovim/neovim/releases/
 │   │   ├── nvim-treesitter.lua
 │   │   ├── packer.lua
 │   │   └── vista.lua
+│   ├── colors.lua
 │   ├── keymaps.lua
 │   └── settings.lua
 ├── plugin
@@ -62,6 +63,8 @@ This setup require [neovim >= v0.5.1](https://github.com/neovim/neovim/releases/
 * [settings.lua](nvim/lua/settings.lua): General Neovim settings and configuration
 
 * [keymaps.lua](nvim/lua/keymaps.lua): Keymaps configuration file, vim/neovim and plugins keymaps.
+
+* [colors.lua](nvim/img/colors.lua): Define Neovim and plugins colors
 
 * [plugins/packer.lua](nvim/lua/plugins/packer.lua): Plugin manager settings
 
