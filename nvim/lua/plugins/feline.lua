@@ -16,8 +16,8 @@
 local colors = require('colors')
 
 local vi_mode_colors = {
-  NORMAL = colors.pink,
-  INSERT = colors.green,
+  NORMAL = colors.green,
+  INSERT = colors.cyan,
   VISUAL = colors.yellow,
   OP = colors.cyan,
   BLOCK = colors.cyan,
@@ -25,10 +25,10 @@ local vi_mode_colors = {
   ['V-REPLACE'] = colors.red,
   ENTER = colors.orange,
   MORE = colors.orange,
-  SELECT = colors.pink,
-  COMMAND = colors.green,
-  SHELL = colors.green,
-  TERM = colors.green,
+  SELECT = colors.yellow,
+  COMMAND = colors.cyan,
+  SHELL = colors.cyan,
+  TERM = colors.cyan,
   NONE = colors.blue
 }
 
