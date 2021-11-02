@@ -4,6 +4,8 @@
 
 ![.](img/1-init.lua.png)
 
+![.](img/2-ccode.pn)
+
 This setup require [neovim >= v0.5.1](https://github.com/neovim/neovim/releases/tag/v0.5.1)
 
 ## Plugins
@@ -86,26 +88,9 @@ This setup require [neovim >= v0.5.1](https://github.com/neovim/neovim/releases/
 
 ## Screenshots
 
-Monokai
-
-![.](img/2-bash.png)
-
-![.](img/3-c.png)
-
-![.](img/4-terminal.png)
-
-OneDark
-
-![.](img/5-onedark.png)
-
-![.](img/6-onedark-1.png)
-
-
 ## Appearance
 
 Colorschemes:
-
-[OneDark](https://github.com/navarasu/onedark.nvim)
 
 [Neovim Monokai](https://github.com/tanvirtin/monokai.nvim)
 
@@ -123,7 +108,7 @@ Icons: [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 ```bash
     git clone https://github.com/brainfucksec/neovim-lua.git
     cd neovim-lua/
-    cp -Rv nvim ~/.config/nvim/
+    cp -Rv nvim ~/.config/
 ```
 
 4. Install [packer.nvim](https://github.com/wbthomason/packer.nvim) for manage the plugins, see: https://github.com/wbthomason/packer.nvim#quickstart

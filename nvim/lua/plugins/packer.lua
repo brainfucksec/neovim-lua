@@ -9,6 +9,7 @@
 --- neovim-lua/README.md
 --- https://github.com/brainfucksec/neovim-lua#readme
 
+
 local cmd = vim.cmd
 cmd [[packadd packer.nvim]]
 
@@ -37,8 +38,7 @@ return packer.startup(function(use)
   use 'nvim-treesitter/nvim-treesitter'
 
   -- colorscheme
-  --use 'tanvirtin/monokai.nvim'
-  use 'navarasu/onedark.nvim'
+  use 'tanvirtin/monokai.nvim'
 
   -- LSP
   use 'neovim/nvim-lspconfig'

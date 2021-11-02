@@ -57,11 +57,7 @@ opt.synmaxcol = 240       -- max column for syntax highlight
 -- Colorscheme
 -----------------------------------------------------------
 opt.termguicolors = true      -- enable 24-bit RGB colors
-
--- onedark
-g.onedark_style = 'deep'
-g.onedark_italic_comment = false
-cmd [[colorscheme onedark]]
+cmd [[colorscheme monokai]]
 
 -----------------------------------------------------------
 -- Tabs, indent

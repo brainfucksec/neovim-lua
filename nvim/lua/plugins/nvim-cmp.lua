@@ -3,7 +3,8 @@
 -----------------------------------------------------------
 
 -- Plugin: nvim-cmp
--- https://github.com/hrsh7th/nvim-cmp
+-- https://github.com/hrsh7th/nvim-cmpa
+
 
 local cmp = require 'cmp'
 local luasnip = require 'luasnip'

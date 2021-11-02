@@ -12,12 +12,11 @@
 --- https://github.com/ibhagwan/nvim-lua
 
 
--- load colors from: ~/.config/nvim/lua/colors.lua
-local colors = require('colors')
+local colors = require 'colors'
 
 local vi_mode_colors = {
-  NORMAL = colors.green,
-  INSERT = colors.cyan,
+  NORMAL = colors.pink,
+  INSERT = colors.green,
   VISUAL = colors.yellow,
   OP = colors.cyan,
   BLOCK = colors.cyan,
@@ -32,8 +31,8 @@ local vi_mode_colors = {
   NONE = colors.blue
 }
 
-local lsp = require('feline.providers.lsp')
-local vi_mode_utils = require('feline.providers.vi_mode')
+local lsp = require 'feline.providers.lsp'
+local vi_mode_utils = require 'feline.providers.vi_mode'
 
 local lsp_get_diag = function(str)
   local count = vim.lsp,diagnostic.get_count(0, str)
@@ -109,7 +108,7 @@ local comps = {
     },
     scroll_bar = {
       provider = { name = 'scroll_bar' },
-      hl = { fg = colors.green },
+      hl = { fg = colors.fg },
       left_sep = ' ',
       right_sep = ' '
     },
@@ -120,7 +119,7 @@ local comps = {
       provider = 'diagnostic_errors',
       icon = '⚠ ',
       hl = { fg = colors.red },
-      left_sep = ' ',
+      left_sep = '  ',
     },
     warn = {
       provider = 'diagnostic_warnings',
@@ -208,6 +207,8 @@ table.insert(components.active[2], comps.file.os)
 table.insert(components.active[2], comps.file.line_percentage)
 table.insert(components.active[2], comps.file.position)
 
+
+-- call feline
 require('feline').setup {
   colors = {
     bg = colors.bg,

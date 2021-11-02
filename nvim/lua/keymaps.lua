@@ -4,7 +4,7 @@
 -----------------------------------------------------------
 
 local map = vim.api.nvim_set_keymap
-local default_opts = {noremap = true, silent = true}
+local default_opts = { noremap = true, silent = true }
 local cmd = vim.cmd
 
 -----------------------------------------------------------
@@ -18,10 +18,10 @@ map('n', '<leader>c', ':nohl<CR>', default_opts)
 map('i', 'kk', '<Esc>', {noremap = true})
 
 -- don't use arrow keys
-map('', '<up>', '<nop>', {noremap = true})
-map('', '<down>', '<nop>', {noremap = true})
-map('', '<left>', '<nop>', {noremap = true})
-map('', '<right>', '<nop>', {noremap = true})
+map('', '<up>', '<nop>', { noremap = true })
+map('', '<down>', '<nop>', { noremap = true })
+map('', '<left>', '<nop>', { noremap = true })
+map('', '<right>', '<nop>', { noremap = true })
 
 -- fast saving with <leader> and s
 map('n', '<leader>s', ':w<CR>', default_opts)
@@ -40,7 +40,7 @@ map('n', '<leader>q', ':qa!<CR>', default_opts)
 -- Applications & Plugins shortcuts:
 -----------------------------------------------------------
 -- open terminal
-map('n', '<C-t>', ':Term<CR>', {noremap = true})
+map('n', '<C-t>', ':Term<CR>', { noremap = true })
 
 -- nvim-tree
 map('n', '<C-n>', ':NvimTreeToggle<CR>', default_opts)       -- open/close
