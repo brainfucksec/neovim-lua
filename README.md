@@ -4,8 +4,6 @@
 
 ![.](img/1-init.lua.png)
 
-![.](img/2-ccode.pn)
-
 This setup require [neovim >= v0.5.1](https://github.com/neovim/neovim/releases/tag/v0.5.1)
 
 ## Plugins
@@ -86,9 +84,9 @@ This setup require [neovim >= v0.5.1](https://github.com/neovim/neovim/releases/
 
 * [plugins/vista.lua](nvim/lua/plugins/vista.lua): Tag viewer settings
 
-## Screenshots
-
 ## Appearance
+
+![.](img/2 -ccode.png)
 
 Colorschemes:
 
