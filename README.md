@@ -86,7 +86,9 @@ This setup require [neovim >= v0.5.1](https://github.com/neovim/neovim/releases/
 
 ## Appearance
 
-![.](img/2 -ccode.png)
+![.](img/2-ccode.png)
+
+![.](img/3-bash.png)
 
 Colorschemes: [Neovim Monokai](https://github.com/tanvirtin/monokai.nvim)
 
