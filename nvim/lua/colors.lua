@@ -16,7 +16,7 @@ local _M = {
   yellow = '#e6db74',
   orange = '#fa8419',
   purple = '#9c64fe',
-  red = '#9a1515',
+  red = '#ed2a2a',
 }
 
 return _M
