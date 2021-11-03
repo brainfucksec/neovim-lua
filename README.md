@@ -12,7 +12,7 @@ This setup require [neovim >= v0.5.1](https://github.com/neovim/neovim/releases/
 
 [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua) - A File Explorer written In Lua
 
-[Indent Blankline](https://github.com/lukas-reineke/indent-blankline.nvim) - Adds indentation guides to all lines (including empty lines)
+[indentBlankline](https://github.com/lukas-reineke/indent-blankline.nvim) - Adds indentation guides to all lines (including empty lines)
 
 [nvim-autopairs](https://github.com/windwp/nvim-autopairs) - A super powerful autopairs for Neovim
 
@@ -86,11 +86,9 @@ This setup require [neovim >= v0.5.1](https://github.com/neovim/neovim/releases/
 
 ## Appearance
 
-![.](img/2-ccode.png)
+![.](img/2 -ccode.png)
 
-Colorschemes:
-
-[Neovim Monokai](https://github.com/tanvirtin/monokai.nvim)
+Colorschemes: [Neovim Monokai](https://github.com/tanvirtin/monokai.nvim)
 
 Fonts: [Cozette](https://github.com/slavfox/Cozette)
 
@@ -139,8 +137,9 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 
 ## TODO
 
+* Fix LSP tags of Vista tag viewer
 * Add Lua to LSP configuration
-* ..Write my own dashboard plugin (one day).
+* Find other colorschemes (hard)
 
 ---
 
@@ -150,12 +149,15 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 
 * https://github.com/nanotee/nvim-lua-guide
 
+* https://dev.to/vonheikemen/everything-you-need-to-know-to-configure-neovim-using-lua-3h58
+
 * https://www.reddit.com/r/neovim/
+
+## Other Neovim Lua projects and examples
 
 * https://github.com/siduck76/NvChad
 
 * https://github.com/artart222/CodeArt
-
 
 ## Lua resources
 
