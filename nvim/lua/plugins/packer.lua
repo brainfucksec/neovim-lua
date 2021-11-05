@@ -23,8 +23,8 @@ return packer.startup(function()
   use 'kyazdani42/nvim-tree.lua'
 
   -- indent line
-  use { "lukas-reineke/indent-blankline.nvim",
-  }
+  use 'lukas-reineke/indent-blankline.nvim'
+
 
   -- autopair
   use 'windwp/nvim-autopairs'
@@ -45,7 +45,8 @@ return packer.startup(function()
   use 'neovim/nvim-lspconfig'
 
   -- autocomplete
-  use { 'hrsh7th/nvim-cmp',
+  use {
+    'hrsh7th/nvim-cmp',
     requires = {
       'L3MON4D3/LuaSnip',
       'hrsh7th/cmp-nvim-lsp',
@@ -56,12 +57,14 @@ return packer.startup(function()
   }
 
   -- statusline
-  use { 'famiu/feline.nvim',
+  use {
+    'famiu/feline.nvim',
     requires = { 'kyazdani42/nvim-web-devicons' },
   }
 
   -- git labels
-  use { 'lewis6991/gitsigns.nvim',
+  use {
+    'lewis6991/gitsigns.nvim',
     requires = { 'nvim-lua/plenary.nvim' },
     config = function()
       require('gitsigns').setup()
