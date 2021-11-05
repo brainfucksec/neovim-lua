@@ -139,7 +139,6 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 
 ## TODO
 
-* Fix LSP tags of Vista tag viewer
 * Add Lua to LSP configuration
 * Find other colorschemes (hard)
 
