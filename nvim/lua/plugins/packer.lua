@@ -16,14 +16,15 @@ cmd [[packadd packer.nvim]]
 local packer = require 'packer'
 
 -- Add packages
-return packer.startup(function(use)
+return packer.startup(function()
   use 'wbthomason/packer.nvim' -- packer can manage itself
 
   -- file explorer
   use 'kyazdani42/nvim-tree.lua'
 
   -- indent line
-  use "lukas-reineke/indent-blankline.nvim"
+  use { "lukas-reineke/indent-blankline.nvim",
+  }
 
   -- autopair
   use 'windwp/nvim-autopairs'
@@ -37,7 +38,7 @@ return packer.startup(function(use)
   -- treesitter interface
   use 'nvim-treesitter/nvim-treesitter'
 
-  -- colorscheme
+  -- colorschemes
   use 'tanvirtin/monokai.nvim'
 
   -- LSP
