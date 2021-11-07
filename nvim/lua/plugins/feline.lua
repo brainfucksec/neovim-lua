@@ -14,8 +14,9 @@
 
 local colors = require 'colors'
 
+-- monokai colors
 local vi_mode_colors = {
-  NORMAL = colors.pink,
+  NORMAL = colors.cyan,
   INSERT = colors.green,
   VISUAL = colors.yellow,
   OP = colors.cyan,
@@ -25,10 +26,10 @@ local vi_mode_colors = {
   ENTER = colors.orange,
   MORE = colors.orange,
   SELECT = colors.yellow,
-  COMMAND = colors.cyan,
-  SHELL = colors.cyan,
-  TERM = colors.cyan,
-  NONE = colors.blue
+  COMMAND = colors.pink,
+  SHELL = colors.pink,
+  TERM = colors.pink,
+  NONE = colors.purple
 }
 
 local lsp = require 'feline.providers.lsp'
@@ -41,6 +42,7 @@ end
 
 -- My components
 local comps = {
+  -- vi_mode -> NORMAL, INSERT..
   vi_mode = {
     left = {
       provider = function()
@@ -60,7 +62,9 @@ local comps = {
       right_sep = ' '
     }
   },
+  -- parse file information
   file = {
+    -- file name
     info = {
       provider = {
         name = 'file_info',
@@ -72,9 +76,11 @@ local comps = {
       hl = { fg = colors.cyan },
       icon = '',
     },
-  type = {
+    -- file type
+    type = {
       provider = { name = 'file_type' },
     },
+    -- operating system
     os = {
       provider = function()
         local os = vim.bo.fileformat:lower()
@@ -92,12 +98,14 @@ local comps = {
       left_sep = ' ',
       right_sep = ' '
     },
+    -- cursor position in %
     line_percentage = {
       provider = { name = 'line_percentage' },
       hl = { fg = colors.pink },
       left_sep = ' ',
       right_sep = ' '
     },
+    -- raw-column
     position = {
       provider = {name = 'position'},
       hl = {
@@ -106,6 +114,7 @@ local comps = {
       },
       right_sep = ' ',
     },
+    -- simple scrollbar (inactive)
     scroll_bar = {
       provider = { name = 'scroll_bar' },
       hl = { fg = colors.fg },
@@ -161,7 +170,6 @@ local comps = {
       icon = '  ',
       hl = { fg = colors.green },
       left_sep = ' ',
-
     },
     change = {
       provider = 'git_diff_changed',
@@ -178,6 +186,8 @@ local comps = {
   }
 }
 
+-- Get active/inactive components
+--- see: https://github.com/famiu/feline.nvim/blob/master/USAGE.md#components
 local components = {
   active = {},
   inactive = {},
@@ -206,7 +216,6 @@ table.insert(components.active[2], comps.lsp.name)
 table.insert(components.active[2], comps.file.os)
 table.insert(components.active[2], comps.file.line_percentage)
 table.insert(components.active[2], comps.file.position)
-
 
 -- call feline
 require('feline').setup {

@@ -141,6 +141,7 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 
 * Add Lua to LSP configuration
 * Find other colorschemes (hard)
+* Improve Terminal
 
 ---
 
@@ -170,9 +171,9 @@ See: [nvim-lspconfig #CONFIG.md](https://github.com/neovim/nvim-lspconfig/blob/m
 
 ## Disclaimer
 
-* This configuration is in development version.  See: `Version` on [init.lua](nvim/init.lua) file.
+* This configuration is in development version.  See: `Version` on [init.lua](nvim/init.lua) file, anyway sometimes small changes are not included, so you always see git commits.
 
-* As all my setups I try to follow the [KISS](https://en.wikipedia.org/wiki/KISS_principle) principle, probably some concepts may not be valid for everyone, then feel free to take what you need but don't install anything without checking first!
+* As all my setups I try to follow the [KISS](https://en.wikipedia.org/wiki/KISS_principle) principle, probably some concepts may not be valid for everyone, then feel free to take what you need but **don't install anything without checking first!**
 ---
 
 #### Thanks to all the authors of the sources mentioned above and to all the others from whom I "stole" some configs :)
