@@ -1,8 +1,8 @@
-# Neovim Lua
+![.](img/logo.png)
 
 ### My Neovim configuration with Lua
 
-![.](img/1-init.lua.png)
+![.](img/1-selfie.png)
 
 This setup require [neovim >= v0.5.1](https://github.com/neovim/neovim/releases/tag/v0.5.1)
 
