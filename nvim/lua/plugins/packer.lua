@@ -25,7 +25,6 @@ return packer.startup(function()
   -- indent line
   use 'lukas-reineke/indent-blankline.nvim'
 
-
   -- autopair
   use 'windwp/nvim-autopairs'
 
@@ -40,6 +39,8 @@ return packer.startup(function()
 
   -- colorschemes
   use 'tanvirtin/monokai.nvim'
+
+  use { 'rose-pine/neovim', as = 'rose-pine' }
 
   -- LSP
   use 'neovim/nvim-lspconfig'
