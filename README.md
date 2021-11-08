@@ -86,15 +86,29 @@ This setup require [neovim >= v0.5.1](https://github.com/neovim/neovim/releases/
 
 ## Appearance
 
-![.](img/2-ccode.png)
+Colorschemes:
 
-![.](img/3-bash.png)
+[Neovim Monokai](https://github.com/tanvirtin/monokai.nvim)
 
-Colorschemes: [Neovim Monokai](https://github.com/tanvirtin/monokai.nvim)
+[Rose Pine](https://github.com/rose-pine/neovim)
 
 Fonts: [Cozette](https://github.com/slavfox/Cozette)
 
 Icons: [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
+
+## Screenshots
+
+Monokai
+
+![.](img/2-ccode.png)
+
+![.](img/3-bash.png)
+
+Rose Pine
+
+![.](img/4-ccode-rp.png)
+
+![.](img/5-bash-rp.png)
 
 ## Installation
 
