@@ -7,10 +7,13 @@
 
 
 require('indent_blankline').setup {
-  char = '|',
+  char = "▏",
   show_first_indent_level = false,
   filetype_exclude = {
     'help',
+    'git',
+    'markdown',
+    'text',
     'terminal',
     'packer'
   },
