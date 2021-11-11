@@ -65,19 +65,19 @@ Language servers:
 Add your language server to `servers`
 
 For language servers list see:
-https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md
+https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
 
 Bash --> bashls
-https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#bashls
+https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#bashls
 
 Python --> pyright
-https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#pyright
+https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#pyright
 
 C-C++ -->  clangd
-https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#clangd
+https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#clangd
 
 HTML/CSS/JSON --> vscode-html-languageserver
-https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#html
+https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#html
 
 JavaScript/TypeScript --> tsserver
 https://github.com/typescript-language-server/typescript-language-server
