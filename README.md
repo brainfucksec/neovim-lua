@@ -146,7 +146,7 @@ C-C++ - [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server
 
 HTML/CSS/JSON - [vscode-html](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#html)
 
-JavaScript/TypeScript - [tsserver](https://github.com/typescript-language-server/typescript-language-server) (under development)
+JavaScript/TypeScript - [tsserver](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#tsserver)
 
 
 See: [nvim-lspconfig #doc/server_configurations.md](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md)

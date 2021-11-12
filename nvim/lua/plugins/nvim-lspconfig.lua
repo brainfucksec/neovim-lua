@@ -80,7 +80,7 @@ HTML/CSS/JSON --> vscode-html-languageserver
 https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#html
 
 JavaScript/TypeScript --> tsserver
-https://github.com/typescript-language-server/typescript-language-server
+https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#tsserver
 
 --]]
 
