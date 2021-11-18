@@ -69,6 +69,14 @@ return packer.startup(function()
     requires = { 'nvim-lua/plenary.nvim' },
     config = function()
       require('gitsigns').setup()
-    end,
+    end
+  }
+
+  -- dashboard
+  use {
+    'goolord/alpha-nvim',
+    config = function ()
+        require'alpha'.setup(require'alpha.themes.dashboard'.opts)
+    end
   }
 end)

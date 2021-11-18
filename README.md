@@ -32,11 +32,14 @@ This setup require [neovim >= v0.5.1](https://github.com/neovim/neovim/releases/
 
 [gitsigns](https://github.com/lewis6991/gitsigns.nvim) - Super fast git decorations implemented purely in lua/teal
 
+[alpha-nvim](https://github.com/goolord/alpha-nvim) - A fast and highly customizable greeter for neovim.
+
 ## Directory tree of Lua files
 
 ```
 ├── lua
 │   ├── plugins
+│   │   ├── alpha-nvim.lua
 │   │   ├── feline.lua
 │   │   ├── indent-blankline.lua
 │   │   ├── nvim-autopairs.lua
@@ -67,6 +70,8 @@ This setup require [neovim >= v0.5.1](https://github.com/neovim/neovim/releases/
 * [colors.lua](nvim/img/colors.lua): Define Neovim and plugins colors
 
 * [plugins/packer.lua](nvim/lua/plugins/packer.lua): Plugin manager settings
+
+* [plugins/alpha-nvim.lua](nvim/lua/plugins/alpha-nvim.lua): Dashboard
 
 * [plugins/feline.lua](nvim/lua/plugins/feline.lua): Statusline configuration file
 
@@ -154,7 +159,6 @@ See: [nvim-lspconfig #doc/server_configurations.md](https://github.com/neovim/nv
 ## TODO
 
 * Add Lua to LSP configuration
-* Find other colorschemes (hard)
 * Improve Terminal
 
 ---
