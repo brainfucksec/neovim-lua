@@ -2,10 +2,6 @@
 
 ### My Neovim configuration with Lua
 
-![.](img/1-selfie.png)
-
-This setup require [neovim >= v0.5.1](https://github.com/neovim/neovim/releases/tag/v0.5.1)
-
 ## Plugins
 
 [packer.nvim](https://github.com/wbthomason/packer.nvim) -  A use-package inspired plugin manager for Neovim
