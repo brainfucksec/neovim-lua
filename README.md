@@ -38,7 +38,6 @@
 │   │   ├── alpha-nvim.lua
 │   │   ├── feline.lua
 │   │   ├── indent-blankline.lua
-│   │   ├── nvim-autopairs.lua
 │   │   ├── nvim-cmp.lua
 │   │   ├── nvim-lspconfig.lua
 │   │   ├── nvim-tree.lua
@@ -72,8 +71,6 @@
 * [plugins/feline.lua](nvim/lua/plugins/feline.lua): Statusline configuration file
 
 * [plugins/indent-blankline.lua](nvim/lua/plugins/indent-blankline.lua): Indent line
-
-* [plugins/nvim-autopairs](nvim/lua/plugins/nvim-autopairs.lua): Autoclose brackets
 
 * [plugins/nvim-cmp.lua](nvim/lua/plugins/nvim-cmp.lua): Autocompletion settings
 

@@ -26,7 +26,12 @@ return packer.startup(function()
   use 'lukas-reineke/indent-blankline.nvim'
 
   -- autopair
-  use 'windwp/nvim-autopairs'
+  use {
+    'windwp/nvim-autopairs',
+    config = function()
+      require('nvim-autopairs').setup()
+    end
+  }
 
   -- icons
   use 'kyazdani42/nvim-web-devicons'
@@ -75,6 +80,7 @@ return packer.startup(function()
   -- dashboard
   use {
     'goolord/alpha-nvim',
+    requires = { 'kyazdani42/nvim-web-devicons' },
     config = function ()
         require'alpha'.setup(require'alpha.themes.dashboard'.opts)
     end
