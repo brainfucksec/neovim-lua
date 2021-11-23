@@ -1,6 +1,10 @@
-![.](img/logo.png)
+<p align="center">
+<img src="img/logo.png" alt="logo">
+</p>
 
-### My Neovim configuration with Lua
+<h3 align="center">
+My Neovim configuration with Lua
+</h3>
 
 ## Plugins
 
