@@ -114,7 +114,7 @@ Rose Pine
 
 ## Installation
 
-1. Install [neovim >= v0.5.1](https://github.com/neovim/neovim/releases/tag/v0.5.0)
+1. Install [neovim v0.6.x](https://github.com/neovim/neovim/releases/tag/v0.6.0)
 
 2. Install [npm](https://github.com/npm/cli) (for download the packages of LSP language servers)
 
