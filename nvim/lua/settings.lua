@@ -82,7 +82,7 @@ cmd [[
 -- Autocompletion
 -----------------------------------------------------------
 -- insert mode completion options
-opt.completeopt = 'menuone,noselect'
+opt.completeopt = 'menu,menuone,noselect'
 
 -----------------------------------------------------------
 -- Terminal
