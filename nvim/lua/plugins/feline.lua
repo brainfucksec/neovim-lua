@@ -105,11 +105,11 @@ local comps = {
       left_sep = ' ',
       right_sep = ' '
     },
-    -- raw-column
+    -- line-column
     position = {
       provider = {name = 'position'},
       hl = {
-        fg = colors.cyan,
+        fg = colors.green,
         style = 'bold'
       },
       right_sep = ' ',
