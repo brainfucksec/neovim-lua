@@ -219,7 +219,7 @@ table.insert(components.active[2], comps.file.position)
 
 -- call feline
 require('feline').setup {
-  colors = {
+  theme = {
     bg = colors.bg,
     fg = colors.fg
   },
