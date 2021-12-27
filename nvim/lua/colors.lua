@@ -26,13 +26,13 @@ return _M
 
 
 -- Theme: Rosé Pine
---- See: https://github.com/rose-pine/neovim#custom-colours
+--- See: https://github.com/rose-pine/neovim/blob/main/lua/rose-pine/palette.lua
 --- color names are adapted to the format above
 local _M = {
   bg = '#111019',
   fg = '#e0def4',
   pink = '#eb6f92',
-  green = '#1f1d2e',
+  green = '#9ccfd8',
   cyan = '#31748f',
   yellow = '#f6c177',
   orange = '#2a2837',
@@ -41,4 +41,3 @@ local _M = {
 }
 
 return _M
-
