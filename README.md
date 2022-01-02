@@ -179,10 +179,6 @@ nvim /tmp/nvim-start.log
 
 See: `:help startuptime`
 
-## TODO
-
-* Add Lua to LSP configuration
-
 ---
 
 ## Guides and resources
