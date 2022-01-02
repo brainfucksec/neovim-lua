@@ -88,29 +88,29 @@ My Neovim configuration with Lua
 
 ## Appearance
 
-Colorschemes:
+**Colorschemes:**
 
 [Neovim Monokai](https://github.com/tanvirtin/monokai.nvim)
 
 [Rose Pine](https://github.com/rose-pine/neovim)
 
-Fonts: [Cozette](https://github.com/slavfox/Cozette)
+**Fonts:** [Cozette](https://github.com/slavfox/Cozette)
 
-Icons: [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
+**Icons:** [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 
 ## Screenshots
 
-Monokai
-
-![.](img/2-ccode.png)
-
-![.](img/3-bash.png)
-
-Rose Pine
+**Rose Pine**
 
 ![.](img/4-ccode-rp.png)
 
 ![.](img/5-bash-rp.png)
+
+**Monokai**
+
+![.](img/2-ccode.png)
+
+![.](img/3-bash.png)
 
 ## Installation
 
@@ -152,6 +152,26 @@ JavaScript/TypeScript - [tsserver](https://github.com/neovim/nvim-lspconfig/blob
 
 
 See: [nvim-lspconfig #doc/server_configurations.md](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md)
+
+### Health checks:
+
+- Open nvim and run command `checkhealth`, you should not see any error in the output (except for the one related to the Python 2 interpreter):
+
+```vim
+:checkhealth
+```
+
+![.](img/6-checkhealth.png)
+
+- You can also use the `startuptime` option to read the nvim startup logs:
+
+```bash
+nvim --startuptime > /tmp/nvim-start.log
+
+nvim /tmp/nvim-start.log
+```
+
+See: `:help startuptime`
 
 ## TODO
 
