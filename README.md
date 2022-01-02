@@ -1,5 +1,11 @@
+<!--
 <p align="center">
 <img src="img/logo.png" alt="logo">
+</p>
+-->
+
+<p align="center">
+<img src="img/a-banner.png" alt="banner">
 </p>
 
 <h3 align="center">
