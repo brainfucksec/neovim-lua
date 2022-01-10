@@ -98,13 +98,6 @@ local comps = {
       left_sep = ' ',
       right_sep = ' '
     },
-    -- cursor position in %
-    line_percentage = {
-      provider = { name = 'line_percentage' },
-      hl = { fg = colors.pink },
-      left_sep = ' ',
-      right_sep = '  '
-    },
     -- line-column
     position = {
       provider = {name = 'position'},
@@ -112,7 +105,15 @@ local comps = {
         fg = colors.green,
         style = 'bold'
       },
+      left_sep = ' ',
       right_sep = ' ',
+    },
+    -- cursor position in %
+    line_percentage = {
+      provider = { name = 'line_percentage' },
+      hl = { fg = colors.pink },
+      left_sep = ' ',
+      right_sep = ' '
     },
     -- simple scrollbar (inactive)
     scroll_bar = {
@@ -214,8 +215,8 @@ table.insert(components.active[2], comps.diagnos.hint)
 table.insert(components.active[2], comps.diagnos.info)
 table.insert(components.active[2], comps.lsp.name)
 table.insert(components.active[2], comps.file.os)
-table.insert(components.active[2], comps.file.line_percentage)
 table.insert(components.active[2], comps.file.position)
+table.insert(components.active[2], comps.file.line_percentage)
 
 -- call feline
 require('feline').setup {
