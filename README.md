@@ -42,6 +42,8 @@ My Neovim configuration with Lua
 
 ## Directory tree of Lua files
 
+`${HOME}/.config/nvim`
+
 ```
 ├── lua
 │   ├── plugins
@@ -64,33 +66,39 @@ My Neovim configuration with Lua
 
 ## Files and settings
 
-* [init.lua](nvim/init.lua): Main configuration file (call `lua` modules, load plugins etc.)
+`/nvim`
 
-* [lua](nvim/lua): Folder of `lua` modules, here reside all the Lua modules that needed. These modules are called from `init.lua` file (See below).  For plugins settings I use the convention `/lua/plugins/<plugin_name>.lua>`.  See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
+* [init.lua](nvim/init.lua): Main configuration file that call `lua` modules
+
+* [lua](nvim/lua): Folder of `lua` modules, here reside all the Lua modules that needed. These modules are called from `init.lua` file (see below).  For plugins settings files I use the convention `/lua/plugins/<plugin_name>.lua>`.  See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
+
+`/lua`
 
 * [settings.lua](nvim/lua/settings.lua): General Neovim settings and configuration
 
 * [keymaps.lua](nvim/lua/keymaps.lua): Keymaps configuration file, vim/neovim and plugins keymaps.
 
-* [colors.lua](nvim/img/colors.lua): Define Neovim and plugins colors
+* [colors.lua](nvim/img/colors.lua): Define Neovim and plugins Colorschemes
 
-* [plugins/packer.lua](nvim/lua/plugins/packer.lua): Plugin manager settings
+`/lua/plugins`
 
-* [plugins/alpha-nvim.lua](nvim/lua/plugins/alpha-nvim.lua): Dashboard
+* [packer.lua](nvim/lua/plugins/packer.lua): Plugin manager settings
 
-* [plugins/feline.lua](nvim/lua/plugins/feline.lua): Statusline configuration file
+* [alpha-nvim.lua](nvim/lua/plugins/alpha-nvim.lua): Dashboard
 
-* [plugins/indent-blankline.lua](nvim/lua/plugins/indent-blankline.lua): Indent line
+* [feline.lua](nvim/lua/plugins/feline.lua): Statusline configuration file
 
-* [plugins/nvim-cmp.lua](nvim/lua/plugins/nvim-cmp.lua): Autocompletion settings
+* [indent-blankline.lua](nvim/lua/plugins/indent-blankline.lua): Indent line
 
-* [plugins/nvim-lspconfig.lua](nvim/lua/plugins/nvim-lspconfig.lua): LSP configuration (language servers, keybinding)
+* [nvim-cmp.lua](nvim/lua/plugins/nvim-cmp.lua): Autocompletion settings
 
-* [plugins/nvim-tree.lua](nvim/lua/plugins/nvim-tree.lua): File manager settings
+* [nvim-lspconfig.lua](nvim/lua/plugins/nvim-lspconfig.lua): LSP configuration (language servers, keybinding)
 
-* [plugins/nvim-treesitter](nvim/lua/plugins/nvim-treesitter): Treesitter interface configuration
+* [nvim-tree.lua](nvim/lua/plugins/nvim-tree.lua): File manager settings
 
-* [plugins/vista.lua](nvim/lua/plugins/vista.lua): Tag viewer settings
+* [nvim-treesitter](nvim/lua/plugins/nvim-treesitter): Treesitter interface configuration
+
+* [vista.lua](nvim/lua/plugins/vista.lua): Tag viewer settings
 
 ## Appearance
 
