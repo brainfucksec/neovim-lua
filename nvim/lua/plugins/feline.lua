@@ -103,7 +103,7 @@ local comps = {
       provider = { name = 'line_percentage' },
       hl = { fg = colors.pink },
       left_sep = ' ',
-      right_sep = ' '
+      right_sep = '  '
     },
     -- line-column
     position = {
