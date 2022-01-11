@@ -72,7 +72,7 @@ My Neovim configuration with Lua
 
 * [lua](nvim/lua): Folder of `lua` modules, here reside all the Lua modules that needed. These modules are called from `init.lua` file (see below).  For plugins settings files I use the convention `/lua/plugins/<plugin_name>.lua>`.  See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 
-`/lua`
+`/nvim/lua`
 
 * [settings.lua](nvim/lua/settings.lua): General Neovim settings and configuration
 
@@ -80,7 +80,7 @@ My Neovim configuration with Lua
 
 * [colors.lua](nvim/img/colors.lua): Define Neovim and plugins Colorschemes
 
-`/lua/plugins`
+`/nvim/lua/plugins`
 
 * [packer.lua](nvim/lua/plugins/packer.lua): Plugin manager settings
 
