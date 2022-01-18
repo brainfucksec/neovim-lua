@@ -145,7 +145,7 @@ My Neovim configuration with Lua
 
 1. Install LSP language servers with `npm`
 ```bash
-    sudo npm install -g bash-language-server pyright vscode-langservers-extracted tsserver
+    sudo npm install -g bash-language-server pyright vscode-langservers-extracted typescript typescript-language-server
 ```
 
 2. Install [clang](https://clangd.llvm.org/installation.html) for use LSP with [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#clangd)
