@@ -38,4 +38,4 @@ dashboard.section.buttons.val = {
 
 dashboard.section.footer.val = footer()
 
-require('alpha').setup { dashboard.opts }
+alpha.setup(dashboard.config)
