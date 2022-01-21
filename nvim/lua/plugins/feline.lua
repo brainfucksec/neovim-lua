@@ -94,8 +94,7 @@ local comps = {
         end
         return icon .. os
       end,
-      hl = {
-        fg = colors.cyan },
+      hl = { fg = colors.gray },
       left_sep = ' ',
       right_sep = ' '
     },
