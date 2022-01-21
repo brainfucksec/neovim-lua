@@ -7,7 +7,7 @@
 
 
 --[[
--- Theme: monokai (classic)
+-- Theme: Monokai (classic)
 --- See: https://github.com/tanvirtin/monokai.nvim/blob/master/lua/monokai.lua
 local _M = {
   bg = '#202328', --default: #272a30
@@ -25,11 +25,11 @@ return _M
 ]]--
 
 
--- Theme: Rosé Pine
+-- Theme: Rosé Pine (main)
 --- See: https://github.com/rose-pine/neovim/blob/main/lua/rose-pine/palette.lua
 --- color names are adapted to the format above
 local _M = {
-  bg = '#111019',
+  bg = '#111019', --default: #191724
   fg = '#e0def4',
   pink = '#eb6f92',
   green = '#9ccfd8',
