@@ -14,7 +14,7 @@
 
 local colors = require 'colors'
 
--- monokai colors
+-- Rose Pinè theme
 local vi_mode_colors = {
   NORMAL = colors.cyan,
   INSERT = colors.green,
@@ -94,7 +94,8 @@ local comps = {
         end
         return icon .. os
       end,
-      hl = { fg = colors.fg },
+      hl = {
+        fg = colors.cyan },
       left_sep = ' ',
       right_sep = ' '
     },
@@ -102,8 +103,7 @@ local comps = {
     position = {
       provider = {name = 'position'},
       hl = {
-        fg = colors.green,
-        style = 'bold'
+        fg = colors.fg,
       },
       left_sep = ' ',
       right_sep = ' ',
@@ -111,7 +111,11 @@ local comps = {
     -- cursor position in %
     line_percentage = {
       provider = { name = 'line_percentage' },
-      hl = { fg = colors.pink },
+      hl = {
+        fg = colors.bg,
+        bg = colors.cyan,
+        style = 'bold',
+      },
       left_sep = ' ',
       right_sep = ' '
     },
