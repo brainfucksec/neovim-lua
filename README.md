@@ -5,7 +5,7 @@
 -->
 
 <p align="center">
-<img src="img/a-banner.png" alt="banner">
+<img src="img/1-banner.png" alt="banner">
 </p>
 
 <h3 align="center">
