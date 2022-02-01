@@ -94,16 +94,14 @@ local comps = {
         end
         return icon .. os
       end,
-      hl = { fg = colors.gray },
+      hl = { fg = colors.fg },
       left_sep = ' ',
       right_sep = ' '
     },
     -- line-column
     position = {
       provider = {name = 'position'},
-      hl = {
-        fg = colors.fg,
-      },
+      hl = { fg = colors.fg },
       left_sep = ' ',
       right_sep = ' ',
     },
