@@ -14,7 +14,7 @@
 
 local colors = require 'colors'
 
--- Rose Pinè theme
+-- Monokai (classic) theme
 local vi_mode_colors = {
   NORMAL = colors.cyan,
   INSERT = colors.green,

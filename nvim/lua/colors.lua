@@ -6,7 +6,6 @@
 --- require('colors')
 
 
---[[
 -- Theme: Monokai (classic)
 --- See: https://github.com/tanvirtin/monokai.nvim/blob/master/lua/monokai.lua
 local _M = {
@@ -22,9 +21,9 @@ local _M = {
 }
 
 return _M
-]]--
 
 
+--[[
 -- Theme: Rosé Pine (main)
 --- See: https://github.com/rose-pine/neovim/blob/main/lua/rose-pine/palette.lua
 --- color names are adapted to the format above
@@ -42,3 +41,4 @@ local _M = {
 }
 
 return _M
+]]--
