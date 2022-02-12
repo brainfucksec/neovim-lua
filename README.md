@@ -114,17 +114,17 @@ My Neovim configuration with Lua
 
 ## Screenshots
 
-**Rose Pine**
-
-![.](img/4-ccode-rp.png)
-
-![.](img/5-bash-rp.png)
-
 **Monokai**
 
 ![.](img/2-ccode.png)
 
 ![.](img/3-bash.png)
+
+**Rosé Pine**
+
+![.](img/4-ccode-rp.png)
+
+![.](img/5-bash-rp.png)
 
 ## Installation
 

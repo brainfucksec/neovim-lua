@@ -3,19 +3,19 @@
 -----------------------------------------------------------
 
 -- Plugin: alpha-nvim
--- https://github.com/goolord/alpha-nvim
+-- url: https://github.com/goolord/alpha-nvim
 
 
 local alpha = require 'alpha'
 local dashboard = require 'alpha.themes.dashboard'
 
--- setup footer
+-- Setup footer
 local function footer()
   local datetime = os.date('%Y/%m/%d %H:%M:%S')
   return datetime
 end
 
--- header
+-- Header
 dashboard.section.header.val = {
   "                                                    ",
   " ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗ ",
@@ -27,7 +27,7 @@ dashboard.section.header.val = {
   "                                                    ",
 }
 
--- menu
+-- Menu
 dashboard.section.buttons.val = {
   dashboard.button('e', ' New file', ':ene <BAR> startinsert<CR>'),
   dashboard.button('f', ' Find file', ':NvimTreeOpen<CR>'),

@@ -1,18 +1,18 @@
------------------------------------------------------------
+----------------------------------------------------------
 -- Statusline configuration file
 -----------------------------------------------------------
 
 -- Plugin: feline.nvim
--- https://github.com/famiu/feline.nvim
+-- url: https://github.com/famiu/feline.nvim
 
--- For the configuration see the Usage section:
+--- For the configuration see the Usage section:
 --- https://github.com/famiu/feline.nvim/blob/master/USAGE.md
 
--- Thanks to ibhagwan for the example to follow:
+--- Thanks to ibhagwan for the example to follow:
 --- https://github.com/ibhagwan/nvim-lua
 
 
-local colors = require 'colors'
+local colors = require('colors').monokai
 
 -- Monokai (classic) theme
 local vi_mode_colors = {
@@ -62,9 +62,9 @@ local comps = {
       right_sep = ' '
     }
   },
-  -- parse file information
+  -- Parse file information:
   file = {
-    -- file name
+    -- File name
     info = {
       provider = {
         name = 'file_info',
@@ -76,11 +76,11 @@ local comps = {
       hl = { fg = colors.cyan },
       icon = '',
     },
-    -- file type
+    -- File type
     type = {
       provider = { name = 'file_type' },
     },
-    -- operating system
+    -- Operating system
     os = {
       provider = function()
         local os = vim.bo.fileformat:lower()
@@ -98,14 +98,17 @@ local comps = {
       left_sep = ' ',
       right_sep = ' '
     },
-    -- line-column
+    -- Line-column
     position = {
-      provider = {name = 'position'},
-      hl = { fg = colors.fg },
+      provider = { name = 'position' },
+      hl = {
+        fg = colors.fg,
+        style = 'bold',
+      },
       left_sep = ' ',
       right_sep = ' ',
     },
-    -- cursor position in %
+    -- Cursor position in %
     line_percentage = {
       provider = { name = 'line_percentage' },
       hl = {
@@ -116,7 +119,7 @@ local comps = {
       left_sep = ' ',
       right_sep = ' '
     },
-    -- simple scrollbar (inactive)
+    -- Simple scrollbar
     scroll_bar = {
       provider = { name = 'scroll_bar' },
       hl = { fg = colors.fg },
@@ -219,7 +222,7 @@ table.insert(components.active[2], comps.file.os)
 table.insert(components.active[2], comps.file.position)
 table.insert(components.active[2], comps.file.line_percentage)
 
--- call feline
+-- Call feline
 require('feline').setup {
   theme = {
     bg = colors.bg,

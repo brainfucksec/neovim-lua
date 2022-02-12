@@ -3,27 +3,27 @@
 -----------------------------------------------------------
 
 -- Plugin: nvim-cmp
--- https://github.com/hrsh7th/nvim-cmpa
+-- url: https://github.com/hrsh7th/nvim-cmpa
 
 
 local cmp = require 'cmp'
 local luasnip = require 'luasnip'
 
 cmp.setup {
-  -- load snippet support
+  -- Load snippet support
   snippet = {
     expand = function(args)
       luasnip.lsp_expand(args.body)
     end,
   },
 
--- completion settings
+-- Completion settings
   completion = {
     --completeopt = 'menu,menuone,noselect'
     keyword_length = 2
   },
 
-  -- key mapping
+  -- Key mapping
   mapping = {
     ['<C-n>'] = cmp.mapping.select_next_item(),
     ['<C-p>'] = cmp.mapping.select_prev_item(),
@@ -57,7 +57,7 @@ cmp.setup {
     end
   },
 
-  -- load sources, see: https://github.com/topics/nvim-cmp
+  -- Load sources, see: https://github.com/topics/nvim-cmp
   sources = {
     { name = 'nvim_lsp' },
     { name = 'luasnip' },
@@ -65,3 +65,4 @@ cmp.setup {
     { name = 'buffer' },
   },
 }
+

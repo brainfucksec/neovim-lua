@@ -1,9 +1,9 @@
------------------------------------------------------------
--- Vista configuration file
+----------------------------------------------------------
+-- Vista (tagbar) configuration file
 -----------------------------------------------------------
 
 -- Plugin: vista.vim
--- https://github.com/liuchengxu/vista.vim
+-- url: https://github.com/liuchengxu/vista.vim
 
 
 local g = vim.g

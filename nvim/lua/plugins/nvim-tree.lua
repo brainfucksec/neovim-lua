@@ -3,14 +3,13 @@
 -----------------------------------------------------------
 
 -- Plugin: nvim-tree
--- https://github.com/kyazdani42/nvim-tree.lua
+-- url: https://github.com/kyazdani42/nvim-tree.lua
 
--- Keybindings are defined in `keymapping.lua`:
+--- Keybindings are defined in `keymapping.lua`:
 --- https://github.com/kyazdani42/nvim-tree.lua#keybindings
 
--- Note: options under the g: command should be set BEFORE running the
---- setup function:
---- https://github.com/kyazdani42/nvim-tree.lua#setup
+--- Note: options under the g: command should be set BEFORE running the
+--- setup function: https://github.com/kyazdani42/nvim-tree.lua#setup
 --- See: `help NvimTree`
 local g = vim.g
 

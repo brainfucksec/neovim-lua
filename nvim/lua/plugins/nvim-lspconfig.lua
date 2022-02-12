@@ -3,7 +3,7 @@
 -----------------------------------------------------------
 
 -- Plugin: nvim-lspconfig
--- for language server setup see: https://github.com/neovim/nvim-lspconfig
+-- url: https://github.com/neovim/nvim-lspconfig
 
 local nvim_lsp = require 'lspconfig'
 
@@ -88,14 +88,15 @@ https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.m
 -- map buffer local keybindings when the language server attaches
 local servers = { 'bashls', 'pyright', 'clangd', 'html', 'tsserver' }
 
--- Set settings for language servers below
---
+-- Set settings for language servers:
+
 -- tsserver settings
 local ts_settings = function(client)
   client.resolved_capabilities.document_formatting = false
   ts_settings(client)
 end
 
+-- Call setup
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
     on_attach = on_attach,

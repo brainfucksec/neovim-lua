@@ -2,13 +2,14 @@
 -- Color schemes configuration file
 -----------------------------------------------------------
 
--- Import colorscheme with:
---- require('colors')
+-- Import color scheme with:
+--- require('colors').colorscheme_name
 
+local M = {}
 
 -- Theme: Monokai (classic)
 --- See: https://github.com/tanvirtin/monokai.nvim/blob/master/lua/monokai.lua
-local colors = {
+M.monokai = {
   bg = '#202328', --default: #272a30
   fg = '#f8f8f0',
   pink = '#f92672',
@@ -20,14 +21,10 @@ local colors = {
   red = '#e95678',
 }
 
-return colors
-
-
---[[
 -- Theme: Rosé Pine (main)
 --- See: https://github.com/rose-pine/neovim/blob/main/lua/rose-pine/palette.lua
 --- color names are adapted to the format above
-local colors = {
+M.rose_pine = {
   bg = '#111019', --default: #191724
   fg = '#e0def4',
   gray = '#908caa',
@@ -40,5 +37,4 @@ local colors = {
   red = '#ebbcba',
 }
 
-return colors
-]]--
+return M

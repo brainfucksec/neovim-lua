@@ -3,7 +3,7 @@
 -----------------------------------------------------------
 
 -- Plugin manager: packer.nvim
--- https://github.com/wbthomason/packer.nvim
+-- url: https://github.com/wbthomason/packer.nvim
 
 -- For information about installed plugins see the README
 --- neovim-lua/README.md
@@ -19,13 +19,13 @@ local packer = require 'packer'
 return packer.startup(function()
   use 'wbthomason/packer.nvim' -- packer can manage itself
 
-  -- file explorer
+  -- File explorer
   use 'kyazdani42/nvim-tree.lua'
 
-  -- indent line
+  -- Indent line
   use 'lukas-reineke/indent-blankline.nvim'
 
-  -- autopair
+  -- Autopair
   use {
     'windwp/nvim-autopairs',
     config = function()
@@ -33,16 +33,16 @@ return packer.startup(function()
     end
   }
 
-  -- icons
+  -- Icons
   use 'kyazdani42/nvim-web-devicons'
 
-  -- tagviewer
+  -- Tag viewer
   use 'liuchengxu/vista.vim'
 
-  -- treesitter interface
+  -- Treesitter interface
   use 'nvim-treesitter/nvim-treesitter'
 
-  -- colorschemes
+  -- Color schemes
   use 'tanvirtin/monokai.nvim'
 
   use { 'rose-pine/neovim', as = 'rose-pine' }
@@ -50,7 +50,7 @@ return packer.startup(function()
   -- LSP
   use 'neovim/nvim-lspconfig'
 
-  -- autocomplete
+  -- Autocomplete
   use {
     'hrsh7th/nvim-cmp',
     requires = {
@@ -62,7 +62,7 @@ return packer.startup(function()
     },
   }
 
-  -- statusline
+  -- Statusline
   use {
     'famiu/feline.nvim',
     requires = { 'kyazdani42/nvim-web-devicons' },
@@ -77,7 +77,7 @@ return packer.startup(function()
     end
   }
 
-  -- dashboard
+  -- Dashboard (start screen)
   use {
     'goolord/alpha-nvim',
     requires = { 'kyazdani42/nvim-web-devicons' },
