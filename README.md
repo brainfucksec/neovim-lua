@@ -5,11 +5,11 @@
 -->
 
 <p align="center">
-<img src="img/1-banner.png" alt="banner">
+<img src="img/logo.png" alt="main-logo">
 </p>
 
 <h3 align="center">
-My Neovim configuration with Lua
+Neovim KISS configuration with Lua
 </h3>
 
 ## Plugins
@@ -40,7 +40,9 @@ My Neovim configuration with Lua
 
 [alpha-nvim](https://github.com/goolord/alpha-nvim) - A fast and highly customizable greeter for neovim.
 
-## Directory tree of Lua files
+---
+
+## Directory Tree of Lua Files
 
 `${HOME}/.config/nvim`
 
@@ -64,7 +66,7 @@ My Neovim configuration with Lua
 └── init.lua
 ```
 
-## Files and settings
+## Files and Settings
 
 `/nvim`
 
@@ -100,19 +102,23 @@ My Neovim configuration with Lua
 
 * [vista.lua](nvim/lua/plugins/vista.lua): Tag viewer settings
 
+---
+
 ## Appearance
 
 **Colorschemes:**
 
-[Neovim Monokai](https://github.com/tanvirtin/monokai.nvim)
+* [Neovim Monokai](https://github.com/tanvirtin/monokai.nvim)
 
-[Rose Pine](https://github.com/rose-pine/neovim)
+* [Rose Pine](https://github.com/rose-pine/neovim)
 
 **Fonts:** [Cozette](https://github.com/slavfox/Cozette)
 
 **Icons:** [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 
 ## Screenshots
+
+![.](img/1-banner.png)
 
 **Monokai**
 
@@ -125,6 +131,8 @@ My Neovim configuration with Lua
 ![.](img/4-ccode-rp.png)
 
 ![.](img/5-bash-rp.png)
+
+---
 
 ## Installation
 
@@ -141,6 +149,8 @@ My Neovim configuration with Lua
 
 4. Install [packer.nvim](https://github.com/wbthomason/packer.nvim) for manage the plugins, see: https://github.com/wbthomason/packer.nvim#quickstart
 
+---
+
 ## LSP Configuration
 
 1. Install LSP language servers with `npm`
@@ -150,9 +160,9 @@ My Neovim configuration with Lua
 
 2. Install [clang](https://clangd.llvm.org/installation.html) for use LSP with [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#clangd)
 
-3. Open a source file of one of the supported languages with `neovim`, in the Neovim cmd line run command [:LspInfo](https://github.com/neovim/nvim-lspconfig#built-in-commands) for testing the LSP support
+3. Open a source file of one of the supported languages with `neovim`, in the Neovim cmd line run command [:LspInfo](https://github.com/neovim/nvim-lspconfig#built-in-commands) for testing the LSP support.
 
-### Languages currently supported:
+### Languages Currently Supported:
 
 Bash - [bashls](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#bashls)
 
@@ -164,12 +174,13 @@ HTML/CSS/JSON - [vscode-html](https://github.com/neovim/nvim-lspconfig/blob/mast
 
 JavaScript/TypeScript - [tsserver](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#tsserver)
 
-
 See: [nvim-lspconfig #doc/server_configurations.md](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md)
 
-### Health checks:
+---
 
-- Open nvim and run command `checkhealth`, you should not see any error in the output (except for the one related to the Python 2 interpreter):
+## Configuration check
+
+- Open nvim and run command `checkhealth`, you should not see any error in the output (except for the one related to the Python 2 interpreter if don't have it):
 
 ```vim
 :checkhealth
@@ -213,10 +224,12 @@ See: `:help startuptime`
 
 * Lua 5.4 Reference Manual - https://www.lua.org/manual/5.4/
 
+---
+
 ## Disclaimer
 
-* As all my setups I try to follow the [KISS](https://en.wikipedia.org/wiki/KISS_principle) principle, probably some concepts may not be valid for everyone, then feel free to take what you need but **don't install anything without checking first!**
+As all my setups I try to follow the [KISS](https://en.wikipedia.org/wiki/KISS_principle) principle, probably some concepts may not be valid for everyone, then feel free to take what you need but **don't install anything without checking first!**
 
 ---
 
-#### Thanks to all the authors of the sources mentioned above and to all the others from whom I "stole" some configs :)
+**Thanks to all the authors of the sources mentioned above and to all the others from whom I "stole" some configs :)**
