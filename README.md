@@ -40,8 +40,6 @@ Neovim KISS configuration with Lua
 
 [alpha-nvim](https://github.com/goolord/alpha-nvim) - A fast and highly customizable greeter for neovim.
 
----
-
 ## Directory Tree of Lua Files
 
 `${HOME}/.config/nvim`
@@ -102,8 +100,6 @@ Neovim KISS configuration with Lua
 
 * [vista.lua](nvim/lua/plugins/vista.lua): Tag viewer settings
 
----
-
 ## Appearance
 
 **Colorschemes:**
@@ -132,8 +128,6 @@ Neovim KISS configuration with Lua
 
 ![.](img/5-bash-rp.png)
 
----
-
 ## Installation
 
 1. Install [neovim v0.6.x](https://github.com/neovim/neovim/releases/latest)
@@ -148,8 +142,6 @@ Neovim KISS configuration with Lua
 ```
 
 4. Install [packer.nvim](https://github.com/wbthomason/packer.nvim) for manage the plugins, see: https://github.com/wbthomason/packer.nvim#quickstart
-
----
 
 ## LSP Configuration
 
@@ -176,8 +168,6 @@ JavaScript/TypeScript - [tsserver](https://github.com/neovim/nvim-lspconfig/blob
 
 See: [nvim-lspconfig #doc/server_configurations.md](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md)
 
----
-
 ## Configuration check
 
 - Open nvim and run command `checkhealth`, you should not see any error in the output (except for the one related to the Python 2 interpreter if don't have it):
@@ -197,8 +187,6 @@ nvim /tmp/nvim-start.log
 ```
 
 See: `:help startuptime`
-
----
 
 ## Guides and resources
 
@@ -223,8 +211,6 @@ See: `:help startuptime`
 * Lua Quick Guide - https://github.com/medwatt/Notes/blob/main/Lua/Lua_Quick_Guide.ipynb
 
 * Lua 5.4 Reference Manual - https://www.lua.org/manual/5.4/
-
----
 
 ## Disclaimer
 
