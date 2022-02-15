@@ -12,9 +12,9 @@
 --- https://github.com/ibhagwan/nvim-lua
 
 
+-- Set colorscheme (Monokai classic)
 local colors = require('colors').monokai
 
--- Monokai (classic) theme
 local vi_mode_colors = {
   NORMAL = colors.cyan,
   INSERT = colors.green,
@@ -32,9 +32,11 @@ local vi_mode_colors = {
   NONE = colors.purple
 }
 
+-- Providers (LSP, vi_mode)
 local lsp = require 'feline.providers.lsp'
 local vi_mode_utils = require 'feline.providers.vi_mode'
 
+-- LSP diagnostic
 local lsp_get_diag = function(str)
   local count = vim.lsp,diagnostic.get_count(0, str)
   return (count > 0) and ' '..count..' ' or ''
@@ -78,7 +80,12 @@ local comps = {
     },
     -- File type
     type = {
-      provider = { name = 'file_type' },
+      provider = function()
+        local type = vim.bo.filetype:lower()
+        return type
+      end,
+      hl = { fg = colors.cyan },
+      left_sep = ' '
     },
     -- Operating system
     os = {
@@ -218,6 +225,7 @@ table.insert(components.active[2], comps.diagnos.warn)
 table.insert(components.active[2], comps.diagnos.hint)
 table.insert(components.active[2], comps.diagnos.info)
 table.insert(components.active[2], comps.lsp.name)
+table.insert(components.active[2], comps.file.type)
 table.insert(components.active[2], comps.file.os)
 table.insert(components.active[2], comps.file.position)
 table.insert(components.active[2], comps.file.line_percentage)
