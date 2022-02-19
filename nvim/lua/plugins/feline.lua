@@ -84,8 +84,12 @@ local comps = {
         local type = vim.bo.filetype:lower()
         return type
       end,
-      hl = { fg = colors.cyan },
-      left_sep = ' '
+      hl = {
+        fg = colors.fg,
+        --style = 'bold',
+      },
+      left_sep = ' ',
+      righ_sep = ' '
     },
     -- Operating system
     os = {
@@ -102,7 +106,7 @@ local comps = {
         return icon .. os
       end,
       hl = { fg = colors.fg },
-      left_sep = ' ',
+      --left_sep = ' ',
       right_sep = ' '
     },
     -- Line-column
@@ -167,6 +171,7 @@ local comps = {
       icon = '  ',
       hl = { fg = colors.pink },
       left_sep = '  ',
+      right_sep = ' '
     }
   },
   -- git info
