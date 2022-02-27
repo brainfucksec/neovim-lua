@@ -1,11 +1,5 @@
-<!--
 <p align="center">
-<img src="img/logo.png" alt="logo">
-</p>
--->
-
-<p align="center">
-<img src="img/logo.png" alt="main-logo">
+<img src="img/logo.png" alt="neovim-lua_logo">
 </p>
 
 <h3 align="center">
@@ -116,6 +110,10 @@ Neovim KISS configuration with Lua
 
 ![.](img/1-banner.png)
 
+<p align="center">
+<img src="img/1-banner.png">
+</p>
+
 **Monokai**
 
 ![.](img/2-ccode.png)
@@ -134,19 +132,21 @@ Neovim KISS configuration with Lua
 
 2. Install [npm](https://github.com/npm/cli) (for download the packages of LSP language servers)
 
-3. Download [this repository](https://github.com/brainfucksec/neovim-lua) with `git` and copy the `nvim` folder
-```bash
+3. Download [this repository](https://github.com/brainfucksec/neovim-lua) with `git` and copy the `nvim` folder (make a backup of your current nvim folder if necessary):
+
+```term
     git clone https://github.com/brainfucksec/neovim-lua.git
     cd neovim-lua/
     cp -Rv nvim ~/.config/
 ```
 
-4. Install [packer.nvim](https://github.com/wbthomason/packer.nvim) for manage the plugins, see: https://github.com/wbthomason/packer.nvim#quickstart
+4. Install [packer.nvim](https://github.com/wbthomason/packer.nvim) for install and manage plugins, see: https://github.com/wbthomason/packer.nvim#quickstart
 
 ## LSP Configuration
 
 1. Install LSP language servers with `npm`
-```bash
+
+```term
     sudo npm install -g bash-language-server pyright vscode-langservers-extracted typescript typescript-language-server
 ```
 
@@ -180,7 +180,7 @@ See: [nvim-lspconfig #doc/server_configurations.md](https://github.com/neovim/nv
 
 - You can also use the `startuptime` option to read the nvim startup logs:
 
-```bash
+```term
 nvim --startuptime > /tmp/nvim-start.log
 
 nvim /tmp/nvim-start.log
@@ -203,6 +203,8 @@ See: `:help startuptime`
 * https://github.com/siduck76/NvChad
 
 * https://github.com/artart222/CodeArt
+
+* https://github.com/crivotz/nv-ide
 
 ## Lua resources
 
