@@ -108,8 +108,6 @@ Neovim KISS configuration with Lua
 
 ## Screenshots
 
-![.](img/1-banner.png)
-
 <p align="center">
 <img src="img/1-banner.png">
 </p>
