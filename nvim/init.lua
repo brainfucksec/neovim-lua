@@ -9,7 +9,7 @@
 
 
 Neovim init file
-Version: 0.47.0 - 2022/02/15
+Version: 0.47.1 - 2022/02/27
 Maintainer: brainf+ck
 Website: https://github.com/brainfucksec/neovim-lua
 
