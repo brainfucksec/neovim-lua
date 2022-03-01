@@ -16,10 +16,10 @@ require('indent_blankline').setup {
     'text',
     'terminal',
     'lspinfo',
-    'packer'
+    'packer',
   },
   buftype_exclude = {
     'terminal',
-    'nofile'
+    'nofile',
   },
 }
