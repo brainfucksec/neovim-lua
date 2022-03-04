@@ -201,7 +201,7 @@ See: `:help startuptime`
 
 * https://dev.to/vonheikemen/everything-you-need-to-know-to-configure-neovim-using-lua-3h58
 
-* https://www.reddit.com/r/neovim/
+* https://www.old.reddit.com/r/neovim/
 
 ## Other Neovim Lua projects and examples
 
