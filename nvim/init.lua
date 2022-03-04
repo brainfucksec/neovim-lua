@@ -9,7 +9,7 @@
 
 
 Neovim init file
-Version: 0.47.1 - 2022/02/27
+Version: 0.48.0 - 2022/03/04
 Maintainer: brainf+ck
 Website: https://github.com/brainfucksec/neovim-lua
 
@@ -18,9 +18,9 @@ Website: https://github.com/brainfucksec/neovim-lua
 -----------------------------------------------------------
 -- Import Lua modules
 -----------------------------------------------------------
-require('settings')
-require('keymaps')
-require('plugins/packer')
+require('core/settings')
+require('core/keymaps')
+require('packer_init')
 require('plugins/nvim-tree')
 require('plugins/indent-blankline')
 require('plugins/feline')

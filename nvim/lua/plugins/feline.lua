@@ -13,7 +13,7 @@
 
 
 -- Set colorscheme (Monokai classic)
-local colors = require('colors').monokai
+local colors = require('core/colors').monokai
 
 local vi_mode_colors = {
   NORMAL = colors.cyan,

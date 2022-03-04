@@ -40,6 +40,10 @@ Neovim KISS configuration with Lua
 
 ```
 ├── lua
+│   ├── core
+│   │   ├── colors.lua
+│   │   ├── keymaps.lua
+│   │   └── settings.lua
 │   ├── plugins
 │   │   ├── alpha-nvim.lua
 │   │   ├── feline.lua
@@ -48,11 +52,8 @@ Neovim KISS configuration with Lua
 │   │   ├── nvim-lspconfig.lua
 │   │   ├── nvim-tree.lua
 │   │   ├── nvim-treesitter.lua
-│   │   ├── packer.lua
 │   │   └── vista.lua
-│   ├── colors.lua
-│   ├── keymaps.lua
-│   └── settings.lua
+│   └── packer_init.lua
 ├── plugin
 │   └── packer_compiled.lua
 └── init.lua
@@ -64,15 +65,21 @@ Neovim KISS configuration with Lua
 
 * [init.lua](nvim/init.lua): Main configuration file that call `lua` modules
 
-* [lua](nvim/lua): Folder of `lua` modules, here reside all the Lua modules that needed. These modules are called from `init.lua` file (see below).  For plugins settings files I use the convention `/lua/plugins/<plugin_name>.lua>`.  See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
+* [lua](nvim/lua): Folder of `lua` modules, here reside all the Lua modules that needed. These modules are called from `init.lua` file (see below).
+
+See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 
 `/nvim/lua`
 
-* [settings.lua](nvim/lua/settings.lua): General Neovim settings and configuration
+* [packer_init.lua](nvim/lua/packer_init.lua): Load plugins
 
-* [keymaps.lua](nvim/lua/keymaps.lua): Keymaps configuration file, vim/neovim and plugins keymaps.
+`/nvim/lua/core`
 
-* [colors.lua](nvim/img/colors.lua): Define Neovim and plugins Colorschemes
+* [settings.lua](nvim/lua/core/settings.lua): General Neovim settings and configuration
+
+* [keymaps.lua](nvim/lua/core/keymaps.lua): Keymaps configuration file, vim/neovim and plugins keymaps.
+
+* [colors.lua](nvim/lua/core/colors.lua): Define colors (based on colorschemes)
 
 `/nvim/lua/plugins`
 
@@ -158,11 +165,11 @@ Bash - [bashls](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_
 
 Python - [pyright](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#pyright)
 
-C-C++ - [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#clangd)
+C, C++ - [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#clangd)
 
-HTML/CSS/JSON - [vscode-html](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#html)
+HTML, CSS, JSON - [vscode-html](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#html)
 
-JavaScript/TypeScript - [tsserver](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#tsserver)
+JavaScript, TypeScript - [tsserver](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#tsserver)
 
 See: [nvim-lspconfig #doc/server_configurations.md](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md)
 
