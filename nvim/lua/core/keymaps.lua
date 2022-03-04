@@ -1,38 +1,43 @@
 -----------------------------------------------------------
--- Keymaps of Neovim and installed plugins.
+-- Define keymaps of Neovim and installed plugins.
 -----------------------------------------------------------
 
-local map = vim.api.nvim_set_keymap
-local default_opts = { noremap = true, silent = true }
+local function map(mode, lhs, rhs, opts)
+  local options = { noremap = true, silent = true }
+  if opts then
+    options = vim.tbl_extend('force', options, opts)
+  end
+  vim.api.nvim_set_keymap(mode, lhs, rhs, options)
+end
 
 -----------------------------------------------------------
 -- Neovim shortcuts
 -----------------------------------------------------------
 
 -- Clear search highlighting with <leader> and c
-map('n', '<leader>c', ':nohl<CR>', default_opts)
+map('n', '<leader>c', ':nohl<CR>')
 
 -- Map Esc to kk
-map('i', 'kk', '<Esc>', {noremap = true})
+map('i', 'kk', '<Esc>')
 
 -- Don't use arrow keys
-map('', '<up>', '<nop>', { noremap = true })
-map('', '<down>', '<nop>', { noremap = true })
-map('', '<left>', '<nop>', { noremap = true })
-map('', '<right>', '<nop>', { noremap = true })
+map('', '<up>', '<nop>')
+map('', '<down>', '<nop>')
+map('', '<left>', '<nop>')
+map('', '<right>', '<nop>')
 
 -- Fast saving with <leader> and s
-map('n', '<leader>s', ':w<CR>', default_opts)
-map('i', '<leader>s', '<C-c>:w<CR>', default_opts)
+map('n', '<leader>s', ':w<CR>')
+map('i', '<leader>s', '<C-c>:w<CR>')
 
 -- Move around splits using Ctrl + {h,j,k,l}
-map('n', '<C-h>', '<C-w>h', default_opts)
-map('n', '<C-j>', '<C-w>j', default_opts)
-map('n', '<C-k>', '<C-w>k', default_opts)
-map('n', '<C-l>', '<C-w>l', default_opts)
+map('n', '<C-h>', '<C-w>h')
+map('n', '<C-j>', '<C-w>j')
+map('n', '<C-k>', '<C-w>k')
+map('n', '<C-l>', '<C-w>l')
 
 -- Close all windows and exit from Neovim with <leader> and q
-map('n', '<leader>q', ':qa!<CR>', default_opts)
+map('n', '<leader>q', ':qa!<CR>')
 
 -----------------------------------------------------------
 -- Applications and Plugins shortcuts
@@ -42,9 +47,9 @@ map('n', '<leader>q', ':qa!<CR>', default_opts)
 map('n', '<C-t>', ':Term<CR>', { noremap = true })
 
 -- nvim-tree
-map('n', '<C-n>', ':NvimTreeToggle<CR>', default_opts)       -- open/close
-map('n', '<leader>r', ':NvimTreeRefresh<CR>', default_opts)  -- refresh
-map('n', '<leader>n', ':NvimTreeFindFile<CR>', default_opts) -- search file
+map('n', '<C-n>', ':NvimTreeToggle<CR>')       -- open/close
+map('n', '<leader>r', ':NvimTreeRefresh<CR>')  -- refresh
+map('n', '<leader>n', ':NvimTreeFindFile<CR>') -- search file
 
 -- Vista tag-viewer
-map('n', '<C-m>', ':Vista!!<CR>', default_opts) -- open/close
+map('n', '<C-m>', ':Vista!!<CR>') -- open/close
