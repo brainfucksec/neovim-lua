@@ -161,6 +161,8 @@ See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 
 ### Languages Currently Supported:
 
+Lua - [builtin](https://neovim.io/doc/user/lua.html)
+
 Bash - [bashls](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#bashls)
 
 Python - [pyright](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#pyright)
