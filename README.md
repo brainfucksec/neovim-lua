@@ -195,6 +195,12 @@ nvim /tmp/nvim-start.log
 
 See: `:help startuptime`
 
+## TODO
+
+* Add other colorscheme/s
+* Improve "Autocommands" management
+* Improve "colors" management
+
 ## Guides and resources
 
 * https://neovim.io/doc/user/lua.html
