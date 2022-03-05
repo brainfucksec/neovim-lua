@@ -56,7 +56,7 @@ opt.synmaxcol = 240                   -- Max column for syntax highlight
 -- Colorscheme
 -----------------------------------------------------------
 opt.termguicolors = true              -- Enable 24-bit RGB colors
-cmd [[colorscheme monokai]]
+require('monokai').setup {}           -- Load colorscheme
 
 -----------------------------------------------------------
 -- Autocommands
