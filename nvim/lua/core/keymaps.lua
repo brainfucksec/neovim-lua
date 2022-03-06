@@ -51,9 +51,9 @@ map('n', '<C-t>', ':Term<CR>', { noremap = true })  -- open
 map('t', '<Esc>', '<C-\\><C-n>')                    -- exit
 
 -- NvimTree
-map('n', '<C-n>', ':NvimTreeToggle<CR>')        -- open/close
-map('n', '<leader>r', ':NvimTreeRefresh<CR>')   -- refresh
-map('n', '<leader>n', ':NvimTreeFindFile<CR>')  -- search file
+map('n', '<C-n>', ':NvimTreeToggle<CR>')            -- open/close
+map('n', '<leader>r', ':NvimTreeRefresh<CR>')       -- refresh
+map('n', '<leader>n', ':NvimTreeFindFile<CR>')      -- search file
 
 -- Vista tag-viewer
 map('n', '<C-m>', ':Vista!!<CR>') -- open/close
