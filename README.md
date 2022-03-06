@@ -105,6 +105,8 @@ See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 
 **Colorschemes:**
 
+* [OneDark](https://github.com/navarasu/onedark.nvim)
+
 * [Neovim Monokai](https://github.com/tanvirtin/monokai.nvim)
 
 * [Rose Pine](https://github.com/rose-pine/neovim)
@@ -116,20 +118,30 @@ See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 ## Screenshots
 
 <p align="center">
-<img src="img/1-banner.png">
+<img src="img/banner.png">
 </p>
+
+<details><summary> <b>(Click to expand!)</b></summary>
+
+**OneDark (darker)**
+
+![onedark_1](img/1-onedark_1.png)
+
+![onedark_2](img/2-onedark_2.png)
 
 **Monokai**
 
-![.](img/2-ccode.png)
+![monokai_1](img/3-monokai_1.png)
 
-![.](img/3-bash.png)
+![monokai_2](img/4-monokai_2.png)
 
 **Rosé Pine**
 
-![.](img/4-ccode-rp.png)
+![rose-pine_1](img/5-rose-pine_1.png)
 
-![.](img/5-bash-rp.png)
+![rose-pine-2](img/6-rose-pine_2.png)
+
+</details>
 
 ## Installation
 
@@ -137,7 +149,7 @@ See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 
 2. Install [npm](https://github.com/npm/cli) (for download the packages of LSP language servers)
 
-3. Download [this repository](https://github.com/brainfucksec/neovim-lua) with `git` and copy the `nvim` folder (make a backup of your current nvim folder if necessary):
+3. Download [this repository](https://github.com/brainfucksec/neovim-lua) with `git` and copy the `nvim` folder in the `${HOME}/.config` directory (make a backup of your current `nvim` folder if necessary):
 
 ```term
     git clone https://github.com/brainfucksec/neovim-lua.git
@@ -159,7 +171,7 @@ See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 
 3. Open a source file of one of the supported languages with `neovim`, in the Neovim cmd line run command [:LspInfo](https://github.com/neovim/nvim-lspconfig#built-in-commands) for testing the LSP support.
 
-### Languages Currently Supported:
+### Languages Currently Supported
 
 Lua - [builtin](https://neovim.io/doc/user/lua.html)
 
@@ -175,6 +187,27 @@ JavaScript, TypeScript - [tsserver](https://github.com/neovim/nvim-lspconfig/blo
 
 See: [nvim-lspconfig #doc/server_configurations.md](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md)
 
+## Set Color Scheme
+
+The color scheme is defined in the following files (default: OneDark):
+
+* Neovim UI - [nvim/lua/core/settings.lua](nvim/lua/core/settings.lua):
+
+```lua
+-- Load colorscheme
+require('onedark').setup {
+    style = 'darker'
+}
+require('onedark').load()
+```
+
+* Statusline - [nvim/lua/plugins/feline.lua](nvim/lua/plugins/feline.lua):
+
+```lua
+-- Set colorscheme (from core/colors.lua/colorscheme_name)
+local colors = require('core/colors').onedark
+```
+
 ## Configuration check
 
 - Open nvim and run command `checkhealth`, you should not see any error in the output (except for the one related to the Python 2 interpreter if don't have it):
@@ -183,7 +216,7 @@ See: [nvim-lspconfig #doc/server_configurations.md](https://github.com/neovim/nv
 :checkhealth
 ```
 
-![.](img/6-checkhealth.png)
+![.](img/checkhealth.png)
 
 - You can also use the `startuptime` option to read the nvim startup logs:
 
@@ -197,9 +230,8 @@ See: `:help startuptime`
 
 ## TODO
 
-* Add other colorscheme/s
 * Improve "Autocommands" management
-* Improve "colors" management
+* Improve LSP configuration
 
 ## Guides and resources
 

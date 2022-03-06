@@ -12,8 +12,8 @@
 --- https://github.com/ibhagwan/nvim-lua
 
 
--- Set colorscheme (Monokai classic)
-local colors = require('core/colors').monokai
+-- Set colorscheme (from core/colors.lua/colorscheme_name)
+local colors = require('core/colors').onedark
 
 local vi_mode_colors = {
   NORMAL = colors.cyan,

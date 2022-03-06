@@ -43,6 +43,8 @@ return packer.startup(function()
   use 'nvim-treesitter/nvim-treesitter'
 
   -- Color schemes
+  use 'navarasu/onedark.nvim'
+
   use 'tanvirtin/monokai.nvim'
 
   use { 'rose-pine/neovim', as = 'rose-pine' }
