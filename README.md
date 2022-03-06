@@ -121,7 +121,7 @@ See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 <img src="img/banner.png">
 </p>
 
-<details><summary> <b>(Click to expand!)</b></summary>
+<details><summary> <b>(Click to expand)</b></summary>
 
 **OneDark (darker)**
 
