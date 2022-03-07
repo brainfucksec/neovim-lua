@@ -35,6 +35,7 @@ opt.splitbelow = true                 -- Orizontal split to the bottom
 opt.ignorecase = true                 -- Ignore case letters when search
 opt.smartcase = true                  -- Ignore lowercase for the whole pattern
 opt.linebreak = true                  -- Wrap on word boundary
+opt.termguicolors = true              -- Enable 24-bit RGB colors
 
 -----------------------------------------------------------
 -- Tabs, indent
@@ -51,20 +52,6 @@ opt.hidden = true                     -- Enable background buffers
 opt.history = 100                     -- Remember N lines in history
 opt.lazyredraw = true                 -- Faster scrolling
 opt.synmaxcol = 240                   -- Max column for syntax highlight
-
------------------------------------------------------------
--- Colorscheme
------------------------------------------------------------
-opt.termguicolors = true              -- Enable 24-bit RGB colors
-
--- Load colorscheme
---require('monokai').setup {}
-
--- OneDark styles: dark, darker, cool, deep, warm, warmer, light
-require('onedark').setup {
-    style = 'darker'
-}
-require('onedark').load()
 
 -----------------------------------------------------------
 -- Autocommands

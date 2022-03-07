@@ -79,7 +79,7 @@ See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 
 * [keymaps.lua](nvim/lua/core/keymaps.lua): Keymaps configuration file, vim/neovim and plugins keymaps.
 
-* [colors.lua](nvim/lua/core/colors.lua): Define colors (based on colorschemes)
+* [colors.lua](nvim/lua/core/colors.lua): Define Neovim and plugins color scheme
 
 `/nvim/lua/plugins`
 
