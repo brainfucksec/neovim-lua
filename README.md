@@ -173,7 +173,7 @@ See: https://github.com/wbthomason/packer.nvim#quickstart
 1. Install LSP language servers with `npm`
 
 ```term
-    sudo npm install -g bash-language-server pyright vscode-langservers-extracted typescript typescript-language-server
+sudo npm install -g bash-language-server pyright vscode-langservers-extracted typescript typescript-language-server
 ```
 
 2. Install [clang](https://clangd.llvm.org/installation.html) for use LSP with [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#clangd)
@@ -270,7 +270,8 @@ See: `:help startuptime`
 
 ## Disclaimer
 
-As all my setups I try to follow the [KISS](https://en.wikipedia.org/wiki/KISS_principle) principle, probably some concepts may not be valid for everyone, then feel free to take what you need but **don't install anything without checking first!**
+As all my setups I try to follow the [KISS](https://en.wikipedia.org/wiki/KISS_principle) principle, probably some concepts may not be valid for everyone.
+Then feel free to take what you need but **don't install anything without checking first!**
 
 ---
 
