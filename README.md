@@ -240,7 +240,9 @@ See: `:help startuptime`
 ## TODO
 
 * Improve "Autocommands" management
-* Improve LSP configuration
+* Fix/improve LSP configuration:
+    * Fix "highlighting references" see: [#4](https://github.com/brainfucksec/neovim-lua/issues/4)
+    * Fix `tsserver` "0 client(s) attached to this buffer" error, see: https://neovim.discourse.group/t/0-client-s-attached-to-this-buffer-tsserver/1316
 
 ## Guides and resources
 
