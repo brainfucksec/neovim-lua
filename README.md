@@ -230,6 +230,7 @@ See: `:help startuptime`
 
 ## TODO
 
+* [!] Add instructions for installing packers and plugins
 * Improve "Autocommands" management
 * Improve LSP configuration
 
