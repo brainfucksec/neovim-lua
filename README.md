@@ -152,12 +152,21 @@ See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 3. Download [this repository](https://github.com/brainfucksec/neovim-lua) with `git` and copy the `nvim` folder in the `${HOME}/.config` directory (make a backup of your current `nvim` folder if necessary):
 
 ```term
-    git clone https://github.com/brainfucksec/neovim-lua.git
-    cd neovim-lua/
-    cp -Rv nvim ~/.config/
+git clone https://github.com/brainfucksec/neovim-lua.git
+cd neovim-lua/
+cp -Rv nvim ~/.config/
 ```
 
-4. Install [packer.nvim](https://github.com/wbthomason/packer.nvim) for install and manage plugins, see: https://github.com/wbthomason/packer.nvim#quickstart
+4. Install [packer.nvim](https://github.com/wbthomason/packer.nvim) for install and manage plugins:
+
+```term
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
+
+Open Neovim and run `:PackerSync` command.
+
+See: https://github.com/wbthomason/packer.nvim#quickstart
 
 ## LSP Configuration
 
@@ -169,7 +178,7 @@ See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 
 2. Install [clang](https://clangd.llvm.org/installation.html) for use LSP with [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#clangd)
 
-3. Open a source file of one of the supported languages with `neovim`, in the Neovim cmd line run command [:LspInfo](https://github.com/neovim/nvim-lspconfig#built-in-commands) for testing the LSP support.
+3. Open a source file of one of the supported languages with Neovim and run command [:LspInfo](https://github.com/neovim/nvim-lspconfig#built-in-commands) for testing the LSP support.
 
 ### Languages Currently Supported
 
@@ -230,7 +239,6 @@ See: `:help startuptime`
 
 ## TODO
 
-* [!] Add instructions for installing packers and plugins
 * Improve "Autocommands" management
 * Improve LSP configuration
 
