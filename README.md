@@ -240,7 +240,7 @@ See: `:help startuptime`
 ## TODO
 
 * Improve "Autocommands" management
-* Improve LSP configuration:
+* Improve LSP configuration
 
 ## Guides and resources
 
