@@ -240,8 +240,7 @@ See: `:help startuptime`
 ## TODO
 
 * Improve "Autocommands" management
-* Fix/improve LSP configuration:
-    * Fix "highlighting references" see: [#4](https://github.com/brainfucksec/neovim-lua/issues/4)
+* Improve LSP configuration:
 
 ## Guides and resources
 
