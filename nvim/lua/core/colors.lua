@@ -2,16 +2,15 @@
 -- Color schemes configuration file
 -----------------------------------------------------------
 
--- Load nvim color scheme
---require('monokai').setup {}
-
--- OneDark styles: dark, darker, cool, deep, warm, warmer, light
+-- Load nvim color scheme:
+--- OneDark styles: dark, darker, cool, deep, warm, warmer, light
 require('onedark').setup {
   style = 'darker',
 }
 require('onedark').load()
 
--- Import color scheme with:
+
+-- Import color scheme for other components with:
 --- require('colors').colorscheme_name
 
 local M = {}
