@@ -63,36 +63,33 @@ opt.shortmess:append "sI"
 
 -- Disable builtins plugins
 local disabled_built_ins = {
-    "netrw",
-    "netrwPlugin",
-    "netrwSettings",
-    "netrwFileHandlers",
-    "gzip",
-    "zip",
-    "zipPlugin",
-    "tar",
-    "tarPlugin",
-    "getscript",
-    "getscriptPlugin",
-    "vimball",
-    "vimballPlugin",
-    "2html_plugin",
-    "logipat",
-    "rrhelper",
-    "spellfile_plugin",
-    "matchit"
+  "netrw",
+  "netrwPlugin",
+  "netrwSettings",
+  "netrwFileHandlers",
+  "gzip",
+  "zip",
+  "zipPlugin",
+  "tar",
+  "tarPlugin",
+  "getscript",
+  "getscriptPlugin",
+  "vimball",
+  "vimballPlugin",
+  "2html_plugin",
+  "logipat",
+  "rrhelper",
+  "spellfile_plugin",
+  "matchit"
 }
 
 for _, plugin in pairs(disabled_built_ins) do
-    g["loaded_" .. plugin] = 1
+  g["loaded_" .. plugin] = 1
 end
 
 -----------------------------------------------------------
 -- Autocommands
 -----------------------------------------------------------
-
--- Remove whitespace on save
-cmd [[au BufWritePre * :%s/\s\+$//e]]
 
 -- Highlight on yank
 exec([[
@@ -102,11 +99,16 @@ exec([[
   augroup end
 ]], false)
 
+-- Remove whitespace on save
+cmd [[autocmd BufWritePre * :%s/\s\+$//e]]
+
 -- Don't auto commenting new lines
-cmd [[au BufEnter * set fo-=c fo-=r fo-=o]]
+cmd [[autocmd BufEnter * set fo-=c fo-=r fo-=o]]
 
 -- Remove line lenght marker for selected filetypes
-cmd [[autocmd FileType text,markdown,html,xhtml,javascript setlocal cc=0]]
+cmd [[
+  autocmd FileType text,markdown,html,xhtml,javascript setlocal cc=0
+]]
 
 -- 2 spaces for selected filetypes
 cmd [[
@@ -124,8 +126,8 @@ cmd [[command Term :botright vsplit term://$SHELL]]
 --- enter insert mode when switching to terminal
 --- close terminal buffer on process exit
 cmd [[
-    autocmd TermOpen * setlocal listchars= nonumber norelativenumber nocursorline
-    autocmd TermOpen * startinsert
-    autocmd BufLeave term://* stopinsert
+  autocmd TermOpen * setlocal listchars= nonumber norelativenumber nocursorline
+  autocmd TermOpen * startinsert
+  autocmd BufLeave term://* stopinsert
 ]]
 
