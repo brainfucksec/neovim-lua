@@ -10,31 +10,31 @@ Neovim KISS configuration with Lua
 
 [packer.nvim](https://github.com/wbthomason/packer.nvim) -  A use-package inspired plugin manager for Neovim
 
+[feline.nvim](https://github.com/Famiu/feline.nvim) - A minimal, stylish and customizable statusline for Neovim written in Lua
+
+[nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - A collection of common configurations for Neovim's built-in language server client
+
+[nvim-cmp](https://github.com/hrsh7th/nvim-cmp) - Auto completion plugin
+
+[LuaSnip](https://github.com/L3MON4D3/LuaSnip) - Snippet Engine for Neovim written in Lua
+
 [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua) - A File Explorer written In Lua
 
 [indentBlankline](https://github.com/lukas-reineke/indent-blankline.nvim) - Adds indentation guides to all lines (including empty lines)
 
 [nvim-autopairs](https://github.com/windwp/nvim-autopairs) - A super powerful autopairs for Neovim
 
-[feline.nvim](https://github.com/Famiu/feline.nvim) - A minimal, stylish and customizable statusline for Neovim written in Lua
-
-[nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons) - A Lua fork of vim-devicons
-
 [vista.vim](https://github.com/liuchengxu/vista.vim) - View and search LSP symbols, tags in Vim/NeoVim
-
-[nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - Nvim Treesitter configurations and abstraction layer
-
-[nvim-cmp](https://github.com/hrsh7th/nvim-cmp) - Auto completion plugin
-
-[nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - A collection of common configurations for Neovim's built-in language server client
-
-[LuaSnip](https://github.com/L3MON4D3/LuaSnip) - Snippet Engine for Neovim written in Lua
 
 [gitsigns](https://github.com/lewis6991/gitsigns.nvim) - Super fast git decorations implemented purely in lua/teal
 
+[nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - Nvim Treesitter configurations and abstraction layer
+
 [alpha-nvim](https://github.com/goolord/alpha-nvim) - A fast and highly customizable greeter for neovim.
 
-## Directory Tree of Lua Files
+[nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons) - A Lua fork of vim-devicons
+
+## Directory Tree
 
 `${HOME}/.config/nvim`
 
@@ -43,10 +43,10 @@ Neovim KISS configuration with Lua
 │   ├── core
 │   │   ├── colors.lua
 │   │   ├── keymaps.lua
-│   │   └── settings.lua
+│   │   ├── settings.lua
+│   │   └── statusline.lua
 │   ├── plugins
 │   │   ├── alpha-nvim.lua
-│   │   ├── feline.lua
 │   │   ├── indent-blankline.lua
 │   │   ├── nvim-cmp.lua
 │   │   ├── nvim-lspconfig.lua
@@ -75,19 +75,19 @@ See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 
 `/nvim/lua/core`
 
+* [colors.lua](nvim/lua/core/colors.lua): Define Neovim and plugins color scheme
+
+* [keymaps.lua](nvim/lua/core/keymaps.lua): Keymaps configuration file, vim/neovim and plugins keymaps
+
 * [settings.lua](nvim/lua/core/settings.lua): General Neovim settings and configuration
 
-* [keymaps.lua](nvim/lua/core/keymaps.lua): Keymaps configuration file, vim/neovim and plugins keymaps.
-
-* [colors.lua](nvim/lua/core/colors.lua): Define Neovim and plugins color scheme
+* [statusline.lua](nvim/lua/core/statusline.lua): Statusline configuration file
 
 `/nvim/lua/plugins`
 
 * [packer.lua](nvim/lua/plugins/packer.lua): Plugin manager settings
 
 * [alpha-nvim.lua](nvim/lua/plugins/alpha-nvim.lua): Dashboard
-
-* [feline.lua](nvim/lua/plugins/feline.lua): Statusline configuration file
 
 * [indent-blankline.lua](nvim/lua/plugins/indent-blankline.lua): Indent line
 
