@@ -8,10 +8,10 @@ Website: https://github.com/brainfucksec/neovim-lua
 --]]
 
 -- Import Lua modules
+require('packer_init')
 require('core/settings')
 require('core/keymaps')
 require('core/statusline')
-require('packer_init')
 require('plugins/nvim-tree')
 require('plugins/indent-blankline')
 require('plugins/vista')
