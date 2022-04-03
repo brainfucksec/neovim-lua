@@ -29,7 +29,7 @@ local vi_mode_colors = {
   COMMAND = colors.pink,
   SHELL = colors.pink,
   TERM = colors.pink,
-  NONE = colors.purple
+  NONE = colors.yellow,
 }
 
 -- Providers (LSP, vi_mode)
