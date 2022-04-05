@@ -108,7 +108,7 @@ local comps = {
         return icon .. os
       end,
       hl = { fg = colors.fg },
-      --left_sep = ' ',
+      left_sep = ' ',
       right_sep = ' ',
     },
     -- Line-column
