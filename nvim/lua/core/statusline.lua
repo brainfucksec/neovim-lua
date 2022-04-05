@@ -42,6 +42,8 @@ local lsp_get_diag = function(str)
   return (count > 0) and ' '..count..' ' or ''
 end
 
+local separator = '|'
+
 -- My components
 local comps = {
   -- vi_mode -> NORMAL, INSERT..
@@ -90,7 +92,10 @@ local comps = {
         return ' ' .. icon .. ' ' .. type
       end,
       hl = { fg = colors.fg },
-      left_sep = ' ',
+      left_sep = {
+        str = ' ' .. separator,
+        hl = { fg = colors.fg },
+      },
       righ_sep = ' ',
     },
     -- Operating system
@@ -108,8 +113,14 @@ local comps = {
         return icon .. os
       end,
       hl = { fg = colors.fg },
-      left_sep = ' ',
-      right_sep = ' ',
+      left_sep = {
+        str = ' ' .. separator,
+        hl = { fg = colors.fg },
+      },
+      right_sep = {
+        str = ' ' .. separator,
+        hl = { fg = colors.fg },
+      },
     },
     -- Line-column
     position = {
