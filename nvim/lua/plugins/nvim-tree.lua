@@ -32,6 +32,7 @@ g.nvim_tree_show_icons = {
 --- Each of these are documented in `:help nvim-tree.OPTION_NAME`
 require('nvim-tree').setup {
   open_on_setup = true,
+  open_on_setup_file = true,
   open_on_tab = true,
   auto_close = false,
   update_cwd = true,
