@@ -87,7 +87,7 @@ local comps = {
         local extension = vim.fn.expand '%:e'
         local icon = require('nvim-web-devicons').get_icon(extension)
         if icon == nil then
-          icon = ' '
+          icon = ' '
         end
         return ' ' .. icon .. ' ' .. type
       end,
@@ -154,13 +154,13 @@ local comps = {
   diagnos = {
     err = {
       provider = 'diagnostic_errors',
-      icon = '⚠ ',
+      icon = ' ',
       hl = { fg = colors.red },
       left_sep = '  ',
     },
     warn = {
       provider = 'diagnostic_warnings',
-      icon = ' ',
+      icon = ' ',
       hl = { fg = colors.yellow },
       left_sep = ' ',
     },
@@ -172,7 +172,7 @@ local comps = {
     },
     hint = {
       provider = 'diagnostic_hints',
-      icon = ' ',
+      icon = ' ',
       hl = { fg = colors.cyan },
       left_sep = ' ',
     },
