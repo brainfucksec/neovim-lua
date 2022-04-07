@@ -160,7 +160,7 @@ local comps = {
     },
     warn = {
       provider = 'diagnostic_warnings',
-      icon = ' ',
+      icon = ' ' ,
       hl = { fg = colors.yellow },
       left_sep = ' ',
     },
