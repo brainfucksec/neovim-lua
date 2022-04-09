@@ -10,13 +10,8 @@
 --- https://github.com/brainfucksec/neovim-lua#readme
 
 
-local cmd = vim.cmd
-cmd [[packadd packer.nvim]]
-
-local packer = require 'packer'
-
 -- Add packages
-return packer.startup(function()
+return require('packer').startup(function()
   use 'wbthomason/packer.nvim' -- packer can manage itself
 
   -- File explorer
