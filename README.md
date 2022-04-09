@@ -145,17 +145,11 @@ See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 
 ## Installation
 
-1. Install [neovim v0.6.x](https://github.com/neovim/neovim/releases/latest)
+1. Install [Neovim v0.6.x](https://github.com/neovim/neovim/releases/latest)
 
-2. Install [npm](https://github.com/npm/cli) (for download the packages of LSP language servers)
+2. Install [Nerd Fonts](https://www.nerdfonts.com/font-downloads), (for the font of the screenshots install [Cozette Font](https://github.com/slavfox/Cozette))
 
-3. Download [this repository](https://github.com/brainfucksec/neovim-lua) with `git` and copy the `nvim` folder in the `${HOME}/.config` directory (make a backup of your current `nvim` folder if necessary):
-
-```term
-git clone https://github.com/brainfucksec/neovim-lua.git
-cd neovim-lua/
-cp -Rv nvim ~/.config/
-```
+3. Install [npm](https://github.com/npm/cli) for download packages of LSP language servers, see: [LSP Configuration](#lsp-configuration)
 
 4. Install [packer.nvim](https://github.com/wbthomason/packer.nvim) for install and manage plugins:
 
@@ -167,6 +161,16 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 Open Neovim and run `:PackerSync` command.
 
 See: https://github.com/wbthomason/packer.nvim#quickstart
+
+5. Download [this repository](https://github.com/brainfucksec/neovim-lua) with `git` and copy the `nvim` folder in the `${HOME}/.config` directory (make a backup of your current `nvim` folder if necessary):
+
+```term
+git clone https://github.com/brainfucksec/neovim-lua.git
+cd neovim-lua/
+cp -Rv nvim ~/.config/
+```
+
+6. Restart Neovim
 
 ## LSP Configuration
 
@@ -188,7 +192,7 @@ Bash - [bashls](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_
 
 Python - [pyright](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#pyright)
 
-C, C++, CSS - [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#clangd)
+C, C++ - [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#clangd)
 
 HTML, CSS, JSON - [vscode-html](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#html)
 
@@ -216,6 +220,8 @@ require('onedark').load()
 -- Set colorscheme (from core/colors.lua/colorscheme_name)
 local colors = require('core/colors').onedark
 ```
+
+
 
 ## Configuration check
 
