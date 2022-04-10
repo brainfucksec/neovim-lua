@@ -5,7 +5,10 @@
 -- Plugin: nvim-lspconfig
 -- url: https://github.com/neovim/nvim-lspconfig
 
-local nvim_lsp = require 'lspconfig'
+local status_ok, lspconfig = pcall(require, 'lspconfig')
+if not status_ok then
+  return
+end
 
 -- Add additional capabilities supported by nvim-cmp
 local capabilities = vim.lsp.protocol.make_client_capabilities()
@@ -101,7 +104,7 @@ local servers = { 'bashls', 'pyright', 'clangd', 'html', 'tsserver' }
 
 -- Call setup
 for _, lsp in ipairs(servers) do
-  nvim_lsp[lsp].setup {
+  lspconfig[lsp].setup {
     on_attach = on_attach,
     capabilities = capabilities,
     flags = {

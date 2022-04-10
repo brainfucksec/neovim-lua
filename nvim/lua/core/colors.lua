@@ -4,9 +4,10 @@
 
 -- See: https://github.com/brainfucksec/neovim-lua#appearance
 
+
 -- Load nvim color scheme:
 --- Change the "require" values with your color scheme
---- Available color schemes: OneDark, Neovim Monokai, Rose Pine
+--- Available color schemes: onedark, monokai, rose-pine
 local status_ok, color_scheme = pcall(require, 'onedark')
 if not status_ok then
   return
@@ -25,7 +26,7 @@ local M = {}
 
 -- Theme: OneDark (dark)
 --- Colors: https://github.com/navarasu/onedark.nvim/blob/master/lua/onedark/palette.lua
-M.onedark = {
+M.onedark_dark = {
   bg = '#282c34',
   fg = '#b2bbcc',
   pink = '#c678dd',

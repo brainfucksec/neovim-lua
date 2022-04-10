@@ -139,7 +139,7 @@ See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 
 ![rose-pine_1](img/5-rose-pine_1.png)
 
-![rose-pine-2](img/6-rose-pine_2.png)
+![rose-pine_2](img/6-rose-pine_2.png)
 
 </details>
 
@@ -172,31 +172,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
 
-7. Download the plugins with `git`:
-
-```term
-cd ~/.local/share/nvim/site/pack/packer/start/
-
-git clone https://github.com/Famiu/feline.nvim
-git clone https://github.com/neovim/nvim-lspconfig
-git clone https://github.com/hrsh7th/nvim-cmp
-git clone https://github.com/L3MON4D3/LuaSnip
-git clone https://github.com/hrsh7th/cmp-buffer
-git clone https://github.com/saadparwaiz1/cmp_luasnip
-git clone https://github.com/hrsh7th/cmp-nvim-lsp
-git clone https://github.com/hrsh7th/cmp-path
-git clone https://github.com/kyazdani42/nvim-tree.lua
-git clone https://github.com/lukas-reineke/indent-blankline.nvim
-git clone https://github.com/windwp/nvim-autopairs
-git clone https://github.com/liuchengxu/vista.vim
-git clone https://github.com/lewis6991/gitsigns.nvim
-git clone https://github.com/nvim-lua/plenary.nvim
-git clone https://github.com/nvim-treesitter/nvim-treesitter
-git clone https://github.com/goolord/alpha-nvim
-git clone https://github.com/kyazdani42/nvim-web-devicons
-```
-
-8. Run Neovim with `PackerSync` command:
+7. Run Neovim with `PackerSync` command:
 
 ```term
 nvim +PackerSync
@@ -237,7 +213,8 @@ The color scheme is defined in the following files (default: OneDark):
 * Neovim UI - [nvim/lua/core/settings.lua](nvim/lua/core/settings.lua):
 
 ```lua
--- Load colorscheme
+-- Load nvim color scheme:
+...color_scheme = pcall(require, 'onedark')
 require('onedark').setup {
     style = 'darker'
 }
@@ -248,10 +225,8 @@ require('onedark').load()
 
 ```lua
 -- Set colorscheme (from core/colors.lua/colorscheme_name)
-local colors = require('core/colors').onedark
+local colors = require('core/colors').onedark_dark
 ```
-
-
 
 ## Configuration check
 
@@ -261,7 +236,7 @@ local colors = require('core/colors').onedark
 :checkhealth
 ```
 
-![.](img/checkhealth.png)
+![alt text](img/checkhealth.png)
 
 - You can also use the `startuptime` option to read the nvim startup logs:
 
@@ -275,7 +250,6 @@ See: `:help startuptime`
 
 ## TODO
 
-* Improve/fix plugins installation at first run (with `packer`)
 * Improve "Autocommands" management
 * Improve LSP configuration
 
@@ -290,6 +264,8 @@ See: `:help startuptime`
 * https://www.old.reddit.com/r/neovim/
 
 ## Other Neovim Lua projects and examples
+
+* https://github.com/LunarVim/Neovim-from-scratch
 
 * https://github.com/siduck76/NvChad
 
@@ -312,4 +288,4 @@ Then feel free to take what you need but **don't install anything without checki
 
 ---
 
-**Thanks to all the authors of the sources mentioned above and to all the others from whom I "stole" some configs :)**
+**Thanks to all the authors of the sources mentioned above and to all the others from whom I "stole" some configs and thanks to the users of /r/Neovim subreddit for the support :)**

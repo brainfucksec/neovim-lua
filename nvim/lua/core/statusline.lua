@@ -11,9 +11,13 @@
 --- Thanks to ibhagwan for the example to follow:
 --- https://github.com/ibhagwan/nvim-lua
 
+local status_ok, feline = pcall(require, 'feline')
+if not status_ok then
+  return
+end
 
 -- Set colorscheme (from core/colors.lua/colorscheme_name)
-local colors = require('core/colors').onedark
+local colors = require('core/colors').onedark_dark
 
 local vi_mode_colors = {
   NORMAL = colors.cyan,
@@ -248,7 +252,7 @@ table.insert(components.active[2], comps.file.position)
 table.insert(components.active[2], comps.file.line_percentage)
 
 -- Call feline
-require('feline').setup {
+feline.setup {
   theme = {
     bg = colors.bg,
     fg = colors.fg,

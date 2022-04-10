@@ -5,11 +5,15 @@
 -- Plugin: alpha-nvim
 -- url: https://github.com/goolord/alpha-nvim
 
--- For configuration examples see: https://github.com/goolord/alpha-nvim/discussions/16
+--- For configuration examples see: https://github.com/goolord/alpha-nvim/discussions/16
 
 
-local alpha = require 'alpha'
-local dashboard = require 'alpha.themes.dashboard'
+local status_ok, alpha = pcall(require, 'alpha')
+if not status_ok then
+  return
+end
+
+local dashboard = require('alpha.themes.dashboard')
 
 -- Footer
 local function footer()
