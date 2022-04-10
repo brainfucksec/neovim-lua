@@ -186,7 +186,7 @@ git clone https://github.com/saadparwaiz1/cmp_luasnip
 git clone https://github.com/hrsh7th/cmp-nvim-lsp
 git clone https://github.com/hrsh7th/cmp-path
 git clone https://github.com/kyazdani42/nvim-tree.lua
-git clone https://github.com/lukas-reineke/indent-blankline
+git clone https://github.com/lukas-reineke/indent-blankline.nvim
 git clone https://github.com/windwp/nvim-autopairs
 git clone https://github.com/liuchengxu/vista.vim
 git clone https://github.com/lewis6991/gitsigns.nvim
