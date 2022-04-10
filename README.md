@@ -181,11 +181,16 @@ git clone https://github.com/Famiu/feline.nvim
 git clone https://github.com/neovim/nvim-lspconfig
 git clone https://github.com/hrsh7th/nvim-cmp
 git clone https://github.com/L3MON4D3/LuaSnip
+git clone https://github.com/hrsh7th/cmp-buffer
+git clone https://github.com/saadparwaiz1/cmp_luasnip
+git clone https://github.com/hrsh7th/cmp-nvim-lsp
+git clone https://github.com/hrsh7th/cmp-path
 git clone https://github.com/kyazdani42/nvim-tree.lua
 git clone https://github.com/lukas-reineke/indent-blankline
 git clone https://github.com/windwp/nvim-autopairs
 git clone https://github.com/liuchengxu/vista.vim
 git clone https://github.com/lewis6991/gitsigns.nvim
+git clone https://github.com/nvim-lua/plenary.nvim
 git clone https://github.com/nvim-treesitter/nvim-treesitter
 git clone https://github.com/goolord/alpha-nvim
 git clone https://github.com/kyazdani42/nvim-web-devicons
@@ -270,6 +275,7 @@ See: `:help startuptime`
 
 ## TODO
 
+* Improve/fix plugins installation at first run (with `packer`)
 * Improve "Autocommands" management
 * Improve LSP configuration
 
