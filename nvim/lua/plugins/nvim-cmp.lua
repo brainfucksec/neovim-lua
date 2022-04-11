@@ -6,13 +6,13 @@
 -- url: https://github.com/hrsh7th/nvim-cmpa
 
 
-local status_ok, cmp = pcall(require, 'cmp')
-if not status_ok then
+local cmp_status_ok, cmp = pcall(require, 'cmp')
+if not cmp_status_ok then
   return
 end
 
-local status_ok, luasnip = pcall(require, 'luasnip')
-if not status_ok then
+local luasnip_status_ok, luasnip = pcall(require, 'luasnip')
+if not luasnip_status_ok then
   return
 end
 
