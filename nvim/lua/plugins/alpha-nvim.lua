@@ -5,7 +5,7 @@
 -- Plugin: alpha-nvim
 -- url: https://github.com/goolord/alpha-nvim
 
---- For configuration examples see: https://github.com/goolord/alpha-nvim/discussions/16
+-- For configuration examples see: https://github.com/goolord/alpha-nvim/discussions/16
 
 
 local status_ok, alpha = pcall(require, 'alpha')

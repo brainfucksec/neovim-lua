@@ -5,9 +5,9 @@
 -- Plugin manager: packer.nvim
 -- url: https://github.com/wbthomason/packer.nvim
 
--- For information about installed plugins see the README
---- neovim-lua/README.md
---- https://github.com/brainfucksec/neovim-lua#readme
+-- For information about installed plugins see the README:
+-- neovim-lua/README.md
+-- https://github.com/brainfucksec/neovim-lua#readme
 
 
 -- Automatically install packer
