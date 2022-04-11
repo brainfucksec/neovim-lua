@@ -1,3 +1,4 @@
+* Improve LSP configuration
 <p align="center">
 <img src="img/logo.png" alt="neovim-lua_logo">
 </p>
@@ -5,6 +6,17 @@
 <h3 align="center">
 Neovim KISS configuration with Lua
 </h3>
+
+## Table of Contents
+
+* [Plugins](#plugins)
+* [Directory Tree](#directory-tree)
+* [Files and Settings](#files-and-settings)
+* [Installation](#installation)
+* [LSP Configuration](#lsp-configuration)
+* [Set Color Scheme](#set-color-scheme)
+* [Configuration Check](#configuration-check)
+* [Appearance](#appearance)
 
 ## Plugins
 
@@ -101,48 +113,6 @@ See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 
 * [vista.lua](nvim/lua/plugins/vista.lua): Tag viewer settings
 
-## Appearance
-
-**Colorschemes:**
-
-* [OneDark](https://github.com/navarasu/onedark.nvim)
-
-* [Neovim Monokai](https://github.com/tanvirtin/monokai.nvim)
-
-* [Rose Pine](https://github.com/rose-pine/neovim)
-
-**Fonts:** [Cozette](https://github.com/slavfox/Cozette)
-
-**Icons:** [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
-
-## Screenshots
-
-<p align="center">
-<img src="img/banner.png">
-</p>
-
-<details><summary> <b>(Click to expand)</b></summary>
-
-**OneDark (darker)**
-
-![onedark_1](img/1-onedark_1.png)
-
-![onedark_2](img/2-onedark_2.png)
-
-**Monokai**
-
-![monokai_1](img/3-monokai_1.png)
-
-![monokai_2](img/4-monokai_2.png)
-
-**Rosé Pine**
-
-![rose-pine_1](img/5-rose-pine_1.png)
-
-![rose-pine_2](img/6-rose-pine_2.png)
-
-</details>
-
 ## Installation
 
 1. Install [Neovim v0.6.x](https://github.com/neovim/neovim/releases/latest).
@@ -228,6 +198,8 @@ require('onedark').load()
 local colors = require('core/colors').onedark_dark
 ```
 
+See: [Appearance](#appearance)
+
 ## Configuration check
 
 - Open nvim and run command `checkhealth`, you should not see any error in the output (except for the one related to the Python 2 interpreter if don't have it):
@@ -248,10 +220,52 @@ nvim /tmp/nvim-start.log
 
 See: `:help startuptime`
 
+## Appearance
+
+### Colorschemes
+
+* [OneDark](https://github.com/navarasu/onedark.nvim)
+
+* [Neovim Monokai](https://github.com/tanvirtin/monokai.nvim)
+
+* [Rose Pine](https://github.com/rose-pine/neovim)
+
+**Fonts:** [Cozette](https://github.com/slavfox/Cozette)
+
+**Icons:** [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
+
+### Screenshots
+
+<p align="center">
+<img src="img/banner.png">
+</p>
+
+<details><summary> <b>(Click to expand)</b></summary>
+
+**OneDark (darker)**
+
+![onedark_1](img/1-onedark_1.png)
+
+![onedark_2](img/2-onedark_2.png)
+
+**Monokai**
+
+![monokai_1](img/3-monokai_1.png)
+
+![monokai_2](img/4-monokai_2.png)
+
+**Rosé Pine**
+
+![rose-pine_1](img/5-rose-pine_1.png)
+
+![rose-pine_2](img/6-rose-pine_2.png)
+
+</details>
+
 ## TODO
 
-* Improve "Autocommands" management
 * Improve LSP configuration
+* Improve "Autocommands" management
 
 ## Guides and resources
 
@@ -288,4 +302,4 @@ Then feel free to take what you need but **don't install anything without checki
 
 ---
 
-**Thanks to all the authors of the sources mentioned above and to all the others from whom I "stole" some configs and thanks to the users of /r/Neovim subreddit for the support :)**
+**Thanks to all the authors of the sources mentioned above, to all the others from whom I "stole" some configs and thanks to the users of /r/Neovim subreddit for the support of the configuration :)**
