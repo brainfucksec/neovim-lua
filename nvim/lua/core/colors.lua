@@ -6,14 +6,14 @@
 
 
 -- Load nvim color scheme:
---- Change the "require" values with your color scheme
---- Available color schemes: onedark, monokai, rose-pine
+-- Change the "require" values with your color scheme
+-- Available color schemes: onedark, monokai, rose-pine
 local status_ok, color_scheme = pcall(require, 'onedark')
 if not status_ok then
   return
 end
 
---- OneDark styles: dark, darker, cool, deep, warm, warmer, light
+-- OneDark styles: dark, darker, cool, deep, warm, warmer, light
 require('onedark').setup {
   style = 'darker',
   colors = { fg = '#b2bbcc' }, --default: #a0a8b7
@@ -21,11 +21,11 @@ require('onedark').setup {
 require('onedark').load()
 
 -- With these functions you can import color scheme for other components
---- (i.e. statusline) with: require('colors').colorscheme_name
+-- (i.e. statusline) with: require('colors').colorscheme_name
 local M = {}
 
 -- Theme: OneDark (dark)
---- Colors: https://github.com/navarasu/onedark.nvim/blob/master/lua/onedark/palette.lua
+-- Colors: https://github.com/navarasu/onedark.nvim/blob/master/lua/onedark/palette.lua
 M.onedark_dark = {
   bg = '#282c34',
   fg = '#b2bbcc',
@@ -38,7 +38,7 @@ M.onedark_dark = {
 }
 
 -- Theme: Monokai (classic)
---- Colors: https://github.com/tanvirtin/monokai.nvim/blob/master/lua/monokai.lua
+-- Colors: https://github.com/tanvirtin/monokai.nvim/blob/master/lua/monokai.lua
 M.monokai = {
   bg = '#202328', --default: #272a30
   fg = '#f8f8f0',
@@ -51,8 +51,8 @@ M.monokai = {
 }
 
 -- Theme: Rosé Pine (main)
---- Colors: https://github.com/rose-pine/neovim/blob/main/lua/rose-pine/palette.lua
---- color names are adapted to the formats above
+-- Colors: https://github.com/rose-pine/neovim/blob/main/lua/rose-pine/palette.lua
+-- color names are adapted to the formats above
 M.rose_pine = {
   bg = '#111019', --default: #191724
   fg = '#e0def4',

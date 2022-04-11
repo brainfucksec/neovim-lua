@@ -3,8 +3,8 @@
 -----------------------------------------------------------
 
 -- Default options are not included
---- See: https://neovim.io/doc/user/vim_diff.html
---- [2] Defaults - *nvim-defaults*
+-- See: https://neovim.io/doc/user/vim_diff.html
+-- [2] Defaults - *nvim-defaults*
 
 -----------------------------------------------------------
 -- Neovim API aliases
@@ -123,8 +123,8 @@ cmd [[
 cmd [[command Term :botright vsplit term://$SHELL]]
 
 -- Terminal visual tweaks:
---- enter insert mode when switching to terminal
---- close terminal buffer on process exit
+-- enter insert mode when switching to terminal
+-- close terminal buffer on process exit
 cmd [[
   autocmd TermOpen * setlocal listchars= nonumber norelativenumber nocursorline
   autocmd TermOpen * startinsert
