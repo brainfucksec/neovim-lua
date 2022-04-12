@@ -52,7 +52,7 @@ opt.hidden = true                     -- Enable background buffers
 opt.history = 100                     -- Remember N lines in history
 opt.lazyredraw = true                 -- Faster scrolling
 opt.synmaxcol = 240                   -- Max column for syntax highlight
-opt.updatetime = 400                  -- ms to wait for trigger 'document_highlight'
+opt.updatetime = 250                  -- ms to wait for trigger an event
 
 -----------------------------------------------------------
 -- Startup
