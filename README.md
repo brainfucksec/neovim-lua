@@ -156,7 +156,7 @@ nvim +PackerSync
 sudo npm install -g bash-language-server pyright vscode-langservers-extracted typescript typescript-language-server
 ```
 
-2. Install [clang](https://clangd.llvm.org/installation.html) for use LSP with [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#clangd)
+2. Install [clang](https://clangd.llvm.org/installation.html) for use LSP with [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#clangd) and [ctags](https://github.com/universal-ctags/ctags) to view LSP symbols and tags with [Vista.vim](https://github.com/liuchengxu/vista.vim).
 
 3. Open a source file of one of the supported languages with Neovim and run command [:LspInfo](https://github.com/neovim/nvim-lspconfig#built-in-commands) for testing the LSP support.
 
@@ -264,8 +264,8 @@ See: `:help startuptime`
 
 ## TODO
 
-* Improve LSP configuration
-* Improve "Autocommands" management
+* Improve "Autocommands" management.
+* Add support for Rust programming language.
 
 ## Guides and resources
 
