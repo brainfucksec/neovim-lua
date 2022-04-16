@@ -50,7 +50,7 @@ Neovim KISS configuration with Lua
 
 `${HOME}/.config/nvim`
 
-```bash
+```
 .
 ├── lua
 │   ├── core
@@ -154,9 +154,19 @@ nvim +PackerSync
 sudo npm install -g bash-language-server pyright vscode-langservers-extracted typescript typescript-language-server
 ```
 
-2. Install [clang](https://clangd.llvm.org/installation.html) for use LSP with [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#clangd), and [ctags](https://github.com/universal-ctags/ctags) to view tags with [Tagbar](https://github.com/preservim/tagbar).
+2. Install additional packages for plugins support:
 
-3. Open a source file of one of the supported languages with Neovim and run command [:LspInfo](https://github.com/neovim/nvim-lspconfig#built-in-commands) for testing the LSP support.
+**C, C++:**
+
+* [clang](https://clangd.llvm.org/installation.html) for use LSP with [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#clangd).
+
+* [ctags](https://github.com/universal-ctags/ctags) to view tags with [Tagbar](https://github.com/preservim/tagbar).
+
+**Python:**
+
+* [pynvim](https://github.com/neovim/pynvim)
+
+3. Open a source file of one of the supported languages with Neovim, and run command [:LspInfo](https://github.com/neovim/nvim-lspconfig#built-in-commands) for testing the LSP support.
 
 ### Languages Currently Supported
 
@@ -262,8 +272,9 @@ See: `:help startuptime`
 
 ## TODO
 
-* Improve "Autocommands" management.
+* Improve "Autocommands" configuration.
 * Add support for Rust programming language.
+* Add another color scheme (not important).
 
 ## Guides and resources
 
