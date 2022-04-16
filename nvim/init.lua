@@ -1,7 +1,7 @@
 --[[
 
 Neovim init file
-Version: 0.56.1 - 2022/04/16
+Version: 0.57.0 - 2022/04/16
 Maintainer: brainf+ck
 Website: https://github.com/brainfucksec/neovim-lua
 
@@ -14,7 +14,6 @@ require('core/keymaps')
 require('core/statusline')
 require('plugins/nvim-tree')
 require('plugins/indent-blankline')
-require('plugins/vista')
 require('plugins/nvim-cmp')
 require('plugins/nvim-lspconfig')
 require('plugins/nvim-treesitter')

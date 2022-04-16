@@ -62,7 +62,7 @@ return packer.startup(function(use)
   use 'kyazdani42/nvim-web-devicons'
 
   -- Tag viewer
-  use 'liuchengxu/vista.vim'
+  use 'preservim/tagbar'
 
   -- Treesitter interface
   use 'nvim-treesitter/nvim-treesitter'

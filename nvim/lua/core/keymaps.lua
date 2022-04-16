@@ -62,5 +62,5 @@ map('n', '<C-n>', ':NvimTreeToggle<CR>')            -- open/close
 map('n', '<leader>f', ':NvimTreeRefresh<CR>')       -- refresh
 map('n', '<leader>n', ':NvimTreeFindFile<CR>')      -- search file
 
--- Vista tag-viewer
-map('n', '<C-m>', ':Vista!!<CR>') -- open/close
+-- Tagbar
+map('n', '<C-m>', ':TagbarToggle<CR>')              -- open/close
