@@ -36,7 +36,7 @@ Neovim KISS configuration with Lua
 
 [nvim-autopairs](https://github.com/windwp/nvim-autopairs) - A super powerful autopairs for Neovim
 
-[vista.vim](https://github.com/liuchengxu/vista.vim) - View and search LSP symbols, tags in Vim/NeoVim
+[Tagbar](https://github.com/preservim/tagbar) - A class outline viewer for Vim
 
 [gitsigns](https://github.com/lewis6991/gitsigns.nvim) - Super fast git decorations implemented purely in lua/teal
 
@@ -50,7 +50,8 @@ Neovim KISS configuration with Lua
 
 `${HOME}/.config/nvim`
 
-```
+```bash
+.
 ├── lua
 │   ├── core
 │   │   ├── colors.lua
@@ -63,8 +64,7 @@ Neovim KISS configuration with Lua
 │   │   ├── nvim-cmp.lua
 │   │   ├── nvim-lspconfig.lua
 │   │   ├── nvim-tree.lua
-│   │   ├── nvim-treesitter.lua
-│   │   └── vista.lua
+│   │   └── nvim-treesitter.lua
 │   └── packer_init.lua
 ├── plugin
 │   └── packer_compiled.lua
@@ -111,8 +111,6 @@ See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 
 * [nvim-treesitter](nvim/lua/plugins/nvim-treesitter): Treesitter interface configuration
 
-* [vista.lua](nvim/lua/plugins/vista.lua): Tag viewer settings
-
 ## Installation
 
 1. Install [Neovim v0.6.x](https://github.com/neovim/neovim/releases/latest).
@@ -156,7 +154,7 @@ nvim +PackerSync
 sudo npm install -g bash-language-server pyright vscode-langservers-extracted typescript typescript-language-server
 ```
 
-2. Install [clang](https://clangd.llvm.org/installation.html) for use LSP with [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#clangd) and [ctags](https://github.com/universal-ctags/ctags) to view LSP symbols and tags with [Vista.vim](https://github.com/liuchengxu/vista.vim).
+2. Install [clang](https://clangd.llvm.org/installation.html) for use LSP with [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#clangd), and [ctags](https://github.com/universal-ctags/ctags) to view tags with [Tagbar](https://github.com/preservim/tagbar).
 
 3. Open a source file of one of the supported languages with Neovim and run command [:LspInfo](https://github.com/neovim/nvim-lspconfig#built-in-commands) for testing the LSP support.
 
