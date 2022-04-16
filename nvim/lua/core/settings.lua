@@ -95,39 +95,41 @@ end
 exec([[
   augroup YankHighlight
     autocmd!
-    autocmd TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=800}
+    autocmd TextYankPost * silent!
+    \ lua vim.highlight.on_yank{higroup="IncSearch", timeout=1000}
   augroup end
 ]], false)
 
 -- Remove whitespace on save
-cmd [[autocmd BufWritePre * :%s/\s\+$//e]]
+cmd([[autocmd BufWritePre * :%s/\s\+$//e]])
 
 -- Don't auto commenting new lines
-cmd [[autocmd BufEnter * set fo-=c fo-=r fo-=o]]
+cmd([[autocmd BufEnter * set fo-=c fo-=r fo-=o]])
 
 -- Remove line lenght marker for selected filetypes
-cmd [[
+cmd([[
   autocmd FileType text,markdown,html,xhtml,javascript setlocal cc=0
-]]
+]])
 
 -- 2 spaces for selected filetypes
-cmd [[
-  autocmd FileType xml,html,xhtml,css,scss,javascript,json,lua,yaml setlocal shiftwidth=2 tabstop=2
-]]
+cmd([[
+  autocmd FileType xml,html,xhtml,css,scss,javascript,json,lua,yaml
+  \ setlocal shiftwidth=2 tabstop=2
+]])
 
 -----------------------------------------------------------
 -- Terminal
 -----------------------------------------------------------
 
 -- Open a terminal pane on the right using :Term
-cmd [[command Term :botright vsplit term://$SHELL]]
+cmd([[command Term :botright vsplit term://$SHELL]])
 
 -- Terminal visual tweaks:
 -- enter insert mode when switching to terminal
 -- close terminal buffer on process exit
-cmd [[
+cmd([[
   autocmd TermOpen * setlocal listchars= nonumber norelativenumber nocursorline
   autocmd TermOpen * startinsert
   autocmd BufLeave term://* stopinsert
-]]
+]])
 
