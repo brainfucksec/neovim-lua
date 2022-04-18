@@ -9,11 +9,11 @@ local augroup = vim.api.nvim_create_augroup   -- Create/get autocommand group
 local autocmd = vim.api.nvim_create_autocmd   -- Create autocommand
 
 -- Highlight on yank
-augroup('YankHighlight', {clear = true})
+augroup('YankHighlight', { clear = true })
 autocmd('TextYankPost', {
   group = 'YankHighlight',
   callback = function()
-    vim.highlight.on_yank({higroup = 'IncSearch', timeout = '1000'})
+    vim.highlight.on_yank({ higroup = 'IncSearch', timeout = '1000' })
   end
 })
 
@@ -31,18 +31,18 @@ autocmd('BufEnter', {
 
 -- Settings for fyletypes:
 -- Disable line lenght marker
-augroup('setLineLenght', {clear = true})
+augroup('setLineLenght', { clear = true })
 autocmd('Filetype', {
   group = 'setLineLenght',
-  pattern = {'text', 'markdown', 'html', 'xhtml', 'javascript', 'typescript'},
+  pattern = { 'text', 'markdown', 'html', 'xhtml', 'javascript', 'typescript' },
   command = 'setlocal cc=0'
 })
 
 -- Set indentation to 2 spaces
-augroup('setIndent', {clear = true})
+augroup('setIndent', { clear = true })
 autocmd('Filetype', {
   group = 'setIndent',
-  pattern = {'xml', 'html', 'xhtml', 'css', 'scss', 'javascript', 'typescript',
+  pattern = { 'xml', 'html', 'xhtml', 'css', 'scss', 'javascript', 'typescript',
   'json', 'yaml', 'lua'
   },
   command = 'setlocal shiftwidth=2 tabstop=2'
