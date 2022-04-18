@@ -271,7 +271,6 @@ See: `:help startuptime`
 ## TODO
 
 * Improve Keymaps with new Lua APIs.
-* Improve (Fix) LSP configuration (show warnings and errors after opening/save a file).
 * Add support for Rust programming language.
 * Add another color scheme (not important).
 
