@@ -13,7 +13,6 @@ local cmd = vim.cmd     				      -- Execute Vim commands
 local exec = vim.api.nvim_exec 	      -- Execute Vimscript
 local g = vim.g         				      -- Global variables
 local opt = vim.opt         		      -- Set options (global/buffer/windows-scoped)
---local fn = vim.fn       				    -- Call Vim functions
 
 -----------------------------------------------------------
 -- General
@@ -36,6 +35,7 @@ opt.ignorecase = true                 -- Ignore case letters when search
 opt.smartcase = true                  -- Ignore lowercase for the whole pattern
 opt.linebreak = true                  -- Wrap on word boundary
 opt.termguicolors = true              -- Enable 24-bit RGB colors
+opt.laststatus=3                      -- Set global statusline
 
 -----------------------------------------------------------
 -- Tabs, indent
@@ -57,7 +57,6 @@ opt.updatetime = 250                  -- ms to wait for trigger an event
 -----------------------------------------------------------
 -- Startup
 -----------------------------------------------------------
-
 -- Disable nvim intro
 opt.shortmess:append "sI"
 
