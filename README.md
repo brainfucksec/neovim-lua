@@ -199,6 +199,7 @@ See: [nvim-lspconfig #doc/server_configurations.md](https://github.com/neovim/nv
 **Fonts:** [Cozette](https://github.com/slavfox/Cozette)
 
 **Icons:** [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
+
 The color scheme is defined in the following files (default: OneDark):
 
 * Neovim UI - [nvim/lua/core/settings.lua](nvim/lua/core/settings.lua):

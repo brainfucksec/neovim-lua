@@ -1,5 +1,5 @@
 -----------------------------------------------------------
--- Autocommand Functions
+-- Autocommand functions
 -----------------------------------------------------------
 
 -- Define autocommands with Lua APIs
@@ -34,7 +34,7 @@ autocmd('BufEnter', {
 augroup('setLineLenght', {clear = true})
 autocmd('Filetype', {
   group = 'setLineLenght',
-  pattern = {'*.txt', '*.md', '*.html', '*.xhtml', '*.js', '*.ts'},
+  pattern = {'text', 'markdown', 'html', 'xhtml', 'javascript', 'typescript'},
   command = 'setlocal cc=0'
 })
 
@@ -42,21 +42,19 @@ autocmd('Filetype', {
 augroup('setIndent', {clear = true})
 autocmd('Filetype', {
   group = 'setIndent',
-  pattern = {'*.xml', '*.html', '*.xhtml', '*.css', '*.scss', '*.js',
-    '*.ts', '*.json', '*.yaml', '*.lua'
+  pattern = {'xml', 'html', 'xhtml', 'css', 'scss', 'javascript', 'typescript',
+  'json', 'yaml', 'lua'
   },
   command = 'setlocal shiftwidth=2 tabstop=2'
 })
 
--- Terminal:
--- open a Terminal on the right tab
+-- Terminal settings:
+-- Open a Terminal on the right tab
 autocmd('CmdlineEnter', {
-  pattern = '*',
   command = 'command! Term :botright vsplit term://$SHELL'
 })
 
--- Terminal settings:
--- enter insert mode when switching to terminal
+-- Enter insert mode when switching to terminal
 autocmd('TermOpen', {
   command = 'setlocal listchars= nonumber norelativenumber nocursorline',
 })
@@ -66,7 +64,7 @@ autocmd('TermOpen', {
   command = 'startinsert'
 })
 
--- close terminal buffer on process exit
+-- Close terminal buffer on process exit
 autocmd('BufLeave', {
   pattern = 'term://*',
   command = 'stopinsert'

@@ -4,7 +4,6 @@
 
 -- See: https://github.com/brainfucksec/neovim-lua#appearance
 
-
 -- Load nvim color scheme:
 -- Change the "require" values with your color scheme
 -- Available color schemes: onedark, monokai, rose-pine
@@ -20,8 +19,8 @@ require('onedark').setup {
 }
 require('onedark').load()
 
--- With these functions you can import color scheme for other components
--- (i.e. statusline) with: require('colors').colorscheme_name
+-- statusline color schemes:
+-- import with: require('colors').colorscheme_name
 local M = {}
 
 -- Theme: OneDark (dark)
