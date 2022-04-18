@@ -14,9 +14,9 @@ Neovim KISS configuration with Lua
 * [Files and Settings](#files-and-settings)
 * [Installation](#installation)
 * [LSP Configuration](#lsp-configuration)
-* [Set Color Scheme](#set-color-scheme)
-* [Configuration Check](#configuration-check)
 * [Appearance](#appearance)
+* [Configuration Check](#configuration-check)
+* [Screenshots](#screenshots)
 
 ## Plugins
 
@@ -51,12 +51,12 @@ Neovim KISS configuration with Lua
 `${HOME}/.config/nvim`
 
 ```
-.
 ├── lua
 │   ├── core
+│   │   ├── autocmds.lua
 │   │   ├── colors.lua
 │   │   ├── keymaps.lua
-│   │   ├── settings.lua
+│   │   ├── options.lua
 │   │   └── statusline.lua
 │   ├── plugins
 │   │   ├── alpha-nvim.lua
@@ -87,11 +87,13 @@ See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 
 `/nvim/lua/core`
 
+* [autocmds.lua](nvim/lua/core/autocmds.lua): Define autocommands with Lua APIs
+
 * [colors.lua](nvim/lua/core/colors.lua): Define Neovim and plugins color scheme
 
 * [keymaps.lua](nvim/lua/core/keymaps.lua): Keymaps configuration file, vim/neovim and plugins keymaps
 
-* [settings.lua](nvim/lua/core/settings.lua): General Neovim settings and configuration
+* [options.lua](nvim/lua/core/options.lua): General Neovim settings
 
 * [statusline.lua](nvim/lua/core/statusline.lua): Statusline configuration file
 
@@ -184,8 +186,19 @@ JavaScript, TypeScript - [tsserver](https://github.com/neovim/nvim-lspconfig/blo
 
 See: [nvim-lspconfig #doc/server_configurations.md](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md)
 
-## Set Color Scheme
+## Appearance
 
+### Available Colorschemes
+
+* [OneDark](https://github.com/navarasu/onedark.nvim)
+
+* [Neovim Monokai](https://github.com/tanvirtin/monokai.nvim)
+
+* [Rose Pine](https://github.com/rose-pine/neovim)
+
+**Fonts:** [Cozette](https://github.com/slavfox/Cozette)
+
+**Icons:** [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 The color scheme is defined in the following files (default: OneDark):
 
 * Neovim UI - [nvim/lua/core/settings.lua](nvim/lua/core/settings.lua):
@@ -205,8 +218,6 @@ require('onedark').load()
 -- Set colorscheme (from core/colors.lua/colorscheme_name)
 local colors = require('core/colors').onedark_dark
 ```
-
-See: [Appearance](#appearance)
 
 ## Configuration check
 
@@ -228,21 +239,7 @@ nvim /tmp/nvim-start.log
 
 See: `:help startuptime`
 
-## Appearance
-
-### Colorschemes
-
-* [OneDark](https://github.com/navarasu/onedark.nvim)
-
-* [Neovim Monokai](https://github.com/tanvirtin/monokai.nvim)
-
-* [Rose Pine](https://github.com/rose-pine/neovim)
-
-**Fonts:** [Cozette](https://github.com/slavfox/Cozette)
-
-**Icons:** [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
-
-### Screenshots
+## Screenshots
 
 <p align="center">
 <img src="img/banner.png">
@@ -272,7 +269,8 @@ See: `:help startuptime`
 
 ## TODO
 
-* Improve "Autocommands" configuration.
+* Improve Keymaps with new Lua APIs.
+* Improve (Fix) LSP configuration (show warnings and errors after opening/save a file).
 * Add support for Rust programming language.
 * Add another color scheme (not important).
 

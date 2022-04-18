@@ -6,11 +6,6 @@
 -- See: https://neovim.io/doc/user/vim_diff.html
 -- [2] Defaults - *nvim-defaults*
 
------------------------------------------------------------
--- Neovim API aliases
------------------------------------------------------------
-local cmd = vim.cmd     				      -- Execute Vim commands
-local exec = vim.api.nvim_exec 	      -- Execute Vimscript
 local g = vim.g         				      -- Global variables
 local opt = vim.opt         		      -- Set options (global/buffer/windows-scoped)
 
@@ -52,7 +47,7 @@ opt.hidden = true                     -- Enable background buffers
 opt.history = 100                     -- Remember N lines in history
 opt.lazyredraw = true                 -- Faster scrolling
 opt.synmaxcol = 240                   -- Max column for syntax highlight
-opt.updatetime = 250                  -- ms to wait for trigger an event
+opt.updatetime = 700                  -- ms to wait for trigger an event
 
 -----------------------------------------------------------
 -- Startup
@@ -85,50 +80,4 @@ local disabled_built_ins = {
 for _, plugin in pairs(disabled_built_ins) do
   g["loaded_" .. plugin] = 1
 end
-
------------------------------------------------------------
--- Autocommands
------------------------------------------------------------
-
--- Highlight on yank
-exec([[
-  augroup YankHighlight
-    autocmd!
-    autocmd TextYankPost * silent!
-    \ lua vim.highlight.on_yank{higroup="IncSearch", timeout=1000}
-  augroup end
-]], false)
-
--- Remove whitespace on save
-cmd([[autocmd BufWritePre * :%s/\s\+$//e]])
-
--- Don't auto commenting new lines
-cmd([[autocmd BufEnter * set fo-=c fo-=r fo-=o]])
-
--- Remove line lenght marker for selected filetypes
-cmd([[
-  autocmd FileType text,markdown,html,xhtml,javascript setlocal cc=0
-]])
-
--- 2 spaces for selected filetypes
-cmd([[
-  autocmd FileType xml,html,xhtml,css,scss,javascript,json,lua,yaml
-  \ setlocal shiftwidth=2 tabstop=2
-]])
-
------------------------------------------------------------
--- Terminal
------------------------------------------------------------
-
--- Open a terminal pane on the right using :Term
-cmd([[command Term :botright vsplit term://$SHELL]])
-
--- Terminal visual tweaks:
--- enter insert mode when switching to terminal
--- close terminal buffer on process exit
-cmd([[
-  autocmd TermOpen * setlocal listchars= nonumber norelativenumber nocursorline
-  autocmd TermOpen * startinsert
-  autocmd BufLeave term://* stopinsert
-]])
 
