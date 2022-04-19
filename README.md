@@ -270,7 +270,6 @@ See: `:help startuptime`
 
 ## TODO
 
-* Improve Keymaps with new Lua APIs.
 * Add support for Rust programming language.
 * Add another color scheme (not important).
 
