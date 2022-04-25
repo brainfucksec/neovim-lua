@@ -114,15 +114,26 @@ https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.m
 
 --]]
 
+-- Define `root_dir` when needed
+-- See: https://github.com/neovim/nvim-lspconfig/issues/320
+local root_dir = function()
+  return vim.fn.getcwd()
+end
+
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches.
 -- Add your language server below:
-local servers = { 'bashls', 'pyright', 'clangd', 'html', 'tsserver' }
+local servers = { 'bashls', 'pyright', 'clangd', 'html', 'cssls', 'tsserver' }
+
+local html_opts = {
+  root_dir = root_dir,
+}
 
 -- Call setup
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     on_attach = on_attach,
+    html_opts = html_opts,
     capabilities = capabilities,
     flags = {
       -- default in neovim 0.7+
