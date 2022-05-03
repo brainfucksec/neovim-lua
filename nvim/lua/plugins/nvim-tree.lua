@@ -39,7 +39,6 @@ nvim_tree.setup {
   open_on_setup = true,
   open_on_setup_file = true,
   open_on_tab = true,
-  auto_close = false,
   update_cwd = true,
   view = { width = 32 },
   renderer = {
