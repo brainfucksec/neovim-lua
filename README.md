@@ -1,4 +1,3 @@
-* Improve LSP configuration
 <p align="center">
 <img src="img/logo.png" alt="neovim-lua_logo">
 </p>
