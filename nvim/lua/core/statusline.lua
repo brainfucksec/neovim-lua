@@ -3,10 +3,10 @@
 -----------------------------------------------------------
 
 -- Plugin: feline.nvim
--- url: https://github.com/famiu/feline.nvim
+-- url: https://github.com/feline-nvim/feline.nvim
 
 -- For the configuration see the Usage section:
--- https://github.com/famiu/feline.nvim/blob/master/USAGE.md
+-- https://github.com/feline-nvim/feline.nvim/blob/master/USAGE.md
 
 -- Thanks to ibhagwan for the example to follow:
 -- https://github.com/ibhagwan/nvim-lua
@@ -220,7 +220,7 @@ local comps = {
 }
 
 -- Get active/inactive components
--- See: https://github.com/famiu/feline.nvim/blob/master/USAGE.md#components
+-- See: https://github.com/feline-nvim/feline.nvim/blob/master/USAGE.md#components
 local components = {
   active = {},
   inactive = {},
