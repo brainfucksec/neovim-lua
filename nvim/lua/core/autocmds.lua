@@ -29,11 +29,11 @@ autocmd('BufEnter', {
   command = 'set fo-=c fo-=r fo-=o'
 })
 
--- Settings for fyletypes:
--- Disable line lenght marker
-augroup('setLineLenght', { clear = true })
+-- Settings for filetypes:
+-- Disable line length marker
+augroup('setLineLength', { clear = true })
 autocmd('Filetype', {
-  group = 'setLineLenght',
+  group = 'setLineLength',
   pattern = { 'text', 'markdown', 'html', 'xhtml', 'javascript', 'typescript' },
   command = 'setlocal cc=0'
 })

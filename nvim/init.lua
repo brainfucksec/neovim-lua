@@ -1,7 +1,7 @@
 --[[
 
 Neovim init file
-Version: 0.59.5 - 2022/05/03
+Version: 0.60.1 - 2022/05/18
 Maintainer: brainf+ck
 Website: https://github.com/brainfucksec/neovim-lua
 
@@ -20,3 +20,4 @@ require('plugins/nvim-cmp')
 require('plugins/nvim-lspconfig')
 require('plugins/nvim-treesitter')
 require('plugins/alpha-nvim')
+
