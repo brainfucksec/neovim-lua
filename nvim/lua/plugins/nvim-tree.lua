@@ -37,7 +37,7 @@ end
 --- Each of these are documented in `:help nvim-tree.OPTION_NAME`
 nvim_tree.setup {
   open_on_setup = true,
-  --open_on_setup_file = true,
+  open_on_setup_file = false, --default
   open_on_tab = true,
   update_cwd = true,
   view = { width = 32 },
