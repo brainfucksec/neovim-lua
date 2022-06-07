@@ -201,7 +201,7 @@ See: [nvim-lspconfig #doc/server_configurations.md](https://github.com/neovim/nv
 
 The color scheme is defined in the following files (default: OneDark):
 
-* Neovim UI - [nvim/lua/core/settings.lua](nvim/lua/core/settings.lua):
+* Neovim UI - [nvim/lua/core/colors.lua](nvim/lua/core/colors.lua):
 
 ```lua
 -- Load nvim color scheme:
