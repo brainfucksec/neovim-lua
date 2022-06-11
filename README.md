@@ -267,11 +267,6 @@ See: `:help startuptime`
 
 </details>
 
-## TODO
-
-* Add support for Rust programming language.
-* Add another color scheme (not important).
-
 ## Guides and resources
 
 * https://neovim.io/doc/user/lua.html
