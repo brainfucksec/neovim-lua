@@ -212,7 +212,7 @@ require('onedark').setup {
 require('onedark').load()
 ```
 
-* Statusline - [nvim/lua/plugins/feline.lua](nvim/lua/plugins/feline.lua):
+* Statusline - [nvim/lua/plugins/feline.lua](nvim/lua/core/statusline.lua):
 
 ```lua
 -- Set colorscheme (from core/colors.lua/colorscheme_name)
