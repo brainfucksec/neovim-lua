@@ -3,7 +3,7 @@
 -----------------------------------------------------------
 
 -- Plugin: nvim-cmp
--- url: https://github.com/hrsh7th/nvim-cmpa
+-- url: https://github.com/hrsh7th/nvim-cmp
 
 
 local cmp_status_ok, cmp = pcall(require, 'cmp')
