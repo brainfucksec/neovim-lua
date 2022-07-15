@@ -212,7 +212,7 @@ require('onedark').setup {
 require('onedark').load()
 ```
 
-* Statusline - [nvim/lua/core/statusline.lua](nvim/lua/core/statusline.lua):
+* Statusline - [nvim/lua/plugins/feline.lua](nvim/lua/core/statusline.lua):
 
 ```lua
 -- Set colorscheme (from core/colors.lua/colorscheme_name)
@@ -302,4 +302,4 @@ Then feel free to take what you need but **don't install anything without checki
 
 ---
 
-**Thanks to all the authors of the sources mentioned above, to all the others from whom I "stole" some configs and thanks to the users of /r/Neovim subreddit for the support of the configuration :)**
+**Thanks to all the authors of the sources mentioned above, to all from whom I "stole" some configs, to the users of /r/Neovim subreddit for the support of the configuration and to [all the people who help me](https://github.com/brainfucksec/neovim-lua/graphs/contributors) improve this setup with their reports and advices.**
