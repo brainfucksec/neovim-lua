@@ -302,4 +302,4 @@ Then feel free to take what you need but **don't install anything without checki
 
 ---
 
-**Thanks to all the authors of the sources mentioned above, to all from whom I "stole" some configs, to the users of /r/Neovim subreddit for the support of the configuration and to [all the people who help me](https://github.com/brainfucksec/neovim-lua/graphs/contributors) improve this setup with their reports and advices.**
+**Thanks to all the authors of the sources mentioned above, to all from whom I "stole" some configs, to the users of /r/Neovim subreddit for the support of the configuration and to [all the people who help me](https://github.com/brainfucksec/neovim-lua/graphs/contributors) to improve this setup with their reports and advices.**
