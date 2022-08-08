@@ -25,7 +25,7 @@ nvim_tree.setup {
   hijack_unnamed_buffer_when_opening = false,
   ignore_buffer_on_setup = false,
   open_on_setup = true,
-  open_on_setup_file = true,
+  open_on_setup_file = false,
   open_on_tab = true,
   ignore_buf_on_tab_change = {},
   sort_by = "name",
