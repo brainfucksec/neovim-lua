@@ -20,17 +20,25 @@ nvim_tree.setup {
   auto_reload_on_write = true,
   create_in_closed_folder = false,
   --disable_netrw = false, -> already disabled on `/core/options.lua`
+  hijack_cursor = true,
   hijack_netrw = true,
   hijack_unnamed_buffer_when_opening = false,
   ignore_buffer_on_setup = false,
   open_on_setup = true,
-  open_on_setup_file = false,
+  open_on_setup_file = true,
   open_on_tab = true,
+  ignore_buf_on_tab_change = {},
   sort_by = "name",
+  root_dirs = {},
+  prefer_startup_root = false,
+  sync_root_with_cwd = false,
   reload_on_bufenter = false,
   respect_buf_cwd = false,
-  update_cwd = true,
+  on_attach = "disable", -- function(bufnr). If nil, will use the deprecated mapping strategy
+  remove_keymaps = false, -- boolean (disable totally or not) or list of key (lhs)
   view = {
+    adaptive_size = false,
+    centralize_selection = false,
     width = 32,
     height = 30,
     hide_root_folder = false,
@@ -39,10 +47,15 @@ nvim_tree.setup {
     number = false,
     relativenumber = false,
     signcolumn = "yes",
-    mappings = {
-      custom_only = false,
-      list = {
-        -- user mappings go here
+    float = {
+      enable = false,
+      open_win_config = {
+      relative = "editor",
+      border = "rounded",
+      width = 30,
+      height = 30,
+      row = 1,
+      col = 1,
       },
     },
   },
@@ -50,14 +63,17 @@ nvim_tree.setup {
     add_trailing = false,
     group_empty = false,
     highlight_git = false,
+    full_name = false,
     highlight_opened_files = "none",
     root_folder_modifier = ":~",
     indent_markers = {
       enable = false,
+      inline_arrows = true,
       icons = {
-        corner = "└ ",
-        edge = "│ ",
-        none = "  ",
+        corner = "└",
+        edge = "│",
+        item = "│",
+        none = " ",
       },
     },
     icons = {
@@ -74,6 +90,7 @@ nvim_tree.setup {
       glyphs = {
         default = "",
         symlink = "",
+        bookmark = "",
         folder = {
           arrow_closed = "",
           arrow_open = "",
@@ -96,6 +113,7 @@ nvim_tree.setup {
       },
     },
     special_files = { "Cargo.toml", "Makefile", "README.md", "readme.md" },
+    symlink_destination = true,
   },
   hijack_directories = {
     enable = true,
@@ -103,7 +121,7 @@ nvim_tree.setup {
   },
   update_focused_file = {
     enable = true,
-    update_cwd = true,
+    update_root = true,
     ignore_list = {},
   },
   ignore_ft_on_setup = {},
@@ -126,9 +144,14 @@ nvim_tree.setup {
     custom = {},
     exclude = {},
   },
+  filesystem_watchers = {
+    enable = true,
+   debounce_delay = 50,
+  },
   git = {
     enable = true,
     ignore = true,
+    show_on_dirs = true,
     timeout = 400,
   },
   actions = {
@@ -137,6 +160,19 @@ nvim_tree.setup {
       enable = true,
       global = false,
       restrict_above_cwd = false,
+    },
+    expand_all = {
+      max_folder_discovery = 300,
+      exclude = {},
+    },
+    file_popup = {
+      open_win_config = {
+        col = 1,
+        row = 1,
+        relative = "cursor",
+        border = "shadow",
+        style = "minimal",
+      },
     },
     open_file = {
       quit_on_open = false,
@@ -150,9 +186,12 @@ nvim_tree.setup {
         },
       },
     },
+    remove_file = {
+      close_window = true,
+    },
   },
   trash = {
-    cmd = "trash",
+    cmd = "gio trash",
     require_confirm = true,
   },
   live_filter = {
@@ -166,9 +205,11 @@ nvim_tree.setup {
       all = false,
       config = false,
       copy_paste = false,
+      dev = false,
       diagnostics = false,
       git = false,
       profile = false,
+      watcher = false,
     },
   },
 }
