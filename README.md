@@ -269,21 +269,15 @@ See: `:help startuptime`
 
 **OneDark (darker)**
 
-![onedark_1](img/1-onedark_1.png)
-
-![onedark_2](img/2-onedark_2.png)
+![1-onedark.png](img/1-onedark.png)
 
 **Monokai**
 
-![monokai_1](img/3-monokai_1.png)
-
-![monokai_2](img/4-monokai_2.png)
+![2-monokai.png](img/2-monokai.png)
 
 **Rosé Pine**
 
-![rose-pine_1](img/5-rose-pine_1.png)
-
-![rose-pine_2](img/6-rose-pine_2.png)
+![3-rose-pine.png](img/3-rose-pine.png)
 
 </details>
 
