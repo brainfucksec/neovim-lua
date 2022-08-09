@@ -20,7 +20,7 @@ nvim_tree.setup {
   auto_reload_on_write = true,
   create_in_closed_folder = false,
   --disable_netrw = false, -> already disabled on `/core/options.lua`
-  hijack_cursor = true,
+  hijack_cursor = false,
   hijack_netrw = true,
   hijack_unnamed_buffer_when_opening = false,
   ignore_buffer_on_setup = false,
@@ -146,7 +146,7 @@ nvim_tree.setup {
   },
   filesystem_watchers = {
     enable = true,
-   debounce_delay = 50,
+    debounce_delay = 50,
   },
   git = {
     enable = true,
