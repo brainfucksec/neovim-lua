@@ -309,11 +309,17 @@ See: `:help startuptime`
 
 * Lua 5.4 Reference Manual - https://www.lua.org/manual/5.4/
 
-## Disclaimer
-
-As all my setups I try to follow the [KISS](https://en.wikipedia.org/wiki/KISS_principle) principle, probably some concepts may not be valid for everyone.
-Then feel free to take what you need but **don't install anything without checking first!**
-
 ---
 
-**Thanks to all the authors of the sources mentioned above, to all from whom I "stole" some configs, to the users of /r/Neovim subreddit for the support of the configuration and to [all the people who help me](https://github.com/brainfucksec/neovim-lua/graphs/contributors) to improve this setup with their reports and advices.**
+## Disclaimer
+
+This setup is based on [KISS](https://en.wikipedia.org/wiki/KISS_principle) principle, probably some concepts may not be valid for everyone. Then feel free to take what you need but **don't install anything without checking first!**
+
+## Thanks to:
+
+- [All the contributors](https://github.com/brainfucksec/neovim-lua/graphs/contributors) who helped improve this setup with their reports and advices.
+
+- All the authors of the sources mentioned above.
+
+- The users of /r/Neovim subreddit for the support of the configuration.
+
