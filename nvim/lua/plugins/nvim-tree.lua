@@ -26,7 +26,8 @@ nvim_tree.setup {
   ignore_buffer_on_setup = false,
   open_on_setup = true,
   open_on_setup_file = false,
-  open_on_tab = true,
+  open_on_tab = false,
+  focus_empty_on_setup = false,
   ignore_buf_on_tab_change = {},
   sort_by = "name",
   root_dirs = {},
@@ -40,13 +41,18 @@ nvim_tree.setup {
     adaptive_size = false,
     centralize_selection = false,
     width = 32,
-    height = 30,
     hide_root_folder = false,
     side = "left",
     preserve_window_proportions = false,
     number = false,
     relativenumber = false,
     signcolumn = "yes",
+    mappings = {
+      custom_only = false,
+      list = {
+        -- user mappings go here
+      },
+    },
     float = {
       enable = false,
       open_win_config = {
@@ -132,6 +138,7 @@ nvim_tree.setup {
   diagnostics = {
     enable = false,
     show_on_dirs = false,
+    debounce_delay = 50,
     icons = {
       hint = "",
       info = "",
