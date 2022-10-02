@@ -58,11 +58,12 @@ Neovim KISS configuration with Lua
 │   │   ├── keymaps.lua
 │   │   ├── options.lua
 │   │   └── statusline.lua
+│   ├── lsp
+│   │   └── nvim-lspconfig.lua
 │   ├── plugins
 │   │   ├── alpha-nvim.lua
 │   │   ├── indent-blankline.lua
 │   │   ├── nvim-cmp.lua
-│   │   ├── nvim-lspconfig.lua
 │   │   ├── nvim-tree.lua
 │   │   └── nvim-treesitter.lua
 │   └── packer_init.lua
@@ -97,6 +98,10 @@ See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 
 * [statusline.lua](nvim/lua/core/statusline.lua): Statusline configuration file
 
+`/nvim/lua/lsp`
+
+* [nvim-lspconfig.lua](nvim/lua/plugins/nvim-lspconfig.lua): LSP configuration (language servers, keybinding)
+
 `/nvim/lua/plugins`
 
 * [packer.lua](nvim/lua/plugins/packer.lua): Plugin manager settings
@@ -106,8 +111,6 @@ See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 * [indent-blankline.lua](nvim/lua/plugins/indent-blankline.lua): Indent line
 
 * [nvim-cmp.lua](nvim/lua/plugins/nvim-cmp.lua): Autocompletion settings
-
-* [nvim-lspconfig.lua](nvim/lua/plugins/nvim-lspconfig.lua): LSP configuration (language servers, keybinding)
 
 * [nvim-tree.lua](nvim/lua/plugins/nvim-tree.lua): File manager settings
 
