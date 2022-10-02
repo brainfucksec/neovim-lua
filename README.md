@@ -59,7 +59,7 @@ Neovim KISS configuration with Lua
 │   │   ├── options.lua
 │   │   └── statusline.lua
 │   ├── lsp
-│   │   └── nvim-lspconfig.lua
+│   │   └── lspconfig.lua
 │   ├── plugins
 │   │   ├── alpha-nvim.lua
 │   │   ├── indent-blankline.lua
@@ -100,7 +100,7 @@ See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 
 `/nvim/lua/lsp`
 
-* [nvim-lspconfig.lua](nvim/lua/plugins/nvim-lspconfig.lua): LSP configuration (language servers, keybinding)
+* [lspconfig.lua](nvim/lua/lsp/lspconfig.lua): LSP configuration (language servers, keybinding)
 
 `/nvim/lua/plugins`
 
