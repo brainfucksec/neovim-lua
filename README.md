@@ -115,7 +115,7 @@ See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 
 ## Installation
 
-1. Install [Neovim v0.7.x](https://github.com/neovim/neovim/releases/latest).
+1. Install [Neovim v0.8.x](https://github.com/neovim/neovim/releases/latest).
 
 2. Install [Nerd Fonts](https://www.nerdfonts.com/font-downloads), (for the font of the screenshots install [Cozette Font](https://github.com/slavfox/Cozette)).
 
