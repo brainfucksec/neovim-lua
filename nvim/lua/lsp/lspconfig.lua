@@ -56,8 +56,7 @@ local on_attach = function(client, bufnr)
   vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 
   -- Highlighting references.
-  -- Server capabilities spec:
-  -- https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#serverCapabilities
+  -- See: https://sbulav.github.io/til/til-neovim-highlight-references/
   if client.server_capabilities.documentHighlightProvider then
       vim.api.nvim_create_augroup("lsp_document_highlight", { clear = true })
       vim.api.nvim_clear_autocmds { buffer = bufnr, group = "lsp_document_highlight" }
