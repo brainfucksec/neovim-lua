@@ -50,27 +50,7 @@ Neovim KISS configuration with Lua
 
 `${HOME}/.config/nvim`
 
-```
-├── lua
-│   ├── core
-│   │   ├── autocmds.lua
-│   │   ├── colors.lua
-│   │   ├── keymaps.lua
-│   │   ├── options.lua
-│   │   └── statusline.lua
-│   ├── lsp
-│   │   └── lspconfig.lua
-│   ├── plugins
-│   │   ├── alpha-nvim.lua
-│   │   ├── indent-blankline.lua
-│   │   ├── nvim-cmp.lua
-│   │   ├── nvim-tree.lua
-│   │   └── nvim-treesitter.lua
-│   └── packer_init.lua
-├── plugin
-│   └── packer_compiled.lua
-└── init.lua
-```
+![alt text](img/dir-tree.png)
 
 ## Files and Settings
 
