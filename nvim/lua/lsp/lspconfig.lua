@@ -23,24 +23,6 @@ end
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = cmp_nvim_lsp.default_capabilities(capabilities)
 
--- Diagnostic options, see: `:help vim.diagnostic.config`
-vim.diagnostic.config({
-  update_in_insert = true,
-  float = {
-    focusable = false,
-    style = "minimal",
-    border = "rounded",
-    source = "always",
-    header = "",
-    prefix = "",
-	},
-})
-
--- Show line diagnostics automatically in hover window
-vim.cmd([[
-  autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, { focus = false })
-]])
-
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 local opts = { noremap=true, silent=true }
@@ -57,6 +39,7 @@ local on_attach = function(client, bufnr)
 
   -- Highlighting references.
   -- See: https://sbulav.github.io/til/til-neovim-highlight-references/
+  -- for the highlight trigger time see: `vim.opt.updatetime`
   if client.server_capabilities.documentHighlightProvider then
       vim.api.nvim_create_augroup("lsp_document_highlight", { clear = true })
       vim.api.nvim_clear_autocmds { buffer = bufnr, group = "lsp_document_highlight" }
@@ -94,8 +77,27 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', '<space>f', function() vim.lsp.buf.format { async = true } end, bufopts)
 end
 
---[[
+-- UI Customization:
+-- Customizing how diagnostics are displayed
+-- see: `:help vim.diagnostic.config`
+vim.diagnostic.config({
+  update_in_insert = true,
+  float = {
+    focusable = false,
+    style = "minimal",
+    border = "rounded",
+    source = "always",
+    header = "",
+    prefix = "",
+	},
+})
 
+-- Show line diagnostics automatically in hover window
+vim.cmd([[
+  autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, { focus = false })
+]])
+
+--[[
 Language servers setup:
 
 For language servers list see:
@@ -108,7 +110,6 @@ Python        -> pyright
 C-C++         -> clangd
 HTML/CSS/JSON -> vscode-html-languageserver
 JavaScript/TypeScript -> tsserver
-
 --]]
 
 -- Define `root_dir` when needed
