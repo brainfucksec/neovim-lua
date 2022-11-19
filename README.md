@@ -102,7 +102,7 @@ See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 
 2. Install [Nerd Fonts](https://www.nerdfonts.com/font-downloads), (for the font of the screenshots install [Cozette Font](https://github.com/slavfox/Cozette)).
 
-3. Install [npm](https://github.com/npm/cli) for download packages of LSP language servers, see: [LSP Configuration](#lsp-configuration).
+3. Install [Node.js - npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) for download packages of LSP language servers, see: [LSP Configuration](#lsp-configuration).
 
 4. Make a backup of your current `nvim` folder if necessary:
 
@@ -179,11 +179,11 @@ See: [nvim-lspconfig #doc/server_configurations.md](https://github.com/neovim/nv
 
 * [Rose Pine](https://github.com/rose-pine/neovim)
 
-**Fonts:** [Cozette](https://github.com/slavfox/Cozette)
+**Fonts:** See: [Installation](#installation)
 
 **Icons:** [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 
-The color scheme is defined in the following files (default: OneDark):
+The color scheme (default: OneDark) is defined in the following files:
 
 * Neovim UI - [nvim/lua/core/colors.lua](nvim/lua/core/colors.lua):
 
@@ -215,7 +215,7 @@ These are the default keymaps, in the following shortcuts, the `<leader>` key is
 | `<leader>tk/th`      | Normal        | Change split orientation (vertical/horizontal)    |
 | `<Ctrl> + {h,j,k,l}` | Normal        | Move around splits windows                        |
 | `<leader>r`          | Normal        | Reload configuration file                         |
-| `<leader>s`          | Normal/Insert | Save file                                         |
+| `<leader>s`          | Normal        | Save file                                         |
 | `<leader>q`          | Normal        | Save (close all windows) and exit from Neovim     |
 | `<Ctrl> + t`         | Normal        | Open terminal (`:Term`)                           |
 | `<Esc>`              | Terminal      | Exit terminal                                     |
@@ -297,6 +297,8 @@ See: `:help startuptime`
 ## Disclaimer
 
 This setup is based on [KISS](https://en.wikipedia.org/wiki/KISS_principle) principle, probably some concepts may not be valid for everyone. Then feel free to take what you need but **don't install anything without checking first!**
+
+This setup is not a Framework but it is the configuration I use to work on Linux, it can be used by default as it can be a start point to understand how Neovim is structured and maybe improve this config.
 
 ## Thanks to:
 
