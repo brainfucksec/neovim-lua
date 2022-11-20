@@ -7,13 +7,12 @@
 
 -- Keybindings are defined in `core/keymaps.lua`:
 -- https://github.com/kyazdani42/nvim-tree.lua#keybindings
-
 local status_ok, nvim_tree = pcall(require, 'nvim-tree')
 if not status_ok then
   return
 end
 
--- Call setup:
+-- Call setup.
 -- Each of these are documented in `:help nvim-tree.OPTION_NAME`
 -- nested options are documented by accessing them with `.` (eg: `:help nvim-tree.view.mappings.list`)
 nvim_tree.setup {
@@ -25,7 +24,7 @@ nvim_tree.setup {
   hijack_unnamed_buffer_when_opening = false,
   ignore_buffer_on_setup = false,
   open_on_setup = true,
-  open_on_setup_file = false,
+  open_on_setup_file = true, -- open nvim-tree when you open any file
   open_on_tab = false,
   focus_empty_on_setup = false,
   ignore_buf_on_tab_change = {},
