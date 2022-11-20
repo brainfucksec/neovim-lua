@@ -14,7 +14,7 @@ end
 indent_blankline.setup {
   char = "▏",
   use_treesitter = true,
-  show_first_indent_level = false,
+  show_first_indent_level = true,
   filetype_exclude = {
     'lspinfo',
     'packer',
