@@ -23,9 +23,6 @@ nvim_tree.setup {
   hijack_cursor = false,
   hijack_netrw = true,
   hijack_unnamed_buffer_when_opening = false,
-  ignore_buffer_on_setup = false,
-  open_on_setup = true,
-  open_on_setup_file = true, -- open nvim-tree when you open any file
   sort_by = "name",
   root_dirs = {},
   prefer_startup_root = false,
