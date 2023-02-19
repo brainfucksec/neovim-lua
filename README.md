@@ -98,9 +98,11 @@ See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 
 ## Installation
 
+Before installing this version of the config, see: [Breaking Change - New Plugin Manager: lazy.nvim](https://github.com/brainfucksec/neovim-lua/issues/27)
+
 1. Install [Neovim v0.8.x](https://github.com/neovim/neovim/releases/latest).
 
-2. Install [Nerd Fonts](https://www.nerdfonts.com/font-downloads), (the font of the screenshots are 'JetBrainsMono Nerd Font').
+2. Install [Nerd Fonts](https://www.nerdfonts.com/font-downloads), (the font of the screenshots are `JetBrainsMono Nerd Font`).
 
 3. Install [Node.js - npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) for download packages of LSP language servers, see: [LSP Configuration](#lsp-configuration).
 
