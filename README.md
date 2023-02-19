@@ -100,7 +100,7 @@ See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 
 1. Install [Neovim v0.8.x](https://github.com/neovim/neovim/releases/latest).
 
-2. Install [Nerd Fonts](https://www.nerdfonts.com/font-downloads), (for the font of the screenshots install [Cozette Font](https://github.com/slavfox/Cozette)).
+2. Install [Nerd Fonts](https://www.nerdfonts.com/font-downloads), (the font of the screenshots are 'JetBrainsMono Nerd Font').
 
 3. Install [Node.js - npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) for download packages of LSP language servers, see: [LSP Configuration](#lsp-configuration).
 
