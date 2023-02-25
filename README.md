@@ -6,6 +6,8 @@
 Neovim KISS configuration with Lua
 </h3>
 
+##  Breaking change: New plugin manager [lazy.nvim](https://github.com/folke/lazy.nvim), see [ISSUE #27](https://github.com/brainfucksec/neovim-lua/issues/27)
+
 ## Table of Contents
 
 * [Plugins](#plugins)
@@ -17,8 +19,6 @@ Neovim KISS configuration with Lua
 * [Keymaps](#keymaps)
 * [Configuration Check](#configuration-check)
 * [Screenshots](#screenshots)
-
-# Breaking change: New plugin manager [lazy.nvim](https://github.com/folke/lazy.nvim), see [ISSUE #27](https://github.com/brainfucksec/neovim-lua/issues/27)
 
 ## Plugins
 
