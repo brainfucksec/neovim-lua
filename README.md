@@ -6,7 +6,11 @@
 Neovim KISS configuration with Lua
 </h3>
 
-##  Breaking change: New plugin manager [lazy.nvim](https://github.com/folke/lazy.nvim), see [ISSUE #27](https://github.com/brainfucksec/neovim-lua/issues/27)
+---
+
+###  Breaking change: New plugin manager [lazy.nvim](https://github.com/folke/lazy.nvim), see [ISSUE #27](https://github.com/brainfucksec/neovim-lua/issues/27)
+
+---
 
 ## Table of Contents
 
@@ -95,8 +99,6 @@ See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 * [nvim-treesitter](nvim/lua/plugins/nvim-treesitter): Treesitter interface configuration
 
 ## Installation
-
-Before installing this version of the config, see: [Breaking Change - New Plugin Manager: lazy.nvim](https://github.com/brainfucksec/neovim-lua/issues/27)
 
 1. Install [Neovim v0.8.x](https://github.com/neovim/neovim/releases/latest).
 
