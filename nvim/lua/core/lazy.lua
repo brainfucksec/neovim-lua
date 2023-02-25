@@ -44,19 +44,19 @@ lazy.setup({
     { 'https://github.com/rose-pine/neovim', name = 'rose-pine', lazy = true },
 
     -- Icons
-    'kyazdani42/nvim-web-devicons',
+    { 'kyazdani42/nvim-web-devicons' },
 
     -- File explorer
-    'kyazdani42/nvim-tree.lua',
+    { 'kyazdani42/nvim-tree.lua' },
 
     -- Statusline
     {
-      'feline-nvim/feline.nvim',
+      'freddiehaddad/feline.nvim',
       dependencies = { 'kyazdani42/nvim-web-devicons' },
     },
 
     -- Indent line
-    'lukas-reineke/indent-blankline.nvim',
+    { 'lukas-reineke/indent-blankline.nvim' },
 
     -- Autopair
     {
@@ -77,10 +77,10 @@ lazy.setup({
     },
 
     -- Tag viewer
-    'preservim/tagbar',
+    { 'preservim/tagbar' },
 
     -- LSP
-    'neovim/nvim-lspconfig',
+    { 'neovim/nvim-lspconfig' },
 
     -- Autocomplete
     {

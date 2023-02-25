@@ -24,7 +24,7 @@ Neovim KISS configuration with Lua
 
 [lazy.nvim](https://github.com/folke/lazy.nvim) - A modern plugin manager for Neovim
 
-[feline.nvim](https://github.com/feline-nvim/feline.nvim) - A minimal, stylish and customizable statusline for Neovim written in Lua
+[feline.nvim](https://github.com/freddiehaddad/feline.nvim) (freddiehaddad Fork)- A minimal, stylish and customizable statusline for Neovim written in Lua
 
 [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - A collection of common configurations for Neovim's built-in language server client
 
