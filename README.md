@@ -20,7 +20,7 @@ Neovim KISS configuration with Lua
 
 ## Plugins
 
-[packer.nvim](https://github.com/wbthomason/packer.nvim) -  A use-package inspired plugin manager for Neovim
+[lazy.nvim](https://github.com/folke/lazy.nvim) - A modern plugin manager for Neovim
 
 [feline.nvim](https://github.com/feline-nvim/feline.nvim) - A minimal, stylish and customizable statusline for Neovim written in Lua
 
@@ -62,10 +62,6 @@ Neovim KISS configuration with Lua
 
 See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 
-`/nvim/lua`
-
-* [packer_init.lua](nvim/lua/packer_init.lua): Load plugins
-
 `/nvim/lua/core`
 
 * [autocmds.lua](nvim/lua/core/autocmds.lua): Define autocommands with Lua APIs
@@ -73,6 +69,8 @@ See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 * [colors.lua](nvim/lua/core/colors.lua): Define Neovim and plugins color scheme
 
 * [keymaps.lua](nvim/lua/core/keymaps.lua): Keymaps configuration file, vim/neovim and plugins keymaps
+
+* [lazy.lua](nvim/lua/core/lazy.lua): Plugin manager configuration file
 
 * [options.lua](nvim/lua/core/options.lua): General Neovim settings
 
@@ -83,8 +81,6 @@ See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 * [lspconfig.lua](nvim/lua/lsp/lspconfig.lua): LSP configuration (language servers, keybinding)
 
 `/nvim/lua/plugins`
-
-* [packer.lua](nvim/lua/plugins/packer.lua): Plugin manager settings
 
 * [alpha-nvim.lua](nvim/lua/plugins/alpha-nvim.lua): Dashboard
 
@@ -120,17 +116,12 @@ cd neovim-lua/
 cp -Rv nvim ~/.config/
 ```
 
-6. Install [packer.nvim](https://github.com/wbthomason/packer.nvim) for install and manage the plugins:
+6. Install [lazy.nvim](https://github.com/folke/lazy.nvim) for install and manage the plugins, see: [lazy.nvim - Installation](https://github.com/folke/lazy.nvim#-installation)
+
+7. Run Neovim for download/sync plaugins with `lazy`
 
 ```term
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\
- ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-```
-
-7. Run Neovim with `PackerSync` command:
-
-```term
-nvim +PackerSync
+nvim
 ```
 
 ## LSP Configuration
@@ -197,6 +188,8 @@ require('onedark').setup {
 }
 require('onedark').load()
 ```
+
+* Lazy loading - [nvim/lua/core/lazy.lua](nvim/lua/core/lazy.lua)
 
 * Statusline - [nvim/lua/core/statusline.lua](nvim/lua/core/statusline.lua):
 
