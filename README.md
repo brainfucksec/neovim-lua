@@ -23,6 +23,9 @@ Neovim KISS configuration with Lua
 * [Keymaps](#keymaps)
 * [Configuration Check](#configuration-check)
 * [Screenshots](#screenshots)
+* [Guides and Resources](#guides-and-resources)
+* [Other Neovim Lua Projects and Examples](#other-neovim-lua-projects-and-examples)
+* [Lua Resources](#lua-resources)
 
 ## Plugins
 
@@ -219,7 +222,7 @@ These are the default keymaps, in the following shortcuts, the `<leader>` key is
 | `<Ctrl> + n`         | Normal        | Open NvimTree                                     |
 | `<leader>z`          | Normal        | Open Tagbar                                       |
 
-## Configuration check
+## Configuration Check
 
 - Open nvim and run command `checkhealth`, you should not see any error in the output (except for the one related to the Python 2 interpreter if don't have it):
 
@@ -261,7 +264,7 @@ See: `:help startuptime`
 
 </details>
 
-## Guides and resources
+## Guides and Resources
 
 * https://neovim.io/doc/user/lua.html
 
@@ -271,7 +274,7 @@ See: `:help startuptime`
 
 * https://www.old.reddit.com/r/neovim/
 
-## Other Neovim Lua projects and examples
+## Other Neovim Lua Projects and Examples
 
 * https://github.com/LunarVim/Neovim-from-scratch
 
@@ -281,7 +284,7 @@ See: `:help startuptime`
 
 * https://github.com/crivotz/nv-ide
 
-## Lua resources
+## Lua Resources
 
 * Lua in Y minutes - https://learnxinyminutes.com/docs/lua/
 
