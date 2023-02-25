@@ -120,7 +120,7 @@ cp -Rv nvim ~/.config/
 
 6. Install [lazy.nvim](https://github.com/folke/lazy.nvim) for install and manage the plugins, see: [lazy.nvim - Installation](https://github.com/folke/lazy.nvim#-installation)
 
-7. Run Neovim for download/sync plaugins with `lazy`
+7. Run Neovim for download/sync plugins with `lazy`
 
 ```term
 nvim
@@ -190,8 +190,6 @@ require('onedark').setup {
 }
 require('onedark').load()
 ```
-
-* Lazy loading - [nvim/lua/core/lazy.lua](nvim/lua/core/lazy.lua)
 
 * Statusline - [nvim/lua/core/statusline.lua](nvim/lua/core/statusline.lua):
 
