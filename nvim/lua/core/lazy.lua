@@ -4,6 +4,7 @@
 
 -- Plugin manager: lazy.nvim
 -- URL: https://github.com/folke/lazy.nvim
+
 -- For information about installed plugins see the README:
 -- neovim-lua/README.md
 -- https://github.com/brainfucksec/neovim-lua#readme
@@ -44,19 +45,50 @@ lazy.setup({
     { 'https://github.com/rose-pine/neovim', name = 'rose-pine', lazy = true },
 
     -- Icons
-    { 'kyazdani42/nvim-web-devicons' },
+    { 'kyazdani42/nvim-web-devicons', lazy = true },
+
+    -- Dashboard (start screen)
+    {
+      'goolord/alpha-nvim',
+      dependencies = { 'kyazdani42/nvim-web-devicons' },
+    },
+
+    -- Git labels
+    {
+      'lewis6991/gitsigns.nvim',
+      lazy = true,
+      dependencies = {
+        'nvim-lua/plenary.nvim',
+        'kyazdani42/nvim-web-devicons',
+      },
+      config = function()
+        require('gitsigns').setup{}
+      end
+    },
 
     -- File explorer
-    { 'kyazdani42/nvim-tree.lua' },
+    {
+      'kyazdani42/nvim-tree.lua',
+      dependencies = { 'kyazdani42/nvim-web-devicons' },
+    },
 
     -- Statusline
     {
       'freddiehaddad/feline.nvim',
-      dependencies = { 'kyazdani42/nvim-web-devicons' },
+      dependencies = {
+        'kyazdani42/nvim-web-devicons',
+        'lewis6991/gitsigns.nvim',
+      },
     },
+
+    -- Treesitter
+    { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
 
     -- Indent line
     { 'lukas-reineke/indent-blankline.nvim' },
+
+    -- Tag viewer
+    { 'preservim/tagbar' },
 
     -- Autopair
     {
@@ -67,18 +99,6 @@ lazy.setup({
       end
     },
 
-    -- Treesitter
-    {
-      'nvim-treesitter/nvim-treesitter',
-      build = ':TSUpdate',
-      config = function()
-        require('nvim-treesitter.install').update({ with_sync = true })
-      end
-    },
-
-    -- Tag viewer
-    { 'preservim/tagbar' },
-
     -- LSP
     { 'neovim/nvim-lspconfig' },
 
@@ -86,7 +106,7 @@ lazy.setup({
     {
       'hrsh7th/nvim-cmp',
       -- load cmp on InsertEnter
-      event = "InsertEnter",
+      event = 'InsertEnter',
       -- these dependencies will only be loaded when cmp loads
       -- dependencies are always lazy-loaded unless specified otherwise
       dependencies = {
@@ -96,21 +116,6 @@ lazy.setup({
         'hrsh7th/cmp-buffer',
         'saadparwaiz1/cmp_luasnip',
       },
-    },
-
-   -- Git labels
-    {
-      'lewis6991/gitsigns.nvim',
-      dependencies = { 'nvim-lua/plenary.nvim' },
-      config = function()
-        require('gitsigns').setup{}
-      end
-    },
-
-    -- Dashboard (start screen)
-    {
-      'goolord/alpha-nvim',
-      dependencies = { 'kyazdani42/nvim-web-devicons' },
     },
   },
 })
