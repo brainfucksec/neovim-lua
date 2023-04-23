@@ -8,10 +8,6 @@ Neovim KISS configuration with Lua
 
 ---
 
-###  Breaking change: New plugin manager [lazy.nvim](https://github.com/folke/lazy.nvim), see [ISSUE #27](https://github.com/brainfucksec/neovim-lua/issues/27)
-
----
-
 ## Table of Contents
 
 * [Plugins](#plugins)
@@ -31,7 +27,7 @@ Neovim KISS configuration with Lua
 
 [lazy.nvim](https://github.com/folke/lazy.nvim) - A modern plugin manager for Neovim
 
-[feline.nvim](https://github.com/freddiehaddad/feline.nvim) (freddiehaddad Fork)- A minimal, stylish and customizable statusline for Neovim written in Lua
+[feline.nvim](https://github.com/freddiehaddad/feline.nvim) (freddiehaddad Fork) - A minimal, stylish and customizable statusline for Neovim written in Lua
 
 [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - A collection of common configurations for Neovim's built-in language server client
 
@@ -189,7 +185,7 @@ The color scheme (default: OneDark) is defined in the following files:
 
 ```lua
 -- Load nvim color scheme:
-...color_scheme = pcall(require, 'onedark')
+local status_ok, color_scheme = pcall(require, 'onedark')
 require('onedark').setup {
     style = 'darker'
 }
@@ -242,6 +238,16 @@ nvim /tmp/nvim-start.log
 
 See: `:help startuptime`
 
+Also you can check the configuration of the Plugins and Neovim startup time with `lazy` commands:
+
+```vim
+:Lazy check
+
+:Lazy profile
+```
+
+See: [lazy.nvim - Usage](https://github.com/folke/lazy.nvim#-usage)
+
 ## Screenshots
 
 <p align="center">
@@ -261,6 +267,10 @@ See: `:help startuptime`
 **Rosé Pine**
 
 ![3-rose-pine.png](img/3-rose-pine.png)
+
+**lazy.nvim**
+
+![4-lazy-nvim.png](img/4-lazy-nvim.png)
 
 </details>
 
