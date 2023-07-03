@@ -25,12 +25,12 @@ require('onedark').load()
 
 --[[
 Statusline color schemes.
-Import the following color schemes in your statusline.lua file
-with: `require('core/colors').colorscheme_name` where the colors scheme name
+Return the selected color scheme in this file with:
+`return M.colorscheme_name` where the color scheme name
 is the value of the variables below.
 
-e.g.: `local colors = require('core/colors').onedark_dark
-See: `core/statusline.lua`
+e.g.: `return M.onedark_dark`
+The returned value will be used by `core/statusline.lua`
 
 The color schemes below are created by following the "palette" file color
 schemes. Color names are adapted to maintain a pattern, original names can be
@@ -78,4 +78,4 @@ M.rose_pine = {
   red = '#ebbcba',
 }
 
-return M
+return M.onedark_dark
