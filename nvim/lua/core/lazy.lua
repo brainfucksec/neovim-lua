@@ -85,7 +85,7 @@ lazy.setup({
     { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
 
     -- Indent line
-    { 'lukas-reineke/indent-blankline.nvim' },
+    { 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} },
 
     -- Tag viewer
     { 'preservim/tagbar' },
