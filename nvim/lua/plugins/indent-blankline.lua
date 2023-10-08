@@ -12,26 +12,27 @@ if not status_ok then
 end
 
 ibl.setup {
-  char = "▏",
-  use_treesitter = true,
-  show_first_indent_level = true,
-  filetype_exclude = {
-    'lspinfo',
-    'packer',
-    'checkhealth',
-    'help',
-    'man',
-    'dashboard',
-    'git',
-    'markdown',
-    'text',
-    'terminal',
-    'NvimTree',
-  },
-  buftype_exclude = {
-    'terminal',
-    'nofile',
-    'quickfix',
-    'prompt',
+  indent = { char = "▎" },
+  exclude = {
+    filetypes = {
+      'lspinfo',
+      'packer',
+      'checkhealth',
+      'help',
+      'man',
+      'dashboard',
+      'git',
+      'markdown',
+      'text',
+      'terminal',
+      'NvimTree',
+    },
+
+    buftypes = {
+      'terminal',
+      'nofile',
+      'quickfix',
+      'prompt',
+    },
   },
 }
