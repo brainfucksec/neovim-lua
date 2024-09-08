@@ -109,7 +109,7 @@ Bash          -> bashls
 Python        -> pyright
 C-C++         -> clangd
 HTML/CSS/JSON -> vscode-html-languageserver
-JavaScript/TypeScript -> tsserver
+JavaScript/TypeScript -> ts_ls
 --]]
 
 -- Define `root_dir` when needed
@@ -122,7 +122,7 @@ end
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches.
 -- Add your language server below:
-local servers = { 'bashls', 'pyright', 'clangd', 'html', 'cssls', 'tsserver' }
+local servers = { 'bashls', 'pyright', 'clangd', 'html', 'cssls', 'ts_ls' }
 
 -- Call setup
 for _, lsp in ipairs(servers) do
