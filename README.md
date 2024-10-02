@@ -63,9 +63,9 @@ Neovim KISS configuration with Lua
 
 * [init.lua](nvim/init.lua): Main configuration file that call `lua` modules
 
-* [lua](nvim/lua): Folder of `lua` modules, here reside all the Lua modules that needed. These modules are called from `init.lua` file (see below).
+* [lua](nvim/lua): The directory of `lua` modules, these modules are called in the `init.lua` file (see below).
 
-See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
+See: [nanotee/nvim-lua-guide: Where to put Lua files](https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files)
 
 `/nvim/lua/core`
 
@@ -73,7 +73,7 @@ See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 
 * [colors.lua](nvim/lua/core/colors.lua): Define Neovim and plugins color scheme
 
-* [keymaps.lua](nvim/lua/core/keymaps.lua): Keymaps configuration file, vim/neovim and plugins keymaps
+* [keymaps.lua](nvim/lua/core/keymaps.lua): Keymaps configuration file, Neovim and plugins keymaps
 
 * [lazy.lua](nvim/lua/core/lazy.lua): Plugin manager configuration file
 
@@ -99,7 +99,7 @@ See: https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files
 
 ## Installation
 
-1. Install [Neovim v0.8.x](https://github.com/neovim/neovim/releases/latest).
+1. Install [Neovim v0.10.x](https://github.com/neovim/neovim/releases/latest).
 
 2. Install [Nerd Fonts](https://www.nerdfonts.com/font-downloads), (the font of the screenshots are `JetBrainsMono Nerd Font`).
 
@@ -119,7 +119,7 @@ cd neovim-lua/
 cp -Rv nvim ~/.config/
 ```
 
-6. Install [lazy.nvim](https://github.com/folke/lazy.nvim) for install and manage the plugins, see: [lazy.nvim - Installation](https://github.com/folke/lazy.nvim#-installation)
+6. Install [lazy.nvim](https://lazy.folke.io/) for install and manage the plugins, see: [lazy.nvim - Installation](https://lazy.folke.io/installation)
 
 7. Run Neovim for download/sync plugins with `lazy`
 
@@ -129,17 +129,21 @@ nvim
 
 ## LSP Configuration
 
-1. Install LSP language servers with `npm`
+1. Install LSP language servers with `npm`, see: [Languages Currently Supported](languages-currently-supported)
 
 ```term
-sudo npm install -g bash-language-server pyright vscode-langservers-extracted typescript typescript-language-server
+sudo npm install -g \
+    bash-language-server \
+    pyright \
+    vscode-langservers-extracted \
+    typescript typescript-language-server
 ```
 
 2. Install additional packages for plugins support:
 
 **C, C++:**
 
-* [clang](https://clangd.llvm.org/installation.html) for use LSP with [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#clangd).
+* [clang](https://clangd.llvm.org/installation.html) for use LSP with [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#clangd).
 
 * [ctags](https://github.com/universal-ctags/ctags) to view tags with [Tagbar](https://github.com/preservim/tagbar).
 
@@ -147,23 +151,25 @@ sudo npm install -g bash-language-server pyright vscode-langservers-extracted ty
 
 * [pynvim](https://github.com/neovim/pynvim)
 
-3. Open a source file of one of the supported languages with Neovim, and run command [:LspInfo](https://github.com/neovim/nvim-lspconfig#built-in-commands) for testing the LSP support.
+3. Open a source file of one of the supported languages with Neovim, and run command [:LspInfo](https://github.com/neovim/nvim-lspconfig?tab=readme-ov-file#commands) for verify the LSP support.
+
+See: [nvim-lspconfig - Quickstart](https://github.com/neovim/nvim-lspconfig?tab=readme-ov-file#quickstart)
 
 ### Languages Currently Supported
 
 Lua - [builtin](https://neovim.io/doc/user/lua.html)
 
-Bash - [bashls](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#bashls)
+Bash - [bashls](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#bashls)
 
-Python - [pyright](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#pyright)
+Python - [pyright](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#pyright)
 
-C, C++ - [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#clangd)
+C, C++ - [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#clangd)
 
-HTML, CSS, JSON - [vscode-html](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#html)
+HTML, CSS, JSON - [vscode-langservers-extracted](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#html)
 
-JavaScript, TypeScript - [ts_ls](https://github.com/typescript-language-server/typescript-language-server)
+JavaScript, TypeScript - [ts_ls](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#ts_ls)
 
-See: [nvim-lspconfig #doc/server_configurations.md](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md)
+See: [nvim-lspconfig #doc/LSP configs](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md)
 
 ## Appearance
 
@@ -246,7 +252,7 @@ Also you can check the configuration of the Plugins and Neovim startup time with
 :Lazy profile
 ```
 
-See: [lazy.nvim - Usage](https://github.com/folke/lazy.nvim#-usage)
+See: [lazy.nvim - Usage](https://lazy.folke.io/usage)
 
 ## Screenshots
 
@@ -276,31 +282,33 @@ See: [lazy.nvim - Usage](https://github.com/folke/lazy.nvim#-usage)
 
 ## Guides and Resources
 
-* https://neovim.io/doc/user/lua.html
+* [Lua - Neovim docs](https://neovim.io/doc/user/lua.html)
 
-* https://github.com/nanotee/nvim-lua-guide
+* [Lua-guide - Neovim docs](https://neovim.io/doc/user/lua-guide.html#lua-guide)
 
-* https://dev.to/vonheikemen/everything-you-need-to-know-to-configure-neovim-using-lua-3h58
+* [reddit /r/neovim](https://www.old.reddit.com/r/neovim/)
 
-* https://www.old.reddit.com/r/neovim/
+* [Lemmy: programming.dev/c/neovim](https://programming.dev/c/neovim)
+
+* [Everything you need to know to configure neovim using lua](https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/)
 
 ## Other Neovim Lua Projects and Examples
 
-* https://github.com/LunarVim/Neovim-from-scratch
+* [NvChad](https://github.com/siduck76/NvChad)
 
-* https://github.com/siduck76/NvChad
+* [nvim-ide](https://github.com/ldelossa/nvim-ide)
 
-* https://github.com/artart222/CodeArt
+* [nv-ide](https://github.com/crivotz/nv-ide)
 
-* https://github.com/crivotz/nv-ide
+* [Neovim from scratch](https://github.com/LunarVim/Neovim-from-scratch)
 
 ## Lua Resources
 
-* Lua in Y minutes - https://learnxinyminutes.com/docs/lua/
+* [Learn X in Y minutes: Where X=Lua](https://learnxinyminutes.com/docs/lua/)
 
-* Lua Quick Guide - https://github.com/medwatt/Notes/blob/main/Lua/Lua_Quick_Guide.ipynb
+* [Lua Quick Guide](https://github.com/medwatt/Notes/blob/main/Lua/Lua_Quick_Guide.ipynb)
 
-* Lua 5.4 Reference Manual - https://www.lua.org/manual/5.4/
+* [Lua 5.4 Reference Manual](https://www.lua.org/manual/5.4/)
 
 ---
 
