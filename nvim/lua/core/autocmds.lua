@@ -3,13 +3,15 @@
 -----------------------------------------------------------
 
 -- Define autocommands with Lua APIs
--- See: h:api-autocmd, h:augroup
+-- See: :h api-autocmd, :h augroup
+-- https://neovim.io/doc/user/autocmd.html
 
 local augroup = vim.api.nvim_create_augroup   -- Create/get autocommand group
 local autocmd = vim.api.nvim_create_autocmd   -- Create autocommand
 
--- General settings:
---------------------
+-----------------------------------------------------------
+-- General settings
+-----------------------------------------------------------
 
 -- Highlight on yank
 augroup('YankHighlight', { clear = true })
@@ -32,8 +34,9 @@ autocmd('BufEnter', {
   command = 'set fo-=c fo-=r fo-=o'
 })
 
--- Settings for filetypes:
---------------------------
+-----------------------------------------------------------
+-- Settings for filetypes
+-----------------------------------------------------------
 
 -- Disable line length marker
 augroup('setLineLength', { clear = true })
@@ -53,8 +56,9 @@ autocmd('Filetype', {
   command = 'setlocal shiftwidth=2 tabstop=2'
 })
 
--- Terminal settings:
----------------------
+-----------------------------------------------------------
+-- Terminal settings
+-----------------------------------------------------------
 
 -- Open a Terminal on the right tab
 autocmd('CmdlineEnter', {
