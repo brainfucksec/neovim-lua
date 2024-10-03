@@ -8,7 +8,7 @@
 Set Neovim UI color scheme.
 Note: The instruction to load the color scheme may vary depending on the
 package.
-See the README of color scheme (i.e. git package) for the instruction, for
+See the README of color scheme (i.e. git package) for information, for
 example: require('color_scheme').setup{}, vim.cmd('color_scheme').
 --]]
 
@@ -22,10 +22,16 @@ end
 -- e.g.: require('monokai').setup{}
 
 -- Set color scheme: OneDark
+-- https://github.com/navarasu/onedark.nvim/?tab=readme-ov-file#configuration
 require('onedark').setup {
   -- styles: dark, darker, cool, deep, warm, warmer, light
   style = 'darker',
-  colors = { fg = '#b2bbcc' }, -- default: #a0a8b7
+  colors = { fg = '#b2bbcc' }, -- override default: #a0a8b7
+  code_style = {
+    -- styles: italic, bold, none
+    comments = 'none',
+    functions = 'bold',
+  },
 }
 require('onedark').load()
 
@@ -36,7 +42,7 @@ Return the selected color scheme in this file with: `return M.colorscheme_name`
 where the color scheme name is the value of the variables below.
 
 e.g.: `local colors = return M.onedark_dark`
-The returned value will be used by `core/statusline.lua`
+The return value is also used by `core/statusline.lua`.
 --]]
 local M = {}
 
@@ -62,7 +68,7 @@ M.onedark_dark = {
 -- Theme: Monokai (classic)
 -- Colors: https://github.com/tanvirtin/monokai.nvim/blob/master/lua/monokai.lua
 M.monokai = {
-  bg = '#202328', --default: #272a30
+  bg = '#202328', -- default: #272a30
   fg = '#f8f8f0',
   pink = '#f92672',
   green = '#a6e22e',
@@ -76,7 +82,7 @@ M.monokai = {
 -- Colors: https://github.com/rose-pine/neovim/blob/main/lua/rose-pine/palette.lua
 -- color names are adapted to the formats above
 M.rose_pine = {
-  bg = '#111019', --default: #191724
+  bg = '#111019', -- default: #191724
   fg = '#e0def4',
   pink = '#eb6f92',
   green = '#9ccfd8',
@@ -86,4 +92,5 @@ M.rose_pine = {
   red = '#ebbcba',
 }
 
+-- Current color scheme
 return M.onedark_dark
