@@ -185,7 +185,7 @@ See: [nvim-lspconfig #doc/LSP configs](https://github.com/neovim/nvim-lspconfig/
 
 **Icons:** [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 
-The color scheme (default: OneDark) is defined in the following files:
+The color scheme (default: OneDark) is defined in the following file:
 
 * Neovim UI - [nvim/lua/core/colors.lua](nvim/lua/core/colors.lua):
 
@@ -198,11 +198,9 @@ require('onedark').setup {
 require('onedark').load()
 ```
 
-* Statusline - [nvim/lua/core/statusline.lua](nvim/lua/core/statusline.lua):
-
 ```lua
--- Set colorscheme (from core/colors.lua/colorscheme_name)
-local colors = require('core/colors').onedark_dark
+-- Return colorscheme for statusline:
+return M.onedark_dark
 ```
 
 ## Keymaps
