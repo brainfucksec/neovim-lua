@@ -4,39 +4,47 @@
 
 -- See: https://github.com/brainfucksec/neovim-lua#appearance
 
--- Neovim UI color scheme.
--- Add the selected color scheme in the `require` values below.
+--[[
+Set Neovim UI color scheme.
+Note: The instruction to load the color scheme may vary may vary depending on
+the package.
+See the README of the selected color scheme for the instruction to use, for
+example: require('color_scheme').setup{}, vim.cmd('color_scheme').
+
+Add the color scheme in the `require` values below.
+e.g.: require('monokai').setup{}
+--]]
+
 -- Current available color schemes: onedark, monokai, rose-pine.
 local status_ok, color_scheme = pcall(require, 'onedark')
 if not status_ok then
   return
 end
 
--- Note: The instruction to load the color scheme may vary.
--- See the README of the selected color scheme for the instruction
--- to use.
--- e.g.: require('color_scheme').setup{}, vim.cmd('color_scheme') ...
+-- Set color scheme: OneDark
 require('onedark').setup {
   -- styles: dark, darker, cool, deep, warm, warmer, light
   style = 'darker',
-  colors = { fg = '#b2bbcc' }, --default: #a0a8b7
+  colors = { fg = '#b2bbcc' }, -- default: #a0a8b7
 }
 require('onedark').load()
 
 --[[
 Statusline color schemes.
-Import the following color schemes in your statusline.lua file
-with: `require('core/colors').colorscheme_name` where the colors scheme name
-is the value of the variables below.
 
-e.g.: `local colors = require('core/colors').onedark_dark
-See: `core/statusline.lua`
+Return the selected color scheme in this file with: `return M.colorscheme_name`
+where the color scheme name is the value of the variables below.
 
+e.g.: `local colors = return M.onedark_dark`
+The returned value will be used by `core/statusline.lua`
+--]]
+local M = {}
+
+--[[
 The color schemes below are created by following the "palette" file color
 schemes. Color names are adapted to maintain a pattern, original names can be
 different.
 --]]
-local M = {}
 
 -- Theme: OneDark (dark)
 -- Colors: https://github.com/navarasu/onedark.nvim/blob/master/lua/onedark/palette.lua
@@ -78,4 +86,4 @@ M.rose_pine = {
   red = '#ebbcba',
 }
 
-return M
+return M.onedark_dark
