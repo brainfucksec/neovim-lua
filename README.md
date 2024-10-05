@@ -177,6 +177,8 @@ See: [nvim-lspconfig #doc/LSP configs](https://github.com/neovim/nvim-lspconfig/
 
 * [OneDark](https://github.com/navarasu/onedark.nvim)
 
+* [Kanagawa](https://github.com/rebelot/kanagawa.nvim)
+
 * [Neovim Monokai](https://github.com/tanvirtin/monokai.nvim)
 
 * [Rose Pine](https://github.com/rose-pine/neovim)
@@ -190,16 +192,18 @@ The color scheme (default: OneDark) is defined in the following file:
 * Neovim UI - [nvim/lua/core/colors.lua](nvim/lua/core/colors.lua):
 
 ```lua
--- Load nvim color scheme:
+--[[
+Set Neovim UI color scheme.
+Insert preferred color scheme in the `color_scheme` variable.
+Color scheme is loaded at "Load color scheme" after settings sections, setup
+must be called before loading.
+--]]
 local status_ok, color_scheme = pcall(require, 'onedark')
-require('onedark').setup {
-    style = 'darker'
-}
-require('onedark').load()
-```
 
-```lua
--- Return colorscheme for statusline:
+-- Load color scheme:
+require('onedark').load()
+
+-- Set status line color scheme
 return M.onedark_dark
 ```
 
@@ -242,10 +246,10 @@ nvim /tmp/nvim-start.log
 
 See: `:help startuptime`
 
-Also you can check the configuration of the Plugins and Neovim startup time with `lazy` commands:
+Also you can check the plugins configuration and startup time with `lazy`:
 
 ```vim
-:Lazy check
+:checkhealth lazy
 
 :Lazy profile
 ```

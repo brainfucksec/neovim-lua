@@ -6,22 +6,24 @@
 
 --[[
 Set Neovim UI color scheme.
-Note: The instruction to load the color scheme may vary depending on the
-package.
-See the README of color scheme (i.e. git package) for information, for
-example: require('color_scheme').setup{}, vim.cmd('color_scheme').
---]]
+Current available color schemes: onedark, kanagawa, monokai, rose-pine.
 
--- Current available color schemes: onedark, monokai, rose-pine.
+Insert preferred color scheme in the `color_scheme` variable.
+Color scheme is loaded at "Load color scheme" after settings sections, setup
+must be called before loading.
+--]]
 local status_ok, color_scheme = pcall(require, 'onedark')
 if not status_ok then
   return
 end
 
--- Add the color scheme in the `require` values below.
--- e.g.: require('monokai').setup{}
+--[[
+Color scheme settings:
+For changes to the color scheme refer to the project instructions,
+usually found in the README file of the git package.
+--]]
 
--- Set color scheme: OneDark
+-- OneDark
 -- https://github.com/navarasu/onedark.nvim/?tab=readme-ov-file#configuration
 require('onedark').setup {
   -- styles: dark, darker, cool, deep, warm, warmer, light
@@ -33,24 +35,51 @@ require('onedark').setup {
     functions = 'bold',
   },
 }
+
+-- Kanagawa
+-- https://github.com/rebelot/kanagawa.nvim#configuration
+require('kanagawa').setup {
+  undercurl = false, -- enable undercurl
+  commentStyle = { italic = false },
+  keywordStyle = { italic = false },
+  statementStyle = { bold = false },
+    colors = {  -- add/modify theme and palette colors
+      palette = {},
+      theme = { wave = {}, lotus = {}, dragon = {}, all = {} },
+    },
+    overrides = function(colors) -- add/modify highlights
+      return {}
+    end,
+    theme = "wave",   -- Load "wave" theme when 'background' option is not set
+    background = {    -- map the value of 'background' option to a theme
+      dark = "wave",  -- try "dragon" !
+      light = "lotus"
+    },
+}
+
+--[[
+Load color scheme:
+Note: The instruction to load the color scheme may vary depending on the
+package.
+See the README of the color scheme (i.e. git package) for information, for
+example: require('color_scheme').setup{}, vim.cmd('color_scheme')
+--]]
 require('onedark').load()
 
 --[[
 Statusline color schemes.
-
-Return the selected color scheme in this file with: `return M.colorscheme_name`
+Return the selected color scheme from this file with: `return M.colorscheme_name`
 where the color scheme name is the value of the variables below.
 
 e.g.: `local colors = return M.onedark_dark`
 The return value is also used by `core/statusline.lua`.
---]]
-local M = {}
 
---[[
-The color schemes below are created by following the "palette" file color
-schemes. Color names are adapted to maintain a pattern, original names can be
-different.
+The color schemes below are created by following the "palette" schemes
+retrieved from the READMEs of git project.  Color names are adapted to maintain
+a pattern of the statusline settings, original names can be different.
 --]]
+
+local M = {}
 
 -- Theme: OneDark (dark)
 -- Colors: https://github.com/navarasu/onedark.nvim/blob/master/lua/onedark/palette.lua
@@ -62,7 +91,20 @@ M.onedark_dark = {
   cyan = '#56b6c2',
   yellow = '#e5c07b',
   orange = '#d19a66',
-  red = '#e86671',
+  red = '#e86671'
+}
+
+-- Theme: Kanagawa
+-- Colors: https://github.com/rebelot/kanagawa.nvim?tab=readme-ov-file#color-palette
+M.kanagawa = {
+  bg = '#16161d',
+  fg = '#c8c093',
+  pink = 'd27e99',
+  green = '76946a',
+  cyan = '6a9589',
+  yellow = 'dca561',
+  orange = 'ff9e3b',
+  red = 'c34043'
 }
 
 -- Theme: Monokai (classic)
@@ -75,7 +117,7 @@ M.monokai = {
   cyan = '#66d9ef',
   yellow = '#e6db74',
   orange = '#fd971f',
-  red = '#e95678',
+  red = '#e95678'
 }
 
 -- Theme: Rosé Pine (main)
@@ -89,8 +131,8 @@ M.rose_pine = {
   cyan = '#31748f',
   yellow = '#f6c177',
   orange = '#2a2837',
-  red = '#ebbcba',
+  red = '#ebbcba'
 }
 
--- Current color scheme
+-- Set status line color scheme
 return M.onedark_dark
