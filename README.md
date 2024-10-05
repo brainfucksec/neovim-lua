@@ -288,11 +288,12 @@ See: [lazy.nvim - Usage](https://lazy.folke.io/usage)
 
 * [Lua-guide - Neovim docs](https://neovim.io/doc/user/lua-guide.html#lua-guide)
 
+* [Everything you need to know to configure neovim using lua](https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/)
+
 * [reddit /r/neovim](https://www.old.reddit.com/r/neovim/)
 
 * [Lemmy: programming.dev/c/neovim](https://programming.dev/c/neovim)
 
-* [Everything you need to know to configure neovim using lua](https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/)
 
 ## Other Neovim Lua Projects and Examples
 
@@ -318,7 +319,9 @@ See: [lazy.nvim - Usage](https://lazy.folke.io/usage)
 
 This setup is based on [KISS](https://en.wikipedia.org/wiki/KISS_principle) principle, probably some concepts may not be valid for everyone. Then feel free to take what you need but **don't install anything without checking first!**
 
-This setup is not a Framework but it is the configuration I use to work on Linux, it can be used by default as it can be a start point to understand how Neovim is structured and maybe improve this config.
+This setup is not a Framework but it is the configuration I use to work on Linux, it can be used by default as it can be a start point to understand how Neovim is structured and maybe improve this config.  Is the base configuration I use, and it tries to stay as simple as possible, with each addition weighted along these lines.
+
+[Less is more](https://en.wikipedia.org/wiki/Less_is_more)
 
 ## Thanks to:
 
@@ -326,5 +329,5 @@ This setup is not a Framework but it is the configuration I use to work on Linux
 
 - All the authors of the sources mentioned above.
 
-- The users of /r/Neovim subreddit for the support of the configuration.
+- The users of [/r/Neovim](https://old.reddit.com/r/neovim/) subreddit for the support of the configuration.
 
