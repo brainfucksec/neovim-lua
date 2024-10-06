@@ -39,7 +39,7 @@ require('onedark').setup {
 -- Kanagawa
 -- https://github.com/rebelot/kanagawa.nvim#configuration
 require('kanagawa').setup {
-  undercurl = false, -- enable undercurl
+  undercurl = false, -- disable undercurl
   commentStyle = { italic = false },
   keywordStyle = { italic = false },
   statementStyle = { bold = false },
@@ -65,6 +65,9 @@ See the README of the color scheme (i.e. git package) for information, for
 example: require('color_scheme').setup{}, vim.cmd('color_scheme')
 --]]
 require('onedark').load()
+--vim.cmd("colorscheme kanagawa")
+--require('monokai').setup {}
+--vim.cmd("colorscheme rose-pine")
 
 --[[
 Statusline color schemes.
@@ -81,7 +84,7 @@ a pattern of the statusline settings, original names can be different.
 
 local M = {}
 
--- Theme: OneDark (dark)
+-- Theme: OneDark (darker)
 -- Colors: https://github.com/navarasu/onedark.nvim/blob/master/lua/onedark/palette.lua
 M.onedark_dark = {
   bg = '#282c34',
