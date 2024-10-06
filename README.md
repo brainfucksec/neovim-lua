@@ -187,6 +187,8 @@ See: [nvim-lspconfig #doc/LSP configs](https://github.com/neovim/nvim-lspconfig/
 
 **Icons:** [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 
+See: [Screenshots](#screenshots)
+
 The color scheme (default: OneDark) is defined in the following file:
 
 * Neovim UI - [nvim/lua/core/colors.lua](nvim/lua/core/colors.lua):
@@ -250,7 +252,9 @@ Also you can check the plugins configuration and startup time with `lazy`:
 
 ```vim
 :checkhealth lazy
+```
 
+```vim
 :Lazy profile
 ```
 
@@ -264,21 +268,41 @@ See: [lazy.nvim - Usage](https://lazy.folke.io/usage)
 
 <details><summary> <b>(Click to expand)</b></summary>
 
-**OneDark (darker)**
+**OneDark Darker**
 
-![1-onedark.png](img/1-onedark.png)
+![1-onedark_darker.png](img/1-onedark_darker.png)
+
+**OneDark Dark**
+
+![2-onedark_dark.png](img/2-onedark_dark.png)
+
+**OneDark Cool**
+
+![3-onedark_cool.png](img/3-onedark_cool.png)
+
+**OneDark Deep**
+
+![4-onedark_deep.png](img/4-onedark_deep.png)
+
+**Kanagawa Wave**
+
+![5-kanagawa_wave.png](img/5-kanagawa_wave.png)
+
+**Kanagawa Dragon**
+
+![6-kanagawa_dragon.png](img/6-kanagawa_dragon.png)
 
 **Monokai**
 
-![2-monokai.png](img/2-monokai.png)
+![7-monokai.png](img/7-monokai.png)
 
 **Rosé Pine**
 
-![3-rose-pine.png](img/3-rose-pine.png)
+![8-rose-pine.png](img/8-rose-pine.png)
 
 **lazy.nvim**
 
-![4-lazy-nvim.png](img/4-lazy-nvim.png)
+![lazy-nvim.png](img/lazy-nvim.png)
 
 </details>
 
