@@ -102,12 +102,12 @@ M.onedark_dark = {
 M.kanagawa = {
   bg = '#16161d',
   fg = '#c8c093',
-  pink = 'd27e99',
-  green = '76946a',
-  cyan = '6a9589',
-  yellow = 'dca561',
-  orange = 'ff9e3b',
-  red = 'c34043'
+  pink = '#d27e99',
+  green = '#76946a',
+  cyan = '#6a9589',
+  yellow = '#dca561',
+  orange = '#938056',
+  red = '#c34043'
 }
 
 -- Theme: Monokai (classic)
