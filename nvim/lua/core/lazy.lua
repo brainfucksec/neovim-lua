@@ -30,13 +30,31 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Use a protected call so we don't error out on first use
-local status_ok, lazy = pcall(require, 'lazy')
+local status_ok, lazy = pcall(require, 'lazy')require('lazy')
 if not status_ok then
   return
 end
 
 -- Start setup
 lazy.setup({
+  pkg = {
+    enabled = true,
+    cache = vim.fn.stdpath("state") .. "/lazy/pkg-cache.lua",
+    -- the first package source that is found for a plugin will be used.
+    sources = {
+      "lazy",
+      "rockspec", -- will only be used when rocks.enabled is true
+      "packspec",
+    },
+  },
+  rocks = {
+    -- disable rockspec
+    -- see: https://github.com/folke/lazy.nvim?tab=readme-ov-file#%EF%B8%8F-requirements
+    -- https://github.com/folke/lazy.nvim/issues/1576
+    enabled = false,
+    root = vim.fn.stdpath("data") .. "/lazy-rocks",
+    server = "https://nvim-neorocks.github.io/rocks-binaries/",
+  },
   spec = {
     --[[
     Colorscheme:
