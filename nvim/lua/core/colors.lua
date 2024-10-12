@@ -29,9 +29,12 @@ require('onedark').setup {
   -- styles: dark, darker, cool, deep, warm, warmer, light
   style = 'darker',
   colors = { fg = '#b2bbcc' }, -- override default: #a0a8b7
+  -- Change code style ---
+  -- Options are italic, bold, underline, none
+  -- You can configure multiple style with comma separated, For e.g., keywords = 'italic,bold'
   code_style = {
-    -- styles: italic, bold, none
     comments = 'none',
+    keywords = 'bold',
     functions = 'bold',
   },
 }
