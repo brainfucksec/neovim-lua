@@ -87,98 +87,95 @@ local my_comps = {
     left_sep = ' ',
     right_sep = ' ',
   },
-  -- Parse file information:
-  file = {
-    -- File name
-    info = {
-      provider = {
-        name = 'file_info',
-        opts = {
-          type = 'relative',
-          file_modified_icon = '',
-        }
-      },
-      hl = { fg = colors.cyan },
-      icon = '',
+  -- File info
+  file_info = {
+    provider = {
+      name = 'file_info',
+      opts = {
+        type = 'relative',
+        file_modified_icon = '',
+      }
     },
-    -- File type
-    type = {
-      provider = function()
-        local type = vim.bo.filetype:lower()
-        local extension = vim.fn.expand '%:e'
-        local icon = require('nvim-web-devicons').get_icon(extension)
-        if icon == nil then
-          icon = ''
-        end
-        return ' ' .. icon .. ' ' .. type
-      end,
-      hl = { fg = colors.cyan },
-      left_sep = {
-        str = ' ' .. separator,
-        hl = { fg = colors.fg },
-      },
-      righ_sep = ' ',
-    },
-    -- Operating System
-    os = {
-      provider = function()
-        local os = vim.bo.fileformat:lower()
-        local icon
-        if os == 'unix' then
-          icon = '  '
-        elseif os == 'mac' then
-          icon = '  '
-        else
-          icon = '  '
-        end
-        --return icon .. os
-        return icon
-      end,
+    hl = { fg = colors.cyan },
+    icon = '',
+  },
+  -- File type
+  file_type = {
+    provider = function()
+      local type = vim.bo.filetype:lower()
+      local extension = vim.fn.expand '%:e'
+      local icon = require('nvim-web-devicons').get_icon(extension)
+      if icon == nil then
+        icon = ''
+      end
+      return ' ' .. icon .. ' ' .. type
+    end,
+    hl = { fg = colors.cyan },
+    left_sep = {
+      str = ' ' .. separator,
       hl = { fg = colors.fg },
-      left_sep = {
-        str = ' ' .. separator,
-        hl = { fg = colors.fg },
-      },
     },
-    -- File encoding
-    encoding = {
-      provider = { name = 'file_encoding' },
+    righ_sep = ' ',
+  },
+  -- Operating System
+  os = {
+    provider = function()
+      local os = vim.bo.fileformat:lower()
+      local icon
+      if os == 'unix' then
+        icon = '  '
+      elseif os == 'mac' then
+        icon = '  '
+      else
+        icon = '  '
+      end
+      --return icon .. os
+      return icon
+    end,
+    hl = { fg = colors.fg },
+    left_sep = {
+      str = ' ' .. separator,
       hl = { fg = colors.fg },
-      right_sep = {
-        str = ' ' .. separator,
-        hl = { fg = colors.fg },
-      },
-    },
-    -- Line-column
-    position = {
-      provider = { name = 'position' },
-      hl = {
-        fg = colors.fg,
-        style = 'bold',
-      },
-      left_sep = ' ',
-      right_sep = ' ',
-    },
-    -- Cursor position in %
-    line_percentage = {
-      provider = { name = 'line_percentage' },
-      hl = {
-        fg = colors.cyan,
-        style = 'bold',
-      },
-      left_sep = ' ',
-      right_sep = ' ',
-    },
-    -- Simple scrollbar
-    scroll_bar = {
-      provider = { name = 'scroll_bar' },
-      hl = { fg = colors.fg },
-      left_sep = ' ',
-      right_sep = ' ',
     },
   },
-  -- LSP info
-  diagnos = {
+  -- File encoding
+  file_encoding = {
+    provider = { name = 'file_encoding' },
+    hl = { fg = colors.fg },
+    right_sep = {
+      str = ' ' .. separator,
+      hl = { fg = colors.fg },
+    },
+  },
+  -- Cursor position: Line:column
+  position = {
+    provider = { name = 'position' },
+    hl = {
+      fg = colors.fg,
+      style = 'bold',
+    },
+    left_sep = ' ',
+    right_sep = ' ',
+  },
+  -- Cursor position in %
+  line_percentage = {
+    provider = { name = 'line_percentage' },
+    hl = {
+      fg = colors.cyan,
+      style = 'bold',
+    },
+    left_sep = ' ',
+    right_sep = ' ',
+  },
+  -- Scrollbar
+  scroll_bar = {
+    provider = { name = 'scroll_bar' },
+    hl = { fg = colors.fg },
+    left_sep = ' ',
+    right_sep = ' ',
+  },
+  -- LSP diagnostic messages
+  diagnostic = {
     err = {
       provider = 'diagnostic_errors',
       icon = ' ',
@@ -204,6 +201,7 @@ local my_comps = {
       left_sep = ' ',
     },
   },
+  -- LSP information
   lsp = {
     name = {
       provider = 'lsp_client_names',
@@ -256,24 +254,24 @@ table.insert(components.inactive, {})
 
 -- Right section
 table.insert(components.active[1], my_comps.vi_mode)
-table.insert(components.active[1], my_comps.file.info)
+table.insert(components.active[1], my_comps.file_info)
 table.insert(components.active[1], my_comps.git.branch)
 table.insert(components.active[1], my_comps.git.add)
 table.insert(components.active[1], my_comps.git.change)
 table.insert(components.active[1], my_comps.git.remove)
-table.insert(components.inactive[1], my_comps.file.info)
+table.insert(components.inactive[1], my_comps.file_info)
 
 -- Left Section
-table.insert(components.active[2], my_comps.diagnos.err)
-table.insert(components.active[2], my_comps.diagnos.warn)
-table.insert(components.active[2], my_comps.diagnos.hint)
-table.insert(components.active[2], my_comps.diagnos.info)
+table.insert(components.active[2], my_comps.diagnostic.err)
+table.insert(components.active[2], my_comps.diagnostic.warn)
+table.insert(components.active[2], my_comps.diagnostic.hint)
+table.insert(components.active[2], my_comps.diagnostic.info)
 table.insert(components.active[2], my_comps.lsp.name)
-table.insert(components.active[2], my_comps.file.type)
-table.insert(components.active[2], my_comps.file.os)
-table.insert(components.active[2], my_comps.file.encoding)
-table.insert(components.active[2], my_comps.file.position)
-table.insert(components.active[2], my_comps.file.line_percentage)
+table.insert(components.active[2], my_comps.file_type)
+table.insert(components.active[2], my_comps.os)
+table.insert(components.active[2], my_comps.file_encoding)
+table.insert(components.active[2], my_comps.position)
+table.insert(components.active[2], my_comps.line_percentage)
 
 -- Call feline
 feline.setup {
