@@ -31,7 +31,7 @@ Colors are defined nvim/lua/core/colors.lua (See: Statusline color schemes.)
 local vi_mode_colors = {
   NORMAL = colors.green,
   OP = colors.green,
-  INSERT = colors.red,
+  INSERT = colors.blue,
   VISUAL = colors.blue,
   LINES = colors.blue,
   BLOCK = colors.blue,
