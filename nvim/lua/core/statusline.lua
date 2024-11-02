@@ -60,7 +60,7 @@ local lsp_get_diag = function(str)
 end
 
 -- Separator style
--- You can use defautl presets:
+-- You can use default presets:
 -- https://github.com/freddiehaddad/feline.nvim/blob/main/USAGE.md#separator-presets
 --local separator = '|'
 local separator = '│'
@@ -68,26 +68,24 @@ local separator = '│'
 -- My components
 -- See: Components
 -- https://github.com/freddiehaddad/feline.nvim/blob/main/USAGE.md#components
-local comps = {
-  -- vi_mode -> NORMAL, INSERT..
+local my_comps = {
+  -- vi_mode: NORMAL, INSERT..
   vi_mode = {
-    left = {
-      provider = function()
-        local label = ' '..vi_mode_utils.get_vim_mode()..' '
-        return label
-      end,
-      hl = function()
-        local set_color = {
-          name = vi_mode_utils.get_mode_highlight_name(),
-          fg = colors.bg,
-          bg = vi_mode_utils.get_mode_color(),
-          style = 'bold',
-        }
-        return set_color
-      end,
-      left_sep = ' ',
-      right_sep = ' ',
-    }
+    provider = function()
+      local label = ' '..vi_mode_utils.get_vim_mode()..' '
+      return label
+    end,
+    hl = function()
+      local set_color = {
+        name = vi_mode_utils.get_mode_highlight_name(),
+        fg = colors.bg,
+        bg = vi_mode_utils.get_mode_color(),
+        style = 'bold',
+      }
+      return set_color
+    end,
+    left_sep = ' ',
+    right_sep = ' ',
   },
   -- Parse file information:
   file = {
@@ -257,25 +255,25 @@ table.insert(components.inactive, {})
 table.insert(components.inactive, {})
 
 -- Right section
-table.insert(components.active[1], comps.vi_mode.left)
-table.insert(components.active[1], comps.file.info)
-table.insert(components.active[1], comps.git.branch)
-table.insert(components.active[1], comps.git.add)
-table.insert(components.active[1], comps.git.change)
-table.insert(components.active[1], comps.git.remove)
-table.insert(components.inactive[1], comps.file.info)
+table.insert(components.active[1], my_comps.vi_mode)
+table.insert(components.active[1], my_comps.file.info)
+table.insert(components.active[1], my_comps.git.branch)
+table.insert(components.active[1], my_comps.git.add)
+table.insert(components.active[1], my_comps.git.change)
+table.insert(components.active[1], my_comps.git.remove)
+table.insert(components.inactive[1], my_comps.file.info)
 
 -- Left Section
-table.insert(components.active[2], comps.diagnos.err)
-table.insert(components.active[2], comps.diagnos.warn)
-table.insert(components.active[2], comps.diagnos.hint)
-table.insert(components.active[2], comps.diagnos.info)
-table.insert(components.active[2], comps.lsp.name)
-table.insert(components.active[2], comps.file.type)
-table.insert(components.active[2], comps.file.os)
-table.insert(components.active[2], comps.file.encoding)
-table.insert(components.active[2], comps.file.position)
-table.insert(components.active[2], comps.file.line_percentage)
+table.insert(components.active[2], my_comps.diagnos.err)
+table.insert(components.active[2], my_comps.diagnos.warn)
+table.insert(components.active[2], my_comps.diagnos.hint)
+table.insert(components.active[2], my_comps.diagnos.info)
+table.insert(components.active[2], my_comps.lsp.name)
+table.insert(components.active[2], my_comps.file.type)
+table.insert(components.active[2], my_comps.file.os)
+table.insert(components.active[2], my_comps.file.encoding)
+table.insert(components.active[2], my_comps.file.position)
+table.insert(components.active[2], my_comps.file.line_percentage)
 
 -- Call feline
 feline.setup {
