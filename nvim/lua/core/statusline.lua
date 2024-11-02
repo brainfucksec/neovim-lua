@@ -24,7 +24,8 @@ local colors = require('core/colors')
 
 --[[
 Set colors for vi_mode_colors
-See "vi_mode_colors": https://github.com/freddiehaddad/feline.nvim/blob/main/USAGE.md#setup-function
+See: vi_mode_colors
+https://github.com/freddiehaddad/feline.nvim/blob/main/USAGE.md#setup-function
 
 Colors are defined nvim/lua/core/colors.lua (See: Statusline color schemes.)
 --]]
@@ -47,6 +48,8 @@ local vi_mode_colors = {
 }
 
 -- Providers (LSP, vi_mode)
+-- See: Default providers
+-- https://github.com/freddiehaddad/feline.nvim/blob/main/USAGE.md#default-providers
 local lsp = require 'feline.providers.lsp'
 local vi_mode_utils = require 'feline.providers.vi_mode'
 
@@ -56,9 +59,15 @@ local lsp_get_diag = function(str)
   return (count > 0) and ' '..count..' ' or ''
 end
 
-local separator = '|'
+-- Separator style
+-- You can use defautl presets:
+-- https://github.com/freddiehaddad/feline.nvim/blob/main/USAGE.md#separator-presets
+--local separator = '|'
+local separator = '│'
 
 -- My components
+-- See: Components
+-- https://github.com/freddiehaddad/feline.nvim/blob/main/USAGE.md#components
 local comps = {
   -- vi_mode -> NORMAL, INSERT..
   vi_mode = {
