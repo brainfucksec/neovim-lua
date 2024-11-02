@@ -87,17 +87,20 @@ a pattern of the statusline settings, original names can be different.
 
 local M = {}
 
--- Theme: OneDark (darker)
+-- Theme: OneDark (dark)
 -- Colors: https://github.com/navarasu/onedark.nvim/blob/master/lua/onedark/palette.lua
+-- Main color scheme is OneDark "darker" style, dark variant is used here
+-- for statusline contrast.
 M.onedark_dark = {
   bg = '#282c34',
   fg = '#b2bbcc',
-  pink = '#c678dd',
+  red = '#e86671',
+  blue = '#61afef',
+  violet = '#c678dd',
   green = '#98c379',
   cyan = '#56b6c2',
   yellow = '#e5c07b',
-  orange = '#d19a66',
-  red = '#e86671'
+  orange = '#d19a66'
 }
 
 -- Theme: Kanagawa
@@ -105,12 +108,13 @@ M.onedark_dark = {
 M.kanagawa = {
   bg = '#16161d',
   fg = '#c8c093',
-  pink = '#d27e99',
-  green = '#76946a',
+  red = '#c34043',
+  blue = '#7e9cd8',
+  violet = '#957fb8',
+  green = '#98bb6c',
   cyan = '#6a9589',
-  yellow = '#dca561',
-  orange = '#938056',
-  red = '#c34043'
+  yellow = '#ff9e3b',
+  orange = '#ffa066'
 }
 
 -- Theme: Monokai (classic)
@@ -118,12 +122,13 @@ M.kanagawa = {
 M.monokai = {
   bg = '#202328', -- default: #272a30
   fg = '#f8f8f0',
-  pink = '#f92672',
+  red = '#e95678',
+  blue = '#819aff',
+  violet = '#f92672',
   green = '#a6e22e',
   cyan = '#66d9ef',
   yellow = '#e6db74',
-  orange = '#fd971f',
-  red = '#e95678'
+  orange = '#fd971f'
 }
 
 -- Theme: Rosé Pine (main)
@@ -132,12 +137,13 @@ M.monokai = {
 M.rose_pine = {
   bg = '#111019', -- default: #191724
   fg = '#e0def4',
-  pink = '#eb6f92',
+  red = '#eb6f92',
+  blue = '#6e6a86',
+  violet = '#c4a7e7',
   green = '#9ccfd8',
   cyan = '#31748f',
   yellow = '#f6c177',
-  orange = '#2a2837',
-  red = '#ebbcba'
+  orange = '#ea9d34'
 }
 
 -- Set status line color scheme

@@ -1,4 +1,4 @@
------------------------------------------------------------
+----------------------------------------------------------
 -- Statusline configuration file
 -----------------------------------------------------------
 
@@ -15,24 +15,35 @@ if not status_ok then
   return
 end
 
--- Set colorscheme (from core/colors.lua)
+--[[
+Set colorscheme (from nvim/lua/core/colors.lua)
+See: README #Appearance
+https://github.com/brainfucksec/neovim-lua?tab=readme-ov-file#appearance
+--]]
 local colors = require('core/colors')
 
+--[[
+Set colors for vi_mode_colors
+See "vi_mode_colors": https://github.com/freddiehaddad/feline.nvim/blob/main/USAGE.md#setup-function
+
+Colors are defined nvim/lua/core/colors.lua (See: Statusline color schemes.)
+--]]
 local vi_mode_colors = {
-  NORMAL = colors.cyan,
-  INSERT = colors.green,
-  VISUAL = colors.yellow,
-  OP = colors.cyan,
-  BLOCK = colors.cyan,
-  REPLACE = colors.red,
-  ['V-REPLACE'] = colors.red,
-  ENTER = colors.orange,
-  MORE = colors.orange,
-  SELECT = colors.yellow,
-  COMMAND = colors.pink,
-  SHELL = colors.pink,
-  TERM = colors.pink,
-  NONE = colors.yellow,
+  NORMAL = colors.green,
+  OP = colors.green,
+  INSERT = colors.red,
+  VISUAL = colors.blue,
+  LINES = colors.blue,
+  BLOCK = colors.blue,
+  REPLACE = colors.violet,
+  ['V-REPLACE'] = colors.violet,
+  ENTER = colors.cyan,
+  MORE = colors.cyan,
+  SELECT = colors.orange,
+  COMMAND = colors.green,
+  SHELL = colors.green,
+  TERM = colors.green,
+  NONE = colors.yellow
 }
 
 -- Providers (LSP, vi_mode)
@@ -225,7 +236,7 @@ local comps = {
 }
 
 -- Get active/inactive components
--- See: https://github.com/feline-nvim/feline.nvim/blob/master/USAGE.md#components
+-- See: https://github.com/freddiehaddad/feline.nvim/blob/main/USAGE.md#components
 local components = {
   active = {},
   inactive = {},
