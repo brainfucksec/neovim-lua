@@ -206,7 +206,7 @@ local my_comps = {
     name = {
       provider = 'lsp_client_names',
       icon = '  ',
-      hl = { fg = colors.pink },
+      hl = { fg = colors.violet },
       left_sep = '  ',
       right_sep = ' ',
     }
@@ -216,7 +216,7 @@ local my_comps = {
     branch = {
       provider = 'git_branch',
       icon = ' ',
-      hl = { fg = colors.pink },
+      hl = { fg = colors.violet },
       left_sep = '  ',
     },
     add = {
