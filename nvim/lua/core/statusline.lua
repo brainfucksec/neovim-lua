@@ -47,9 +47,11 @@ local vi_mode_colors = {
   NONE = colors.yellow
 }
 
--- Providers (LSP, vi_mode)
--- See: Default providers
--- https://github.com/freddiehaddad/feline.nvim/blob/main/USAGE.md#default-providers
+--[[
+Providers (LSP, vi_mode)
+See: Default providers
+https://github.com/freddiehaddad/feline.nvim/blob/main/USAGE.md#default-providers
+--]]
 local lsp = require 'feline.providers.lsp'
 local vi_mode_utils = require 'feline.providers.vi_mode'
 
@@ -59,17 +61,24 @@ local lsp_get_diag = function(str)
   return (count > 0) and ' '..count..' ' or ''
 end
 
--- Separator style
--- You can use default presets:
--- https://github.com/freddiehaddad/feline.nvim/blob/main/USAGE.md#separator-presets
+--[[
+Separator style
+You can use default presets:
+https://github.com/freddiehaddad/feline.nvim/blob/main/USAGE.md#separator-presets
+--]]
 --local separator = '|'
 local separator = '│'
 
--- My components
--- See: Components
--- https://github.com/freddiehaddad/feline.nvim/blob/main/USAGE.md#components
+
+--[[
+My components
+See: Components
+https://github.com/freddiehaddad/feline.nvim/blob/main/USAGE.md#components
+--]]
 local my_comps = {
+  ----------------------------
   -- vi_mode: NORMAL, INSERT..
+  ----------------------------
   vi_mode = {
     provider = function()
       local label = ' '..vi_mode_utils.get_vim_mode()..' '
@@ -87,7 +96,9 @@ local my_comps = {
     left_sep = ' ',
     right_sep = ' ',
   },
+  ------------
   -- File info
+  ------------
   file_info = {
     provider = {
       name = 'file_info',
@@ -99,7 +110,9 @@ local my_comps = {
     hl = { fg = colors.cyan },
     icon = '',
   },
+  ------------
   -- File type
+  ------------
   file_type = {
     provider = function()
       local type = vim.bo.filetype:lower()
@@ -117,7 +130,9 @@ local my_comps = {
     },
     righ_sep = ' ',
   },
+  -------------------
   -- Operating System
+  -------------------
   os = {
     provider = function()
       local os = vim.bo.fileformat:lower()
@@ -138,7 +153,9 @@ local my_comps = {
       hl = { fg = colors.fg },
     },
   },
+  ----------------
   -- File encoding
+  ----------------
   file_encoding = {
     provider = { name = 'file_encoding' },
     hl = { fg = colors.fg },
@@ -147,17 +164,9 @@ local my_comps = {
       hl = { fg = colors.fg },
     },
   },
-  -- Cursor position: Line:column
-  position = {
-    provider = { name = 'position' },
-    hl = {
-      fg = colors.fg,
-      style = 'bold',
-    },
-    left_sep = ' ',
-    right_sep = ' ',
-  },
+  -----------------------
   -- Cursor position in %
+  -----------------------
   line_percentage = {
     provider = { name = 'line_percentage' },
     hl = {
@@ -167,14 +176,30 @@ local my_comps = {
     left_sep = ' ',
     right_sep = ' ',
   },
+  -------------------------------
+  -- Cursor position: Line:column
+  -------------------------------
+  position = {
+    provider = { name = 'position' },
+    hl = {
+      fg = colors.fg,
+      style = 'bold',
+    },
+    left_sep = ' ',
+    right_sep = ' ',
+  },
+  ------------
   -- Scrollbar
+  ------------
   scroll_bar = {
     provider = { name = 'scroll_bar' },
     hl = { fg = colors.fg },
     left_sep = ' ',
     right_sep = ' ',
   },
+  --------------------------
   -- LSP diagnostic messages
+  --------------------------
   diagnostic = {
     err = {
       provider = 'diagnostic_errors',
@@ -201,7 +226,9 @@ local my_comps = {
       left_sep = ' ',
     },
   },
+  ------------------
   -- LSP information
+  ------------------
   lsp = {
     name = {
       provider = 'lsp_client_names',
@@ -211,7 +238,9 @@ local my_comps = {
       right_sep = ' ',
     }
   },
+  -----------
   -- git info
+  -----------
   git = {
     branch = {
       provider = 'git_branch',
@@ -270,8 +299,8 @@ table.insert(components.active[2], my_comps.lsp.name)
 table.insert(components.active[2], my_comps.file_type)
 table.insert(components.active[2], my_comps.os)
 table.insert(components.active[2], my_comps.file_encoding)
-table.insert(components.active[2], my_comps.position)
 table.insert(components.active[2], my_comps.line_percentage)
+table.insert(components.active[2], my_comps.position)
 
 -- Call feline
 feline.setup {
