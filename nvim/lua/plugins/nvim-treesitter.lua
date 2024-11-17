@@ -15,8 +15,10 @@ nvim_treesitter.setup {
   -- A list of parser names, or "all"
   -- See: `TSInstallInfo` commmand
   ensure_installed = {
-    'awk', 'bash', 'c', 'cmake', 'cpp', 'css', 'go', 'html', 'javascript', 'json',
-    'lua', 'perl', 'python', 'rust', 'typescript', 'vim', 'yaml',
+    'angular', 'awk', 'bash', 'c', 'c_sharp', 'cmake', 'cpp', 'css', 'csv',
+    'go', 'haskell', 'html', 'http', 'java', 'javascript', 'json', 'lua',
+    'luadoc', 'make', 'markdown', 'markdown_inline', 'nix', 'perl', 'python',
+    'ruby','rust', 'sql', 'toml', 'typescript', 'vim', 'yaml',
   },
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
