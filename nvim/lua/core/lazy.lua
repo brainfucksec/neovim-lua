@@ -103,7 +103,7 @@ lazy.setup({
 
     -- Statusline
     {
-      'freddiehaddad/feline.nvim',
+      'nvim-lualine/lualine.nvim',
       dependencies = {
         'kyazdani42/nvim-web-devicons',
         'lewis6991/gitsigns.nvim',

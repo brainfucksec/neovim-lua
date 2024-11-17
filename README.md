@@ -3,7 +3,7 @@
 </p>
 
 <h3 align="center">
-Neovim KISS configuration with Lua
+Neovim KISS configuration with Lua and LSP
 </h3>
 
 ---
@@ -27,7 +27,7 @@ Neovim KISS configuration with Lua
 
 [lazy.nvim](https://github.com/folke/lazy.nvim) - A modern plugin manager for Neovim
 
-[feline.nvim](https://github.com/freddiehaddad/feline.nvim) (freddiehaddad Fork) - A minimal, stylish and customizable statusline for Neovim written in Lua
+[lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) - A blazing fast and easy to configure neovim statusline plugin written in pure lua.
 
 [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - A collection of common configurations for Neovim's built-in language server client
 
@@ -265,6 +265,8 @@ See: [lazy.nvim - Usage](https://lazy.folke.io/usage)
 <p align="center">
 <img src="img/banner.png">
 </p>
+
+**Note:** _Screenshots may not be updated to the latest changes (such as the statusline), the project is updated often, so everything changes often over time._
 
 <details><summary> <b>(Click to expand)</b></summary>
 
