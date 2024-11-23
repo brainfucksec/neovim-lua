@@ -202,11 +202,13 @@ must be called before loading.
 --]]
 local status_ok, color_scheme = pcall(require, 'onedark')
 
+-- Color scheme setup (settings) before load:
+require('onedark').setup {
+    -- Your preferences here.
+}
+
 -- Load color scheme:
 require('onedark').load()
-
--- Set status line color scheme
-return M.onedark_dark
 ```
 
 ## Keymaps
