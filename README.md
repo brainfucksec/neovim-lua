@@ -268,8 +268,6 @@ See: [lazy.nvim - Usage](https://lazy.folke.io/usage)
 <img src="img/banner.png">
 </p>
 
-**Note:** _Screenshots may not be updated to the latest changes (such as the statusline), the project is updated often, so everything changes often over time._
-
 <details><summary> <b>(Click to expand)</b></summary>
 
 **OneDark Darker**
@@ -288,19 +286,19 @@ See: [lazy.nvim - Usage](https://lazy.folke.io/usage)
 
 ![4-onedark_deep.png](img/4-onedark_deep.png)
 
-**Kanagawa Wave**
+**Kanagawa Wave** (lualine theme: palenight)
 
 ![5-kanagawa_wave.png](img/5-kanagawa_wave.png)
 
-**Kanagawa Dragon**
+**Kanagawa Dragon** (lualine theme: seoul256)
 
 ![6-kanagawa_dragon.png](img/6-kanagawa_dragon.png)
 
-**Monokai**
+**Monokai** (lualine theme: molokai)
 
 ![7-monokai.png](img/7-monokai.png)
 
-**Rosé Pine**
+**Rosé Pine** (lualine theme: nightfly)
 
 ![8-rose-pine.png](img/8-rose-pine.png)
 
