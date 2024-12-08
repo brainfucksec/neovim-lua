@@ -6,7 +6,10 @@
 -- URL: https://github.com/nvim-lualine/lualine.nvim
 
 --[[
-For the configuration see the Wiki:
+For the configuration see README #Usage and customization:
+https://github.com/nvim-lualine/lualine.nvim?tab=readme-ov-file#usage-and-customization
+
+You can also help with documentation in the wiki:
 https://github.com/nvim-lualine/lualine.nvim/wiki
 --]]
 
@@ -16,6 +19,7 @@ if not status_ok then
 end
 
 require('lualine').setup {
+  -- Global options
   options = {
     icons_enabled = true,
     theme = 'onedark',
@@ -24,6 +28,7 @@ require('lualine').setup {
     disabled_filetypes = {
       statusline = {},
       winbar = {},
+      'NvimTree',
     },
     ignore_focus = {},
     always_divide_middle = true,
@@ -34,6 +39,8 @@ require('lualine').setup {
       winbar = 1000,
     }
   },
+
+  -- General component options
   sections = {
     lualine_a = {'mode'},
     lualine_b = {'branch', 'diff', 'diagnostics'},
@@ -51,8 +58,22 @@ require('lualine').setup {
     lualine_z = {}
   },
   tabline = {},
-  winbar = {},
-  inactive_winbar = {},
+  winbar = {
+    lualine_a = {},
+    lualine_b = {},
+    lualine_c = {'filename'},
+    lualine_x = {},
+    lualine_y = {},
+    lualine_z = {}
+  },
+  inactive_winbar = {
+    lualine_a = {},
+    lualine_b = {},
+    lualine_c = {'filename'},
+    lualine_x = {},
+    lualine_y = {},
+    lualine_z = {}
+  },
   extensions = {}
 }
 
