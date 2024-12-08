@@ -20,7 +20,7 @@ Neovim KISS configuration with Lua and LSP
 * [Configuration Check](#configuration-check)
 * [Screenshots](#screenshots)
 * [Guides and Resources](#guides-and-resources)
-* [Other Neovim Lua Projects and Examples](#other-neovim-lua-projects-and-examples)
+* [Other Neovim Lua Project](#other-neovim-lua-projects)
 * [Lua Resources](#lua-resources)
 
 ## Plugins
@@ -321,7 +321,7 @@ See: [lazy.nvim - Usage](https://lazy.folke.io/usage)
 * [Lemmy: programming.dev/c/neovim](https://programming.dev/c/neovim)
 
 
-## Other Neovim Lua Projects and Examples
+## Other Neovim Lua Projects
 
 * [NvChad](https://github.com/siduck76/NvChad)
 
@@ -330,6 +330,8 @@ See: [lazy.nvim - Usage](https://lazy.folke.io/usage)
 * [nv-ide](https://github.com/crivotz/nv-ide)
 
 * [Neovim from scratch](https://github.com/LunarVim/Neovim-from-scratch)
+
+* [CosmicNvim](https://github.com/CosmicNvim/CosmicNvim)
 
 ## Lua Resources
 
