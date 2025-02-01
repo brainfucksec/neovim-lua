@@ -33,7 +33,7 @@ require('lualine').setup {
     },
     ignore_focus = {},
     always_divide_middle = true,
-    always_show_tabline = true,
+    always_show_tabline = false,
     globalstatus = true,
     refresh = {
       statusline = 100,
@@ -68,12 +68,12 @@ require('lualine').setup {
     lualine_y = {},
     lualine_z = {}
   },
-  tabline = {
-    lualine_a = {
+  tabline = {},
+  winbar = {
+    lualine_c = {
       { 'filename', path=0 }
     },
   },
-  winbar = {},
   inactive_winbar = {},
   extensions = {}
 }
