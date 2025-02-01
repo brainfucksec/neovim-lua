@@ -277,9 +277,9 @@ See: [lazy.nvim - Usage](https://lazy.folke.io/usage)
 <img src="img/banner.png">
 </p>
 
-<details><summary> <b>(Click to expand)</b></summary>
-
 Note: Screenshots may be out of date compared to the actual setup.
+
+<details><summary> <b>(Click to expand)</b></summary>
 
 **OneDark Darker**
 
