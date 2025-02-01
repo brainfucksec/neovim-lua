@@ -179,7 +179,7 @@ See: [nvim-lspconfig #doc/LSP configs](https://github.com/neovim/nvim-lspconfig/
 
 * [Kanagawa](https://github.com/rebelot/kanagawa.nvim)
 
-* [Neovim Monokai](https://github.com/tanvirtin/monokai.nvim)
+* [Monokai Pro](https://github.com/loctvl842/monokai-pro.nvim)
 
 * [Rose Pine](https://github.com/rose-pine/neovim)
 
@@ -196,18 +196,27 @@ The color scheme (default: OneDark) is defined in the following file:
 ```lua
 --[[
 Set Neovim UI color scheme.
+Current available color schemes: onedark, kanagawa, monokai-pro, rose-pine.
+See: https://github.com/brainfucksec/neovim-lua#appearance
+
 Insert preferred color scheme in the `color_scheme` variable.
-Color scheme is loaded at "Load color scheme" after settings sections, setup
+Note: Color scheme is loaded in the "Load color scheme" section below, setup
 must be called before loading.
 --]]
 local status_ok, color_scheme = pcall(require, 'onedark')
 
--- Color scheme setup (settings) before load:
-require('onedark').setup {
-    -- Your preferences here.
-}
+-- Color scheme setup before load:
+require('onedark').setup({
+    -- Your settings here.
+})
 
--- Load color scheme:
+--[[
+Load color scheme:
+Note: The instruction to load the color scheme may vary depending on the
+package.
+See the README of the related color scheme (i.e. git package) for information,
+Examples: require('color_scheme').setup{}, vim.cmd('color_scheme')
+--]]
 require('onedark').load()
 ```
 
@@ -269,6 +278,8 @@ See: [lazy.nvim - Usage](https://lazy.folke.io/usage)
 </p>
 
 <details><summary> <b>(Click to expand)</b></summary>
+
+Note: Screenshots may be out of date compared to the actual setup.
 
 **OneDark Darker**
 
