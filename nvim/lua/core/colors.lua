@@ -67,13 +67,13 @@ require('kanagawa').setup({
 require('monokai-pro').setup({
   styles = {
     comment = { italic = false },
-    keyword = { italic = true }, -- any other keyword
-    type = { italic = false }, -- (preferred) int, long, char, etc
-    storageclass = { italic = true }, -- static, register, volatile, etc
-    structure = { italic = false }, -- struct, union, enum, etc
-    parameter = { italic = false }, -- parameter pass in function
+    keyword = { italic = true },        -- any other keyword
+    type = { italic = false },          -- (preferred) int, long, char, etc
+    storageclass = { italic = true },   -- static, register, volatile, etc
+    structure = { italic = false },     -- struct, union, enum, etc
+    parameter = { italic = false },     -- parameter pass in function
     annotation = { italic = true },
-    tag_attribute = { italic = true }, -- attribute of tag in reactjs
+    tag_attribute = { italic = true },  -- attribute of tag in reactjs
   },
 })
 
