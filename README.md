@@ -22,6 +22,8 @@ Neovim KISS configuration with Lua and LSP
 * [Guides and Resources](#guides-and-resources)
 * [Other Neovim Lua Project](#other-neovim-lua-projects)
 * [Lua Resources](#lua-resources)
+* [Disclaimer](#disclaimer)
+* [Thanks to](#thanks-to)
 
 ## Plugins
 
@@ -237,7 +239,7 @@ These are the default keymaps, in the following shortcuts, the `<leader>` key is
 | `<Ctrl> + t`         | Normal        | Open terminal (`:Term`)                           |
 | `<Esc>`              | Terminal      | Exit terminal                                     |
 | `<Ctrl> + n`         | Normal        | Open NvimTree                                     |
-| `<leader>z`          | Normal        | Open Tagbar                                       |
+| `<leader>t`          | Normal        | Open/Close Tagbar                                 |
 
 ## Configuration Check
 
@@ -364,9 +366,5 @@ This setup is not a Framework but it is the configuration I use to work on Linux
 
 ## Thanks to:
 
-- [All the contributors](https://github.com/brainfucksec/neovim-lua/graphs/contributors) who helped improve this setup with their reports and advices.
-
-- All the authors of the sources mentioned above.
-
-- The users of [/r/Neovim](https://old.reddit.com/r/neovim/) subreddit for the support of the configuration.
+- [All the contributors](https://github.com/brainfucksec/neovim-lua/graphs/contributors) who helped improve this setup with their reports and advices and all the authors of the sources mentioned above.
 
