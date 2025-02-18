@@ -13,7 +13,7 @@ You can also help with documentation in the wiki:
 https://github.com/nvim-lualine/lualine.nvim/wiki
 --]]
 
-local status_ok, feline = pcall(require, 'lualine')
+local status_ok, lualine = pcall(require, 'lualine')
 if not status_ok then
   return
 end
