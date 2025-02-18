@@ -254,9 +254,9 @@ These are the default keymaps, in the following shortcuts, the `<leader>` key is
 - You can also use the `startuptime` option to read the nvim startup logs:
 
 ```term
-nvim --startuptime > /tmp/nvim-start.log
+nvim --startuptime nvim-start.log
 
-nvim /tmp/nvim-start.log
+nvim nvim-start.log
 ```
 
 See: `:help startuptime`
