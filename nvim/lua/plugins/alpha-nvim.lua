@@ -91,7 +91,7 @@ local b5 = {
 }
 
 -- Assigns the value of the preferred `bx` banner to the `section.header.val` table
-dashboard.section.header.val = b2
+dashboard.section.header.val = b1
 
 -- Menu (Shortcuts)
 dashboard.section.buttons.val = {
