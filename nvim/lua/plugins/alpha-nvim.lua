@@ -5,7 +5,8 @@
 -- Plugin: alpha-nvim
 -- url: https://github.com/goolord/alpha-nvim
 
--- For configuration examples see: https://github.com/goolord/alpha-nvim/discussions/16
+-- Configuration start: https://github.com/goolord/alpha-nvim#quick-start
+-- For configuration examples (alpha-themes), see: https://github.com/goolord/alpha-nvim/discussions/16
 
 local status_ok, alpha = pcall(require, 'alpha')
 if not status_ok then
@@ -16,6 +17,8 @@ end
 -- see: https://github.com/goolord/alpha-nvim?tab=readme-ov-file#quick-start
 local dashboard = require('alpha.themes.dashboard')
 
+
+-- Load banner:
 -- Set the different banners to the variables `bx` (b0, b1, ..)
 -- to add a new banner create a new variable `bx` to the list :)
 -- by default there are six different banners (from b0 to b5).
@@ -90,13 +93,13 @@ local b5 = {
   "                                                             "
 }
 
--- Assigns the value of the preferred `bx` banner to the `section.header.val` table
+-- Assigns the value of the preferred `bx` banner to `section.header.val`
 dashboard.section.header.val = b1
 
 -- Menu (Shortcuts)
 dashboard.section.buttons.val = {
   dashboard.button('e', '  New file', ':ene <BAR> startinsert<CR>'),
-  dashboard.button('f', '  Find file', ':NvimTreeOpen<CR>'),
+  dashboard.button('f', '  Find file', ':NvimTreeOpen<CR>'),
   dashboard.button('s', '  Settings', ':e $MYVIMRC<CR>'),
   dashboard.button('u', '  Update plugins', ':Lazy update<CR>'),
   dashboard.button('q', '  Quit', ':qa<CR>'),
