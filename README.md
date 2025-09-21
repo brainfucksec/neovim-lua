@@ -83,10 +83,6 @@ See: [nanotee/nvim-lua-guide: Where to put Lua files](https://github.com/nanotee
 
 * [statusline.lua](nvim/lua/core/statusline.lua): Statusline configuration file
 
-`/nvim/lua/lsp`
-
-* [lspconfig.lua](nvim/lua/lsp/lspconfig.lua): LSP configuration (language servers, keybinding)
-
 `/nvim/lua/plugins`
 
 * [alpha-nvim.lua](nvim/lua/plugins/alpha-nvim.lua): Dashboard
@@ -101,7 +97,7 @@ See: [nanotee/nvim-lua-guide: Where to put Lua files](https://github.com/nanotee
 
 ## Installation
 
-1. Install [Neovim v0.10.x](https://github.com/neovim/neovim/releases/latest).
+1. Install [Neovim v0.11.x](https://github.com/neovim/neovim/releases/latest).
 
 2. Install [Nerd Fonts](https://www.nerdfonts.com/font-downloads), (the font of the screenshots are `JetBrainsMono Nerd Font`).
 
@@ -155,7 +151,7 @@ sudo npm install -g \
 
 3. Open a source file of one of the supported languages with Neovim, and run command [:LspInfo](https://github.com/neovim/nvim-lspconfig?tab=readme-ov-file#commands) for verify the LSP support.
 
-See: [nvim-lspconfig - Quickstart](https://github.com/neovim/nvim-lspconfig?tab=readme-ov-file#quickstart)
+See: [nvim-lspconfig - Quickstart](https://github.com/neovim/nvim-lspconfig/tree/master?tab=readme-ov-file#quickstart)
 
 ### Languages Currently Supported
 
@@ -171,7 +167,7 @@ HTML, CSS, JSON - [vscode-langservers-extracted](https://github.com/neovim/nvim-
 
 JavaScript, TypeScript - [ts_ls](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#ts_ls)
 
-See: [nvim-lspconfig #doc/LSP configs](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md)
+LSP server configs: [nvim-lspconfig #doc/LSP configs](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md)
 
 ## Appearance
 
