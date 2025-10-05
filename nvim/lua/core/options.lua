@@ -7,47 +7,50 @@
 -- [2] Defaults - *nvim-defaults*
 
 local g = vim.g       -- Global variables
-local opt = vim.opt   -- Set options (global/buffer/windows-scoped)
+local o = vim.o       -- Set options
+local opt = vim.opt   -- Set options (lua list/map-like)
 
 -----------------------------------------------------------
 -- General
 -----------------------------------------------------------
-opt.mouse = 'a'                       -- Enable mouse support
-opt.clipboard = 'unnamedplus'         -- Copy/paste to system clipboard
-opt.swapfile = false                  -- Don't use swapfile
-opt.completeopt = 'menuone,noinsert,noselect'  -- Autocomplete options
+o.mouse = 'a'                       -- Enable mouse support
+o.clipboard = 'unnamedplus'         -- Copy/paste to system clipboard
+o.cursorline = true                 -- Highlight current line
+o.cursorlineopt = "number"          -- Highlight current line number
+o.swapfile = false                  -- Don't use swapfile
+o.completeopt = 'menuone,noinsert,noselect'  -- Autocomplete options
 
 -----------------------------------------------------------
 -- Neovim UI
 -----------------------------------------------------------
-opt.number = true           -- Show line number
-opt.showmatch = true        -- Highlight matching parenthesis
-opt.foldmethod = 'marker'   -- Enable folding (default 'foldmarker')
-opt.colorcolumn = '80'      -- Line lenght marker at 80 columns
-opt.splitright = true       -- Vertical split to the right
-opt.splitbelow = true       -- Horizontal split to the bottom
-opt.ignorecase = true       -- Ignore case letters when search
-opt.smartcase = true        -- Ignore lowercase for the whole pattern
-opt.linebreak = true        -- Wrap on word boundary
-opt.termguicolors = true    -- Enable 24-bit RGB colors
-opt.laststatus=3            -- Set global statusline
+o.number = true           -- Show line number
+o.showmatch = true        -- Highlight matching parenthesis
+o.foldmethod = 'marker'   -- Enable folding (default 'foldmarker')
+o.colorcolumn = '80'      -- Line lenght marker at 80 columns
+o.splitright = true       -- Vertical split to the right
+o.splitbelow = true       -- Horizontal split to the bottom
+o.ignorecase = true       -- Ignore case letters when search
+o.smartcase = true        -- Ignore lowercase for the whole pattern
+o.linebreak = true        -- Wrap on word boundary
+o.termguicolors = true    -- Enable 24-bit RGB colors
+o.laststatus = 3          -- Set global statusline
 
 -----------------------------------------------------------
 -- Tabs, indent
 -----------------------------------------------------------
-opt.expandtab = true        -- Use spaces instead of tabs
-opt.shiftwidth = 4          -- Shift 4 spaces when tab
-opt.tabstop = 4             -- 1 tab == 4 spaces
-opt.smartindent = true      -- Autoindent new lines
+o.expandtab = true        -- Use spaces instead of tabs
+o.shiftwidth = 4          -- Shift 4 spaces when tab
+o.tabstop = 4             -- 1 tab == 4 spaces
+o.smartindent = true      -- Autoindent new lines
 
 -----------------------------------------------------------
 -- Memory, CPU
 -----------------------------------------------------------
-opt.hidden = true           -- Enable background buffers
-opt.history = 100           -- Remember N lines in history
-opt.lazyredraw = true       -- Faster scrolling
-opt.synmaxcol = 240         -- Max column for syntax highlight
-opt.updatetime = 250        -- ms to wait for trigger an event
+o.hidden = true           -- Enable background buffers
+o.history = 100           -- Remember N lines in history
+o.lazyredraw = true       -- Faster scrolling
+o.synmaxcol = 240         -- Max column for syntax highlight
+o.updatetime = 250        -- ms to wait for trigger an event
 
 -----------------------------------------------------------
 -- Startup
