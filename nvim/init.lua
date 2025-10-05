@@ -18,6 +18,8 @@ require('plugins/indent-blankline')
 require('plugins/nvim-cmp')
 require('plugins/nvim-treesitter')
 require('plugins/alpha-nvim')
+
+-- Enable LSP
 vim.lsp.enable({
   'bashls',
   'pyright',
