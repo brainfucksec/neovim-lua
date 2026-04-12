@@ -8,6 +8,12 @@ Neovim KISS configuration with Lua and LSP
 
 ---
 
+>[!CAUTION]
+> Public Archive - This repository is deprecated and is compatible only with Neovim version 0.11.x.
+I'm working on a new configuration for version 0.12.x, so there will be a new git repository called "neovim-config."
+
+---
+
 ## Table of Contents
 
 * [Plugins](#plugins)
