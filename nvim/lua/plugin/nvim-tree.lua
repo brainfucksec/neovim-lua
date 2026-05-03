@@ -16,7 +16,7 @@ end
 -- See: `:help nvim-tree` 4. SETUP
 -- Each of these are documented in `:help nvim-tree.OPTION_NAME`
 -- nested options are documented by accessing them with `.` (eg: `:help nvim-tree.view.mappings.list`)
-nvim_tree.setup {
+nvim_tree.setup({
   on_attach = "default",
   hijack_cursor = false,
   auto_reload_on_write = true,
@@ -38,7 +38,7 @@ nvim_tree.setup {
     centralize_selection = false,
     cursorline = true,
     debounce_delay = 15,
-    width = 34,
+    width = 30,
     side = "left",
     preserve_window_proportions = false,
     number = false,
@@ -152,10 +152,6 @@ nvim_tree.setup {
       ignore_list = {},
     },
     exclude = false,
-  },
-  system_open = {
-    cmd = "",
-    args = {},
   },
   git = {
     enable = true,
@@ -289,4 +285,4 @@ nvim_tree.setup {
       watcher = false,
     },
   },
-} -- END_OPTS
+}) -- END_OPTS

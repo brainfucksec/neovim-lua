@@ -11,7 +11,7 @@ if not status_ok then
   return
 end
 
-ibl.setup {
+ibl.setup({
   indent = { char = "▎" },
   exclude = {
     filetypes = {
@@ -35,4 +35,4 @@ ibl.setup {
       'prompt',
     },
   },
-}
+})

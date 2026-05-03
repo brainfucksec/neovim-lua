@@ -8,12 +8,6 @@ Neovim KISS configuration with Lua and LSP
 
 ---
 
->[!CAUTION]
-> **Public Archive - This repository is deprecated and is compatible only with Neovim version 0.11.x.
-I'm working on a new configuration for version 0.12.x, so there will be a new git repository called "neovim-config."**
-
----
-
 ## Table of Contents
 
 * [Plugins](#plugins)
@@ -73,37 +67,39 @@ I'm working on a new configuration for version 0.12.x, so there will be a new gi
 
 * [lua](nvim/lua): The directory of `lua` modules, these modules are called in the `init.lua` file (see below).
 
-See: [nanotee/nvim-lua-guide: Where to put Lua files](https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files)
+See: [neovim.io/doc/user/lua-guide/#_lua-modules](https://neovim.io/doc/user/lua-guide/#_lua-modules)
 
-`/nvim/lua/core`
+`/nvim/lua/config`
 
-* [autocmds.lua](nvim/lua/core/autocmds.lua): Define autocommands with Lua APIs
+* [autocmds.lua](nvim/lua/config/autocmds.lua): Define autocommands with Lua APIs
 
-* [colors.lua](nvim/lua/core/colors.lua): Define Neovim and plugins color scheme
+* [colors.lua](nvim/lua/config/colors.lua): Define Neovim and plugins color scheme
 
-* [keymaps.lua](nvim/lua/core/keymaps.lua): Keymaps configuration file, Neovim and plugins keymaps
+* [keymaps.lua](nvim/lua/config/keymaps.lua): Keymaps configuration file, Neovim and plugins keymaps
 
-* [lazy.lua](nvim/lua/core/lazy.lua): Plugin manager configuration file
+* [lazy.lua](nvim/lua/config/lazy.lua): Plugin manager configuration file
 
-* [options.lua](nvim/lua/core/options.lua): General Neovim settings
+* [options.lua](nvim/lua/config/options.lua): General Neovim settings
 
-* [statusline.lua](nvim/lua/core/statusline.lua): Statusline configuration file
+* [statusline.lua](nvim/lua/config/statusline.lua): Statusline configuration file
 
-`/nvim/lua/plugins`
+`/nvim/lua/plugin`
 
-* [alpha-nvim.lua](nvim/lua/plugins/alpha-nvim.lua): Dashboard
+* [alpha-nvim.lua](nvim/lua/plugin/alpha-nvim.lua): Dashboard
 
-* [indent-blankline.lua](nvim/lua/plugins/indent-blankline.lua): Indent line
+* [indent-blankline.lua](nvim/lua/plugin/indent-blankline.lua): Indent line
 
-* [nvim-cmp.lua](nvim/lua/plugins/nvim-cmp.lua): Autocompletion settings
+* [nvim-cmp.lua](nvim/lua/plugin/nvim-cmp.lua): Autocompletion settings
 
-* [nvim-tree.lua](nvim/lua/plugins/nvim-tree.lua): File manager settings
+* [nvim-tree.lua](nvim/lua/plugin/nvim-tree.lua): File manager settings
 
-* [nvim-treesitter](nvim/lua/plugins/nvim-treesitter): Treesitter interface configuration
+* [nvim-treesitter](nvim/lua/plugin/nvim-treesitter): Treesitter interface configuration
 
 ## Installation
 
-1. Install [Neovim v0.11.x](https://github.com/neovim/neovim/releases/latest).
+1. Install [Neovim v0.12.x](https://github.com/neovim/neovim/releases/latest).
+
+    - See: [neovim.io/doc/install/](https://neovim.io/doc/install/)
 
 2. Install [Nerd Fonts](https://www.nerdfonts.com/font-downloads), (the font of the screenshots are `JetBrainsMono Nerd Font`).
 
@@ -133,17 +129,23 @@ nvim
 
 ## LSP Configuration
 
-1. Install LSP language servers with `npm`, see: [Languages Currently Supported](languages-currently-supported)
+1. Install LSP language servers with `npm`, see: [LSP Default Language Servers](lsp-default-language-servers)
 
 ```term
 sudo npm install -g \
     bash-language-server \
     pyright \
     vscode-langservers-extracted \
-    typescript typescript-language-server
+    typescript typescript-language-server \
+    rust-analyzer
 ```
 
-2. Install additional packages for plugins support:
+For Lua language server see:
+
+  - [lua_ls](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#lua_ls)
+  - [lua-language-server](https://github.com/luals/lua-language-server)
+
+2. Install additional packages for C, C++ and Python:
 
 **C, C++:**
 
@@ -155,13 +157,15 @@ sudo npm install -g \
 
 * [pynvim](https://github.com/neovim/pynvim)
 
-3. Open a source file of one of the supported languages with Neovim, and run command [:LspInfo](https://github.com/neovim/nvim-lspconfig?tab=readme-ov-file#commands) for verify the LSP support.
+3. Open a code file matching one of the filetypes specified in the config with Neovim, and check that LSP is active with `:checkhealth vim.lsp` command.
 
-See: [nvim-lspconfig - Quickstart](https://github.com/neovim/nvim-lspconfig/tree/master?tab=readme-ov-file#quickstart)
+See: [neovim.io/doc/user/lsp/](https://neovim.io/doc/user/lsp/)
 
-### Languages Currently Supported
+### LSP Default Language Servers
 
-Lua - [builtin](https://neovim.io/doc/user/lua.html)
+neovim-lua by default has the following language servers installed:
+
+Lua - [lua_ls](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#lua_ls)
 
 Bash - [bashls](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#bashls)
 
@@ -173,7 +177,9 @@ HTML, CSS, JSON - [vscode-langservers-extracted](https://github.com/neovim/nvim-
 
 JavaScript, TypeScript - [ts_ls](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#ts_ls)
 
-LSP server configs: [nvim-lspconfig #doc/LSP configs](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md)
+Rust - [rust_analyzer](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#rust_analyzer)
+
+See [nvim-lspconfig #doc/LSP configs](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md)
 
 ## Appearance
 
@@ -198,20 +204,10 @@ The color scheme (default: OneDark) is defined in the following file:
 * Neovim UI - [nvim/lua/core/colors.lua](nvim/lua/core/colors.lua):
 
 ```lua
---[[
-Set Neovim UI color scheme.
-Current available color schemes: onedark, kanagawa, monokai-pro, rose-pine.
-See: https://github.com/brainfucksec/neovim-lua#appearance
-
-Insert preferred color scheme in the `color_scheme` variable.
-Note: Color scheme is loaded in the "Load color scheme" section below, setup
-must be called before loading.
---]]
-local status_ok, color_scheme = pcall(require, 'onedark')
 
 -- Color scheme setup before load:
 require('onedark').setup({
-    -- Your settings here.
+    -- color scheme settings here..
 })
 
 --[[
@@ -250,6 +246,8 @@ These are the default keymaps, in the following shortcuts, the `<leader>` key is
 ```vim
 :checkhealth
 ```
+
+See: `help checkhealth`
 
 ![alt text](img/checkhealth.png)
 
