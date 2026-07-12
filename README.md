@@ -79,6 +79,8 @@ See: [neovim.io/doc/user/lua-guide/#_lua-modules](https://neovim.io/doc/user/lua
 
 * [lazy.lua](nvim/lua/config/lazy.lua): Plugin manager configuration file
 
+* [lsp.lua](nvim/lua/config/lsp.lua): Load LSP modules
+
 * [options.lua](nvim/lua/config/options.lua): General Neovim settings
 
 * [statusline.lua](nvim/lua/config/statusline.lua): Statusline configuration file

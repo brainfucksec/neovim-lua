@@ -11,20 +11,10 @@ require('config/autocmds')
 require('config/keymaps')
 require('config/colors')
 require('config/statusline')
+require('config/lsp')
 require('plugin/nvim-tree')
 require('plugin/indent-blankline')
 require('plugin/nvim-treesitter')
 require('plugin/nvim-cmp')
 require('plugin/alpha-nvim')
 
--- Enable LSP
-vim.lsp.enable({
-  'bashls',
-  'lua_ls',
-  'pyright',
-  'clangd',
-  'html',
-  'cssls',
-  'ts_ls',
-  'rust-analyzer'
-})
