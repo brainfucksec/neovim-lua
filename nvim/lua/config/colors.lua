@@ -3,20 +3,10 @@
 -----------------------------------------------------------
 
 --[[
-Set Neovim UI color scheme.
+Set Neovim UI color scheme:
 Current available color schemes: onedark, kanagawa, monokai-pro, rose-pine.
 See: https://github.com/brainfucksec/neovim-lua#appearance
 
-Insert preferred color scheme in the `color_scheme` variable.
-Note: Color scheme is loaded in the "Load color scheme" section below, setup
-must be called before loading.
---]]
-local status_ok, color_scheme = pcall(require, 'onedark')
-if not status_ok then
-  return
-end
-
---[[
 Color schemes settings:
 For configuration of the color scheme refer to the project instructions,
 usually found in the README file of the git package.
