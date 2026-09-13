@@ -69,6 +69,10 @@ Neovim KISS configuration with Lua and LSP
 
 See: [neovim.io/doc/user/lua-guide/#_lua-modules](https://neovim.io/doc/user/lua-guide/#_lua-modules)
 
+`/nvim/lsp/`
+
+Path for LSP configs `lsp/*.lua` files. See: [Lsp - CONFIG](https://neovim.io/doc/user/lsp/#lsp-config)
+
 `/nvim/lua/config`
 
 * [autocmds.lua](nvim/lua/config/autocmds.lua): Define autocommands with Lua APIs
