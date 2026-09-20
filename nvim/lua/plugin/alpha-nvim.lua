@@ -103,7 +103,7 @@ dashboard.section.buttons.val = {
   dashboard.button('e', '  New file', ':ene <BAR> startinsert<CR>'),
   dashboard.button('f', '  Find file', ':NvimTreeOpen<CR>'),
   dashboard.button('s', '  Settings', ':e $MYVIMRC<CR>'),
-  dashboard.button('u', '  Update plugins', ':Lazy update<CR>'),
+  dashboard.button('u', '  Update plugins', ':lua vim.pack.update()<CR>'),
   dashboard.button('q', '  Quit', ':qa<CR>'),
 }
 

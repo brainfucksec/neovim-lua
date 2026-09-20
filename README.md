@@ -27,8 +27,6 @@ Neovim KISS configuration with Lua and LSP
 
 ## Plugins
 
-[lazy.nvim](https://github.com/folke/lazy.nvim) - A modern plugin manager for Neovim
-
 [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) - A blazing fast and easy to configure neovim statusline plugin written in pure lua.
 
 [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - A collection of common configurations for Neovim's built-in language server client
@@ -81,11 +79,11 @@ Path for LSP configs `lsp/*.lua` files. See: [Lsp - CONFIG](https://neovim.io/do
 
 * [keymaps.lua](nvim/lua/config/keymaps.lua): Keymaps configuration file, Neovim and plugins keymaps
 
-* [lazy.lua](nvim/lua/config/lazy.lua): Plugin manager configuration file
-
 * [lsp.lua](nvim/lua/config/lsp.lua): Load LSP modules
 
 * [options.lua](nvim/lua/config/options.lua): General Neovim settings
+
+* [pack.lua](nvim/lua/config/pack.lua): Plugin manager configuration file
 
 * [statusline.lua](nvim/lua/config/statusline.lua): Statusline configuration file
 
@@ -125,9 +123,7 @@ cd neovim-lua/
 cp -Rv nvim ~/.config/
 ```
 
-6. Install [lazy.nvim](https://lazy.folke.io/) for install and manage the plugins, see: [lazy.nvim - Installation](https://lazy.folke.io/installation)
-
-7. Run Neovim for download/sync plugins with `lazy`
+6. Run Neovim and download/sync plugins with `vim.pack`, see: [Pack - Plugin Manager](https://neovim.io/doc/user/pack/#_plugin-manager)
 
 ```term
 nvim
@@ -267,18 +263,6 @@ nvim nvim-start.log
 
 See: `:help startuptime`
 
-Also you can check the plugins configuration and startup time with `lazy`:
-
-```vim
-:checkhealth lazy
-```
-
-```vim
-:Lazy profile
-```
-
-See: [lazy.nvim - Usage](https://lazy.folke.io/usage)
-
 ## Screenshots
 
 <p align="center">
@@ -321,9 +305,9 @@ Note: Screenshots may be out of date compared to the actual setup.
 
 ![8-rose-pine.png](img/8-rose-pine.png)
 
-**lazy.nvim**
+**vim.pack**
 
-![lazy-nvim.png](img/lazy-nvim.png)
+![pack.png](img/pack.png)
 
 </details>
 
