@@ -311,38 +311,24 @@ Note: Screenshots may be out of date compared to the actual setup.
 
 </details>
 
-## Guides and Resources
-
-* [Lua - Neovim docs](https://neovim.io/doc/user/lua.html)
-
-* [Lua-guide - Neovim docs](https://neovim.io/doc/user/lua-guide.html#lua-guide)
-
-* [Everything you need to know to configure neovim using lua](https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/)
+## Neovim Guides and Resources
 
 * [reddit /r/neovim](https://www.old.reddit.com/r/neovim/)
 
 * [Lemmy: programming.dev/c/neovim](https://programming.dev/c/neovim)
 
-
-## Other Neovim Lua Projects
-
-* [NvChad](https://github.com/siduck76/NvChad)
-
-* [nvim-ide](https://github.com/ldelossa/nvim-ide)
-
-* [nv-ide](https://github.com/crivotz/nv-ide)
-
-* [Neovim from scratch](https://github.com/LunarVim/Neovim-from-scratch)
-
-* [CosmicNvim](https://github.com/CosmicNvim/CosmicNvim)
-
 ## Lua Resources
 
 * [Learn X in Y minutes: Where X=Lua](https://learnxinyminutes.com/docs/lua/)
 
-* [Lua Quick Guide](https://github.com/medwatt/Notes/blob/main/Lua/Lua_Quick_Guide.ipynb)
+* [Lua 5.4 Reference Manual](https://www.lua.org/manual/5.5/)
 
-* [Lua 5.4 Reference Manual](https://www.lua.org/manual/5.4/)
+## Neovim Lua Docs
+
+* [Lua - Neovim docs](https://neovim.io/doc/user/lua.html)
+
+* [Lua-guide - Neovim docs](https://neovim.io/doc/user/lua-guide.html#lua-guide)
+
 
 ---
 
