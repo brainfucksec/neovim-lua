@@ -15,6 +15,6 @@ require('config/lsp')
 require('plugin/nvim-tree')
 require('plugin/indent-blankline')
 require('plugin/nvim-treesitter')
-require('plugin/nvim-cmp')
+require('plugin/blink-cmp')
 require('plugin/alpha-nvim')
 

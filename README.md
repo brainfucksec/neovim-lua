@@ -31,7 +31,7 @@ Neovim KISS configuration with Lua and LSP
 
 [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - A collection of common configurations for Neovim's built-in language server client
 
-[nvim-cmp](https://github.com/hrsh7th/nvim-cmp) - Auto completion plugin
+[blink.cmp](https://github.com/Saghen/blink.cmp) - Auto completion plugin
 
 [LuaSnip](https://github.com/L3MON4D3/LuaSnip) - Snippet Engine for Neovim written in Lua
 
@@ -50,6 +50,8 @@ Neovim KISS configuration with Lua and LSP
 [alpha-nvim](https://github.com/goolord/alpha-nvim) - A fast and highly customizable greeter for neovim.
 
 [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons) - A Lua fork of vim-devicons
+
+**Plugins are managed using the built-in plugin manager** [vim.pack](https://neovim.io/doc/user/pack/#vim.pack)
 
 ## Directory Tree
 
@@ -93,7 +95,7 @@ Path for LSP configs `lsp/*.lua` files. See: [Lsp - CONFIG](https://neovim.io/do
 
 * [indent-blankline.lua](nvim/lua/plugin/indent-blankline.lua): Indent line
 
-* [nvim-cmp.lua](nvim/lua/plugin/nvim-cmp.lua): Autocompletion settings
+* [blink-cmp.lua](nvim/lua/plugin/blink-cmp.lua): Autocompletion settings
 
 * [nvim-tree.lua](nvim/lua/plugin/nvim-tree.lua): File manager settings
 
@@ -328,7 +330,6 @@ Note: Screenshots may be out of date compared to the actual setup.
 * [Lua - Neovim docs](https://neovim.io/doc/user/lua.html)
 
 * [Lua-guide - Neovim docs](https://neovim.io/doc/user/lua-guide.html#lua-guide)
-
 
 ---
 

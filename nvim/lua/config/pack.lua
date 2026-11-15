@@ -68,16 +68,15 @@ vim.pack.add({
   -- LSP servers configuration: nvim-lspconfig
   'https://github.com/neovim/nvim-lspconfig',
 
-  -- Autocomplete [current, legacy]: nvim-cmp
-  'https://github.com/hrsh7th/nvim-cmp',
+  -- Snippets: luasnip
+  'https://github.com/L3MON4D3/LuaSnip',
 
-  -- nvim-cmp dependencies:
-  -- these dependencies will only be loaded when cmp loads
-  'https://github.com/L3MON4D3/LuaSnip',        -- Snippets
-  'https://github.com/hrsh7th/cmp-nvim-lsp',    -- LSP wrapper
-  'https://github.com/hrsh7th/cmp-path',        -- path
-  'https://github.com/hrsh7th/cmp-buffer',      -- buffer
-  'https://github.com/saadparwaiz1/cmp_luasnip' -- other Lua snippets
+  -- Autocomplete: blink.cmp
+  {
+    src = 'https://github.com/Saghen/blink.cmp',
+    -- See: https://cmp.saghen.dev/installation
+    version = vim.version.range("1.*"),
+  },
 })
 
 -- Start plugins setup (use plugins immediately)
