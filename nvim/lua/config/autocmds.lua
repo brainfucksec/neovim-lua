@@ -40,7 +40,7 @@ autocmd('BufEnter', {
 
 -- Disable line length marker
 augroup('setLineLength', { clear = true })
-autocmd('Filetype', {
+autocmd('FileType', {
   group = 'setLineLength',
   pattern = { 'text', 'markdown', 'html', 'xhtml', 'javascript', 'typescript' },
   command = 'setlocal cc=0'
@@ -48,7 +48,7 @@ autocmd('Filetype', {
 
 -- Set indentation to 2 spaces
 augroup('setIndent', { clear = true })
-autocmd('Filetype', {
+autocmd('FileType', {
   group = 'setIndent',
   pattern = { 'xml', 'html', 'xhtml', 'css', 'scss', 'javascript', 'typescript',
     'yaml', 'lua'
